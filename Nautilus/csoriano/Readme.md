@@ -6,6 +6,8 @@
                                               
      shell-version 3.36/3.38 support beta ubuntu 20.04/21.04 gnome 40 support ubuntu lts stable 3.38
 
+Download thems + icons https://github.com/Griggorii/ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso/archive/refs/heads/main.zip inpack ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso-main.zip $ sudo dpkg -i *.deb
+
 Backup / Делаем бекап на всякий случай
                                               
 $ sudo XZ_OPT=-9 tar -Jcvf desktop-icons@csoriano_backup.tar.xz /usr/share/gnome-shell/extensions/desktop-icons@csoriano
