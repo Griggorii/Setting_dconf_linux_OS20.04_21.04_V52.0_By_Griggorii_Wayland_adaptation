@@ -9,6 +9,8 @@ Proview https://www.youtube.com/watch?v=dbaI42nYtQ0
           Ubuntu variant 20.04/21.04 gnome 3.36 / 3.38 (not support beta ubuntu 21.04 gnome 40 ,  
 
                                     dump ding@rastersoft.com.tar.xz)
+                                    
+Wayland Session effect Proview unite live icons https://www.youtube.com/watch?v=dbaI42nYtQ0                                    
 
 Download thems + icons https://github.com/Griggorii/ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso/archive/refs/heads/main.zip unpack ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso-main.zip run folder unpack all deb terminal command $ sudo dpkg -i *.deb
 
