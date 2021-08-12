@@ -5,11 +5,14 @@
                                        desktop icons extent
                                               
                                  All gnome nemo icons support
-                                                                                           
-$ sudo apt install nemo -y
+
+Download thems + icons https://github.com/Griggorii/ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso/archive/refs/heads/main.zip inpack ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso-main.zip $ sudo dpkg -i *.deb
+                              
+$ sudo apt update && sudo apt install nemo -y
 
 $ chmod -R a+rwx Setting_dconf_linux_OS21.04_V49.0_By_Griggorii_Wayland_vertical_adaptation.sh
 
 $ ./Setting_dconf_linux_OS21.04_V50.0_By_Griggorii_Wayland_vertical_adaptation.sh
 
-$ gnome-extensions disable unite@hardpixel.eu
+$ gnome-extensions disable unite@hardpixel.eu                                                                                         
+
