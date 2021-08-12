@@ -10,7 +10,7 @@ Proview https://www.youtube.com/watch?v=dbaI42nYtQ0
 
                                     dump ding@rastersoft.com.tar.xz)
 
-Download thems + icons https://github.com/Griggorii/ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso/archive/refs/heads/main.zip inpack ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso-main.zip $ sudo dpkg -i *.deb
+Download thems + icons https://github.com/Griggorii/ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso/archive/refs/heads/main.zip unpack ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso-main.zip run folder unpack all deb terminal command $ sudo dpkg -i *.deb
 
 Backup / Делаем бекап на всякий случай
                                               
