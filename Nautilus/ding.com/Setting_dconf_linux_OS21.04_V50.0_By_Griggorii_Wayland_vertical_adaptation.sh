@@ -200,7 +200,7 @@ mkdir ~/.config/autostart/
 EOF
 dconf dump / > dconf-settings-original-restore_21.04.ini
 EOF
-dconf reset -f /
+# dconf reset -f /
 EOF
 gsettings set org.gnome.shell.extensions.user-theme name "Orchis"
 EOF
@@ -343,6 +343,5359 @@ EOF
 xdg-mime default gnome-disk-image-mounter.desktop application/x-raw-disk-image
 EOF
 update-mime-database ~/.local/share/mime
+EOF
+gsettings set org.gnome.shell.extensions.desktop-icons show-trash true
+gsettings set org.gnome.shell.extensions.desktop-icons icon-size 'small'
+gsettings set org.gnome.shell.extensions.desktop-icons show-home true
+gsettings set org.gtk.Settings.EmojiChooser recent-emoji
+gsettings set org.gnome.gnome-screenshot include-pointer false
+gsettings set org.gnome.gnome-screenshot take-window-shot false
+gsettings set org.gnome.gnome-screenshot delay 1
+gsettings set org.gnome.gnome-screenshot border-effect 'none'
+gsettings set org.gnome.gnome-screenshot last-save-directory ''
+gsettings set org.gnome.gnome-screenshot default-file-type 'png'
+gsettings set org.gnome.gnome-screenshot auto-save-directory ''
+gsettings set org.gnome.gnome-screenshot include-icc-profile true
+gsettings set org.gnome.gnome-screenshot include-border true
+gsettings set org.gnome.rhythmbox.player play-order 'linear'
+gsettings set org.gnome.rhythmbox.player use-xfade-backend false
+gsettings set org.gnome.rhythmbox.player volume 1.0
+gsettings set org.gnome.rhythmbox.player transition-time 0.0
+gsettings set org.gnome.nautilus.list-view default-zoom-level 'standard'
+gsettings set org.gnome.nautilus.list-view use-tree-view true
+gsettings set org.gnome.nautilus.list-view default-visible-columns ['name', 'size', 'date_modified', 'type', 'date_modified_with_time', 'owner', 'permissions', 'group', 'where', 'date_accessed', 'recency', 'detailed_type', 'starred']
+gsettings set org.gnome.nautilus.list-view default-column-order ['name', 'size', 'date_modified', 'type', 'date_modified_with_time', 'owner', 'permissions', 'group', 'where', 'date_accessed', 'recency', 'detailed_type', 'starred']
+gsettings set org.gnome.gedit.plugins.time prompt-type 'prompt-selected-format'
+gsettings set org.gnome.gedit.plugins.time custom-format '%d/%m/%Y %H:%M:%S'
+gsettings set org.gnome.gedit.plugins.time selected-format '%c'
+gsettings set org.gnome.totem active-plugins ['variable-rate', 'vimeo', 'autoload-subtitles', 'totem-im-status', 'skipto', 'recent', 'rotation', 'screensaver', 'save-file', 'dbusservice', 'screenshot', 'movie-properties', 'apple-trailers', 'media-player-keys', 'pythonconsole', 'open-directory', 'opensubtitles']
+gsettings set org.gnome.totem brightness 32767
+gsettings set org.gnome.totem saturation 32767
+gsettings set org.gnome.totem network-buffer-threshold 2.0
+gsettings set org.gnome.totem disable-deinterlacing false
+gsettings set org.gnome.totem open-uri ''
+gsettings set org.gnome.totem contrast 32767
+gsettings set org.gnome.totem screenshot-save-uri ''
+gsettings set org.gnome.totem disable-user-plugins false
+gsettings set org.gnome.totem subtitle-font 'Sans Bold 20'
+gsettings set org.gnome.totem audio-output-type 'stereo'
+gsettings set org.gnome.totem hue 32767
+gsettings set org.gnome.totem autoload-subtitles false
+gsettings set org.gnome.totem filesystem-paths @as []
+gsettings set org.gnome.totem disable-keyboard-shortcuts false
+gsettings set org.gnome.totem subtitle-encoding 'UTF-8'
+gsettings set org.gnome.totem repeat true
+gsettings set org.gnome.desktop.session session-name 'ubuntu'
+gsettings set org.gnome.desktop.session idle-delay uint32 0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.autogain weight-s 1
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.autogain weight-m 1
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.autogain use-geometric-mean true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.autogain state true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.autogain reset true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.autogain installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.autogain post-messages true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.autogain input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.autogain output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.autogain detect-silence true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.autogain target -19.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.autogain weight-i 1
+gsettings set org.gnome.rhythmbox.encoding-settings transcode-lossless false
+gsettings set org.gnome.rhythmbox.encoding-settings media-type-presets {'audio/x-vorbis': 'Ubuntu', 'audio/mpeg': 'Ubuntu'}
+gsettings set org.gnome.rhythmbox.encoding-settings media-type 'audio/x-vorbis'
+gsettings set org.gnome.rhythmbox.source search-type 'search-match'
+gsettings set org.gnome.rhythmbox.source show-browser true
+gsettings set org.gnome.rhythmbox.source paned-position 180
+gsettings set org.gnome.rhythmbox.source sorting ['Artist', true]
+gsettings set org.gnome.metacity.keybindings toggle-tiled-left ['<Super>Left']
+gsettings set org.gnome.metacity.keybindings toggle-tiled-right ['<Super>Right']
+gsettings set org.yorba.shotwell.sharing.flickr visibility 1
+gsettings set org.yorba.shotwell.sharing.flickr default-size 2
+gsettings set org.yorba.shotwell.sharing.flickr strip-metadata false
+gsettings set org.yorba.shotwell.sharing.flickr access-phase-username ''
+gsettings set org.yorba.shotwell.sharing.flickr access-phase-token-secret ''
+gsettings set org.yorba.shotwell.sharing.flickr access-phase-token ''
+gsettings set org.gnome.gnote.note-directory-watcher check-interval 5
+gsettings set com.ubuntu.notifications.settings.applications vibrate-silent-mode true
+gsettings set com.ubuntu.notifications.settings.applications applications @as []
+gsettings set org.gnome.settings-daemon.plugins.remote-display priority 0
+gsettings set org.gnome.settings-daemon.plugins.remote-display active true
+gsettings set org.gnome.desktop.peripherals.tablet output ['', '', '']
+gsettings set org.gnome.desktop.peripherals.tablet display ['', '', '']
+gsettings set org.gnome.desktop.peripherals.tablet keep-aspect false
+gsettings set org.gnome.desktop.peripherals.tablet area [0.0, 0.0, 0.0, 0.0]
+gsettings set org.gnome.desktop.peripherals.tablet left-handed false
+gsettings set org.gnome.desktop.peripherals.tablet mapping 'absolute'
+gsettings set org.gnome.desktop.peripherals.touchscreen display ['', '', '']
+gsettings set org.gnome.desktop.peripherals.touchscreen output ['', '', '']
+gsettings set org.gnome.gthumb.dialogs.messages cannot-move-to-trash true
+gsettings set org.gnome.gthumb.dialogs.messages confirm-deletion true
+gsettings set org.gnome.gthumb.dialogs.messages save-modified-image true
+gsettings set org.gnome.FileRoller.Dialogs.Extract skip-newer false
+gsettings set org.gnome.FileRoller.Dialogs.Extract recreate-folders true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.convolver state false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.convolver ir-width 100
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.convolver post-messages true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.convolver kernel-path ''
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.convolver installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.convolver input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.convolver output-gain 0.0
+gsettings set org.gnome.gedit.plugins.pythonconsole use-system-font true
+gsettings set org.gnome.gedit.plugins.pythonconsole command-color '#314e6c'
+gsettings set org.gnome.gedit.plugins.pythonconsole error-color '#990000'
+gsettings set org.gnome.gedit.plugins.pythonconsole font 'Monospace 10'
+gsettings set com.canonical.unity.settings-daemon.plugins.sound priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.sound active true
+gsettings set org.gnome.shell.extensions.screenshot-window-sizer cycle-screenshot-sizes-backward ['<Shift><Alt><Control>s']
+gsettings set org.gnome.shell.extensions.screenshot-window-sizer cycle-screenshot-sizes ['<Alt><Control>s']
+gsettings set org.gnome.Characters font 'Cantarell 50'
+gsettings set org.gnome.Characters max-recent-characters uint32 100
+gsettings set org.gnome.Characters recent-characters ['↓']
+gsettings set org.gnome.gnote.insert-timestamp format '%c'
+gsettings set org.gnome.yelp font-adjustment 0
+gsettings set org.gnome.yelp show-cursor true
+gsettings set org.gnome.settings-daemon.peripherals.mouse double-click 400
+gsettings set org.gnome.settings-daemon.peripherals.mouse drag-threshold 8
+gsettings set org.onboard.theme-settings key-shadow-strength 70.0
+gsettings set org.onboard.theme-settings roundrect-radius 17.0
+gsettings set org.onboard.theme-settings key-stroke-gradient 25.0
+gsettings set org.onboard.theme-settings key-label-font 'Normal bold'
+gsettings set org.onboard.theme-settings key-label-overrides @as []
+gsettings set org.onboard.theme-settings color-scheme '/usr/share/onboard/themes/Granite.colors'
+gsettings set org.onboard.theme-settings key-shadow-size 33.0
+gsettings set org.onboard.theme-settings key-size 99.0
+gsettings set org.onboard.theme-settings key-gradient-direction 5.0
+gsettings set org.onboard.theme-settings background-gradient 81.0
+gsettings set org.onboard.theme-settings key-stroke-width 63.0
+gsettings set org.onboard.theme-settings key-fill-gradient 4.0
+gsettings set org.onboard.theme-settings key-style 'gradient'
+gsettings set org.freedesktop.folks primary-store ''
+gsettings set org.gnome.gthumb.data-migration catalogs-2-10 true
+gsettings set org.gnome.evolution.eds-shell start-offline false
+gsettings set com.canonical.unity.settings-daemon.plugins.cursor priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.cursor active true
+gsettings set org.mate.accessibility-startup exec-ats @as []
+gsettings set com.canonical.unity.settings-daemon.peripherals.mouse double-click 400
+gsettings set com.canonical.unity.settings-daemon.peripherals.mouse locate-pointer false
+gsettings set com.canonical.unity.settings-daemon.peripherals.mouse drag-threshold 8
+gsettings set org.gnome.desktop.search-providers disable-external false
+gsettings set org.gnome.desktop.search-providers disabled ['seahorse.desktop']
+gsettings set org.gnome.desktop.search-providers enabled @as []
+gsettings set org.gnome.desktop.search-providers sort-order ['gsettings set org.gnome.Contacts.desktop', 'gsettings set org.gnome.Documents.desktop', 'gsettings set org.gnome.Nautilus.desktop']
+gsettings set org.cinnamon.desktop.wm.preferences min-window-opacity 30
+gsettings set org.cinnamon.desktop.wm.preferences action-scroll-titlebar 'none'
+gsettings set org.cinnamon.desktop.wm.preferences theme 'Materia-dark'
+gsettings set org.cinnamon.desktop.wm.preferences focus-new-windows 'smart'
+gsettings set org.cinnamon.desktop.wm.preferences disable-workarounds false
+gsettings set org.cinnamon.desktop.wm.preferences num-workspaces 4
+gsettings set org.cinnamon.desktop.wm.preferences theme-backup 'Adwaita'
+gsettings set org.cinnamon.desktop.wm.preferences application-based false
+gsettings set org.cinnamon.desktop.wm.preferences raise-on-click true
+gsettings set org.cinnamon.desktop.wm.preferences mouse-button-modifier '<Alt>'
+gsettings set org.cinnamon.desktop.wm.preferences auto-raise false
+gsettings set org.cinnamon.desktop.wm.preferences action-middle-click-titlebar 'lower'
+gsettings set org.cinnamon.desktop.wm.preferences resize-with-right-button true
+gsettings set org.cinnamon.desktop.wm.preferences bell-sound '/usr/share/cinnamon/sounds/bell.ogg'
+gsettings set org.cinnamon.desktop.wm.preferences action-double-click-titlebar 'toggle-maximize'
+gsettings set org.cinnamon.desktop.wm.preferences workspace-names ['Workspace 1', 'Workspace 2', '', '', '']
+gsettings set org.cinnamon.desktop.wm.preferences action-right-click-titlebar 'menu'
+gsettings set org.cinnamon.desktop.wm.preferences visual-bell-type 'fullscreen-flash'
+gsettings set org.cinnamon.desktop.wm.preferences titlebar-font 'Sans Bold 10'
+gsettings set org.cinnamon.desktop.wm.preferences focus-mode 'click'
+gsettings set org.cinnamon.desktop.wm.preferences titlebar-uses-system-font false
+gsettings set org.cinnamon.desktop.wm.preferences mouse-button-zoom-modifier '<Alt>'
+gsettings set org.cinnamon.desktop.wm.preferences button-layout 'menu,shade,stick:minimize,maximize,close'
+gsettings set org.cinnamon.desktop.wm.preferences auto-raise-delay 500
+gsettings set org.cinnamon.desktop.wm.preferences audible-bell false
+gsettings set org.cinnamon.desktop.wm.preferences visual-bell false
+gsettings set org.gnome.settings-daemon.plugins.power lid-close-ac-action 'suspend'
+gsettings set org.gnome.settings-daemon.plugins.power time-critical 300
+gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'interactive'
+gsettings set org.gnome.settings-daemon.plugins.power lid-close-suspend-with-external-monitor false
+gsettings set org.gnome.settings-daemon.plugins.power button-hibernate 'hibernate'
+gsettings set org.gnome.settings-daemon.plugins.power idle-dim true
+gsettings set org.gnome.settings-daemon.plugins.power button-power 'interactive'
+gsettings set org.gnome.settings-daemon.plugins.power lid-close-battery-action 'suspend'
+gsettings set org.gnome.settings-daemon.plugins.power priority 0
+gsettings set org.gnome.settings-daemon.plugins.power idle-brightness 30
+gsettings set org.gnome.settings-daemon.plugins.power active false
+gsettings set org.gnome.settings-daemon.plugins.power critical-battery-action 'suspend'
+gsettings set org.gnome.settings-daemon.plugins.power button-suspend 'suspend'
+gsettings set org.gnome.settings-daemon.plugins.power button-sleep 'suspend'
+gsettings set org.gnome.settings-daemon.plugins.power percentage-critical 3
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 3600
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled true
+gsettings set org.gnome.settings-daemon.plugins.power notify-perhaps-recall true
+gsettings set org.gnome.settings-daemon.plugins.power percentage-low 10
+gsettings set org.gnome.settings-daemon.plugins.power percentage-action 2
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'suspend'
+gsettings set org.gnome.settings-daemon.plugins.power time-low 1200
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 6000
+gsettings set org.gnome.settings-daemon.plugins.power time-action 120
+gsettings set org.gnome.settings-daemon.plugins.power use-time-for-policy true
+gsettings set org.mate.interface status-bar-meter-on-right false
+gsettings set org.mate.interface file-chooser-backend 'gio'
+gsettings set org.mate.interface gtk-enable-animations true
+gsettings set org.mate.interface gtk-shell-shows-app-menu true
+gsettings set org.mate.interface cursor-blink true
+gsettings set org.mate.interface icon-theme 'menta'
+gsettings set org.mate.interface gtk-im-preedit-style 'callback'
+gsettings set org.mate.interface menus-have-tearoff false
+gsettings set org.mate.interface gtk-color-scheme ''
+gsettings set org.mate.interface automatic-mnemonics true
+gsettings set org.mate.interface buttons-have-icons true
+gsettings set org.mate.interface gtk-im-module ''
+gsettings set org.mate.interface gtk-theme 'Menta'
+gsettings set org.mate.interface gtk-decoration-layout 'menu:minimize,maximize,close'
+gsettings set org.mate.interface gtk-dialogs-use-header true
+gsettings set org.mate.interface menus-have-icons true
+gsettings set org.mate.interface cursor-blink-time 1200
+gsettings set org.mate.interface toolbar-icons-size 'large-toolbar'
+gsettings set org.mate.interface toolbar-style 'both-horiz'
+gsettings set org.mate.interface monospace-font-name 'Monospace 10'
+gsettings set org.mate.interface accessibility false
+gsettings set org.mate.interface show-unicode-menu true
+gsettings set org.mate.interface gtk-shell-shows-menubar true
+gsettings set org.mate.interface gtk-key-theme 'Default'
+gsettings set org.mate.interface window-scaling-factor 0
+gsettings set org.mate.interface toolbar-detachable false
+gsettings set org.mate.interface window-scaling-factor-qt-sync true
+gsettings set org.mate.interface show-input-method-menu true
+gsettings set org.mate.interface menubar-detachable false
+gsettings set org.mate.interface gtk-overlay-scrolling true
+gsettings set org.mate.interface use-custom-font false
+gsettings set org.mate.interface document-font-name 'Sans 10'
+gsettings set org.mate.interface menubar-accel 'F10'
+gsettings set org.mate.interface enable-animations true
+gsettings set org.mate.interface gtk-im-status-style 'callback'
+gsettings set org.mate.interface gtk-enable-primary-paste true
+gsettings set org.mate.interface font-name 'Sans 10'
+gsettings set com.canonical.unity.settings-daemon.plugins.screensaver-proxy priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.screensaver-proxy active true
+gsettings set org.mate.caja.list-view default-zoom-level 'smaller'
+gsettings set org.mate.caja.list-view default-visible-columns ['name', 'size', 'type', 'date_modified', 'owner', 'octal_permissions', 'group', 'date_accessed', 'selinux_context', 'where', 'permissions', 'size_on_disk', 'mime_type']
+gsettings set org.mate.caja.list-view default-column-order ['name', 'size', 'type', 'date_modified', 'owner', 'octal_permissions', 'group', 'date_accessed', 'selinux_context', 'where', 'permissions', 'size_on_disk', 'mime_type']
+gsettings set org.gnome.rhythmbox.plugins no-user-plugins false
+gsettings set org.gnome.rhythmbox.plugins seen-plugins ['mpris', 'dbus-media-server', 'notification', 'cd-recorder', 'pythonconsole', 'audioscrobbler', 'rblirc', 'ipod', 'rb', 'alternative-toolbar', 'rbzeitgeist', 'soundcloud', 'replaygain', 'magnatune', 'im-status', 'sendto', 'webremote', 'artsearch', 'lyrics', 'grilo', 'daap', 'mtpdevice', 'fmradio', 'listenbrainz']
+gsettings set org.gnome.rhythmbox.plugins active-plugins ['mpris', 'dbus-media-server', 'mmkeys', 'notification', 'audiocd', 'power-manager', 'generic-player', 'cd-recorder', 'audioscrobbler', 'ipod', 'android', 'rb', 'alternative-toolbar', 'artsearch', 'iradio', 'daap', 'mtpdevice']
+gsettings set com.canonical.unity-greeter background-logo '/usr/share/unity-greeter/cof.png'
+gsettings set com.canonical.unity-greeter xft-hintstyle 'hintslight'
+gsettings set com.canonical.unity-greeter draw-grid true
+gsettings set com.canonical.unity-greeter background '/usr/share/backgrounds/warty-final-ubuntu.png'
+gsettings set com.canonical.unity-greeter background-color '#2C001E'
+gsettings set com.canonical.unity-greeter hidden-users @as []
+gsettings set com.canonical.unity-greeter onscreen-keyboard false
+gsettings set com.canonical.unity-greeter theme-name 'Ambiance'
+gsettings set com.canonical.unity-greeter screen-reader false
+gsettings set com.canonical.unity-greeter icon-theme-name 'ubuntu-mono-dark'
+gsettings set com.canonical.unity-greeter high-contrast false
+gsettings set com.canonical.unity-greeter xft-rgba 'rgb'
+gsettings set com.canonical.unity-greeter indicators ['ug-accessibility', 'gsettings set com.canonical.indicator.keyboard', 'gsettings set com.canonical.indicator.session', 'gsettings set com.canonical.indicator.datetime', 'gsettings set com.canonical.indicator.power', 'gsettings set com.canonical.indicator.sound', 'application']
+gsettings set com.canonical.unity-greeter show-hostname true
+gsettings set com.canonical.unity-greeter group-filter @as []
+gsettings set com.canonical.unity-greeter idle-timeout 300
+gsettings set com.canonical.unity-greeter play-ready-sound true
+gsettings set com.canonical.unity-greeter xft-antialias true
+gsettings set com.canonical.unity-greeter draw-user-backgrounds true
+gsettings set com.canonical.unity-greeter logo '/usr/share/unity-greeter/logo.png'
+gsettings set com.canonical.unity-greeter xft-dpi 96.0
+gsettings set com.canonical.unity-greeter font-name 'Ubuntu 11'
+gsettings set org.gnome.settings-daemon.plugins.smartcard priority 0
+gsettings set org.gnome.settings-daemon.plugins.smartcard active true
+gsettings set org.gnome.desktop.datetime automatic-timezone false
+gsettings set ca.desrt.dconf-editor.Demo.Conflict1 default-value-conflict 1
+gsettings set ca.desrt.dconf-editor.Demo.Conflict1 range-conflict uint32 0
+gsettings set ca.desrt.dconf-editor.Demo.Conflict1 warning-similar true
+gsettings set ca.desrt.dconf-editor.Demo.Conflict1 type-conflict 'test'
+gsettings set ca.desrt.dconf-editor.Demo.Conflict1 a-non-conflicting-key true
+gsettings set org.gnome.gthumb.picasaweb resize-width -1
+gsettings set org.gnome.gthumb.picasaweb resize-height -1
+gsettings set org.gnome.desktop.wm.keybindings switch-group ['']
+gsettings set org.gnome.desktop.wm.keybindings begin-resize ['<Alt>F8']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings begin-move ['<Alt>F7']
+gsettings set org.gnome.desktop.wm.keybindings move-to-side-w ['<Control><Alt>KP_Left']
+gsettings set org.gnome.desktop.wm.keybindings move-to-corner-nw ['<Control><Alt>KP_Home']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-6 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right ['<Shift><Control><Alt>Right']
+gsettings set org.gnome.desktop.wm.keybindings always-on-top @as []
+gsettings set org.gnome.desktop.wm.keybindings toggle-maximized ['<Alt>F10']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left ['<Shift><Control><Alt>Left']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings cycle-panels ['<Control><Alt>Escape']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-11 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings lower ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-7 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings toggle-above @as []
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down ['<Shift><Super>Next']
+gsettings set org.gnome.desktop.wm.keybindings switch-panels ['<Control><Alt>Tab']
+gsettings set org.gnome.desktop.wm.keybindings minimize ['<Super>h']
+gsettings set org.gnome.desktop.wm.keybindings cycle-windows ['<Alt>Escape']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-9 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-12 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings toggle-on-all-workspaces ['<Super>Tab']
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source ['<Shift>Alt_L']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings move-to-side-n ['<Control><Alt>KP_Up']
+gsettings set org.gnome.desktop.wm.keybindings maximize-horizontally ['<Shift>KP_Multiply']
+gsettings set org.gnome.desktop.wm.keybindings activate-window-menu ['<Alt>space']
+gsettings set org.gnome.desktop.wm.keybindings set-spew-mark @as []
+gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings maximize-vertically ['<Shift>KP_Divide']
+gsettings set org.gnome.desktop.wm.keybindings move-to-corner-sw ['<Control><Alt>KP_End']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings maximize ['<Super>Up']
+gsettings set org.gnome.desktop.wm.keybindings panel-main-menu ['<Alt>F1']
+gsettings set org.gnome.desktop.wm.keybindings close ['<Alt>F4']
+gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-up ['<Super><Shift>Up']
+gsettings set org.gnome.desktop.wm.keybindings raise-or-lower @as []
+gsettings set org.gnome.desktop.wm.keybindings move-to-side-e ['<Control><Alt>KP_Right']
+gsettings set org.gnome.desktop.wm.keybindings cycle-windows-backward ['<Shift><Alt>Escape']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 ['<Super>1']
+gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-right ['<Super><Shift>Right']
+gsettings set org.gnome.desktop.wm.keybindings switch-windows ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings panel-run-dialog ['<Alt>F2']
+gsettings set org.gnome.desktop.wm.keybindings switch-panels-backward ['<Shift><Control><Alt>Tab']
+gsettings set org.gnome.desktop.wm.keybindings unmaximize ['<Super>Down']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 ['<Super>2']
+gsettings set org.gnome.desktop.wm.keybindings switch-applications ['']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last ['<Super>End']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 ['<Shift><Super>KP_1']
+gsettings set org.gnome.desktop.wm.keybindings move-to-corner-ne ['<Control><Alt>KP_Prior']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 ['<Super>3']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up ['<Super>Prior']
+gsettings set org.gnome.desktop.wm.keybindings move-to-side-s ['<Control><Alt>KP_Down']
+gsettings set org.gnome.desktop.wm.keybindings show-desktop ['<Shift><Super>KP_Decimal']
+gsettings set org.gnome.desktop.wm.keybindings move-to-center @as []
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 ['<Shift><Super>KP_2']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings raise ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings move-to-corner-se ['<Control><Alt>KP_Next']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-10 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 ['<Super>4']
+gsettings set org.gnome.desktop.wm.keybindings toggle-shaded ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings cycle-group-backward ['<Shift><Alt>F6']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 ['<Shift><Super>KP_3']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down ['<Super>Next']
+gsettings set org.gnome.desktop.wm.keybindings cycle-panels-backward ['<Shift><Control><Alt>Escape']
+gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-left ['<Super><Shift>Left']
+gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward ['']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-11 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward ['<Super>space']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 ['<Shift><Super>KP_4']
+gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-down ['<Super><Shift>Down']
+gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-12 ['disabled']
+gsettings set org.gnome.desktop.wm.keybindings cycle-group ['<Alt>F6']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up ['<Shift><Super>Prior']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-last ['<Super><Shift>End']
+gsettings set org.gnome.desktop.wm.keybindings switch-group-backward ['']
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-5 ['disabled']
+gsettings set org.gnome.todo.plugins.background run-on-startup false
+gsettings set org.gnome.todo.plugins.background show-notifications true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs latency-pulsesrc 10000
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs buffer-pulsesink 200000
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs buffer-pulsesrc 200000
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs latency-pulsesink 10000
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs plugins ['gate', 'multiband_gate', 'webrtc', 'limiter', 'compressor', 'multiband_compressor', 'filter', 'equalizer', 'deesser', 'reverb', 'pitch']
+gsettings set com.canonical.unity.settings-daemon.plugins.smartcard priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.smartcard active true
+gsettings set ca.desrt.dconf-editor.Demo.Conflict2 default-value-conflict 2
+gsettings set ca.desrt.dconf-editor.Demo.Conflict2 range-conflict uint32 0
+gsettings set ca.desrt.dconf-editor.Demo.Conflict2 warning-similar true
+gsettings set ca.desrt.dconf-editor.Demo.Conflict2 type-conflict @ms 'test'
+gsettings set ca.desrt.dconf-editor.Demo.Conflict2 another-non-conflicting-key true
+gsettings set com.github.maoschanz.drawing preview-size 250
+gsettings set com.github.maoschanz.drawing last-left-rgba ['0.6431372549019608', '0.0', '0.0', '1.0']
+gsettings set com.github.maoschanz.drawing decorations 'auto'
+gsettings set com.github.maoschanz.drawing big-icons false
+gsettings set com.github.maoschanz.drawing devel-only false
+gsettings set com.github.maoschanz.drawing maximized false
+gsettings set com.github.maoschanz.drawing direct-color-edit false
+gsettings set com.github.maoschanz.drawing default-width 1000
+gsettings set com.github.maoschanz.drawing replace-alpha 'white'
+gsettings set com.github.maoschanz.drawing last-active-tool 'select'
+gsettings set com.github.maoschanz.drawing last-right-rgba ['1.0', '1.0', '0.0', '0.5']
+gsettings set com.github.maoschanz.drawing show-labels false
+gsettings set com.github.maoschanz.drawing default-height 600
+gsettings set com.github.maoschanz.drawing last-size 5
+gsettings set com.github.maoschanz.drawing background-rgba ['1.0', '1.0', '1.0', '1.0']
+gsettings set com.github.maoschanz.drawing disabled-tools @as []
+gsettings set org.yorba.shotwell.preferences.editing external-photo-editor ''
+gsettings set org.yorba.shotwell.preferences.editing external-raw-editor 'eog %U'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs latency-pulsesrc 10000
+gsettings set com.github.wwmm.pulseeffects.sinkinputs buffer-pulsesink 200000
+gsettings set com.github.wwmm.pulseeffects.sinkinputs buffer-pulsesrc 200000
+gsettings set com.github.wwmm.pulseeffects.sinkinputs latency-pulsesink 10000
+gsettings set com.github.wwmm.pulseeffects.sinkinputs plugins ['limiter', 'autogain', 'gate', 'multiband_gate', 'compressor', 'multiband_compressor', 'convolver', 'bass_enhancer', 'exciter', 'crystalizer', 'stereo_tools', 'reverb', 'equalizer', 'deesser', 'crossfeed', 'loudness', 'maximizer', 'filter', 'delay', 'pitch']
+gsettings set org.cinnamon.desktop.notifications display-notifications true
+gsettings set org.cinnamon.desktop.notifications bottom-notifications false
+gsettings set org.cinnamon.desktop.notifications fade-on-mouseover true
+gsettings set org.cinnamon.desktop.notifications fade-opacity 40
+gsettings set org.cinnamon.desktop.notifications remove-old true
+gsettings set org.cinnamon.desktop.notifications timeout 1800
+gsettings set org.gnome.Vinagre show-accels false
+gsettings set org.gnome.Vinagre always-enable-listening false
+gsettings set org.gnome.Vinagre always-show-tabs false
+gsettings set org.gnome.Vinagre history-size 15
+gsettings set org.gnome.Vinagre shared-flag false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer scope 100.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer harmonics 8.5
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer amount 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer blend 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer post-messages false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer listen false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer floor 20.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer floor-active true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer state false
+gsettings set org.onboard xembed-unity-greeter-offset-x 85.0
+gsettings set org.onboard layout '/usr/share/onboard/layouts/Full Keyboard.onboard'
+gsettings set org.onboard system-theme-associations {'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'Pop-dark-slim': '/usr/share/onboard/themes/Ambiance.theme', 'Pop-dark': '/usr/share/onboard/themes/Droid.theme'}
+gsettings set org.onboard use-system-defaults false
+gsettings set org.onboard theme '/usr/share/onboard/themes/Droid.theme'
+gsettings set org.onboard key-label-overrides ['RWIN::super-group', 'LWIN::super-group']
+gsettings set org.onboard system-theme-tracking-enabled false
+gsettings set org.onboard snippets ['0:Onboard\\nHome:https\\://launchpad.net/onboard', '1:Example:Create your macros here.']
+gsettings set org.onboard show-tooltips true
+gsettings set org.onboard start-minimized false
+gsettings set org.onboard schema-version '2.3'
+gsettings set org.onboard status-icon-provider 'AppIndicator'
+gsettings set org.onboard xembed-aspect-change-range [0.0, 1.6000000000000001]
+gsettings set org.onboard xembed-onboard true
+gsettings set org.onboard key-label-font 'Ubuntu'
+gsettings set org.onboard current-settings-page 0
+gsettings set org.onboard xembed-background-color '#0000007F'
+gsettings set org.onboard xembed-background-image-enabled true
+gsettings set org.onboard show-status-icon true
+gsettings set com.canonical.indicator.bluetooth visible true
+gsettings set org.gnome.desktop.background picture-options 'zoom'
+gsettings set org.gnome.desktop.background primary-color '#2c001e'
+gsettings set org.gnome.desktop.background show-desktop-icons false
+gsettings set org.gnome.desktop.background color-shading-type 'solid'
+gsettings set org.gnome.desktop.background draw-background true
+gsettings set org.gnome.desktop.background picture-opacity 100
+gsettings set org.gnome.desktop.background secondary-color '#2c001e'
+gsettings set org.yorba.shotwell.dataimports last-used-dataimports-service ''
+gsettings set org.gnome.settings-daemon.plugins.sound priority 0
+gsettings set org.gnome.settings-daemon.plugins.sound active true
+gsettings set org.gnome.gthumb.comments synchronize true
+gsettings set org.gnome.gthumb.gstreamer-tools use-hardware-acceleration false
+gsettings set org.gnome.gthumb.gstreamer-tools screenshot-location 'file://~'
+gsettings set org.gnome.gthumb.gstreamer-tools volume 100
+gsettings set org.gnome.Terminal.ProfilesList default '1879a64f-247b-4bfe-8529-fc6425b08b8a'
+gsettings set org.gnome.Terminal.ProfilesList list ['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '1879a64f-247b-4bfe-8529-fc6425b08b8a', '7fc9d712-165e-4ae8-9bf1-639fc99f92de', 'f4631098-7198-4ab9-9ab6-7375d697048f', 'fb2e59da-4dcf-45d4-869f-0ee52c75b573']
+gsettings set org.mate.applications-calculator exec 'mate-calc'
+gsettings set org.xfce.mousepad.state.window fullscreen false
+gsettings set org.xfce.mousepad.state.window width 859
+gsettings set org.xfce.mousepad.state.window left -1
+gsettings set org.xfce.mousepad.state.window top -1
+gsettings set org.xfce.mousepad.state.window maximized false
+gsettings set org.xfce.mousepad.state.window height 484
+gsettings set org.mate.applications-browser exec 'mozilla'
+gsettings set org.mate.applications-browser needs-term false
+gsettings set org.mate.applications-browser nremote true
+gsettings set org.gnome.gedit.preferences.editor auto-save-interval uint32 10
+gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode 'word'
+gsettings set org.gnome.gedit.preferences.editor use-default-font false
+gsettings set org.gnome.gedit.preferences.editor tabs-size uint32 8
+gsettings set org.gnome.gedit.preferences.editor auto-save false
+gsettings set org.gnome.gedit.preferences.editor background-pattern 'none'
+gsettings set org.gnome.gedit.preferences.editor smart-home-end 'after'
+gsettings set org.gnome.gedit.preferences.editor search-highlighting true
+gsettings set org.gnome.gedit.preferences.editor scheme 'tango'
+gsettings set org.gnome.gedit.preferences.editor editor-font 'Sans 12'
+gsettings set org.gnome.gedit.preferences.editor bracket-matching true
+gsettings set org.gnome.gedit.preferences.editor syntax-highlighting true
+gsettings set org.gnome.gedit.preferences.editor display-right-margin false
+gsettings set org.gnome.gedit.preferences.editor insert-spaces false
+gsettings set org.gnome.gedit.preferences.editor max-undo-actions 2000
+gsettings set org.gnome.gedit.preferences.editor restore-cursor-position true
+gsettings set org.gnome.gedit.preferences.editor highlight-current-line false
+gsettings set org.gnome.gedit.preferences.editor display-line-numbers false
+gsettings set org.gnome.gedit.preferences.editor auto-indent true
+gsettings set org.gnome.gedit.preferences.editor wrap-mode 'word'
+gsettings set org.gnome.gedit.preferences.editor ensure-trailing-newline true
+gsettings set org.gnome.gedit.preferences.editor right-margin-position uint32 80
+gsettings set org.gnome.gedit.preferences.editor create-backup-copy false
+gsettings set org.gnome.rhythmbox.source search-type 'search-match'
+gsettings set org.gnome.rhythmbox.source show-browser true
+gsettings set org.gnome.rhythmbox.source paned-position 180
+gsettings set org.gnome.rhythmbox.source sorting ['Artist', true]
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-4 ['<Primary><Alt>F4']
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-10 ['<Primary><Alt>F10']
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-3 ['<Primary><Alt>F3']
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-9 ['<Primary><Alt>F9']
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-2 ['<Primary><Alt>F2']
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-8 ['<Primary><Alt>F8']
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-1 ['<Primary><Alt>F1']
+gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts ['<Super>Escape']
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-7 ['<Primary><Alt>F7']
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-12 ['<Primary><Alt>F12']
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-6 ['<Primary><Alt>F6']
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-11 ['<Primary><Alt>F11']
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-5 ['<Primary><Alt>F5']
+gsettings set org.gnome.desktop.sound theme-name 'freedesktop'
+gsettings set org.gnome.desktop.sound event-sounds true
+gsettings set org.gnome.desktop.sound input-feedback-sounds true
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
+gsettings set org.freedesktop.ibus.panel.emoji has-partial-match false
+gsettings set org.freedesktop.ibus.panel.emoji favorite-annotations @as []
+gsettings set org.freedesktop.ibus.panel.emoji load-unicode-at-startup false
+gsettings set org.freedesktop.ibus.panel.emoji partial-match-length 3
+gsettings set org.freedesktop.ibus.panel.emoji favorites @as []
+gsettings set org.freedesktop.ibus.panel.emoji hotkey ['<Control><Shift>e']
+gsettings set org.freedesktop.ibus.panel.emoji lang 'en'
+gsettings set org.freedesktop.ibus.panel.emoji font 'Monospace 16'
+gsettings set org.freedesktop.ibus.panel.emoji load-emoji-at-startup true
+gsettings set org.freedesktop.ibus.panel.emoji unicode-hotkey ['<Control><Shift>u']
+gsettings set org.freedesktop.ibus.panel.emoji partial-match-condition 0
+gsettings set org.mate.applications-at-mobility exec 'dasher'
+gsettings set org.mate.applications-at-mobility startup false
+gsettings set com.canonical.unity.settings-daemon.plugins whitelisted-plugins ['all']
+gsettings set org.mate.caja.extensions disabled-extensions @as []
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
+gsettings set org.gnome.desktop.a11y.applications screen-magnifier-enabled false
+gsettings set org.gnome.desktop.a11y.applications screen-reader-enabled false
+gsettings set org.cinnamon.desktop.keybindings.wm switch-group ['<Alt>Above_Tab']
+gsettings set org.cinnamon.desktop.keybindings.wm begin-resize ['<Alt>F8']
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-7 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm begin-move ['<Alt>F7']
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-side-w @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-corner-nw @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-10 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-6 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-right ['<Control><Shift><Alt>Right']
+gsettings set org.cinnamon.desktop.keybindings.wm toggle-maximized ['<Alt>F10']
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-left ['<Control><Shift><Alt>Left']
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-8 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm tab-popup-select @as []
+gsettings set org.cinnamon.desktop.keybindings.wm push-snap-left ['<Control><Super>Left']
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-11 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm lower @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-7 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm toggle-above @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-down ['<Control><Shift><Alt>Down']
+gsettings set org.cinnamon.desktop.keybindings.wm switch-panels ['<Control><Alt>Tab']
+gsettings set org.cinnamon.desktop.keybindings.wm minimize @as []
+gsettings set org.cinnamon.desktop.keybindings.wm push-snap-down ['<Control><Super>Down']
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-9 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-12 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm toggle-on-all-workspaces @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-8 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-side-n @as []
+gsettings set org.cinnamon.desktop.keybindings.wm maximize-horizontally @as []
+gsettings set org.cinnamon.desktop.keybindings.wm activate-window-menu ['<Alt>space']
+gsettings set org.cinnamon.desktop.keybindings.wm set-spew-mark @as []
+gsettings set org.cinnamon.desktop.keybindings.wm push-tile-up ['<Super>Up']
+gsettings set org.cinnamon.desktop.keybindings.wm maximize-vertically @as []
+gsettings set org.cinnamon.desktop.keybindings.wm switch-windows-backward @as []
+gsettings set org.cinnamon.desktop.keybindings.wm tab-popup-cancel @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-corner-sw @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-9 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm maximize @as []
+gsettings set org.cinnamon.desktop.keybindings.wm push-tile-right ['<Super>Right']
+gsettings set org.cinnamon.desktop.keybindings.wm close ['<Alt>F4']
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-monitor-up ['<Super><Shift>Up']
+gsettings set org.cinnamon.desktop.keybindings.wm raise-or-lower @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-side-e @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-corner-ne @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-monitor-right ['<Super><Shift>Right']
+gsettings set org.cinnamon.desktop.keybindings.wm panel-run-dialog ['<Alt>F2']
+gsettings set org.cinnamon.desktop.keybindings.wm increase-opacity @as []
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-1 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm push-tile-left ['<Super>Left']
+gsettings set org.cinnamon.desktop.keybindings.wm switch-panels-backward @as []
+gsettings set org.cinnamon.desktop.keybindings.wm unmaximize ['<Alt>F5']
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-2 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm push-tile-down ['<Super>Down']
+gsettings set org.cinnamon.desktop.keybindings.wm switch-windows ['<Alt>Tab']
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-1 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-new @as []
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-3 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm decrease-opacity @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-side-s @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-center @as []
+gsettings set org.cinnamon.desktop.keybindings.wm show-desktop ['<Super>d']
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-2 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-left ['<Control><Alt>Left']
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-right ['<Control><Alt>Right']
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-up ['<Control><Alt>Up', '<Alt>F1']
+gsettings set org.cinnamon.desktop.keybindings.wm raise @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-corner-se @as []
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-10 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm push-snap-up ['<Control><Super>Up']
+gsettings set org.cinnamon.desktop.keybindings.wm toggle-shaded @as []
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-down ['<Control><Alt>Down']
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-3 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-monitor-left ['<Super><Shift>Left']
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-4 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-5 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-11 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm toggle-recording ['<Control><Shift><Alt>r']
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-4 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-monitor-down ['<Super><Shift>Down']
+gsettings set org.cinnamon.desktop.keybindings.wm toggle-fullscreen @as []
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-6 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-12 @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-up ['<Control><Shift><Alt>Up']
+gsettings set org.cinnamon.desktop.keybindings.wm push-snap-right ['<Control><Super>Right']
+gsettings set org.cinnamon.desktop.keybindings.wm switch-group-backward @as []
+gsettings set org.cinnamon.desktop.keybindings.wm move-to-workspace-5 @as []
+gsettings set com.ubuntu.touch.system rotation-lock false
+gsettings set com.ubuntu.touch.system dim-timeout uint32 45
+gsettings set com.ubuntu.touch.system activity-timeout uint32 60
+gsettings set com.ubuntu.touch.system auto-brightness false
+gsettings set com.ubuntu.touch.system fingerprint-names @a{ss} {}
+gsettings set com.ubuntu.touch.system brightness-needs-hardware-default true
+gsettings set com.ubuntu.touch.system brightness 80
+gsettings set com.ubuntu.touch.system orientation-lock 'none'
+gsettings set org.gnome.gedit.plugins.terminal foreground-color '#000000'
+gsettings set org.gnome.gedit.plugins.terminal use-system-font true
+gsettings set org.gnome.gedit.plugins.terminal palette ['#2E2E34343636', '#CCCC00000000', '#4E4E9A9A0606', '#C4C4A0A00000', '#34346565A4A4', '#757550507B7B', '#060698209A9A', '#D3D3D7D7CFCF', '#555557575353', '#EFEF29292929', '#8A8AE2E23434', '#FCFCE9E94F4F', '#72729F9FCFCF', '#ADAD7F7FA8A8', '#3434E2E2E2E2', '#EEEEEEEEECEC']
+gsettings set org.gnome.gedit.plugins.terminal use-theme-colors true
+gsettings set org.gnome.gedit.plugins.terminal cursor-blink-mode 'system'
+gsettings set org.gnome.gedit.plugins.terminal background-color '#FFFFDD'
+gsettings set org.gnome.gedit.plugins.terminal scroll-on-keystroke true
+gsettings set org.gnome.gedit.plugins.terminal font 'Monospace 10'
+gsettings set org.gnome.gedit.plugins.terminal audible-bell true
+gsettings set org.gnome.gedit.plugins.terminal cursor-shape 'block'
+gsettings set org.gnome.gedit.plugins.terminal scrollback-lines 100
+gsettings set org.gnome.gedit.plugins.terminal scroll-on-output false
+gsettings set org.gnome.gedit.plugins.terminal scrollback-unlimited false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb treble-cut 5000.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb bass-cut 300.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb predelay 10.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb diffusion 1.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb state false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb amount -8.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb hf-damp 9795.5799999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb decay-time 1.45397
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb room-size 'Tunnel-like'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb dry 6.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.reverb post-messages false
+gsettings set org.gnome.seahorse server-publish-to ''
+gsettings set org.gnome.seahorse server-auto-retrieve false
+gsettings set org.gnome.seahorse last-search-text ''
+gsettings set org.gnome.seahorse server-auto-publish false
+gsettings set org.gnome.seahorse last-search-servers @as []
+gsettings set org.gnome.rhythmbox.plugins.lyrics folder ''
+gsettings set org.gnome.rhythmbox.plugins.lyrics sites ['lyrc.com.ar']
+gsettings set org.gnome.gnote.global-keybindings open-recent-changes 'disabled'
+gsettings set org.gnome.gnote.global-keybindings open-start-here '<Alt>F11'
+gsettings set org.gnome.gnote.global-keybindings create-new-note 'disabled'
+gsettings set org.gnome.gnote.global-keybindings show-note-menu '<Alt>F12'
+gsettings set org.gnome.gnote.global-keybindings open-search 'disabled'
+gsettings set org.gnome.mutter.keybindings tab-popup-cancel @as []
+gsettings set org.gnome.mutter.keybindings tab-popup-select @as []
+gsettings set org.gnome.mutter.keybindings toggle-tiled-right ['<Super>Right']
+gsettings set org.gnome.mutter.keybindings toggle-tiled-left ['<Super>Left']
+gsettings set org.gnome.mutter.keybindings rotate-monitor ['XF86RotateWindows']
+gsettings set org.gnome.mutter.keybindings switch-monitor ['<Super>p', 'XF86Display']
+gsettings set org.gnome.gthumb.rename-series change-case 'none'
+gsettings set org.gnome.gthumb.rename-series sort-by 'general::unsorted'
+gsettings set org.gnome.gthumb.rename-series reverse-order false
+gsettings set org.gnome.gthumb.rename-series start-at 1
+gsettings set org.gnome.gthumb.rename-series template '####%E'
+gsettings set org.gnome.rhythmbox.sources visible-columns ['post-time', 'duration', 'track-number', 'album', 'genre', 'artist']
+gsettings set org.gnome.rhythmbox.sources browser-views 'artists-albums'
+gsettings set org.gnome.rhythmbox.library layout-filename '%tN - %tt'
+gsettings set org.gnome.rhythmbox.library layout-path '%aa/%at'
+gsettings set org.gnome.rhythmbox.library add-dir ''
+gsettings set org.gnome.rhythmbox.library strip-chars false
+gsettings set org.gnome.rhythmbox.encoding-settings transcode-lossless false
+gsettings set org.gnome.rhythmbox.encoding-settings media-type-presets {'audio/x-vorbis': 'Ubuntu', 'audio/mpeg': 'Ubuntu'}
+gsettings set org.gnome.rhythmbox.encoding-settings media-type 'audio/x-vorbis'
+gsettings set org.gnome.rhythmbox.source search-type 'search-match'
+gsettings set org.gnome.rhythmbox.source show-browser true
+gsettings set org.gnome.rhythmbox.source paned-position 180
+gsettings set org.gnome.rhythmbox.source sorting ['Artist', true]
+gsettings set com.github.wwmm.pulseeffects.spectrum n-points 81
+gsettings set com.github.wwmm.pulseeffects.spectrum scale 1.0
+gsettings set com.github.wwmm.pulseeffects.spectrum show true
+gsettings set com.github.wwmm.pulseeffects.spectrum exponent 1.0
+gsettings set com.github.wwmm.pulseeffects.spectrum gradient-color [0.0, 0.0, 0.0, 1.0]
+gsettings set com.github.wwmm.pulseeffects.spectrum sampling-freq 10
+gsettings set com.github.wwmm.pulseeffects.spectrum use-custom-color true
+gsettings set com.github.wwmm.pulseeffects.spectrum fill true
+gsettings set com.github.wwmm.pulseeffects.spectrum height 112
+gsettings set com.github.wwmm.pulseeffects.spectrum type 'Bars'
+gsettings set com.github.wwmm.pulseeffects.spectrum color [0.15698888888888884, 0.66333333333333333, 0.33171338028169001, 1.0]
+gsettings set com.github.wwmm.pulseeffects.spectrum line-width 2.0
+gsettings set com.github.wwmm.pulseeffects.spectrum show-bar-border true
+gsettings set com.github.wwmm.pulseeffects.spectrum use-gradient true
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys control-center 'XF86Tools'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys screencast '<Ctrl><Shift><Alt>R'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys screensaver '<Control><Alt>l'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys video-out '<Super>p'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys pause 'XF86AudioPause'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys screenshot-clip '<Ctrl>Print'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys window-screenshot '<Alt>Print'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys window-screenshot-clip '<Ctrl><Alt>Print'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys custom-keybindings @as []
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys terminal '<Primary><Alt>t'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys area-screenshot '<Shift>Print'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys mic-mute 'XF86AudioMicMute'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys magnifier '<Alt><Super>8'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys magnifier-zoom-in '<Alt><Super>equal'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys play 'XF86AudioPlay'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys stop 'XF86AudioStop'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys www 'XF86WWW'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys max-screencast-length uint32 30
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys toggle-contrast ''
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys media 'XF86AudioMedia'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys increase-text-size ''
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys decrease-text-size ''
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys logout '<Control><Alt>Delete'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys screenreader '<Alt><Super>s'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys area-screenshot-clip '<Ctrl><Shift>Print'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys volume-up 'XF86AudioRaiseVolume'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys home 'XF86Explorer'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys magnifier-zoom-out '<Alt><Super>minus'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys next 'XF86AudioNext'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys volume-mute 'XF86AudioMute'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys active true
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys calculator 'XF86Calculator'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys previous 'XF86AudioPrev'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys on-screen-keyboard '<Primary>k'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys search 'XF86Search'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys eject 'XF86Eject'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys help ''
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys email 'XF86Mail'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys screenshot 'Print'
+gsettings set com.canonical.unity.settings-daemon.plugins.media-keys volume-down 'XF86AudioLowerVolume'
+gsettings set org.gnome.brasero nautilus-extension-debug false
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet thumbnail-size 128
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet single-page false
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet sort-type 'general::unsorted'
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet mime-type 'image/jpeg'
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet theme 'default.cst'
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet footer ''
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet same-size true
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet sort-inverse false
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet template '###'
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet html-image-map false
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet header ''
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet destination ''
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet images-per-page 25
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet squared-thumbnail false
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet columns 5
+gsettings set org.gnome.gthumb.contact-sheet.contact-sheet thumbnail-caption 'general::datetime,general::dimensions,gth::file::display-size'
+gsettings set org.gnome.mousetweaks click-type-window-orientation 'vertical'
+gsettings set org.gnome.mousetweaks click-type-window-geometry ''
+gsettings set org.gnome.mousetweaks click-type-window-style 'both'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser detection 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser laxity 15
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser f1-freq 6000.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser f2-level 12.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser f2-q 1.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser state false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser f2-freq 4500.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser post-messages false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser mode 'Wide'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser f1-level 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser makeup 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser ratio 3.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser threshold -18.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.deesser sc-listen false
+gsettings set org.gnome.gthumb.rotate grid-type 'thirds'
+gsettings set org.gnome.gthumb.rotate background-color '#000'
+gsettings set org.gnome.gthumb.rotate resize 'crop'
+gsettings set org.gnome.gthumb.rotate keep-aspect-ratio true
+gsettings set org.gnome.settings-daemon.plugins.clipboard priority 0
+gsettings set org.gnome.settings-daemon.plugins.clipboard active true
+gsettings set org.freedesktop.ColorHelper display-whitepoint 6500
+gsettings set org.freedesktop.ColorHelper profile-upload-uri 'https://github.com/Griggorii/DisplayCal-3.7.1.4-Ubuntu-20.04--Focal-Fossa--portation_griggorii'
+gsettings set org.freedesktop.ColorHelper display-gamma 2.3999999999999999
+gsettings set org.freedesktop.ColorHelper sample-delay 400
+gsettings set org.gnome.gedit.preferences.encodings candidate-encodings ['UTF-8', 'ISO-8859-15', 'UTF-16', 'WINDOWS-1250', 'WINDOWS-1251', 'ISO-8859-6', 'IBM864', 'WINDOWS-1256', 'ARMSCII-8', 'ISO-8859-4', 'ISO-8859-13', 'WINDOWS-1257', 'TCVN', 'VISCII', 'WINDOWS-1258', 'ISO-8859-7', 'WINDOWS-1253', 'GEORGIAN-ACADEMY', 'ISO-8859-1', 'IBM850', 'WINDOWS-1252', 'IBM862', 'WINDOWS-1255', 'ISO-8859-8', 'ISO-8859-14', 'ISO-8859-5', 'IBM855', 'ISO-IR-111', 'KOI8R', 'KOI8-R', 'CP866', 'KOI8U', 'BIG5', 'BIG5-HKSCS', 'EUC-TW', 'GB18030', 'GB2312', 'GBK', 'EUC-KR', 'ISO-2022-KR', 'JOHAB', 'UHC', 'ISO-8859-16', 'ISO-8859-10', 'TIS-620', 'ISO-8859-9', 'IBM857', 'WINDOWS-1254', 'ISO-8859-2', 'IBM852', 'ISO-8859-3', 'UTF-7', 'UTF-16BE', 'UTF-16LE', 'UTF-32', 'UCS-2', 'UCS-4', 'EUC-JP', 'EUC-JP-MS', 'CP932', 'ISO-2022-JP', 'SHIFT_JIS']
+gsettings set com.canonical.unity.settings-daemon.plugins.clipboard priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.clipboard active true
+gsettings set org.gnome.rhythmbox.encoding-settings transcode-lossless false
+gsettings set org.gnome.rhythmbox.encoding-settings media-type-presets {'audio/x-vorbis': 'Ubuntu', 'audio/mpeg': 'Ubuntu'}
+gsettings set org.gnome.rhythmbox.encoding-settings media-type 'audio/x-vorbis'
+gsettings set org.gnome.rhythmbox.source search-type 'search-match'
+gsettings set org.gnome.rhythmbox.source show-browser true
+gsettings set org.gnome.rhythmbox.source paned-position 180
+gsettings set org.gnome.rhythmbox.source sorting  ['Artist', true]
+gsettings set org.gnome.gthumb.contact-sheet.image-wall template '###'
+gsettings set org.gnome.gthumb.contact-sheet.image-wall single-page false
+gsettings set org.gnome.gthumb.contact-sheet.image-wall mime-type 'image/jpeg'
+gsettings set org.gnome.gthumb.contact-sheet.image-wall images-per-page 25
+gsettings set org.gnome.gthumb.contact-sheet.image-wall thumbnail-size 128
+gsettings set org.gnome.gthumb.contact-sheet.image-wall sort-inverse false
+gsettings set org.gnome.gthumb.contact-sheet.image-wall destination ''
+gsettings set org.gnome.gthumb.contact-sheet.image-wall columns 5
+gsettings set org.gnome.gthumb.contact-sheet.image-wall sort-type 'general::unsorted'
+gsettings set org.gnome.GPaste empty-history-confirmation true
+gsettings set org.gnome.GPaste element-size uint64 60
+gsettings set org.gnome.GPaste upload '<Ctrl><Alt>U'
+gsettings set org.gnome.GPaste track-changes false
+gsettings set org.gnome.GPaste max-history-size uint64 100
+gsettings set org.gnome.GPaste launch-ui '<Ctrl><Alt>G'
+gsettings set org.gnome.GPaste max-text-item-size uint64 2147483647
+gsettings set org.gnome.GPaste rich-text-support true
+gsettings set org.gnome.GPaste max-displayed-history-size uint64 20
+gsettings set org.gnome.GPaste show-history '<Ctrl><Alt>H'
+gsettings set org.gnome.GPaste history-name 'history'
+gsettings set org.gnome.GPaste save-history true
+gsettings set org.gnome.GPaste primary-to-history false
+gsettings set org.gnome.GPaste make-password '<Ctrl><Alt>S'
+gsettings set org.gnome.GPaste pop '<Ctrl><Alt>V'
+gsettings set org.gnome.GPaste synchronize-clipboards false
+gsettings set org.gnome.GPaste sync-primary-to-clipboard '<Ctrl><Alt>P'
+gsettings set org.gnome.GPaste sync-clipboard-to-primary '<Ctrl><Alt>O'
+gsettings set org.gnome.GPaste min-text-item-size uint64 1
+gsettings set org.gnome.GPaste growing-lines false
+gsettings set org.gnome.GPaste images-support true
+gsettings set org.gnome.GPaste max-memory-usage uint64 30
+gsettings set org.gnome.GPaste close-on-select true
+gsettings set org.gnome.GPaste trim-items false
+gsettings set org.gnome.GPaste track-extension-state false
+gsettings set com.hughski.ColorHug.DisplayAnalysis graph-show-channels true
+gsettings set com.hughski.ColorHug.DisplayAnalysis graph-zoom-enable true
+gsettings set com.hughski.ColorHug.DisplayAnalysis graph-pwm-fixup true
+gsettings set com.canonical.unity.settings-daemon.plugins.orientation priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.orientation active true
+gsettings set org.mate.applications-office.calendar exec 'evolution'
+gsettings set org.mate.applications-office.calendar needs-term false
+gsettings set org.gnome.mutter.x11 fractional-scale-mode 'scale-ui-down'
+gsettings set org.onboard.lockdown disable-touch-handles false
+gsettings set org.onboard.lockdown disable-keys [['CTRL', 'LALT', 'F[0-9]+']]
+gsettings set org.onboard.lockdown disable-quit false
+gsettings set org.onboard.lockdown disable-click-buttons false
+gsettings set org.onboard.lockdown disable-hover-click false
+gsettings set org.onboard.lockdown disable-dwell-activation false
+gsettings set org.onboard.lockdown disable-preferences false
+gsettings set com.hughski.ColorHug.Backlight refresh 0.29999999999999999
+gsettings set com.hughski.ColorHug.Backlight smooth 0.29999999999999999
+gsettings set com.hughski.ColorHug.Backlight integration 0.20000000000000001
+gsettings set com.hughski.ColorHug.Backlight gamma 1.0
+gsettings set org.gnome.desktop.privacy disable-microphone false
+gsettings set org.gnome.desktop.privacy hide-identity false
+gsettings set org.gnome.desktop.privacy recent-files-max-age 0
+gsettings set org.gnome.desktop.privacy remove-old-temp-files false
+gsettings set org.gnome.desktop.privacy usb-protection-level 'lockscreen'
+gsettings set org.gnome.desktop.privacy disable-sound-output false
+gsettings set org.gnome.desktop.privacy old-files-age uint32 30
+gsettings set org.gnome.desktop.privacy remember-app-usage true
+gsettings set org.gnome.desktop.privacy disable-camera false
+gsettings set org.gnome.desktop.privacy remember-recent-files false
+gsettings set org.gnome.desktop.privacy report-technical-problems false
+gsettings set org.gnome.desktop.privacy remove-old-trash-files false
+gsettings set org.gnome.desktop.privacy show-full-name-in-top-bar true
+gsettings set org.gnome.desktop.privacy send-software-usage-stats false
+gsettings set org.gnome.desktop.privacy usb-protection false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.filter resonance -3.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.filter state false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.filter mode '12dB/oct Lowpass'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.filter installed true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.filter post-messages false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.filter inertia 20.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.filter output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.filter frequency 2000.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.filter input-gain 0.0
+gsettings set org.gnome.seahorse.manager show-trust false
+gsettings set org.gnome.seahorse.manager show-validity false
+gsettings set org.gnome.seahorse.manager sidebar-width 148
+gsettings set org.gnome.seahorse.manager show-type false
+gsettings set org.gnome.seahorse.manager sidebar-visible true
+gsettings set org.gnome.seahorse.manager keyrings-selected ['pkcs11:model=p11-kit-trust;manufacturer=PKCS%2311%20Kit;serial=1;token=System%20Trust']
+gsettings set org.gnome.seahorse.manager show-expiry false
+gsettings set org.gnome.seahorse.manager item-filter 'personal'
+gsettings set org.gnome.seahorse.manager sort-by 'name'
+gsettings set com.gexperts.Tilix.ProfilesList default '0a1407fe-7c1d-4fe6-98e6-f9863431f084'
+gsettings set com.gexperts.Tilix.ProfilesList list ['2b7c4080-0ddd-46c5-8f23-563fd3ba789d', '0a1407fe-7c1d-4fe6-98e6-f9863431f084', 'c2f53d1c-a3d6-4098-8c59-cd4bbbb6ace3', 'bf9a5e07-866e-4922-9a06-e72991ae65a8', 'c7f52fa9-1a85-4a45-b07e-0e765fb6c358', 'd984ae7f-3048-478f-afdf-b13768f02875', 'c2f53d1c-a3d6-4098-8c59-cd4bbbb6ace4', '0a1407fe-7c1d-4fe6-98e6-f9863431f085']
+gsettings set org.gnome.desktop.media-handling autorun-never true
+gsettings set org.gnome.desktop.media-handling autorun-x-content-open-folder ['x-content/bootable-media']
+gsettings set org.gnome.desktop.media-handling automount-open false
+gsettings set org.gnome.desktop.media-handling autorun-x-content-ignore @as []
+gsettings set org.gnome.desktop.media-handling automount false
+gsettings set org.gnome.desktop.media-handling autorun-x-content-start-app ['x-content/unix-software', 'x-content/bootable-media']
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate range1 -24.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate attack2 150.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate release3 300.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate freq0 120.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate knee1 9.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate ratio2 2.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate bypass2 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate detection2 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate range2 -24.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate makeup0 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate attack3 150.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate freq1 1000.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate threshold0 -12.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate knee2 9.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate ratio3 2.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate bypass3 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate mode 'LR8'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate detection3 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate range3 -24.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate makeup1 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate threshold1 -12.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate solo0 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate freq2 6000.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate knee3 9.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate release0 300.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate solo1 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate makeup2 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate threshold2 -12.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate attack0 150.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate installed true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate release1 300.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate makeup3 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate ratio0 2.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate bypass0 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate state false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate detection0 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate range0 -24.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate threshold3 -12.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate attack1 150.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate release2 300.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate solo2 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate solo3 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate knee0 9.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate ratio1 2.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate bypass1 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate post-messages false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandgate detection1 'RMS'
+gsettings set org.gnome.settings-daemon.plugins whitelisted-plugins ['all']
+gsettings set org.cinnamon.desktop.privacy remember-recent-files true
+gsettings set org.cinnamon.desktop.privacy recent-files-max-age 7
+gsettings set org.cinnamon.desktop.privacy remove-old-temp-files false
+gsettings set org.cinnamon.desktop.privacy old-files-age uint32 30
+gsettings set org.cinnamon.desktop.privacy remove-old-trash-files false
+gsettings set io.github.celluloid-player.Celluloid settings-migrated true
+gsettings set io.github.celluloid-player.Celluloid csd-enable true
+gsettings set io.github.celluloid-player.Celluloid always-autohide-cursor false
+gsettings set io.github.celluloid-player.Celluloid prefetch-metadata true
+gsettings set io.github.celluloid-player.Celluloid controls-unhide-cursor-speed 0.0
+gsettings set io.github.celluloid-player.Celluloid use-skip-buttons-for-playlist true
+gsettings set io.github.celluloid-player.Celluloid ignore-playback-errors false
+gsettings set io.github.celluloid-player.Celluloid last-folder-enable false
+gsettings set io.github.celluloid-player.Celluloid mpv-options ''
+gsettings set io.github.celluloid-player.Celluloid mpv-config-file ''
+gsettings set io.github.celluloid-player.Celluloid mpris-enable true
+gsettings set io.github.celluloid-player.Celluloid mpv-config-enable false
+gsettings set io.github.celluloid-player.Celluloid dark-theme-enable true
+gsettings set io.github.celluloid-player.Celluloid mpv-input-config-enable false
+gsettings set io.github.celluloid-player.Celluloid mpv-input-config-file ''
+gsettings set io.github.celluloid-player.Celluloid media-keys-enable true
+gsettings set io.github.celluloid-player.Celluloid always-open-new-window false
+gsettings set io.github.celluloid-player.Celluloid always-use-floating-controls false
+gsettings set org.gnome.gthumb.dialogs.add-to-catalog view false
+gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend true
+gsettings set org.gnome.desktop.screensaver color-shading-type 'solid'
+gsettings set org.gnome.desktop.screensaver embedded-keyboard-command 'onboard --xid'
+gsettings set org.gnome.desktop.screensaver user-switch-enabled true
+gsettings set org.gnome.desktop.screensaver embedded-keyboard-enabled true
+gsettings set org.gnome.desktop.screensaver status-message-enabled true
+gsettings set org.gnome.desktop.screensaver show-notifications false
+gsettings set org.gnome.desktop.screensaver show-full-name-in-top-bar true
+gsettings set org.gnome.desktop.screensaver logout-command ''
+gsettings set org.gnome.desktop.screensaver idle-activation-enabled false
+gsettings set org.gnome.desktop.screensaver lock-enabled false
+gsettings set org.gnome.desktop.screensaver logout-enabled false
+gsettings set org.gnome.desktop.screensaver primary-color '#2c001e'
+gsettings set org.gnome.desktop.screensaver logout-delay uint32 7200
+gsettings set org.gnome.desktop.screensaver picture-opacity 100
+gsettings set org.gnome.desktop.screensaver picture-options 'zoom'
+gsettings set org.gnome.desktop.screensaver lock-delay uint32 0
+gsettings set org.gnome.desktop.screensaver secondary-color '#2c001e'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.gate detection 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.gate release 250.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.gate range -24.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.gate knee 9.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.gate installed true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.gate post-messages false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.gate ratio 2.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.gate makeup 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.gate attack 20.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.gate stereo-link 'Average'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.gate threshold -18.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.gate state false
+gsettings set org.freedesktop.Tracker.Miner.Files index-optical-discs false
+gsettings set org.freedesktop.Tracker.Miner.Files index-single-directories @as []
+gsettings set org.freedesktop.Tracker.Miner.Files enable-monitors true
+gsettings set org.freedesktop.Tracker.Miner.Files index-on-battery-first-time true
+gsettings set org.freedesktop.Tracker.Miner.Files sched-idle 'first-index'
+gsettings set org.freedesktop.Tracker.Miner.Files removable-days-threshold 3
+gsettings set org.freedesktop.Tracker.Miner.Files index-on-battery true
+gsettings set org.freedesktop.Tracker.Miner.Files ignored-directories ['po', 'CVS', 'core-dumps', 'lost+found']
+gsettings set org.freedesktop.Tracker.Miner.Files index-recursive-directories @as []
+gsettings set org.freedesktop.Tracker.Miner.Files throttle 0
+gsettings set org.freedesktop.Tracker.Miner.Files ignored-directories-with-content ['.trackerignore', '.git', '.hg', '.nomedia']
+gsettings set org.freedesktop.Tracker.Miner.Files index-removable-devices false
+gsettings set org.freedesktop.Tracker.Miner.Files ignored-files ['*~', '*.o', '*.la', '*.lo', '*.loT', '*.in', '*.csproj', '*.m4', '*.rej', '*.gmo', '*.orig', '*.pc', '*.omf', '*.aux', '*.tmp', '*.vmdk', '*.vm*', '*.nvram', '*.part', '*.rcore', '*.lzo', 'autom4te', 'conftest', 'confstat', 'Makefile', 'SCCS', 'ltmain.sh', 'libtool', 'config.status', 'confdefs.h', 'configure', '#*#', '~$*.doc?', '~$*.dot?', '~$*.xls?', '~$*.xlt?', '~$*.xlam', '~$*.ppt?', '~$*.pot?', '~$*.ppam', '~$*.ppsm', '~$*.ppsx', '~$*.vsd?', '~$*.vss?', '~$*.vst?', 'mimeapps.list', 'mimeinfo.cache', 'gnome-mimeapps.list', 'kde-mimeapps.list', '*.directory']
+gsettings set org.freedesktop.Tracker.Miner.Files low-disk-space-limit -1
+gsettings set org.freedesktop.Tracker.Miner.Files crawling-interval -1
+gsettings set org.freedesktop.Tracker.Miner.Files verbosity 'errors'
+gsettings set org.freedesktop.Tracker.Miner.Files enable-writeback true
+gsettings set org.freedesktop.Tracker.Miner.Files initial-sleep 15
+gsettings set org.gnome.shell.extensions.window-list display-all-workspaces false
+gsettings set org.gnome.shell.extensions.window-list show-on-all-monitors false
+gsettings set org.gnome.shell.extensions.window-list grouping-mode 'never'
+gsettings set org.onboard.universal-access hide-click-type-window true
+gsettings set org.onboard.universal-access enable-click-type-window-on-exit true
+gsettings set org.onboard.universal-access drag-threshold -1
+gsettings set org.mate.caja.desktop network-icon-visible false
+gsettings set org.mate.caja.desktop home-icon-name ''
+gsettings set org.mate.caja.desktop computer-icon-visible true
+gsettings set org.mate.caja.desktop text-ellipsis-limit 3
+gsettings set org.mate.caja.desktop network-icon-name ''
+gsettings set org.mate.caja.desktop volumes-visible true
+gsettings set org.mate.caja.desktop home-icon-visible true
+gsettings set org.mate.caja.desktop computer-icon-name ''
+gsettings set org.mate.caja.desktop font 'Sans 10'
+gsettings set org.mate.caja.desktop trash-icon-name ''
+gsettings set org.mate.caja.desktop trash-icon-visible true
+gsettings set com.canonical.indicator.session force-restart-menuitem false
+gsettings set com.canonical.indicator.session suppress-logout-menuitem false
+gsettings set com.canonical.indicator.session suppress-shutdown-menuitem false
+gsettings set com.canonical.indicator.session suppress-logout-restart-shutdown false
+gsettings set com.canonical.indicator.session suppress-restart-menuitem false
+gsettings set com.canonical.indicator.session user-show-menu true
+gsettings set com.canonical.indicator.session show-real-name-on-panel true
+gsettings set org.gnome.desktop.default-applications.terminal exec-arg '-e'
+gsettings set org.gnome.desktop.default-applications.terminal exec 'tilix'
+gsettings set org.cinnamon.desktop.thumbnailers disable ['image/jp2']
+gsettings set org.cinnamon.desktop.thumbnailers disable-all false
+gsettings set org.gnome.FileRoller.Dialogs.Add recursive true
+gsettings set org.gnome.FileRoller.Dialogs.Add include-files '*'
+gsettings set org.gnome.FileRoller.Dialogs.Add no-symlinks true
+gsettings set org.gnome.FileRoller.Dialogs.Add filename ''
+gsettings set org.gnome.FileRoller.Dialogs.Add current-folder ''
+gsettings set org.gnome.FileRoller.Dialogs.Add exclude-files ''
+gsettings set org.gnome.FileRoller.Dialogs.Add exclude-folders ''
+gsettings set org.gnome.FileRoller.Dialogs.Add selected-files ['']
+gsettings set org.gnome.FileRoller.Dialogs.Add update false
+gsettings set org.gnome.gthumb.general active-extensions ['23hq', 'bookmarks', 'burn_disc', 'catalogs', 'change_date', 'comments', 'contact_sheet', 'convert_format', 'desktop_background', 'edit_metadata', 'exiv2_tools', 'facebook', 'file_manager', 'find_duplicates', 'flicker', 'gstreamer_tools', 'gstreamer_utils', 'image_print', 'image_rotation', 'importer', 'jpeg_utils', 'list_tools', 'oauth', 'photo_importer', 'photobucket', 'picasaweb', 'raw_files', 'red_eye_removal', 'rename_series', 'resize_images', 'search', 'selections', 'slideshow', 'webalbums']
+gsettings set org.gnome.gthumb.general store-metadata-in-files true
+gsettings set org.gnome.desktop.a11y always-show-universal-access-status true
+gsettings set org.gnome.desktop.a11y always-show-text-caret false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.exciter ceil-active false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.exciter ceil 16000.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.exciter scope 6937.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.exciter harmonics 9.9999999999999947
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.exciter amount 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.exciter blend 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.exciter input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.exciter post-messages false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.exciter listen false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.exciter output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.exciter installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.exciter state false
+gsettings set org.gnome.calendar window-size [1366, 722]
+gsettings set org.gnome.calendar follow-night-light false
+gsettings set org.gnome.calendar weather-settings [true, false, '', @mv nothing]
+gsettings set org.gnome.calendar active-view 'month'
+gsettings set org.gnome.calendar window-maximized true
+gsettings set org.gnome.calendar window-position [0, 0]
+gsettings set org.gnome.gnote.export-html last-directory ''
+gsettings set org.gnome.gnote.export-html export-linked-all false
+gsettings set org.gnome.gnote.export-html export-linked true
+gsettings set org.gnome.Disks image-dir-uri ''
+gsettings set org.gnome.nautilus.preferences search-filter-time-type 'last_modified'
+gsettings set org.gnome.nautilus.preferences default-sort-order 'name'
+gsettings set org.gnome.nautilus.preferences recursive-search 'always'
+gsettings set org.gnome.nautilus.preferences open-folder-on-dnd-hover false
+gsettings set org.gnome.nautilus.preferences default-sort-in-reverse-order true
+gsettings set org.gnome.nautilus.preferences show-hidden-files false
+gsettings set org.gnome.nautilus.preferences tabs-open-position 'after-current-tab'
+gsettings set org.gnome.nautilus.preferences always-use-location-entry true
+gsettings set org.gnome.nautilus.preferences show-image-thumbnails 'always'
+gsettings set org.gnome.nautilus.preferences confirm-trash true
+gsettings set org.gnome.nautilus.preferences search-view 'icon-view'
+gsettings set org.gnome.nautilus.preferences thumbnail-limit uint64 100
+gsettings set org.gnome.nautilus.preferences mouse-back-button 8
+gsettings set org.gnome.nautilus.preferences click-policy 'single'
+gsettings set org.gnome.nautilus.preferences mouse-forward-button 9
+gsettings set org.gnome.nautilus.preferences show-create-link true
+gsettings set org.gnome.nautilus.preferences show-directory-item-counts 'always'
+gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons true
+gsettings set org.gnome.nautilus.preferences executable-text-activation 'display'
+gsettings set org.gnome.nautilus.preferences show-delete-permanently true
+gsettings set org.gnome.nautilus.preferences fts-enabled true
+gsettings set org.gnome.nautilus.preferences default-folder-viewer 'icon-view'
+gsettings set org.gnome.nautilus.preferences use-experimental-views false
+gsettings set org.gnome.nautilus.preferences install-mime-activation true
+gsettings set org.onboard.typing-assistance auto-capitalization false
+gsettings set org.onboard.typing-assistance auto-correction false
+gsettings set org.onboard.typing-assistance max-recent-languages 5
+gsettings set org.onboard.typing-assistance spell-check-backend 'hunspell'
+gsettings set org.onboard.typing-assistance recent-languages @as []
+gsettings set org.onboard.typing-assistance active-language ''
+gsettings set org.gnome.rhythmbox.rhythmdb grace-period 45
+gsettings set org.gnome.rhythmbox.rhythmdb locations ['']
+gsettings set org.gnome.rhythmbox.rhythmdb monitor-library true
+gsettings set org.gnome.shell.world-clocks locations @av []
+gsettings set org.cinnamon.desktop.default-applications.calculator exec 'gnome-calculator'
+gsettings set org.cinnamon.desktop.default-applications.calculator needs-term false
+gsettings set org.gnome.desktop.input-sources xkb-options ['terminate:ctrl_alt_bksp', 'grp:alt_shift_toggle', 'lv3:ralt_switch']
+gsettings set org.gnome.desktop.input-sources mru-sources ['xkb', 'us', 'xkb', 'ru']
+gsettings set org.gnome.desktop.input-sources show-all-sources false
+gsettings set org.gnome.desktop.input-sources current uint32 0
+gsettings set org.gnome.desktop.input-sources per-window true
+gsettings set org.gnome.desktop.input-sources sources ['xkb', 'us', 'xkb', 'ru']
+gsettings set com.ubuntu.phone default-sim-for-messages 'ask'
+gsettings set com.ubuntu.phone default-sim-for-calls 'ask'
+gsettings set com.ubuntu.phone mms-group-chat-enabled false
+gsettings set com.ubuntu.phone sim-names @a{ss} {}
+gsettings set org.gnome.boxes collections ['Работа', 'Исследование', 'Игры']
+gsettings set org.gnome.boxes first-run false
+gsettings set org.gnome.boxes window-size [894, 548]
+gsettings set org.gnome.boxes window-position [34, 28]
+gsettings set org.gnome.boxes shared-folders ''
+gsettings set org.gnome.boxes window-maximized false
+gsettings set org.gnome.boxes view 'icon-view'
+gsettings set org.gnome.boxes screenshot-interval 5
+gsettings set org.gnome.gnote.sync sync-selected-service-addin ''
+gsettings set org.gnome.gnote.sync sync-local-path ''
+gsettings set org.gnome.gnote.sync autosync-timeout -1
+gsettings set org.gnome.gnote.sync sync-conflict-behavior 0
+gsettings set org.gnome.gnote.sync sync-guid ''
+gsettings set org.gnome.settings-daemon.plugins.housekeeping free-size-gb-no-notify 1
+gsettings set org.gnome.settings-daemon.plugins.housekeeping ignore-paths @as []
+gsettings set org.gnome.settings-daemon.plugins.housekeeping free-percent-notify 0.050000000000000003
+gsettings set org.gnome.settings-daemon.plugins.housekeeping priority 0
+gsettings set org.gnome.settings-daemon.plugins.housekeeping min-notify-period 10
+gsettings set org.gnome.settings-daemon.plugins.housekeeping active true
+gsettings set org.gnome.settings-daemon.plugins.housekeeping free-percent-notify-again 0.01
+gsettings set org.gnome.FileRoller.UI sidebar-width 200
+gsettings set org.gnome.FileRoller.UI window-width 849
+gsettings set org.gnome.FileRoller.UI view-sidebar true
+gsettings set org.gnome.FileRoller.UI window-height 472
+gsettings set org.onboard.window window-state-sticky true
+gsettings set org.onboard.window docking-monitor 'active'
+gsettings set org.onboard.window docking-shrink-workarea false
+gsettings set org.onboard.window transparency 0.0
+gsettings set org.onboard.window enable-inactive-transparency true
+gsettings set org.onboard.window docking-enabled true
+gsettings set org.onboard.window transparent-background false
+gsettings set org.onboard.window keep-aspect-ratio false
+gsettings set org.onboard.window window-handles 'E SE S SW W NW N NE M'
+gsettings set org.onboard.window inactive-transparency 50.0
+gsettings set org.onboard.window inactive-transparency-delay 1.0
+gsettings set org.onboard.window window-decoration false
+gsettings set org.onboard.window docking-edge 'bottom'
+gsettings set org.onboard.window docking-aspect-change-range [0.0, 2.0]
+gsettings set org.onboard.window background-transparency 10.0
+gsettings set org.onboard.window force-to-top true
+gsettings set org.mate.caja.preferences side-pane-background-set false
+gsettings set org.mate.caja.preferences side-pane-background-color '#ffffff'
+gsettings set org.mate.caja.preferences confirm-move-to-trash false
+gsettings set org.mate.caja.preferences desktop-is-home-dir false
+gsettings set org.mate.caja.preferences default-sort-order 'name'
+gsettings set org.mate.caja.preferences show-advanced-permissions false
+gsettings set org.mate.caja.preferences enable-delete false
+gsettings set org.mate.caja.preferences side-pane-background-uri ''
+gsettings set org.mate.caja.preferences mouse-use-extra-buttons true
+gsettings set org.mate.caja.preferences show-hidden-files false
+gsettings set org.mate.caja.preferences background-set false
+gsettings set org.mate.caja.preferences always-use-location-entry false
+gsettings set org.mate.caja.preferences exit-with-last-window false
+gsettings set org.mate.caja.preferences thumbnail-limit uint64 10485760
+gsettings set org.mate.caja.preferences date-format 'locale'
+gsettings set org.mate.caja.preferences background-uri ''
+gsettings set org.mate.caja.preferences show-icons-in-list-view true
+gsettings set org.mate.caja.preferences ctrl-tab-switch-tabs false
+gsettings set org.mate.caja.preferences show-notifications true
+gsettings set org.mate.caja.preferences executable-text-activation 'ask'
+gsettings set org.mate.caja.preferences default-folder-viewer 'icon-view'
+gsettings set org.mate.caja.preferences use-iec-units false
+gsettings set org.mate.caja.preferences default-sort-in-reverse-order false
+gsettings set org.mate.caja.preferences mouse-back-button 8
+gsettings set org.mate.caja.preferences tabs-open-position 'after-current-tab'
+gsettings set org.mate.caja.preferences show-directory-item-counts 'local-only'
+gsettings set org.mate.caja.preferences show-image-thumbnails 'local-only'
+gsettings set org.mate.caja.preferences confirm-trash true
+gsettings set org.mate.caja.preferences install-mime-activation true
+gsettings set org.mate.caja.preferences sort-directories-first true
+gsettings set org.mate.caja.preferences show-backup-files false
+gsettings set org.mate.caja.preferences click-policy 'single'
+gsettings set org.mate.caja.preferences preview-sound 'local-only'
+gsettings set org.mate.caja.preferences background-color '#ffffff'
+gsettings set org.mate.caja.preferences mouse-forward-button 9
+gsettings set org.mate.caja.preferences always-use-browser true
+gsettings set org.mate.caja.preferences show-icon-text 'local-only'
+gsettings set org.gnome.rhythmbox.source search-type 'search-match'
+gsettings set org.gnome.rhythmbox.source show-browser true
+gsettings set org.gnome.rhythmbox.source paned-position 180
+gsettings set org.gnome.rhythmbox.source sorting ['Artist', true]
+gsettings set org.freedesktop.pulseaudio.module-group args0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args6 ''
+gsettings set org.freedesktop.pulseaudio.module-group args9 ''
+gsettings set org.freedesktop.pulseaudio.module-group name3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name ''
+gsettings set org.freedesktop.pulseaudio.module-group name6 ''
+gsettings set org.freedesktop.pulseaudio.module-group name9 ''
+gsettings set org.freedesktop.pulseaudio.module-group args1 ''
+gsettings set org.freedesktop.pulseaudio.module-group locked false
+gsettings set org.freedesktop.pulseaudio.module-group args4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name1 ''
+gsettings set org.freedesktop.pulseaudio.module-group args7 ''
+gsettings set org.freedesktop.pulseaudio.module-group name4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name7 ''
+gsettings set org.freedesktop.pulseaudio.module-group enabled false
+gsettings set org.freedesktop.pulseaudio.module-group args2 ''
+gsettings set org.freedesktop.pulseaudio.module-group args5 ''
+gsettings set org.freedesktop.pulseaudio.module-group args8 ''
+gsettings set org.freedesktop.pulseaudio.module-group name2 ''
+gsettings set org.freedesktop.pulseaudio.module-group name5 ''
+gsettings set org.freedesktop.pulseaudio.module-group name8 ''
+gsettings set org.freedesktop.pulseaudio.module-group args0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name0 'module-combine'
+gsettings set org.freedesktop.pulseaudio.module-group args6 ''
+gsettings set org.freedesktop.pulseaudio.module-group args9 ''
+gsettings set org.freedesktop.pulseaudio.module-group name3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name ''
+gsettings set org.freedesktop.pulseaudio.module-group name6 ''
+gsettings set org.freedesktop.pulseaudio.module-group name9 ''
+gsettings set org.freedesktop.pulseaudio.module-group args1 ''
+gsettings set org.freedesktop.pulseaudio.module-group locked false
+gsettings set org.freedesktop.pulseaudio.module-group args4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name1 ''
+gsettings set org.freedesktop.pulseaudio.module-group args7 ''
+gsettings set org.freedesktop.pulseaudio.module-group name4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name7 ''
+gsettings set org.freedesktop.pulseaudio.module-group enabled false
+gsettings set org.freedesktop.pulseaudio.module-group args2 ''
+gsettings set org.freedesktop.pulseaudio.module-group args5 ''
+gsettings set org.freedesktop.pulseaudio.module-group args8 ''
+gsettings set org.freedesktop.pulseaudio.module-group name2 ''
+gsettings set org.freedesktop.pulseaudio.module-group name5 ''
+gsettings set org.freedesktop.pulseaudio.module-group name8 ''
+gsettings set org.freedesktop.pulseaudio.module-group args0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args6 ''
+gsettings set org.freedesktop.pulseaudio.module-group args9 ''
+gsettings set org.freedesktop.pulseaudio.module-group name3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name ''
+gsettings set org.freedesktop.pulseaudio.module-group name6 ''
+gsettings set org.freedesktop.pulseaudio.module-group name9 ''
+gsettings set org.freedesktop.pulseaudio.module-group args1 ''
+gsettings set org.freedesktop.pulseaudio.module-group locked false
+gsettings set org.freedesktop.pulseaudio.module-group args4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name1 ''
+gsettings set org.freedesktop.pulseaudio.module-group args7 ''
+gsettings set org.freedesktop.pulseaudio.module-group name4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name7 ''
+gsettings set org.freedesktop.pulseaudio.module-group enabled false
+gsettings set org.freedesktop.pulseaudio.module-group args2 ''
+gsettings set org.freedesktop.pulseaudio.module-group args5 ''
+gsettings set org.freedesktop.pulseaudio.module-group args8 ''
+gsettings set org.freedesktop.pulseaudio.module-group name2 ''
+gsettings set org.freedesktop.pulseaudio.module-group name5 ''
+gsettings set org.freedesktop.pulseaudio.module-group name8 ''
+gsettings set org.freedesktop.pulseaudio.module-group args0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args6 ''
+gsettings set org.freedesktop.pulseaudio.module-group args9 ''
+gsettings set org.freedesktop.pulseaudio.module-group name3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name ''
+gsettings set org.freedesktop.pulseaudio.module-group name6 ''
+gsettings set org.freedesktop.pulseaudio.module-group name9 ''
+gsettings set org.freedesktop.pulseaudio.module-group args1 ''
+gsettings set org.freedesktop.pulseaudio.module-group locked false
+gsettings set org.freedesktop.pulseaudio.module-group args4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name1 ''
+gsettings set org.freedesktop.pulseaudio.module-group args7 ''
+gsettings set org.freedesktop.pulseaudio.module-group name4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name7 ''
+gsettings set org.freedesktop.pulseaudio.module-group enabled false
+gsettings set org.freedesktop.pulseaudio.module-group args2 ''
+gsettings set org.freedesktop.pulseaudio.module-group args5 ''
+gsettings set org.freedesktop.pulseaudio.module-group args8 ''
+gsettings set org.freedesktop.pulseaudio.module-group name2 ''
+gsettings set org.freedesktop.pulseaudio.module-group name5 ''
+gsettings set org.freedesktop.pulseaudio.module-group name8 ''
+gsettings set org.freedesktop.pulseaudio.module-group args0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args6 ''
+gsettings set org.freedesktop.pulseaudio.module-group args9 ''
+gsettings set org.freedesktop.pulseaudio.module-group name3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name ''
+gsettings set org.freedesktop.pulseaudio.module-group name6 ''
+gsettings set org.freedesktop.pulseaudio.module-group name9 ''
+gsettings set org.freedesktop.pulseaudio.module-group args1 ''
+gsettings set org.freedesktop.pulseaudio.module-group locked false
+gsettings set org.freedesktop.pulseaudio.module-group args4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name1 ''
+gsettings set org.freedesktop.pulseaudio.module-group args7 ''
+gsettings set org.freedesktop.pulseaudio.module-group name4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name7 ''
+gsettings set org.freedesktop.pulseaudio.module-group enabled false
+gsettings set org.freedesktop.pulseaudio.module-group args2 ''
+gsettings set org.freedesktop.pulseaudio.module-group args5 ''
+gsettings set org.freedesktop.pulseaudio.module-group args8 ''
+gsettings set org.freedesktop.pulseaudio.module-group name2 ''
+gsettings set org.freedesktop.pulseaudio.module-group name5 ''
+gsettings set org.freedesktop.pulseaudio.module-group name8 ''
+gsettings set org.freedesktop.pulseaudio.module-group args0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args6 ''
+gsettings set org.freedesktop.pulseaudio.module-group args9 ''
+gsettings set org.freedesktop.pulseaudio.module-group name3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name ''
+gsettings set org.freedesktop.pulseaudio.module-group name6 ''
+gsettings set org.freedesktop.pulseaudio.module-group name9 ''
+gsettings set org.freedesktop.pulseaudio.module-group args1 ''
+gsettings set org.freedesktop.pulseaudio.module-group locked false
+gsettings set org.freedesktop.pulseaudio.module-group args4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name1 ''
+gsettings set org.freedesktop.pulseaudio.module-group args7 ''
+gsettings set org.freedesktop.pulseaudio.module-group name4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name7 ''
+gsettings set org.freedesktop.pulseaudio.module-group enabled false
+gsettings set org.freedesktop.pulseaudio.module-group args2 ''
+gsettings set org.freedesktop.pulseaudio.module-group args5 ''
+gsettings set org.freedesktop.pulseaudio.module-group args8 ''
+gsettings set org.freedesktop.pulseaudio.module-group name2 ''
+gsettings set org.freedesktop.pulseaudio.module-group name5 ''
+gsettings set org.freedesktop.pulseaudio.module-group name8 ''
+gsettings set org.freedesktop.pulseaudio.module-group args0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name0 ''
+gsettings set org.freedesktop.pulseaudio.module-group args6 ''
+gsettings set org.freedesktop.pulseaudio.module-group args9 ''
+gsettings set org.freedesktop.pulseaudio.module-group name3 ''
+gsettings set org.freedesktop.pulseaudio.module-group name ''
+gsettings set org.freedesktop.pulseaudio.module-group name6 ''
+gsettings set org.freedesktop.pulseaudio.module-group name9 ''
+gsettings set org.freedesktop.pulseaudio.module-group args1 ''
+gsettings set org.freedesktop.pulseaudio.module-group locked false
+gsettings set org.freedesktop.pulseaudio.module-group args4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name1 ''
+gsettings set org.freedesktop.pulseaudio.module-group args7 ''
+gsettings set org.freedesktop.pulseaudio.module-group name4 ''
+gsettings set org.freedesktop.pulseaudio.module-group name7 ''
+gsettings set org.freedesktop.pulseaudio.module-group enabled false
+gsettings set org.freedesktop.pulseaudio.module-group args2 ''
+gsettings set org.freedesktop.pulseaudio.module-group args5 ''
+gsettings set org.freedesktop.pulseaudio.module-group args8 ''
+gsettings set org.freedesktop.pulseaudio.module-group name2 ''
+gsettings set org.freedesktop.pulseaudio.module-group name5 ''
+gsettings set org.freedesktop.pulseaudio.module-group name8 ''
+gsettings set org.mate.caja.sidebar-panels.tree show-only-directories true
+gsettings set org.gnome.rhythmbox.encoding-settings transcode-lossless false
+gsettings set org.gnome.rhythmbox.encoding-settings media-type-presets {'audio/x-vorbis': 'Ubuntu', 'audio/mpeg': 'Ubuntu'}
+gsettings set org.gnome.rhythmbox.encoding-settings media-type 'audio/x-vorbis'
+gsettings set org.gnome.rhythmbox.source search-type 'search-match'
+gsettings set org.gnome.rhythmbox.source show-browser true
+gsettings set org.gnome.rhythmbox.source paned-position 180
+gsettings set org.gnome.rhythmbox.source sorting ['Artist', true]
+gsettings set org.mate.applications-terminal exec-arg '-x'
+gsettings set org.mate.applications-terminal exec 'mate-terminal'
+gsettings set org.freedesktop.Tracker.FTS ignore-numbers true
+gsettings set org.freedesktop.Tracker.FTS max-words-to-index 10000
+gsettings set org.freedesktop.Tracker.FTS ignore-stop-words true
+gsettings set org.freedesktop.Tracker.FTS enable-unaccent true
+gsettings set org.freedesktop.Tracker.FTS enable-stemmer false
+gsettings set org.freedesktop.Tracker.FTS max-word-length 30
+gsettings set org.gnome.libgnomekbd.indicator show-flags false
+gsettings set org.gnome.libgnomekbd.indicator background-color ''
+gsettings set org.gnome.libgnomekbd.indicator font-family ''
+gsettings set org.gnome.libgnomekbd.indicator foreground-color ''
+gsettings set org.gnome.libgnomekbd.indicator font-size 10
+gsettings set org.gnome.libgnomekbd.indicator secondary 0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band9-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band4-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band20-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band24-frequency 5674.1599999999999
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band13-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band21-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band12-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band11-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band26-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band24-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band25-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band22-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band17-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band26-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band15-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band0-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band2-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band16-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band6-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band16-frequency 899.28999999999996
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band26-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band6-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band3-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band4-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band5-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band20-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band11-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band26-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band10-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band8-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band15-frequency 714.34000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band24-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band25-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band2-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band29-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band15-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band14-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band16-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band21-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band7-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band8-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band14-frequency 567.41999999999996
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band5-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band19-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band16-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band2-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band3-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band4-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band5-frequency 71.430000000000007
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band10-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band23-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band22-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band15-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band13-frequency 450.72000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band19-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band29-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band24-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band28-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band9-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band13-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band14-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band15-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band29-frequency 17943.279999999999
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band6-frequency 89.930000000000007
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band7-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band4-frequency 56.740000000000002
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band19-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band18-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band1-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band2-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band23-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band12-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band22-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band28-frequency 14252.860000000001
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band28-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band29-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band3-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band4-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band10-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band28-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band14-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band27-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band18-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band12-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band14-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band13-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band27-frequency 11321.450000000001
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band19-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band7-frequency 113.20999999999999
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band17-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band18-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band0-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band1-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band2-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band19-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band21-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band22-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band6-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band7-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band25-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band1-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band23-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band19-frequency 1794.3299999999999
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band26-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band27-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band11-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band12-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band13-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band27-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band0-frequency 22.59
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band15-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band17-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band18-frequency 1425.29
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band18-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band0-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band1-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band21-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band20-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band21-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band5-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band6-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band9-frequency 179.43000000000001
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band26-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band17-frequency 1132.1500000000001
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band25-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band7-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band11-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band10-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band12-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band16-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band8-frequency 142.53
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band8-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band29-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band11-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band23-frequency 4507.1499999999996
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band28-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band17-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band3-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band20-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band12-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band4-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band0-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band16-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band5-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band4-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band9-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band22-frequency 3580.1599999999999
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band25-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band23-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band24-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band10-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band16-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band11-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band15-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band18-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band28-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band29-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band21-frequency 2843.8200000000002
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band24-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band8-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band4-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band25-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band3-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band1-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band29-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band0-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band5-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band11-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band9-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band20-frequency 2258.9299999999998
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band24-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band22-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band23-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band6-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band15-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band10-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band14-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band14-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band8-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band27-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band28-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band29-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band9-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band20-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band19-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band3-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band2-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band12-frequency 358.01999999999998
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band20-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band9-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band24-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band5-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band0-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band3-frequency 45.07
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band6-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band21-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band22-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band23-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band14-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band11-frequency 284.38
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band13-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band10-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band27-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band26-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band27-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band2-frequency 35.799999999999997
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band19-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band8-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band2-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band18-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band1-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band10-frequency 225.88999999999999
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band3-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band9-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band28-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band1-frequency 28.440000000000001
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band5-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band20-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band17-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band22-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band13-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band26-frequency 8992.9400000000005
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band12-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band21-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band7-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band23-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band25-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band27-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band18-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band7-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band13-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band16-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band0-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band1-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band7-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band17-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band17-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band6-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band25-frequency 7143.3500000000004
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.leftchannel band8-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools balance-in 7.5286998857393428e-16
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools slev 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools balance-out 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools stereo-phase 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools delay 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools mlev 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools mpan 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools mutel false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools softclip true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools muter false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools phasel false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools stereo-base 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools phaser false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools sc-level 1.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools sbal 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools state false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools mode 'LR > LR [Stereo Default]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools post-messages false
+gsettings set org.gnome.gthumb.image-viewer zoom-change 'fit-size-if-larger'
+gsettings set org.gnome.gthumb.image-viewer zoom-quality 'high'
+gsettings set org.gnome.gthumb.image-viewer histogram-scale 'linear'
+gsettings set org.gnome.gthumb.image-viewer reset-scrollbars true
+gsettings set com.canonical.indicator.messages applications ['gsettings set org.gnome.Calendar.desktop', 'thunderbird.desktop']
+gsettings set org.gtk.Settings.FileChooser sort-column 'name'
+gsettings set org.gtk.Settings.FileChooser last-folder-uri ''
+gsettings set org.gtk.Settings.FileChooser date-format 'regular'
+gsettings set org.gtk.Settings.FileChooser show-hidden false
+gsettings set org.gtk.Settings.FileChooser sidebar-width 191
+gsettings set org.gtk.Settings.FileChooser clock-format '24h'
+gsettings set org.gtk.Settings.FileChooser window-position [34, 28]
+gsettings set org.gtk.Settings.FileChooser startup-mode 'cwd'
+gsettings set org.gtk.Settings.FileChooser expand-folders false
+gsettings set org.gtk.Settings.FileChooser window-size [925, 504]
+gsettings set org.gtk.Settings.FileChooser show-type-column true
+gsettings set org.gtk.Settings.FileChooser sort-order 'ascending'
+gsettings set org.gtk.Settings.FileChooser type-format 'category'
+gsettings set org.gtk.Settings.FileChooser show-size-column true
+gsettings set org.gtk.Settings.FileChooser location-mode 'filename-entry'
+gsettings set org.gtk.Settings.FileChooser sort-directories-first true
+gsettings set org.gnome.settings-daemon.plugins.cursor priority 0
+gsettings set org.gnome.settings-daemon.plugins.cursor active true
+gsettings set org.gnome.evolution-data-server oauth2-google-client-id ''
+gsettings set org.gnome.evolution-data-server oauth2-google-client-secret ''
+gsettings set org.gnome.evolution-data-server autoconfig-variables ['']
+gsettings set org.gnome.evolution-data-server camel-gpg-binary ''
+gsettings set org.gnome.evolution-data-server network-monitor-gio-name ''
+gsettings set org.gnome.evolution-data-server camel-cipher-load-photos true
+gsettings set org.gnome.evolution-data-server oauth2-outlook-client-id ''
+gsettings set org.gnome.evolution-data-server autoconfig-directory ''
+gsettings set org.gnome.evolution-data-server migrated true
+gsettings set org.gnome.evolution-data-server oauth2-outlook-client-secret ''
+gsettings set org.gnome.evolution-data-server oauth2-services-hint ['']
+gsettings set org.gnome.gnote.sync.gvfs uri ''
+gsettings set org.cinnamon.desktop.media-handling autorun-never false
+gsettings set org.cinnamon.desktop.media-handling autorun-x-content-open-folder @as []
+gsettings set org.cinnamon.desktop.media-handling automount-open true
+gsettings set org.cinnamon.desktop.media-handling autorun-x-content-ignore @as []
+gsettings set org.cinnamon.desktop.media-handling automount true
+gsettings set org.cinnamon.desktop.media-handling autorun-x-content-start-app ['x-content/unix-software', 'x-content/bootable-media']
+gsettings set org.yorba.shotwell.preferences.window direct-height 697
+gsettings set org.yorba.shotwell.preferences.window direct-width 1024
+gsettings set org.yorba.shotwell.preferences.window library-height 697
+gsettings set org.yorba.shotwell.preferences.window direct-maximize false
+gsettings set org.yorba.shotwell.preferences.window library-maximize false
+gsettings set org.yorba.shotwell.preferences.window library-width 1024
+gsettings set org.yorba.shotwell.preferences.window sidebar-position 180
+gsettings set org.yorba.shotwell.sharing.youtube refresh-token ''
+gsettings set org.gnome.FileRoller.Dialogs.New default-extension '.tar.xz'
+gsettings set org.gnome.FileRoller.Dialogs.New volume-size 0
+gsettings set org.gnome.FileRoller.Dialogs.New encrypt-header false
+gsettings set org.gnome.FileRoller.Dialogs.New other-options false
+gsettings set org.gnome.rhythmbox.podcast download-location ''
+gsettings set org.gnome.rhythmbox.podcast download-interval 'hourly'
+gsettings set org.gnome.rhythmbox.podcast-source search-type 'search-match'
+gsettings set org.gnome.rhythmbox.podcast-source show-browser true
+gsettings set org.gnome.rhythmbox.podcast-source paned-position 180
+gsettings set org.gnome.rhythmbox.podcast-source sorting ['Feed', true]
+gsettings set org.mate.sound theme-name 'freedesktop'
+gsettings set org.mate.sound event-sounds false
+gsettings set org.mate.sound input-feedback-sounds false
+gsettings set org.mate.sound default-mixer-tracks @as []
+gsettings set org.mate.sound default-mixer-device ''
+gsettings set org.mate.sound enable-esd false
+gsettings set org.yorba.shotwell.preferences.files commit-metadata false
+gsettings set org.yorba.shotwell.preferences.files use-lowercase-filenames false
+gsettings set org.yorba.shotwell.preferences.files directory-pattern-custom ''
+gsettings set org.yorba.shotwell.preferences.files auto-import false
+gsettings set org.yorba.shotwell.preferences.files import-dir ''
+gsettings set org.yorba.shotwell.preferences.files directory-pattern '%Y/%m/%d'
+gsettings set org.yorba.shotwell.preferences.files raw-developer-default 'CAMERA'
+gsettings set org.gnome.desktop.app-folders folder-children ['Utilities', 'Sundry', 'YaST']
+gsettings set org.gnome.FileRoller.Listing show-size true
+gsettings set org.gnome.FileRoller.Listing show-time true
+gsettings set org.gnome.FileRoller.Listing sort-type 'ascending'
+gsettings set org.gnome.FileRoller.Listing name-column-width 249
+gsettings set org.gnome.FileRoller.Listing show-type true
+gsettings set org.gnome.FileRoller.Listing list-mode 'as-folder'
+gsettings set org.gnome.FileRoller.Listing show-path false
+gsettings set org.gnome.FileRoller.Listing sort-method 'name'
+gsettings set com.ubuntu.sound allow-amplified-volume true
+gsettings set org.gnome.crypto.pgp ascii-armor true
+gsettings set org.gnome.crypto.pgp default-key ''
+gsettings set org.gnome.crypto.pgp encrypt-to-self true
+gsettings set org.gnome.crypto.pgp keyservers @as []
+gsettings set org.gnome.crypto.pgp sort-recipients-by 'name'
+gsettings set org.gnome.crypto.pgp last-signer ''
+gsettings set org.gnome.desktop.default-applications.office.calendar exec 'evolution -c calendar'
+gsettings set org.gnome.desktop.default-applications.office.calendar needs-term false
+gsettings set org.gnome.nautilus.icon-view captions ['none', 'none', 'none']
+gsettings set org.gnome.nautilus.icon-view default-zoom-level 'standard'
+gsettings set org.gnome.nautilus.icon-view text-ellipsis-limit ['3']
+gsettings set org.yorba.shotwell.preferences.export export-metadata true
+gsettings set org.yorba.shotwell.preferences.export quality 'HIGH'
+gsettings set org.yorba.shotwell.preferences.export scale 1200
+gsettings set org.yorba.shotwell.preferences.export export-format-mode 'SPECIFIED'
+gsettings set org.yorba.shotwell.preferences.export constraint 'ORIGINAL'
+gsettings set org.yorba.shotwell.preferences.export photo-file-format 'TIFF'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser detection 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser laxity 15
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser f1-freq 6000.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser f2-level 12.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser f2-q 1.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser state false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser f2-freq 4500.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser installed true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser post-messages false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser mode 'Wide'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser f1-level 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser makeup 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser ratio 3.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser threshold -18.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.deesser sc-listen false
+gsettings set com.canonical.indicator.datetime locations ['UTC UTC']
+gsettings set com.canonical.indicator.datetime snooze-duration-minutes uint32 5
+gsettings set com.canonical.indicator.datetime show-date true
+gsettings set com.canonical.indicator.datetime calendar-default-sound '/usr/share/sounds/ubuntu/ringtones/Marimbach.ogg'
+gsettings set com.canonical.indicator.datetime show-week-numbers true
+gsettings set com.canonical.indicator.datetime show-events true
+gsettings set com.canonical.indicator.datetime custom-time-format '%l:%M %p'
+gsettings set com.canonical.indicator.datetime show-clock true
+gsettings set com.canonical.indicator.datetime alarm-default-sound '/usr/share/sounds/ubuntu/ringtones/Alarm clock.ogg'
+gsettings set com.canonical.indicator.datetime show-locations true
+gsettings set com.canonical.indicator.datetime show-seconds true
+gsettings set com.canonical.indicator.datetime show-auto-detected-location true
+gsettings set com.canonical.indicator.datetime show-year true
+gsettings set com.canonical.indicator.datetime show-day true
+gsettings set com.canonical.indicator.datetime alarm-default-volume uint32 50
+gsettings set com.canonical.indicator.datetime show-calendar true
+gsettings set com.canonical.indicator.datetime time-format 'locale-default'
+gsettings set com.canonical.indicator.datetime alarm-duration-minutes uint32 10
+gsettings set com.canonical.indicator.datetime alarm-haptic-feedback 'pulse'
+gsettings set com.canonical.indicator.datetime timezone-name ''
+gsettings set org.freedesktop.Tracker.Store graphupdated-delay 1000
+gsettings set org.freedesktop.Tracker.Store verbosity 'errors'
+gsettings set org.gnome.gthumb.resize-images mime-type ''
+gsettings set org.gnome.gthumb.resize-images width 100
+gsettings set org.gnome.gthumb.resize-images keep-aspect-ratio true
+gsettings set org.gnome.gthumb.resize-images unit 'percentage'
+gsettings set org.gnome.gthumb.resize-images allow-swap-width-height true
+gsettings set org.gnome.gthumb.resize-images height 100
+gsettings set io.github.GnomeMpv settings-migrated true
+gsettings set io.github.GnomeMpv csd-enable true
+gsettings set io.github.GnomeMpv use-skip-buttons-for-playlist false
+gsettings set io.github.GnomeMpv prefetch-metadata true
+gsettings set io.github.GnomeMpv always-autohide-cursor false
+gsettings set io.github.GnomeMpv last-folder-enable false
+gsettings set io.github.GnomeMpv mpv-options ''
+gsettings set io.github.GnomeMpv mpv-config-file ''
+gsettings set io.github.GnomeMpv mpris-enable true
+gsettings set io.github.GnomeMpv mpv-config-enable false
+gsettings set io.github.GnomeMpv dark-theme-enable true
+gsettings set io.github.GnomeMpv mpv-input-config-enable false
+gsettings set io.github.GnomeMpv always-use-floating-controls false
+gsettings set io.github.GnomeMpv media-keys-enable true
+gsettings set io.github.GnomeMpv always-open-new-window false
+gsettings set io.github.GnomeMpv mpv-input-config-file ''
+gsettings set org.gnome.Charmap.WindowState fullscreen false
+gsettings set org.gnome.Charmap.WindowState size [768, 412]
+gsettings set org.gnome.Charmap.WindowState maximized false
+gsettings set org.gnome.settings-daemon.peripherals priority 0
+gsettings set org.gnome.settings-daemon.peripherals active true
+gsettings set org.gnome.calculator source-currency ''
+gsettings set org.gnome.calculator source-units 'degree'
+gsettings set org.gnome.calculator button-mode 'basic'
+gsettings set org.gnome.calculator target-currency ''
+gsettings set org.gnome.calculator base 10
+gsettings set org.gnome.calculator angle-units 'degrees'
+gsettings set org.gnome.calculator word-size 64
+gsettings set org.gnome.calculator accuracy 9
+gsettings set org.gnome.calculator show-thousands false
+gsettings set org.gnome.calculator window-position [34, 28]
+gsettings set org.gnome.calculator refresh-interval 604800
+gsettings set org.gnome.calculator target-units 'radian'
+gsettings set org.gnome.calculator precision 2000
+gsettings set org.gnome.calculator number-format 'automatic'
+gsettings set org.gnome.calculator show-zeroes false
+gsettings set org.gnome.rhythmbox.plugins.listenbrainz user-token ''
+gsettings set org.gnome.todo.plugins.todo-txt file ''
+gsettings set com.ubuntu.update-manager window-width 645
+gsettings set com.ubuntu.update-manager launch-count 11
+gsettings set com.ubuntu.update-manager autoclose-install-window true
+gsettings set com.ubuntu.update-manager check-new-release-ignore ''
+gsettings set com.ubuntu.update-manager first-run false
+gsettings set com.ubuntu.update-manager check-dist-upgrades true
+gsettings set com.ubuntu.update-manager summary-before-name true
+gsettings set com.ubuntu.update-manager show-versions false
+gsettings set com.ubuntu.update-manager show-details true
+gsettings set com.ubuntu.update-manager launch-time int64 1627735034
+gsettings set com.ubuntu.update-manager window-height 452
+gsettings set org.cinnamon.desktop.a11y.mouse dwell-gesture-single 'left'
+gsettings set org.cinnamon.desktop.a11y.mouse dwell-gesture-double 'up'
+gsettings set org.cinnamon.desktop.a11y.mouse dwell-gesture-drag 'down'
+gsettings set org.cinnamon.desktop.a11y.mouse dwell-threshold 10
+gsettings set org.cinnamon.desktop.a11y.mouse secondary-click-enabled false
+gsettings set org.cinnamon.desktop.a11y.mouse dwell-mode 'window'
+gsettings set org.cinnamon.desktop.a11y.mouse dwell-gesture-secondary 'right'
+gsettings set org.cinnamon.desktop.a11y.mouse click-type-window-visible true
+gsettings set org.cinnamon.desktop.a11y.mouse dwell-click-enabled false
+gsettings set org.cinnamon.desktop.a11y.mouse dwell-time 1.2
+gsettings set org.cinnamon.desktop.a11y.mouse secondary-click-time 1.2
+gsettings set org.gnome.Geary conversation-viewer-zoom 1.0
+gsettings set org.gnome.Geary ask-open-attachment true
+gsettings set org.gnome.Geary autoselect true
+gsettings set org.gnome.Geary undo-send-delay 5
+gsettings set org.gnome.Geary window-width 1024
+gsettings set org.gnome.Geary compose-as-html true
+gsettings set org.gnome.Geary formatting-toolbar-visible true
+gsettings set org.gnome.Geary folder-list-pane-horizontal true
+gsettings set org.gnome.Geary spell-check-visible-languages @as []
+gsettings set org.gnome.Geary window-height 688
+gsettings set org.gnome.Geary search-strategy 'conservative'
+gsettings set org.gnome.Geary composer-window-size [-1, -1]
+gsettings set org.gnome.Geary folder-list-pane-position-vertical 200
+gsettings set org.gnome.Geary messages-pane-position 356
+gsettings set org.gnome.Geary brief-notification-duration 5
+gsettings set org.gnome.Geary window-maximize false
+gsettings set org.gnome.Geary folder-list-pane-position-horizontal 102
+gsettings set org.gnome.Geary single-key-shortcuts false
+gsettings set org.gnome.Geary display-preview true
+gsettings set org.gnome.Geary migrated-config true
+gsettings set org.gnome.Geary folder-list-pane-position 100
+gsettings set org.gnome.Geary spell-check-languages @mas nothing
+gsettings set org.gnome.Geary startup-notifications false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.loudness link -12.01
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.loudness state true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.loudness loudness -1.9800000000000015
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.loudness installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.loudness post-messages true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.loudness output -3.7000000000000064
+gsettings set org.mate.thumbnailers disable @as []
+gsettings set org.mate.thumbnailers disable-all false
+gsettings set org.gnome.Weather locations [<[uint32 2, <['Moscow', 'UUWW', true, [[0.97127572873484425, 0.65042604039431762]], [[0.97305983920281813, 0.65651530216830811]]]>]>]
+gsettings set org.gnome.Weather automatic-location true
+gsettings set org.gnome.baobab.ui window-size [850, 481]
+gsettings set org.gnome.baobab.ui active-chart 'rings'
+gsettings set org.gnome.baobab.ui window-state 87168
+gsettings set apps.mugshot fax ''
+gsettings set apps.mugshot email 'Griggorii@gmail.com'
+gsettings set apps.mugshot initials 'X64'
+gsettings set org.gnome.gthumb.dialogs.save-file show-options true
+gsettings set org.mate.caja.icon-view captions ['none', 'size', 'date_modified']
+gsettings set org.mate.caja.icon-view default-use-tighter-layout false
+gsettings set org.mate.caja.icon-view default-zoom-level 'standard'
+gsettings set org.mate.caja.icon-view text-ellipsis-limit ['3']
+gsettings set org.mate.caja.icon-view labels-beside-icons false
+gsettings set org.mate.caja.icon-view thumbnail-size 64
+gsettings set org.mate.accessibility-keyboard bouncekeys-delay 300
+gsettings set org.mate.accessibility-keyboard togglekeys-enable false
+gsettings set org.mate.accessibility-keyboard stickykeys-enable false
+gsettings set org.mate.accessibility-keyboard mousekeys-max-speed 10
+gsettings set org.mate.accessibility-keyboard mousekeys-init-delay 300
+gsettings set org.mate.accessibility-keyboard timeout 200
+gsettings set org.mate.accessibility-keyboard enable false
+gsettings set org.mate.accessibility-keyboard feature-state-change-beep false
+gsettings set org.mate.accessibility-keyboard mousekeys-accel-time 300
+gsettings set org.mate.accessibility-keyboard bouncekeys-enable false
+gsettings set org.mate.accessibility-keyboard bouncekeys-beep-reject false
+gsettings set org.mate.accessibility-keyboard mousekeys-enable false
+gsettings set org.mate.accessibility-keyboard stickykeys-modifier-beep false
+gsettings set org.mate.accessibility-keyboard slowkeys-enable false
+gsettings set org.mate.accessibility-keyboard slowkeys-delay 300
+gsettings set org.mate.accessibility-keyboard stickykeys-latch-to-lock true
+gsettings set org.mate.accessibility-keyboard slowkeys-beep-reject false
+gsettings set org.mate.accessibility-keyboard stickykeys-two-key-off false
+gsettings set org.mate.accessibility-keyboard timeout-enable false
+gsettings set org.mate.accessibility-keyboard slowkeys-beep-accept false
+gsettings set org.mate.accessibility-keyboard slowkeys-beep-press false
+gsettings set org.gnome.gthumb.facebook max-resolution 2048
+gsettings set org.gnome.settings-daemon.peripherals.input-devices hotplug-command ''
+gsettings set io.github.celluloid-player.Celluloid.window-state show-playlist false
+gsettings set io.github.celluloid-player.Celluloid.window-state width 1024
+gsettings set io.github.celluloid-player.Celluloid.window-state playlist-width 250
+gsettings set io.github.celluloid-player.Celluloid.window-state last-folder-uri ''
+gsettings set io.github.celluloid-player.Celluloid.window-state volume 1.0
+gsettings set io.github.celluloid-player.Celluloid.window-state height 605
+gsettings set io.github.celluloid-player.Celluloid.window-state show-controls true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.filter resonance 0.70699999999999996
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.filter state false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.filter mode '6dB/oct Bandreject'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.filter installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.filter post-messages false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.filter inertia 74.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.filter output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.filter frequency 305.81799999999998
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.filter input-gain 0.0
+gsettings set org.gnome.gthumb.flickr resize-width -1
+gsettings set org.gnome.gthumb.flickr resize-height -1
+gsettings set org.gnome.gnome-system-monitor.openfilestree sort-order 0
+gsettings set org.gnome.gnome-system-monitor.openfilestree sort-col 0
+gsettings set org.gnome.FileRoller.General editors @as []
+gsettings set org.gnome.FileRoller.General compression-level 'normal'
+gsettings set org.gnome.FileRoller.General encrypt-header false
+gsettings set org.gnome.power-manager info-stats-type 'discharge-accuracy'
+gsettings set org.gnome.power-manager info-history-type 'charge'
+gsettings set org.gnome.power-manager info-stats-graph-points true
+gsettings set org.gnome.power-manager info-page-number 0
+gsettings set org.gnome.power-manager info-stats-graph-smooth true
+gsettings set org.gnome.power-manager info-history-graph-points true
+gsettings set org.gnome.power-manager info-last-device '/org/freedesktop/UPower/devices/line_power_ACAD'
+gsettings set org.gnome.power-manager info-history-time 604800
+gsettings set org.gnome.power-manager info-history-graph-smooth true
+gsettings set org.gnome.gedit.plugins.filebrowser tree-view true
+gsettings set org.gnome.gedit.plugins.filebrowser filter-mode ['hide-hidden', 'hide-binary']
+gsettings set org.gnome.gedit.plugins.filebrowser filter-pattern ''
+gsettings set org.gnome.gedit.plugins.filebrowser enable-remote false
+gsettings set org.gnome.gedit.plugins.filebrowser root 'file:///'
+gsettings set org.gnome.gedit.plugins.filebrowser virtual-root ''
+gsettings set org.gnome.gedit.plugins.filebrowser binary-patterns ['*.la', '*.lo']
+gsettings set org.gnome.gedit.plugins.filebrowser open-at-first-doc true
+gsettings set org.yorba.shotwell.sharing.publishing-gallery3 last-album ''
+gsettings set org.yorba.shotwell.sharing.publishing-gallery3 url ''
+gsettings set org.yorba.shotwell.sharing.publishing-gallery3 scaling-constraint-id 0
+gsettings set org.yorba.shotwell.sharing.publishing-gallery3 strip-metadata false
+gsettings set org.yorba.shotwell.sharing.publishing-gallery3 scaling-pixels 1024
+gsettings set org.yorba.shotwell.sharing.publishing-gallery3 api-key ''
+gsettings set org.yorba.shotwell.sharing.publishing-gallery3 username ''
+gsettings set org.gnome.rhythmbox.sharing require-password false
+gsettings set org.gnome.rhythmbox.sharing share-name ''
+gsettings set org.gnome.rhythmbox.sharing share-password ''
+gsettings set org.gnome.rhythmbox.sharing enable-browsing true
+gsettings set org.gnome.rhythmbox.sharing enable-sharing false
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-tumblr default-size 2
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-tumblr default-blog 0
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-tumblr token ''
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-tumblr token-secret ''
+gsettings set org.gnome.shell app-picker-view uint32 1
+gsettings set org.gnome.shell command-history ['nautilus', 'r', 'tilix', 'lg']
+gsettings set org.gnome.shell disable-user-extensions false
+gsettings set org.gnome.shell always-show-log-out true
+gsettings set org.gnome.shell disable-extension-version-validation true
+gsettings set org.gnome.shell favorite-apps ['gsettings set org.gnome.Screenshot.desktop', 'ubiquity.desktop', 'nemo.desktop', 'gsettings set org.gnome.Nautilus.desktop', 'gsettings set com.github.wwmm.pulseeffects.desktop', 'gnome-control-center.desktop', 'gsettings set com.gexperts.Tilix.desktop', 'gnome-system-monitor.desktop', 'com.obsproject.Studio.desktop', 'gsettings set org.gnome.tweaks.desktop', 'gsettings set org.gnome.DiskUtility.desktop', 'nvidia-settings.desktop', 'gsettings set ca.desrt.dconf-editor.desktop', 'telegramdesktop.desktop', 'chromium-browser.desktop', 'green-recorder.desktop', 'update-manager.desktop']
+gsettings set org.gnome.shell had-bluetooth-devices-setup true
+gsettings set org.gnome.shell looking-glass-history @as []
+gsettings set org.gnome.shell development-tools true
+gsettings set org.gnome.shell introspect false
+gsettings set org.gnome.shell remember-mount-password false
+gsettings set org.gnome.settings-daemon.plugins.orientation priority 0
+gsettings set org.gnome.settings-daemon.plugins.orientation active true
+gsettings set org.gnome.mutter.wayland xwayland-allow-grabs false
+gsettings set org.gnome.mutter.wayland xwayland-grab-access-rules @as []
+gsettings set org.cinnamon.desktop.input-sources show-all-sources false
+gsettings set org.cinnamon.desktop.input-sources current uint32 0
+gsettings set org.cinnamon.desktop.input-sources sources @a[ss] []
+gsettings set org.cinnamon.desktop.input-sources xkb-options @as []
+gsettings set org.gnome.desktop.peripherals.trackball accel-profile 'default'
+gsettings set org.gnome.desktop.peripherals.trackball middle-click-emulation false
+gsettings set org.gnome.desktop.peripherals.trackball scroll-wheel-emulation-button 0
+gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode 'FIXED'
+gsettings set org.gnome.shell.extensions.dash-to-dock shortcut-text '<Super>q'
+gsettings set org.gnome.shell.extensions.dash-to-dock apply-custom-theme true
+gsettings set org.gnome.shell.extensions.dash-to-dock apply-glossy-effect true
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'previews'
+gsettings set org.gnome.shell.extensions.dash-to-dock app-hotkey-9 ['<Super>9']
+gsettings set org.gnome.shell.extensions.dash-to-dock custom-background-color false
+gsettings set org.gnome.shell.extensions.dash-to-dock app-shift-hotkey-1 ['<Shift><Super>1']
+gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
+gsettings set org.gnome.shell.extensions.dash-to-dock height-fraction 0.90000000000000002
+gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-1 ['<Ctrl><Super>1']
+gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces true
+gsettings set org.gnome.shell.extensions.dash-to-dock shift-click-action 'launch'
+gsettings set org.gnome.shell.extensions.dash-to-dock shortcut-timeout 2.0
+gsettings set org.gnome.shell.extensions.dash-to-dock show-delay 0.25
+gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-shrink true
+gsettings set org.gnome.shell.extensions.dash-to-dock app-shift-hotkey-2 ['<Shift><Super>2']
+gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview true
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash true
+gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-2 ['<Ctrl><Super>2']
+gsettings set org.gnome.shell.extensions.dash-to-dock autohide-in-fullscreen false
+gsettings set org.gnome.shell.extensions.dash-to-dock icon-size-fixed true
+gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
+gsettings set org.gnome.shell.extensions.dash-to-dock shift-middle-click-action 'minimize'
+gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-border-color '#e95420'
+gsettings set org.gnome.shell.extensions.dash-to-dock app-shift-hotkey-3 ['<Shift><Super>3']
+gsettings set org.gnome.shell.extensions.dash-to-dock pressure-threshold 100.0
+gsettings set org.gnome.shell.extensions.dash-to-dock hide-delay 0.20000000000000001
+gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top false
+gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-3 ['<Ctrl><Super>3']
+gsettings set org.gnome.shell.extensions.dash-to-dock show-favorites true
+gsettings set org.gnome.shell.extensions.dash-to-dock app-shift-hotkey-4 ['<Shift><Super>4']
+gsettings set org.gnome.shell.extensions.dash-to-dock show-running true
+gsettings set org.gnome.shell.extensions.dash-to-dock force-straight-corner false
+gsettings set org.gnome.shell.extensions.dash-to-dock app-hotkey-1 ['<Super>1']
+gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-4 ['<Ctrl><Super>4']
+gsettings set org.gnome.shell.extensions.dash-to-dock running-indicator-style 'DOTS'
+gsettings set org.gnome.shell.extensions.dash-to-dock hotkeys-overlay true
+gsettings set org.gnome.shell.extensions.dash-to-dock app-shift-hotkey-5 ['<Shift><Super>5']
+gsettings set org.gnome.shell.extensions.dash-to-dock animation-time 0.20000000000000001
+gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-color '#e95420'
+gsettings set org.gnome.shell.extensions.dash-to-dock running-indicator-dominant-color true
+gsettings set org.gnome.shell.extensions.dash-to-dock hotkeys-show-dock true
+gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-5 ['<Ctrl><Super>5']
+gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
+gsettings set org.gnome.shell.extensions.dash-to-dock animate-show-apps true
+gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items true
+gsettings set org.gnome.shell.extensions.dash-to-dock app-hotkey-2 ['<Super>2']
+gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-border-width 0
+gsettings set org.gnome.shell.extensions.dash-to-dock app-shift-hotkey-6 ['<Shift><Super>6']
+gsettings set org.gnome.shell.extensions.dash-to-dock shortcut ['<Super>q']
+gsettings set org.gnome.shell.extensions.dash-to-dock customize-alphas false
+gsettings set org.gnome.shell.extensions.dash-to-dock app-hotkey-3 ['<Super>3']
+gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-6 ['<Ctrl><Super>6']
+gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
+gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts true
+gsettings set org.gnome.shell.extensions.dash-to-dock minimize-shift true
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
+gsettings set org.gnome.shell.extensions.dash-to-dock app-shift-hotkey-7 ['<Shift><Super>7']
+gsettings set org.gnome.shell.extensions.dash-to-dock app-hotkey-10 ['<Super>0']
+gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-customize-running-dots true
+gsettings set org.gnome.shell.extensions.dash-to-dock app-hotkey-4 ['<Super>4']
+gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-7 ['<Ctrl><Super>7']
+gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.69999999999999996
+gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'launch'
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
+gsettings set org.gnome.shell.extensions.dash-to-dock app-shift-hotkey-8 ['<Shift><Super>8']
+gsettings set org.gnome.shell.extensions.dash-to-dock max-alpha 0.80000000000000004
+gsettings set org.gnome.shell.extensions.dash-to-dock app-hotkey-5 ['<Super>5']
+gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-8 ['<Ctrl><Super>8']
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 24
+gsettings set org.gnome.shell.extensions.dash-to-dock app-shift-hotkey-9 ['<Shift><Super>9']
+gsettings set org.gnome.shell.extensions.dash-to-dock intellihide true
+gsettings set org.gnome.shell.extensions.dash-to-dock require-pressure-to-show true
+gsettings set org.gnome.shell.extensions.dash-to-dock app-hotkey-6 ['<Super>6']
+gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-9 ['<Ctrl><Super>9']
+gsettings set org.gnome.shell.extensions.dash-to-dock bolt-support true
+gsettings set org.gnome.shell.extensions.dash-to-dock scroll-switch-workspace true
+gsettings set org.gnome.shell.extensions.dash-to-dock preferred-monitor 0
+gsettings set org.gnome.shell.extensions.dash-to-dock min-alpha 0.20000000000000001
+gsettings set org.gnome.shell.extensions.dash-to-dock app-hotkey-7 ['<Super>7']
+gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-10 ['<Ctrl><Super>0']
+gsettings set org.gnome.shell.extensions.dash-to-dock activate-single-window true
+gsettings set org.gnome.shell.extensions.dash-to-dock intellihide-mode 'ALL_WINDOWS'
+gsettings set org.gnome.shell.extensions.dash-to-dock isolate-monitors true
+gsettings set org.gnome.shell.extensions.dash-to-dock background-color '#02000e'
+gsettings set org.gnome.shell.extensions.dash-to-dock app-hotkey-8 ['<Super>8']
+gsettings set org.gnome.shell.extensions.dash-to-dock app-shift-hotkey-10 ['<Shift><Super>0']
+gsettings set org.gnome.shell.extensions.dash-to-dock hot-keys true
+gsettings set org.gnome.desktop.a11y.magnifier scroll-at-edges false
+gsettings set org.gnome.desktop.a11y.magnifier contrast-red 0.0
+gsettings set org.gnome.desktop.a11y.magnifier cross-hairs-color '#ff0000'
+gsettings set org.gnome.desktop.a11y.magnifier mouse-tracking 'proportional'
+gsettings set org.gnome.desktop.a11y.magnifier cross-hairs-clip false
+gsettings set org.gnome.desktop.a11y.magnifier contrast-blue 0.0
+gsettings set org.gnome.desktop.a11y.magnifier lens-mode false
+gsettings set org.gnome.desktop.a11y.magnifier contrast-green 0.0
+gsettings set org.gnome.desktop.a11y.magnifier show-cross-hairs false
+gsettings set org.gnome.desktop.a11y.magnifier brightness-green 0.0
+gsettings set org.gnome.desktop.a11y.magnifier cross-hairs-opacity 0.66000000000000003
+gsettings set org.gnome.desktop.a11y.magnifier invert-lightness false
+gsettings set org.gnome.desktop.a11y.magnifier mag-factor 4.0
+gsettings set org.gnome.desktop.a11y.magnifier brightness-red 0.0
+gsettings set org.gnome.desktop.a11y.magnifier color-saturation 1.0
+gsettings set org.gnome.desktop.a11y.magnifier brightness-blue 0.0
+gsettings set org.gnome.desktop.a11y.magnifier cross-hairs-length 4096
+gsettings set org.gnome.desktop.a11y.magnifier focus-tracking 'proportional'
+gsettings set org.gnome.desktop.a11y.magnifier caret-tracking 'centered'
+gsettings set org.gnome.desktop.a11y.magnifier cross-hairs-thickness 8
+gsettings set org.gnome.desktop.a11y.magnifier screen-position 'full-screen'
+gsettings set org.gnome.shell.extensions.auto-move-windows application-list @as []
+gsettings set org.gnome.desktop.lockdown mount-removable-storage-devices-as-read-only false
+gsettings set org.gnome.desktop.lockdown disable-command-line false
+gsettings set org.gnome.desktop.lockdown disable-log-out false
+gsettings set org.gnome.desktop.lockdown disable-printing false
+gsettings set org.gnome.desktop.lockdown disable-lock-screen false
+gsettings set org.gnome.desktop.lockdown disable-print-setup false
+gsettings set org.gnome.desktop.lockdown disable-user-switching false
+gsettings set org.gnome.desktop.lockdown disable-application-handlers false
+gsettings set org.gnome.desktop.lockdown disable-save-to-disk false
+gsettings set org.gnome.desktop.lockdown user-administration-disabled false
+gsettings set com.canonical.unity.settings-daemon.peripherals.keyboard bell-pitch 400
+gsettings set com.canonical.unity.settings-daemon.peripherals.keyboard bell-custom-file ''
+gsettings set com.canonical.unity.settings-daemon.peripherals.keyboard bell-mode 'on'
+gsettings set com.canonical.unity.settings-daemon.peripherals.keyboard click-volume 0
+gsettings set com.canonical.unity.settings-daemon.peripherals.keyboard bell-duration 100
+gsettings set com.canonical.unity.settings-daemon.peripherals.keyboard click true
+gsettings set com.canonical.unity.settings-daemon.peripherals.keyboard remember-numlock-state true
+gsettings set com.canonical.unity.settings-daemon.peripherals.keyboard numlock-state 'off'
+gsettings set org.cinnamon.desktop.a11y.magnifier scroll-at-edges false
+gsettings set org.cinnamon.desktop.a11y.magnifier contrast-red 0.0
+gsettings set org.cinnamon.desktop.a11y.magnifier contrast-green 0.0
+gsettings set org.cinnamon.desktop.a11y.magnifier cross-hairs-color '#ff0000'
+gsettings set org.cinnamon.desktop.a11y.magnifier contrast-blue 0.0
+gsettings set org.cinnamon.desktop.a11y.magnifier cross-hairs-clip false
+gsettings set org.cinnamon.desktop.a11y.magnifier lens-mode false
+gsettings set org.cinnamon.desktop.a11y.magnifier cross-hairs-opacity 0.66000000000000003
+gsettings set org.cinnamon.desktop.a11y.magnifier mouse-tracking 'proportional'
+gsettings set org.cinnamon.desktop.a11y.magnifier show-cross-hairs false
+gsettings set org.cinnamon.desktop.a11y.magnifier brightness-green 0.0
+gsettings set org.cinnamon.desktop.a11y.magnifier invert-lightness false
+gsettings set org.cinnamon.desktop.a11y.magnifier mag-factor 1.0
+gsettings set org.cinnamon.desktop.a11y.magnifier brightness-red 0.0
+gsettings set org.cinnamon.desktop.a11y.magnifier color-saturation 1.0
+gsettings set org.cinnamon.desktop.a11y.magnifier brightness-blue 0.0
+gsettings set org.cinnamon.desktop.a11y.magnifier cross-hairs-length 4096
+gsettings set org.cinnamon.desktop.a11y.magnifier screen-position 'full-screen'
+gsettings set org.cinnamon.desktop.a11y.magnifier cross-hairs-thickness 8
+gsettings set org.cinnamon.desktop.a11y.magnifier lens-shape 'square'
+gsettings set com.canonical.notify-osd gravity 1
+gsettings set com.canonical.notify-osd multihead-mode 'focus-follow'
+gsettings set org.gnome.gthumb.importer destination ''
+gsettings set org.gnome.gthumb.importer subfolder-custom-format ''
+gsettings set org.gnome.gthumb.importer subfolder-single false
+gsettings set org.gnome.gthumb.importer subfolder-type 'none'
+gsettings set org.gnome.gthumb.importer subfolder-format 'yyyymmdd'
+gsettings set org.gnome.gthumb.importer warn-delete-unsupported true
+gsettings set org.gnome.Mahjongg window-height 600
+gsettings set org.gnome.Mahjongg tileset 'postmodern.svg'
+gsettings set org.gnome.Mahjongg window-width 900
+gsettings set org.gnome.Mahjongg window-is-maximized false
+gsettings set org.gnome.Mahjongg bgcolour '#34385b'
+gsettings set org.gnome.Mahjongg mapset 'Easy'
+gsettings set org.gnome.Mahjongg show-toolbar true
+gsettings set org.gnome.mutter workspaces-only-on-primary true
+gsettings set org.gnome.mutter overlay-key 'Super_L'
+gsettings set org.gnome.mutter focus-change-on-pointer-rest true
+gsettings set org.gnome.mutter draggable-border-width 10
+gsettings set org.gnome.mutter experimental-features ['x11-randr-fractional-scaling', 'scale-monitor-framebuffer']
+gsettings set org.gnome.mutter dynamic-workspaces true
+gsettings set org.gnome.mutter center-new-windows false
+gsettings set org.gnome.mutter auto-maximize true
+gsettings set org.gnome.mutter attach-modal-dialogs true
+gsettings set org.gnome.mutter edge-tiling true
+gsettings set org.gnome.mutter locate-pointer-key 'Control_L'
+gsettings set org.gnome.mutter check-alive-timeout uint32 5000
+gsettings set org.gnome.mutter no-tab-popup false
+gsettings set com.canonical.unity.settings-daemon.peripherals.touchscreen orientation-lock false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor threshold3 -12.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor attack2 150.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor release3 300.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor freq0 120.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor knee1 9.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor ratio2 2.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor bypass2 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor detection2 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor threshold0 -12.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor makeup0 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor attack3 150.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor freq1 1000.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor knee2 9.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor ratio3 2.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor bypass3 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor mode 'LR8'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor detection3 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor solo0 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor makeup1 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor threshold1 -12.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor freq2 6000.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor knee3 9.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor release0 300.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor solo1 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor makeup2 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor threshold2 -12.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor attack0 150.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor installed true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor release1 300.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor ratio0 2.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor makeup3 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor bypass0 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor state false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor detection0 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor solo2 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor attack1 150.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor release2 300.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor solo3 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor ratio1 2.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor knee0 9.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor bypass1 false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor post-messages false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.multibandcompressor detection1 'RMS'
+gsettings set org.gnome.gthumb.convert-format mime-type 'image/jpeg'
+gsettings set org.gnome.gthumb.webalbums resize-images false
+gsettings set org.gnome.gthumb.webalbums sort-type 'file::mtime'
+gsettings set org.gnome.gthumb.webalbums enable-image-attributes true
+gsettings set org.gnome.gthumb.webalbums footer ''
+gsettings set org.gnome.gthumb.webalbums enable-thumbnail-caption true
+gsettings set org.gnome.gthumb.webalbums images-per-index 12
+gsettings set org.gnome.gthumb.webalbums theme 'Wiki'
+gsettings set org.gnome.gthumb.webalbums image-attributes 'gth::file::display-size,standard::fast-content-type,general::dimensions,general::format,general::location,general::datetime,general::rating,Exif::Image::Make,Exif::Image::Model,Exif::Image::Software,Exif::Image::Artist,Exif::Image::Copyright,Exif::Photo::ISOSpeedRatings,Exif::Photo::BrightnessValue,Exif::Photo::FNumber,Exif::Photo::ApertureValue,Exif::Photo::MaxApertureValue,Exif::Photo::ExposureTime,Exif::Photo::ExposureProgram,Exif::Photo::ExposureIndex,Exif::Photo::ExposureBiasValue,Exif::Photo::ExposureMode,Exif::Photo::ShutterSpeedValue,Exif::Photo::MeteringMode,Exif::Photo::LightSource,Exif::Photo::WhiteBalance,Exif::Photo::Flash,Exif::Photo::FocalLength,Exif::Photo::SubjectArea,Exif::Photo::Contrast,Exif::Photo::Saturation,Exif::Photo::Sharpness'
+gsettings set org.gnome.gthumb.webalbums sort-inverse false
+gsettings set org.gnome.gthumb.webalbums image-page-footer ''
+gsettings set org.gnome.gthumb.webalbums resize-height 480
+gsettings set org.gnome.gthumb.webalbums header ''
+gsettings set org.gnome.gthumb.webalbums destination ''
+gsettings set org.gnome.gthumb.webalbums enable-image-description true
+gsettings set org.gnome.gthumb.webalbums single-index false
+gsettings set org.gnome.gthumb.webalbums adapt-to-width true
+gsettings set org.gnome.gthumb.webalbums index-file 'index.html'
+gsettings set org.gnome.gthumb.webalbums columns 4
+gsettings set org.gnome.gthumb.webalbums resize-width 640
+gsettings set org.gnome.gthumb.webalbums thumbnail-caption 'general::datetime,general::dimensions,gth::file::display-size'
+gsettings set org.gnome.gthumb.webalbums image-page-header ''
+gsettings set org.gnome.gthumb.webalbums copy-images false
+gsettings set org.gnome.settings-daemon.plugins.sharing priority 0
+gsettings set org.gnome.settings-daemon.plugins.sharing active true
+gsettings set org.gnome.shell.overrides focus-change-on-pointer-rest true
+gsettings set org.gnome.shell.overrides attach-modal-dialogs true
+gsettings set org.gnome.shell.overrides workspaces-only-on-primary true
+gsettings set org.gnome.shell.overrides dynamic-workspaces true
+gsettings set org.gnome.shell.overrides edge-tiling true
+gsettings set org.gnome.TwentyFortyEight rows 4
+gsettings set org.gnome.TwentyFortyEight allow-undo false
+gsettings set org.gnome.TwentyFortyEight window-width 600
+gsettings set org.gnome.TwentyFortyEight allow-undo-max uint32 10
+gsettings set org.gnome.TwentyFortyEight animations-speed 130.0
+gsettings set org.gnome.TwentyFortyEight cols 4
+gsettings set org.gnome.TwentyFortyEight do-congrat true
+gsettings set org.gnome.TwentyFortyEight window-maximized false
+gsettings set org.gnome.TwentyFortyEight window-height 600
+gsettings set org.gnome.TwentyFortyEight target-value 2048
+gsettings set org.gnome.shell.app-switcher current-workspace-only false
+gsettings set org.yorba.shotwell.printing match-aspect-ratio true
+gsettings set org.yorba.shotwell.printing content-units 1
+gsettings set org.yorba.shotwell.printing images-per-page 1
+gsettings set org.yorba.shotwell.printing print-titles false
+gsettings set org.yorba.shotwell.printing content-height 5.0
+gsettings set org.yorba.shotwell.printing content-width 7.0
+gsettings set org.yorba.shotwell.printing content-layout 3
+gsettings set org.yorba.shotwell.printing content-ppi 600
+gsettings set org.yorba.shotwell.printing titles-font 'Sans Bold 12'
+gsettings set org.yorba.shotwell.printing size-selection -1
+gsettings set com.canonical.unity.settings-daemon.plugins.gsdwacom priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.gsdwacom active true
+gsettings set org.gnome.ControlCenter last-panel 'info-overview'
+gsettings set org.gnome.ControlCenter show-development-warning true
+gsettings set org.gnome.Vino prompt-enabled true
+gsettings set org.gnome.Vino require-encryption true
+gsettings set org.gnome.Vino use-alternative-port false
+gsettings set org.gnome.Vino disable-background false
+gsettings set org.gnome.Vino disable-xdamage false
+gsettings set org.gnome.Vino alternative-port uint16 5900
+gsettings set org.gnome.Vino icon-visibility 'client'
+gsettings set org.gnome.Vino authentication-methods ['none']
+gsettings set org.gnome.Vino network-interface ''
+gsettings set org.gnome.Vino notify-on-connect true
+gsettings set org.gnome.Vino mailto ''
+gsettings set org.gnome.Vino lock-screen-on-disconnect false
+gsettings set org.gnome.Vino use-upnp false
+gsettings set org.gnome.Vino vnc-password 'keyring'
+gsettings set org.gnome.Vino view-only false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.pitch faster false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.pitch crispness 3
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.pitch semitones 0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.pitch state false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.pitch installed true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.pitch input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.pitch formant-preserving false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.pitch octaves 0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.pitch output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.pitch cents 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.pitch post-messages false
+gsettings set com.canonical.indicator.power icon-policy 'charge'
+gsettings set com.canonical.indicator.power show-time true
+gsettings set com.canonical.indicator.power show-percentage true
+gsettings set org.gnome.rhythmbox.encoding-settings transcode-lossless false
+gsettings set org.gnome.rhythmbox.encoding-settings media-type-presets {'audio/x-vorbis': 'Ubuntu', 'audio/mpeg': 'Ubuntu'}
+gsettings set org.gnome.rhythmbox.encoding-settings media-type 'audio/x-vorbis'
+gsettings set org.gnome.rhythmbox.source search-type 'search-match'
+gsettings set org.gnome.rhythmbox.source show-browser true
+gsettings set org.gnome.rhythmbox.source paned-position 180
+gsettings set org.gnome.rhythmbox.source sorting ['Artist', true]
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band9-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band4-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band20-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band24-frequency 5674.1599999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band13-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band21-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band12-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band11-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band26-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band24-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band25-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band22-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band17-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band26-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band15-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band0-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band2-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band16-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band6-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band16-frequency 899.28999999999996
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band26-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band6-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band3-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band4-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band5-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band20-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band11-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band26-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band10-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band8-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band15-frequency 714.34000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band24-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band25-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band2-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band29-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band15-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band14-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band16-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band21-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band7-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band8-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band14-frequency 567.41999999999996
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band5-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band19-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band16-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band2-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band3-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band4-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band5-frequency 71.430000000000007
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band10-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band23-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band22-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band15-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band13-frequency 450.72000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band19-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band29-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band24-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band28-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band9-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band13-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band14-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band15-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band29-frequency 17943.279999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band6-frequency 89.930000000000007
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band7-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band4-frequency 56.740000000000002
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band19-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band18-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band1-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band2-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band23-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band12-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band22-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band28-frequency 14252.860000000001
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band28-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band29-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band3-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band4-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band10-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band28-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band14-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band27-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band18-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band12-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band14-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band13-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band27-frequency 11321.450000000001
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band19-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band7-frequency 113.20999999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band17-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band18-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band0-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band1-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band2-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band19-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band21-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band22-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band6-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band7-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band25-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band1-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band23-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band19-frequency 1794.3299999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band26-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band27-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band11-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band12-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band13-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band27-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band0-frequency 22.59
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band15-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band17-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band18-frequency 1425.29
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band18-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band0-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band1-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band21-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band20-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band21-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band5-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band6-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band9-frequency 179.43000000000001
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band26-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band17-frequency 1132.1500000000001
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band25-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band7-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band11-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band10-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band12-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band16-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band8-frequency 142.53
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band8-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band29-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band11-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band23-frequency 4507.1499999999996
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band28-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band17-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band3-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band20-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band12-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band4-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band0-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band16-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band5-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band4-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band9-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band22-frequency 3580.1599999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band25-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band23-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band24-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band10-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band16-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band11-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band15-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band18-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band28-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band29-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band21-frequency 2843.8200000000002
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band24-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band8-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band4-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band25-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band3-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band1-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band29-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band0-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band5-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band11-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band9-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band20-frequency 2258.9299999999998
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band24-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band22-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band23-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band6-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band15-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band10-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band14-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band14-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band8-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band27-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band28-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band29-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band9-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band20-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band19-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band3-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band2-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band12-frequency 358.01999999999998
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band20-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band9-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band24-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band5-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band0-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band3-frequency 45.07
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band6-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band21-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band22-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band23-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band14-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band11-frequency 284.38
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band13-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band10-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band27-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band26-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band27-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band2-frequency 35.799999999999997
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band19-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band8-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band2-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band18-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band1-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band10-frequency 225.88999999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band3-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band9-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band28-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band1-frequency 28.440000000000001
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band5-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band20-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band17-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band22-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band13-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band26-frequency 8992.9400000000005
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band12-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band21-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band7-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band23-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band25-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band27-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band18-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band7-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band13-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band16-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band0-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band1-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band7-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band17-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band17-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band6-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band25-frequency 7143.3500000000004
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.rightchannel band8-type 'Bell'
+gsettings set org.mate.background picture-options 'zoom'
+gsettings set org.mate.background primary-color '#5891BC'
+gsettings set org.mate.background show-desktop-icons true
+gsettings set org.mate.background color-shading-type 'vertical-gradient'
+gsettings set org.mate.background background-fade true
+gsettings set org.mate.background draw-background true
+gsettings set org.mate.background picture-opacity 100
+gsettings set org.mate.background picture-filename '${prefix}/share/backgrounds/mate/desktop/Stripes.png'
+gsettings set org.mate.background secondary-color '#3C8F25'
+gsettings set org.xfce.mousepad.state.search match-whole-word false
+gsettings set org.xfce.mousepad.state.search replace-all true
+gsettings set org.xfce.mousepad.state.search direction 2
+gsettings set org.xfce.mousepad.state.search match-case false
+gsettings set org.xfce.mousepad.state.search replace-all-location 1
+gsettings set org.mate.file-views icon-theme 'crux_teal'
+gsettings set com.ubuntu.update-notifier regular-auto-launch-interval 7
+gsettings set com.ubuntu.update-notifier end-system-uids 500
+gsettings set com.ubuntu.update-notifier no-show-notifications false
+gsettings set com.ubuntu.update-notifier release-check-time uint32 1628670653
+gsettings set com.ubuntu.update-notifier show-livepatch-status-icon true
+gsettings set com.ubuntu.update-notifier show-apport-crashes false
+gsettings set org.mate.thumbnail-cache maximum-age 180
+gsettings set org.mate.thumbnail-cache maximum-size 512
+gsettings set org.gnome.desktop.thumbnailers disable @as []
+gsettings set org.gnome.desktop.thumbnailers disable-all false
+gsettings set com.canonical.indicator.keyboard visible true
+gsettings set com.canonical.indicator.keyboard migrated true
+gsettings set com.canonical.indicator.sound normal-volume-decibels 0.0
+gsettings set com.canonical.indicator.sound warning-volume-confirmation-ttl 72000
+gsettings set com.canonical.indicator.sound warning-volume-decibels -8.0
+gsettings set com.canonical.indicator.sound preferred-media-players ['gsettings set io.github.GnomeMpv.desktop']
+gsettings set com.canonical.indicator.sound amplified-volume-decibels 11.0
+gsettings set com.canonical.indicator.sound visible true
+gsettings set com.canonical.indicator.sound global-mute false
+gsettings set com.canonical.indicator.sound blacklisted-media-players @as []
+gsettings set com.canonical.indicator.sound interested-media-players ['gsettings set org.gnome.Totem.desktop', 'vlc.desktop', 'rhythmbox.desktop', 'gsettings set io.github.GnomeMpv.desktop']
+gsettings set com.canonical.indicator.sound warning-volume-enabled true
+gsettings set org.gnome.eog.plugins active-plugins ['fullscreen']
+gsettings set org.gnome.desktop.default-applications.office.tasks exec 'evolution -c tasks'
+gsettings set org.gnome.desktop.default-applications.office.tasks needs-term false
+gsettings set org.gnome.rhythmbox.plugins.replaygain preamp 0.0
+gsettings set org.gnome.rhythmbox.plugins.replaygain limiter true
+gsettings set org.gnome.rhythmbox.plugins.replaygain mode 'radio'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.pitch faster false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.pitch crispness 3
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.pitch semitones 0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.pitch state false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.pitch installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.pitch input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.pitch formant-preserving false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.pitch octaves 0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.pitch output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.pitch cents 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.pitch post-messages false
+gsettings set org.gnome.system.locale region 'ru_RU.UTF-8'
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-4-visible true
+gsettings set org.gnome.gnome-system-monitor.disktreenew columns-order [0, 1, 2, 3, 4, 5, 6]
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-2-width 94
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-5-visible true
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-6-visible true
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-6-width 0
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-3-width 80
+gsettings set org.gnome.gnome-system-monitor.disktreenew sort-col 3
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-0-width 127
+gsettings set org.gnome.gnome-system-monitor.disktreenew sort-order 1
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-4-width 0
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-0-visible true
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-1-width 244
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-1-visible true
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-2-visible true
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-5-width 80
+gsettings set org.gnome.gnome-system-monitor.disktreenew col-3-visible true
+gsettings set org.yorba.shotwell.preferences.slideshow transition-effect-id ''
+gsettings set org.yorba.shotwell.preferences.slideshow delay 3.0
+gsettings set org.yorba.shotwell.preferences.slideshow show-title false
+gsettings set org.yorba.shotwell.preferences.slideshow transition-delay 0.29999999999999999
+gsettings set org.yorba.shotwell.video interpreter-state-cookie -1
+gsettings set org.gnome.settings-daemon.plugins.gsdwacom priority 0
+gsettings set org.gnome.settings-daemon.plugins.gsdwacom active true
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings ['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/budgie-show-desktop/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/budgie-show-files-test/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+gsettings set org.gnome.settings-daemon.plugins.media-keys media ['KP_Insert']
+gsettings set org.gnome.settings-daemon.plugins.media-keys stop-static ['XF86AudioStop']
+gsettings set org.gnome.settings-daemon.plugins.media-keys eject-static ['XF86Eject']
+gsettings set org.gnome.settings-daemon.plugins.media-keys rotate-video-lock ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-cycle ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys toggle-contrast ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys rotate-video-lock-static ['<Super>o']
+gsettings set org.gnome.settings-daemon.plugins.media-keys www ['<Shift>F2']
+gsettings set org.gnome.settings-daemon.plugins.media-keys window-screenshot-clip ['<Shift>F9']
+gsettings set org.gnome.settings-daemon.plugins.media-keys battery-status-static ['XF86Battery']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down ['<Primary>KP_Subtract']
+gsettings set org.gnome.settings-daemon.plugins.media-keys playback-repeat ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys hibernate ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down-precise ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys next ['<Shift>KP_6']
+gsettings set org.gnome.settings-daemon.plugins.media-keys suspend ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys touchpad-toggle-static ['XF86TouchpadToggle', '<Ctrl><Super>XF86TouchpadToggle']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up-quiet ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys active true
+gsettings set org.gnome.settings-daemon.plugins.media-keys play-static ['XF86AudioPlay', '<Ctrl>XF86AudioPlay']
+gsettings set org.gnome.settings-daemon.plugins.media-keys search-static ['XF86Search']
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-in ['<Alt><Super>equal']
+gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot-clip ['<Shift>F8']
+gsettings set org.gnome.settings-daemon.plugins.media-keys mic-mute ['<Alt>m']
+gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up-static ['XF86MonBrightnessUp']
+gsettings set org.gnome.settings-daemon.plugins.media-keys previous ['<Shift>KP_4']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up ['<Primary>KP_Add']
+gsettings set org.gnome.settings-daemon.plugins.media-keys control-center ['<Shift>F6']
+gsettings set org.gnome.settings-daemon.plugins.media-keys search ['<Shift>F5']
+gsettings set org.gnome.settings-daemon.plugins.media-keys calculator ['<Shift>F3']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-step 6
+gsettings set org.gnome.settings-daemon.plugins.media-keys pause-static ['XF86AudioPause']
+gsettings set org.gnome.settings-daemon.plugins.media-keys rfkill-static ['XF86WLAN', 'XF86UWB', 'XF86RFKill']
+gsettings set org.gnome.settings-daemon.plugins.media-keys stop ['<Shift>KP_2']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up-static ['XF86AudioRaiseVolume', '<Ctrl>XF86AudioRaiseVolume']
+gsettings set org.gnome.settings-daemon.plugins.media-keys calculator-static ['XF86Calculator']
+gsettings set org.gnome.settings-daemon.plugins.media-keys home-static ['XF86Explorer']
+gsettings set org.gnome.settings-daemon.plugins.media-keys touchpad-on ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-mute-static ['XF86AudioMute']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-mute-quiet-static ['<Alt>XF86AudioMute']
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-out ['<Alt><Super>minus']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down-quiet-static ['<Alt>XF86AudioLowerVolume', '<Alt><Ctrl>XF86AudioLowerVolume']
+gsettings set org.gnome.settings-daemon.plugins.media-keys window-screenshot ['<Shift>F12']
+gsettings set org.gnome.settings-daemon.plugins.media-keys power ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys play ['<Primary>p']
+gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length uint32 1000100010
+gsettings set org.gnome.settings-daemon.plugins.media-keys power-static ['XF86PowerOff']
+gsettings set org.gnome.settings-daemon.plugins.media-keys terminal ['<Control><Alt>t']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down-static ['XF86AudioLowerVolume', '<Ctrl>XF86AudioLowerVolume']
+gsettings set org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-up ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys playback-forward ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys www-static ['XF86WWW']
+gsettings set org.gnome.settings-daemon.plugins.media-keys playback-random-static ['XF86AudioRandomPlay']
+gsettings set org.gnome.settings-daemon.plugins.media-keys pause ['<Shift>KP_8']
+gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-cycle-static ['XF86MonBrightnessCycle']
+gsettings set org.gnome.settings-daemon.plugins.media-keys media-static ['XF86AudioMedia']
+gsettings set org.gnome.settings-daemon.plugins.media-keys hibernate-static ['XF86Suspend', 'XF86Hibernate']
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot-clip ['<Shift>F10']
+gsettings set org.gnome.settings-daemon.plugins.media-keys eject ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys email-static ['XF86Mail']
+gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys rfkill-bluetooth ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys touchpad-toggle ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-toggle ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys priority 0
+gsettings set org.gnome.settings-daemon.plugins.media-keys help ['F1']
+gsettings set org.gnome.settings-daemon.plugins.media-keys playback-random ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys logout ['<Control><Alt>Delete']
+gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot ['<Shift>F11']
+gsettings set org.gnome.settings-daemon.plugins.media-keys decrease-text-size ['<Shift>KP_Subtract']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up-quiet-static ['<Alt>XF86AudioRaiseVolume', '<Alt><Ctrl>XF86AudioRaiseVolume']
+gsettings set org.gnome.settings-daemon.plugins.media-keys screencast ['<Primary>Print']
+gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver-static ['XF86ScreenSaver']
+gsettings set org.gnome.settings-daemon.plugins.media-keys email ['<Shift>F4']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down-quiet ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down-static ['XF86MonBrightnessDown']
+gsettings set org.gnome.settings-daemon.plugins.media-keys increase-text-size ['<Shift>KP_Add']
+gsettings set org.gnome.settings-daemon.plugins.media-keys touchpad-off-static ['XF86TouchpadOff']
+gsettings set org.gnome.settings-daemon.plugins.media-keys home ['<Primary><Alt>Home']
+gsettings set org.gnome.settings-daemon.plugins.media-keys playback-rewind-static ['XF86AudioRewind']
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenreader ['<Alt><Super>s']
+gsettings set org.gnome.settings-daemon.plugins.media-keys playback-repeat-static ['XF86AudioRepeat']
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier ['<Alt><Super>8']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up-precise ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys playback-rewind ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys suspend-static ['XF86Sleep']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-mute ['<Primary>m']
+gsettings set org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-toggle-static ['XF86KbdLightOnOff']
+gsettings set org.gnome.settings-daemon.plugins.media-keys mic-mute-static ['XF86AudioMicMute']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up-precise-static ['<Shift>XF86AudioRaiseVolume', '<Ctrl><Shift>XF86AudioRaiseVolume']
+gsettings set org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-up-static ['XF86KbdBrightnessUp']
+gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys rfkill ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys playback-forward-static ['XF86AudioForward']
+gsettings set org.gnome.settings-daemon.plugins.media-keys rfkill-bluetooth-static ['XF86Bluetooth']
+gsettings set org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-down ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver ['<Super>l']
+gsettings set org.gnome.settings-daemon.plugins.media-keys on-screen-keyboard ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys control-center-static ['XF86Tools']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-mute-quiet ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys touchpad-off ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot ['<Shift>F7']
+gsettings set org.gnome.settings-daemon.plugins.media-keys battery-status ['']
+gsettings set org.gnome.settings-daemon.plugins.media-keys touchpad-on-static ['XF86TouchpadOn']
+gsettings set org.gnome.settings-daemon.plugins.media-keys next-static ['XF86AudioNext', '<Ctrl>XF86AudioNext']
+gsettings set org.gnome.settings-daemon.plugins.media-keys previous-static ['XF86AudioPrev', '<Ctrl>XF86AudioPrev']
+gsettings set org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-down-static ['XF86KbdBrightnessDown']
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down-precise-static ['<Shift>XF86AudioLowerVolume', '<Ctrl><Shift>XF86AudioLowerVolume']
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor threshold3 -12.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor attack2 150.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor release3 300.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor freq0 120.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor knee1 9.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor ratio2 2.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor bypass2 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor detection2 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor threshold0 -12.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor makeup0 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor attack3 150.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor freq1 1000.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor knee2 9.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor ratio3 2.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor bypass3 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor mode 'LR8'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor detection3 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor solo0 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor makeup1 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor threshold1 -12.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor freq2 6000.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor knee3 9.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor release0 300.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor solo1 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor makeup2 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor threshold2 -12.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor attack0 150.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor release1 300.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor ratio0 2.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor makeup3 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor bypass0 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor state false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor detection0 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor solo2 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor attack1 150.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor release2 300.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor solo3 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor ratio1 2.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor knee0 9.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor bypass1 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor post-messages false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandcompressor detection1 'RMS'
+gsettings set com.canonical.unity.settings-daemon.plugins.xrandr default-monitors-setup 'follow-lid'
+gsettings set com.canonical.unity.settings-daemon.plugins.xrandr priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.xrandr default-configuration-file '/etc/gnome-settings-daemon/xrandr/monitors.xml'
+gsettings set com.canonical.unity.settings-daemon.plugins.xrandr active true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band9-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band4-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band20-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band24-frequency 5674.1599999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band13-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band21-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band12-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band11-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band26-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band24-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band25-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band22-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band17-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band26-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band15-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band0-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band2-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band16-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band6-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band16-frequency 899.28999999999996
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band26-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band6-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band3-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band4-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band5-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band20-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band11-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band26-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band10-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band8-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band15-frequency 714.34000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band24-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band25-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band2-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band29-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band15-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band14-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band16-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band21-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band7-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band8-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band14-frequency 567.41999999999996
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band5-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band19-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band16-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band2-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band3-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band4-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band5-frequency 71.430000000000007
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band10-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band23-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band22-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band15-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band13-frequency 450.72000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band19-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band29-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band24-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band28-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band9-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band13-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band14-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band15-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band29-frequency 17943.279999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band6-frequency 89.930000000000007
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band7-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band4-frequency 56.740000000000002
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band19-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band18-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band1-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band2-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band23-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band12-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band22-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band28-frequency 14252.860000000001
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band28-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band29-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band3-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band4-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band10-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band28-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band14-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band27-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band18-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band12-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band14-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band13-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band27-frequency 11321.450000000001
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band19-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band7-frequency 113.20999999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band17-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band18-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band0-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band1-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band2-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band19-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band21-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band22-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band6-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band7-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band25-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band1-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band23-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band19-frequency 1794.3299999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band26-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band27-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band11-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band12-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band13-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band27-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band0-frequency 22.59
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band15-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band17-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band18-frequency 1425.29
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band18-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band0-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band1-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band21-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band20-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band21-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band5-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band6-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band9-frequency 179.43000000000001
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band26-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band17-frequency 1132.1500000000001
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band25-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band7-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band11-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band10-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band12-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band16-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band8-frequency 142.53
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band8-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band29-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band11-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band23-frequency 4507.1499999999996
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band28-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band17-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band3-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band20-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band12-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band4-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band0-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band16-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band5-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band4-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band9-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band22-frequency 3580.1599999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band25-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band23-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band24-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band10-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band16-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band11-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band15-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band18-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band28-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band29-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band21-frequency 2843.8200000000002
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band24-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band8-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band4-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band25-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band3-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band1-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band29-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band0-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band5-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band11-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band9-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band20-frequency 2258.9299999999998
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band24-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band22-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band23-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band6-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band15-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band10-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band14-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band14-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band8-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band27-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band28-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band29-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band9-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band20-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band19-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band3-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band2-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band12-frequency 358.01999999999998
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band20-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band9-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band24-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band5-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band0-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band3-frequency 45.07
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band6-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band21-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band22-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band23-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band14-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band11-frequency 284.38
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band13-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band10-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band27-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band26-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band27-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band2-frequency 35.799999999999997
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band19-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band8-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band2-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band18-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band1-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band10-frequency 225.88999999999999
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band3-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band9-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band28-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band1-frequency 28.440000000000001
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band5-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band20-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band17-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band22-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band13-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band26-frequency 8992.9400000000005
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band12-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band21-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band7-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band23-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band25-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band27-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band18-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band7-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band13-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band16-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band0-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band1-solo false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band7-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band17-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band17-mute false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band6-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band25-frequency 7143.3500000000004
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer.leftchannel band8-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band9-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band4-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band20-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band24-frequency 5674.1599999999999
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band13-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band21-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band12-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band11-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band26-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band24-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band25-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band22-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band17-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band26-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band15-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band0-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band2-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band16-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band6-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band16-frequency 899.28999999999996
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band26-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band6-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band3-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band4-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band5-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band20-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band11-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band26-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band10-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band8-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band15-frequency 714.34000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band24-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band25-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band2-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band29-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band15-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band14-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band16-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band21-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band7-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band8-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band14-frequency 567.41999999999996
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band5-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band19-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band16-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band2-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band3-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band4-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band5-frequency 71.430000000000007
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band10-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band23-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band22-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band15-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band13-frequency 450.72000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band19-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band29-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band24-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band28-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band9-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band13-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band14-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band15-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band29-frequency 17943.279999999999
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band6-frequency 89.930000000000007
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band7-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band4-frequency 56.740000000000002
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band19-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band18-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band1-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band2-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band23-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band12-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band22-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band28-frequency 14252.860000000001
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band28-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band29-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band3-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band4-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band10-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band28-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band14-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band27-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band18-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band12-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band14-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band13-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band27-frequency 11321.450000000001
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band19-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band7-frequency 113.20999999999999
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band17-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band18-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band0-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band1-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band2-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band19-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band21-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band22-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band6-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band7-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band25-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band1-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band23-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band19-frequency 1794.3299999999999
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band26-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band27-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band11-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band12-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band13-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band27-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band0-frequency 22.59
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band15-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band17-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band18-frequency 1425.29
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band18-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band0-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band1-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band21-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band20-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band21-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band5-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band6-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band9-frequency 179.43000000000001
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band26-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band17-frequency 1132.1500000000001
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band25-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band7-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band11-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band10-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band12-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band16-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band8-frequency 142.53
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band8-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band29-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band11-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band23-frequency 4507.1499999999996
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band28-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band17-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band3-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band20-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band12-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band4-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band0-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band16-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band5-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band4-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band9-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band22-frequency 3580.1599999999999
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band25-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band23-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band24-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band10-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band16-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band11-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band15-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band18-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band28-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band29-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band21-frequency 2843.8200000000002
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band24-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band8-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band4-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band25-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band3-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band1-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band29-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band0-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band5-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band11-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band9-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band20-frequency 2258.9299999999998
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band24-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band22-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band23-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band6-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band15-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band10-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band14-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band14-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band8-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band27-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band28-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band29-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band9-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band20-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band19-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band3-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band2-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band12-frequency 358.01999999999998
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band20-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band9-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band24-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band5-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band0-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band3-frequency 45.07
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band6-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band21-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band22-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band23-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band14-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band11-frequency 284.38
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band13-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band10-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band27-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band26-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band27-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band2-frequency 35.799999999999997
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band19-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band8-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band2-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band18-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band1-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band10-frequency 225.88999999999999
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band3-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band9-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band28-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band1-frequency 28.440000000000001
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band5-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band20-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band17-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band22-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band13-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band26-frequency 8992.9400000000005
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band12-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band21-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band7-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band23-q 4.3600000000000003
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band25-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band27-type 'Bell'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band18-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band7-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band13-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band16-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band0-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band1-solo false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band7-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band17-slope 'x1'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band17-mute false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band6-mode 'RLC [BT]'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band25-frequency 7143.3500000000004
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer.rightchannel band8-type 'Bell'
+gsettings set org.mate.caja.compact-view default-zoom-level 'standard'
+gsettings set org.mate.caja.compact-view all-columns-have-same-width true
+gsettings set org.gnome.gthumb.pixbuf-savers.png compression-level 6
+gsettings set org.gnome.libgnomekbd.preview width 1049
+gsettings set org.gnome.libgnomekbd.preview y 96
+gsettings set org.gnome.libgnomekbd.preview height 459
+gsettings set org.gnome.libgnomekbd.preview x 170
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc voice-detection-frame-size-ms 10
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc noise-suppression true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc noise-suppression-level 'moderate'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc limiter true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc target-level-dbfs 3
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc compression-gain-db 9
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc echo-suppression-level 'moderate'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc delay-agnostic false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc installed true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc echo-cancel true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc voice-detection false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc voice-detection-likelihood 'low'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc high-pass-filter true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc extended-filter true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc gain-control-mode 'adaptive-digital'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc state false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc post-messages false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.webrtc gain-control true
+gsettings set org.gnome.FileRoller.FileSelector sidebar-size 168
+gsettings set org.gnome.FileRoller.FileSelector window-size [840, 721]
+gsettings set org.gnome.FileRoller.FileSelector show-hidden false
+gsettings set org.gnome.gthumb.image-print header-font-name 'Sans Bold 12'
+gsettings set org.gnome.gthumb.image-print unit 'pixels'
+gsettings set org.gnome.gthumb.image-print font-name 'Sans 12'
+gsettings set org.gnome.gthumb.image-print n-columns 1
+gsettings set org.gnome.gthumb.image-print footer ''
+gsettings set org.gnome.gthumb.image-print footer-font-name 'Sans 8'
+gsettings set org.gnome.gthumb.image-print caption ''
+gsettings set org.gnome.gthumb.image-print n-rows 1
+gsettings set org.gnome.gthumb.image-print header ''
+gsettings set org.gnome.brasero.display iso-folder ''
+gsettings set org.gnome.brasero.display viewer true
+gsettings set org.gnome.gthumb.photo-importer delete-from-device false
+gsettings set org.gnome.gthumb.photo-importer adjust-orientation false
+gsettings set org.gnome.gthumb.photo-importer filter 'file::type::is_media'
+gsettings set org.gnome.gedit.plugins.translate service uint32 0
+gsettings set org.gnome.gedit.plugins.translate language-pair 'eng|spa'
+gsettings set org.gnome.gedit.plugins.translate output-to-document true
+gsettings set org.gnome.gedit.plugins.translate api-key ''
+gsettings set org.gnome.online-accounts whitelisted-providers ['all']
+gsettings set org.gnome.totem.plugins.opensubtitles language ''
+gsettings set com.ubuntu.touch.sound incoming-message-sound '/usr/share/sounds/ubuntu/notifications/Xylo.ogg'
+gsettings set com.ubuntu.touch.sound incoming-call-sound '/usr/share/sounds/ubuntu/ringtones/Ubuntu.ogg'
+gsettings set com.ubuntu.touch.sound silent-mode false
+gsettings set org.cinnamon.desktop.keybindings.media-keys battery ['XF86Battery']
+gsettings set org.cinnamon.desktop.keybindings.media-keys screensaver ['<Control><Alt>l', 'XF86ScreenSaver']
+gsettings set org.cinnamon.desktop.keybindings.media-keys video-outputs ['<Super>p', 'XF86Display']
+gsettings set org.cinnamon.desktop.keybindings.media-keys pause ['XF86AudioPause']
+gsettings set org.cinnamon.desktop.keybindings.media-keys screenshot-clip ['<Control>Print']
+gsettings set org.cinnamon.desktop.keybindings.media-keys window-screenshot ['<Alt>Print']
+gsettings set org.cinnamon.desktop.keybindings.media-keys volume-down ['XF86AudioLowerVolume']
+gsettings set org.cinnamon.desktop.keybindings.media-keys terminal ['<Primary><Alt>t']
+gsettings set org.cinnamon.desktop.keybindings.media-keys audio-random ['XF86AudioRandomPlay']
+gsettings set org.cinnamon.desktop.keybindings.media-keys mute-quiet ['XF86AudioMute']
+gsettings set org.cinnamon.desktop.keybindings.media-keys area-screenshot ['<Shift>Print']
+gsettings set org.cinnamon.desktop.keybindings.media-keys restart-cinnamon ['<Control><Alt>Escape']
+gsettings set org.cinnamon.desktop.keybindings.media-keys mic-mute ['XF86AudioMicMute']
+gsettings set org.cinnamon.desktop.keybindings.media-keys play ['XF86AudioPlay']
+gsettings set org.cinnamon.desktop.keybindings.media-keys shutdown ['<Control><Alt>End', 'XF86PowerOff']
+gsettings set org.cinnamon.desktop.keybindings.media-keys stop ['XF86AudioStop']
+gsettings set org.cinnamon.desktop.keybindings.media-keys window-screenshot-clip ['<Control><Alt>Print']
+gsettings set org.cinnamon.desktop.keybindings.media-keys video-rotation-lock ['<Super>o']
+gsettings set org.cinnamon.desktop.keybindings.media-keys kbd-brightness-down ['XF86KbdBrightnessDown']
+gsettings set org.cinnamon.desktop.keybindings.media-keys audio-forward ['XF86AudioForward']
+gsettings set org.cinnamon.desktop.keybindings.media-keys media ['XF86AudioMedia']
+gsettings set org.cinnamon.desktop.keybindings.media-keys suspend ['XF86Sleep']
+gsettings set org.cinnamon.desktop.keybindings.media-keys increase-text-size ['']
+gsettings set org.cinnamon.desktop.keybindings.media-keys screen-brightness-up ['XF86MonBrightnessUp']
+gsettings set org.cinnamon.desktop.keybindings.media-keys toggle-contrast ['']
+gsettings set org.cinnamon.desktop.keybindings.media-keys decrease-text-size ['']
+gsettings set org.cinnamon.desktop.keybindings.media-keys video-rotation ['XF86RotateWindows']
+gsettings set org.cinnamon.desktop.keybindings.media-keys logout ['<Control><Alt>Delete']
+gsettings set org.cinnamon.desktop.keybindings.media-keys area-screenshot-clip ['<Control><Shift>Print']
+gsettings set org.cinnamon.desktop.keybindings.media-keys www ['XF86WWW']
+gsettings set org.cinnamon.desktop.keybindings.media-keys screenreader ['']
+gsettings set org.cinnamon.desktop.keybindings.media-keys hibernate ['XF86Suspend', 'XF86Hibernate']
+gsettings set org.cinnamon.desktop.keybindings.media-keys touchpad-toggle ['XF86TouchpadToggle']
+gsettings set org.cinnamon.desktop.keybindings.media-keys volume-down-quiet ['<Alt>XF86AudioLowerVolume']
+gsettings set org.cinnamon.desktop.keybindings.media-keys kbd-brightness-toggle ['XF86KbdLightOnOff']
+gsettings set org.cinnamon.desktop.keybindings.media-keys home ['<Super>e', 'XF86Explorer']
+gsettings set org.cinnamon.desktop.keybindings.media-keys volume-up ['XF86AudioRaiseVolume']
+gsettings set org.cinnamon.desktop.keybindings.media-keys next ['XF86AudioNext']
+gsettings set org.cinnamon.desktop.keybindings.media-keys kbd-brightness-up ['XF86KbdBrightnessUp']
+gsettings set org.cinnamon.desktop.keybindings.media-keys volume-mute ['XF86AudioMute']
+gsettings set org.cinnamon.desktop.keybindings.media-keys calculator ['XF86Calculator']
+gsettings set org.cinnamon.desktop.keybindings.media-keys touchpad-on ['XF86TouchpadOn']
+gsettings set org.cinnamon.desktop.keybindings.media-keys on-screen-keyboard ['']
+gsettings set org.cinnamon.desktop.keybindings.media-keys previous ['XF86AudioPrev']
+gsettings set org.cinnamon.desktop.keybindings.media-keys audio-repeat ['XF86AudioRepeat']
+gsettings set org.cinnamon.desktop.keybindings.media-keys search ['XF86Search']
+gsettings set org.cinnamon.desktop.keybindings.media-keys eject ['XF86Eject']
+gsettings set org.cinnamon.desktop.keybindings.media-keys volume-up-quiet ['<Alt>XF86AudioRaiseVolume']
+gsettings set org.cinnamon.desktop.keybindings.media-keys screen-brightness-down ['XF86MonBrightnessDown']
+gsettings set org.cinnamon.desktop.keybindings.media-keys help ['']
+gsettings set org.cinnamon.desktop.keybindings.media-keys email ['XF86Mail']
+gsettings set org.cinnamon.desktop.keybindings.media-keys audio-rewind ['XF86AudioRewind']
+gsettings set org.cinnamon.desktop.keybindings.media-keys screenshot ['Print']
+gsettings set org.cinnamon.desktop.keybindings.media-keys touchpad-off ['XF86TouchpadOff']
+gsettings set org.gnome.GWeather speed-unit 'default'
+gsettings set org.gnome.GWeather pressure-unit 'default'
+gsettings set org.gnome.GWeather radar ''
+gsettings set org.gnome.GWeather distance-unit 'default'
+gsettings set org.gnome.GWeather default-location ['', 'UUEE', @m[dd] nothing]
+gsettings set org.gnome.GWeather temperature-unit 'default'
+gsettings set org.gnome.gnome-system-monitor show-all-fs true
+gsettings set org.gnome.gnome-system-monitor solaris-mode true
+gsettings set org.gnome.gnome-system-monitor graph-update-interval 1000
+gsettings set org.gnome.gnome-system-monitor swap-color '#49A835'
+gsettings set org.gnome.gnome-system-monitor network-in-bits true
+gsettings set org.gnome.gnome-system-monitor maximized false
+gsettings set org.gnome.gnome-system-monitor disks-interval 5000
+gsettings set org.gnome.gnome-system-monitor show-dependencies false
+gsettings set org.gnome.gnome-system-monitor kill-dialog true
+gsettings set org.gnome.gnome-system-monitor window-state [851, 512, 34, 28]
+gsettings set org.gnome.gnome-system-monitor net-in-color '#2D7DB3'
+gsettings set org.gnome.gnome-system-monitor mem-color '#AB1852'
+gsettings set org.gnome.gnome-system-monitor cpu-smooth-graph true
+gsettings set org.gnome.gnome-system-monitor current-tab 'resources'
+gsettings set org.gnome.gnome-system-monitor cpu-colors [uint32 0, '#e6194B', 1, '#f58231', 2, '#ffe119', 3, '#bfef45', 4, '#3cb44b', 5, '#42d4f4', 6, '#4363d8', 7, '#911eb4', 8, '#f032e6', 9, '#fabebe', 10, '#ffd8b1', 11, '#fffac8', 12, '#aaffc3', 13, '#469990', 14, '#000075', 15, '#e6beff']
+gsettings set org.gnome.gnome-system-monitor cpu-stacked-area-chart true
+gsettings set org.gnome.gnome-system-monitor update-interval 5000
+gsettings set org.gnome.gnome-system-monitor smooth-refresh true
+gsettings set org.gnome.gnome-system-monitor show-whose-processes 'user'
+gsettings set org.gnome.gnome-system-monitor net-out-color '#EE1D00'
+gsettings set org.gnome.desktop.a11y.mouse dwell-gesture-single 'left'
+gsettings set org.gnome.desktop.a11y.mouse dwell-gesture-double 'up'
+gsettings set org.gnome.desktop.a11y.mouse dwell-gesture-drag 'down'
+gsettings set org.gnome.desktop.a11y.mouse dwell-threshold 10
+gsettings set org.gnome.desktop.a11y.mouse secondary-click-enabled false
+gsettings set org.gnome.desktop.a11y.mouse dwell-mode 'window'
+gsettings set org.gnome.desktop.a11y.mouse dwell-gesture-secondary 'right'
+gsettings set org.gnome.desktop.a11y.mouse click-type-window-visible true
+gsettings set org.gnome.desktop.a11y.mouse dwell-click-enabled false
+gsettings set org.gnome.desktop.a11y.mouse dwell-time 1.2
+gsettings set org.gnome.desktop.a11y.mouse secondary-click-time 1.2
+gsettings set org.gnome.rhythmbox.plugins.daap.dacp enable-remote false
+gsettings set org.gnome.rhythmbox.plugins.daap.dacp known-remotes @as []
+gsettings set org.gnome.rhythmbox.source search-type 'search-match'
+gsettings set org.gnome.rhythmbox.source show-browser true
+gsettings set org.gnome.rhythmbox.source paned-position 180
+gsettings set org.gnome.rhythmbox.source sorting ['Artist', true]
+gsettings set org.gnome.rhythmbox.plugins.magnatune format 'ogg'
+gsettings set org.gnome.rhythmbox.plugins.magnatune account-type 'none'
+gsettings set org.gnome.rhythmbox.source search-type 'search-match'
+gsettings set org.gnome.rhythmbox.source show-browser true
+gsettings set org.gnome.rhythmbox.source paned-position 180
+gsettings set org.gnome.rhythmbox.source sorting ['Artist', true]
+gsettings set org.freedesktop.Tracker.DB journal-rotate-destination ''
+gsettings set org.freedesktop.Tracker.DB journal-chunk-size 50
+gsettings set com.github.wwmm.pulseeffects use-dark-theme false
+gsettings set com.github.wwmm.pulseeffects window-width 1156
+gsettings set com.github.wwmm.pulseeffects blocksize-in '512'
+gsettings set com.github.wwmm.pulseeffects enable-all-sourceoutputs false
+gsettings set com.github.wwmm.pulseeffects custom-sink ''
+gsettings set com.github.wwmm.pulseeffects use-default-sink true
+gsettings set com.github.wwmm.pulseeffects niceness -10
+gsettings set com.github.wwmm.pulseeffects custom-source 'alsa_input.pci-0000_00_1b.0.analog-stereo'
+gsettings set com.github.wwmm.pulseeffects blocksize-out '512'
+gsettings set com.github.wwmm.pulseeffects blacklist-in @as []
+gsettings set com.github.wwmm.pulseeffects realtime-priority 4
+gsettings set com.github.wwmm.pulseeffects last-used-preset 'Akai HD-230'
+gsettings set com.github.wwmm.pulseeffects blacklist-out @as []
+gsettings set com.github.wwmm.pulseeffects bypass false
+gsettings set com.github.wwmm.pulseeffects priority-type 'None'
+gsettings set com.github.wwmm.pulseeffects use-default-source true
+gsettings set com.github.wwmm.pulseeffects window-height 618
+gsettings set com.github.wwmm.pulseeffects enable-all-sinkinputs true
+gsettings set com.canonical.unity.settings-daemon.plugins.background priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.background active true
+gsettings set org.gnome.settings-daemon.plugins.a11y-settings priority 0
+gsettings set org.gnome.settings-daemon.plugins.a11y-settings active true
+gsettings set org.onboard.scanner enabled false
+gsettings set org.onboard.scanner interval-fast 0.050000000000000003
+gsettings set org.onboard.scanner mode 'Autoscan'
+gsettings set org.onboard.scanner device-detach false
+gsettings set org.onboard.scanner alternate false
+gsettings set org.onboard.scanner cycles 2
+gsettings set org.onboard.scanner device-button-map {1: 0, 3: 5}
+gsettings set org.onboard.scanner backtrack 5
+gsettings set org.onboard.scanner user-scan false
+gsettings set org.onboard.scanner device-name 'Default'
+gsettings set org.onboard.scanner interval 1.2
+gsettings set org.onboard.scanner device-key-map @a{ii} {}
+gsettings set org.onboard.scanner feedback-flash true
+gsettings set org.gnome.gedit.plugins.spell highlight-misspelled false
+gsettings set org.cinnamon.desktop.screensaver allow-keyboard-shortcuts true
+gsettings set org.cinnamon.desktop.screensaver use-custom-format false
+gsettings set org.cinnamon.desktop.screensaver date-format '%A %B %e'
+gsettings set org.cinnamon.desktop.screensaver show-info-panel true
+gsettings set org.cinnamon.desktop.screensaver screensaver-webkit-theme ''
+gsettings set org.cinnamon.desktop.screensaver embedded-keyboard-command ''
+gsettings set org.cinnamon.desktop.screensaver font-time 'Ubuntu 64'
+gsettings set org.cinnamon.desktop.screensaver allow-media-control true
+gsettings set org.cinnamon.desktop.screensaver embedded-keyboard-enabled false
+gsettings set org.cinnamon.desktop.screensaver default-message ''
+gsettings set org.cinnamon.desktop.screensaver font-date 'Ubuntu 24'
+gsettings set org.cinnamon.desktop.screensaver show-notifications false
+gsettings set org.cinnamon.desktop.screensaver show-clock true
+gsettings set org.cinnamon.desktop.screensaver screensaver-name ''
+gsettings set org.cinnamon.desktop.screensaver idle-activation-enabled true
+gsettings set org.cinnamon.desktop.screensaver layout-group 0
+gsettings set org.cinnamon.desktop.screensaver font-message 'Ubuntu 14'
+gsettings set org.cinnamon.desktop.screensaver lock-enabled true
+gsettings set org.cinnamon.desktop.screensaver user-switch-enabled true
+gsettings set org.cinnamon.desktop.screensaver show-album-art true
+gsettings set org.cinnamon.desktop.screensaver xscreensaver-hack ''
+gsettings set org.cinnamon.desktop.screensaver ask-for-away-message false
+gsettings set org.cinnamon.desktop.screensaver lock-delay uint32 0
+gsettings set org.cinnamon.desktop.screensaver time-format '%H:%M'
+gsettings set org.cinnamon.desktop.screensaver status-message-enabled true
+gsettings set org.cinnamon.desktop.screensaver floating-widgets true
+gsettings set org.yorba.shotwell.plugins.enable-state publishing-facebook true
+gsettings set org.yorba.shotwell.plugins.enable-state publishing-gallery3 false
+gsettings set org.yorba.shotwell.plugins.enable-state transitions-chess true
+gsettings set org.yorba.shotwell.plugins.enable-state transitions-circle true
+gsettings set org.yorba.shotwell.plugins.enable-state transitions-blinds true
+gsettings set org.yorba.shotwell.plugins.enable-state publishing-tumblr false
+gsettings set org.yorba.shotwell.plugins.enable-state publishing-yandex-fotki false
+gsettings set org.yorba.shotwell.plugins.enable-state transitions-slide true
+gsettings set org.yorba.shotwell.plugins.enable-state transitions-circles true
+gsettings set org.yorba.shotwell.plugins.enable-state transitions-stripes true
+gsettings set org.yorba.shotwell.plugins.enable-state publishing-piwigo true
+gsettings set org.yorba.shotwell.plugins.enable-state publishing-rajce false
+gsettings set org.yorba.shotwell.plugins.enable-state transitions-squares true
+gsettings set org.yorba.shotwell.plugins.enable-state transitions-clock true
+gsettings set org.yorba.shotwell.plugins.enable-state org-gnome-shotwell-publishing-google-photos false
+gsettings set org.yorba.shotwell.plugins.enable-state transitions-fade true
+gsettings set org.yorba.shotwell.plugins.enable-state transitions-crumble true
+gsettings set org.yorba.shotwell.plugins.enable-state publishing-flickr true
+gsettings set org.yorba.shotwell.plugins.enable-state dataimports-fspot true
+gsettings set org.yorba.shotwell.plugins.enable-state publishing-youtube true
+gsettings set com.canonical.indicator.appmenu menu-mode 'global'
+gsettings set org.onboard.window.landscape width 1366
+gsettings set org.onboard.window.landscape x 0
+gsettings set org.onboard.window.landscape dock-width 700
+gsettings set org.onboard.window.landscape y 410
+gsettings set org.onboard.window.landscape dock-expand true
+gsettings set org.onboard.window.landscape dock-height 308
+gsettings set org.onboard.window.landscape height 324
+gsettings set org.gnome.todo default-provider 'local'
+gsettings set org.gnome.todo window-size [870, 405]
+gsettings set org.gnome.todo active-extensions ['today-panel', 'scheduled-panel', 'background', 'eds', 'todoist', 'dark-theme', 'score', 'unscheduled-panel']
+gsettings set org.gnome.todo window-maximized false
+gsettings set org.gnome.todo window-position [0, 0]
+gsettings set org.gnome.todo first-run true
+gsettings set org.gnome.todo view 'grid'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.delay time-r 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.delay state false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.delay time-l 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.delay output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.delay installed false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.delay input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.delay post-messages false
+gsettings set org.yorba.shotwell.sharing.facebook access-token ''
+gsettings set org.yorba.shotwell.sharing.facebook default-size 0
+gsettings set org.yorba.shotwell.sharing.facebook strip-metadata false
+gsettings set org.yorba.shotwell.sharing.facebook user-name ''
+gsettings set org.yorba.shotwell.sharing.facebook uid ''
+gsettings set org.compiz.integrated command-2 ''
+gsettings set org.compiz.integrated run-command-2 ['disabled']
+gsettings set org.compiz.integrated command-5 ''
+gsettings set org.compiz.integrated run-command-5 ['disabled']
+gsettings set org.compiz.integrated command-10 ''
+gsettings set org.compiz.integrated command-8 ''
+gsettings set org.compiz.integrated command-21 '/usr/bin/gnome-system-monitor -p'
+gsettings set org.compiz.integrated display-all-workspaces false
+gsettings set org.compiz.integrated command-window-screenshot 'gnome-screenshot --window'
+gsettings set org.compiz.integrated run-command-11 ['disabled']
+gsettings set org.compiz.integrated command-3 ''
+gsettings set org.compiz.integrated command-screenshot 'gnome-screenshot'
+gsettings set org.compiz.integrated command-6 ''
+gsettings set org.compiz.integrated run-command-6 ['disabled']
+gsettings set org.compiz.integrated command-11 ''
+gsettings set org.compiz.integrated command-9 ''
+gsettings set org.compiz.integrated run-command-9 ['disabled']
+gsettings set org.compiz.integrated run-command-3 ['disabled']
+gsettings set org.compiz.integrated run-command-12 ['disabled']
+gsettings set org.compiz.integrated command-1 ''
+gsettings set org.compiz.integrated run-command-1 ['disabled']
+gsettings set org.compiz.integrated command-4 ''
+gsettings set org.compiz.integrated run-command-4 ['disabled']
+gsettings set org.compiz.integrated command-7 ''
+gsettings set org.compiz.integrated run-command-7 ['disabled']
+gsettings set org.compiz.integrated command-12 ''
+gsettings set org.compiz.integrated run-command-10 ['disabled']
+gsettings set org.compiz.integrated run-command-8 ['disabled']
+gsettings set org.compiz.integrated run-command-21 ['<Control><Alt>Delete']
+gsettings set org.compiz.integrated show-hud ['<Alt>']
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.gate detection 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.gate release 250.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.gate range -24.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.gate knee 9.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.gate installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.gate post-messages false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.gate ratio 1.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.gate makeup 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.gate attack 20.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.gate stereo-link 'Maximum'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.gate threshold -41.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.gate state false
+gsettings set org.gnome.desktop.peripherals.keyboard delay uint32 500
+gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state true
+gsettings set org.gnome.desktop.peripherals.keyboard numlock-state false
+gsettings set org.gnome.desktop.peripherals.keyboard repeat true
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval uint32 30
+gsettings set com.gexperts.Tilix.Settings enable-wide-handle false
+gsettings set com.gexperts.Tilix.Settings advanced-paste-replace-tabs false
+gsettings set com.gexperts.Tilix.Settings auto-hide-mouse false
+gsettings set com.gexperts.Tilix.Settings quake-active-monitor true
+gsettings set com.gexperts.Tilix.Settings warn-vte-config-issue false
+gsettings set com.gexperts.Tilix.Settings control-click-titlebar false
+gsettings set com.gexperts.Tilix.Settings app-title '${appName}: ${sessionName}'
+gsettings set com.gexperts.Tilix.Settings quake-show-on-all-workspaces true
+gsettings set com.gexperts.Tilix.Settings process-monitor false
+gsettings set com.gexperts.Tilix.Settings background-image-scale 'bilinear'
+gsettings set com.gexperts.Tilix.Settings bookmark-include-return true
+gsettings set com.gexperts.Tilix.Settings terminal-title-style 'normal'
+gsettings set com.gexperts.Tilix.Settings quake-hide-headerbar false
+gsettings set com.gexperts.Tilix.Settings use-overlay-scrollbar true
+gsettings set com.gexperts.Tilix.Settings quake-hide-lose-focus-delay 150
+gsettings set com.gexperts.Tilix.Settings use-tabs false
+gsettings set com.gexperts.Tilix.Settings quake-height-percent 40
+gsettings set com.gexperts.Tilix.Settings tab-position 'top'
+gsettings set com.gexperts.Tilix.Settings prompt-on-new-session false
+gsettings set com.gexperts.Tilix.Settings password-include-return true
+gsettings set com.gexperts.Tilix.Settings focus-follow-mouse true
+gsettings set com.gexperts.Tilix.Settings theme-variant 'system'
+gsettings set com.gexperts.Tilix.Settings recent-session-files @as []
+gsettings set com.gexperts.Tilix.Settings accelerators-enabled true
+gsettings set com.gexperts.Tilix.Settings quake-specific-monitor 0
+gsettings set com.gexperts.Tilix.Settings custom-hyperlinks @as []
+gsettings set com.gexperts.Tilix.Settings trigger-unlimit-lines false
+gsettings set com.gexperts.Tilix.Settings window-save-state false
+gsettings set com.gexperts.Tilix.Settings session-name '${title}'
+gsettings set com.gexperts.Tilix.Settings triggers @as []
+gsettings set com.gexperts.Tilix.Settings control-scroll-zoom true
+gsettings set com.gexperts.Tilix.Settings menu-accelerator-enabled false
+gsettings set com.gexperts.Tilix.Settings notify-on-process-complete true
+gsettings set com.gexperts.Tilix.Settings advanced-paste-space-count 4
+gsettings set com.gexperts.Tilix.Settings close-with-last-session true
+gsettings set com.gexperts.Tilix.Settings quake-width-percent 100
+gsettings set com.gexperts.Tilix.Settings quake-tab-position 'top'
+gsettings set com.gexperts.Tilix.Settings copy-on-select false
+gsettings set com.gexperts.Tilix.Settings background-image-mode 'stretch'
+gsettings set com.gexperts.Tilix.Settings enable-transparency true
+gsettings set com.gexperts.Tilix.Settings background-image '/usr/share/backgrounds/matt-mcnulty-nyc-2nd-ave.jpg'
+gsettings set com.gexperts.Tilix.Settings quake-keep-on-top true
+gsettings set com.gexperts.Tilix.Settings set-proxy-env true
+gsettings set com.gexperts.Tilix.Settings quake-window-position 'top'
+gsettings set com.gexperts.Tilix.Settings new-instance-mode 'new-window'
+gsettings set com.gexperts.Tilix.Settings triggers-lines 256
+gsettings set com.gexperts.Tilix.Settings quake-alignment 'center'
+gsettings set com.gexperts.Tilix.Settings search-default-match-as-regex false
+gsettings set com.gexperts.Tilix.Settings paste-advanced-default false
+gsettings set com.gexperts.Tilix.Settings terminal-title-show-when-single true
+gsettings set com.gexperts.Tilix.Settings search-default-match-entire-word false
+gsettings set com.gexperts.Tilix.Settings window-style 'normal'
+gsettings set com.gexperts.Tilix.Settings prompt-on-delete-profile true
+gsettings set com.gexperts.Tilix.Settings prompt-on-close true
+gsettings set com.gexperts.Tilix.Settings prompt-on-close-process true
+gsettings set com.gexperts.Tilix.Settings unsafe-paste-alert true
+gsettings set com.gexperts.Tilix.Settings paste-strip-first-char false
+gsettings set com.gexperts.Tilix.Settings advanced-paste-replace-crlf false
+gsettings set com.gexperts.Tilix.Settings window-state 0
+gsettings set com.gexperts.Tilix.Settings sidebar-on-right true
+gsettings set com.gexperts.Tilix.Settings encodings ['UTF-8', 'ISO-8859-1', 'ISO-8859-2', 'ISO-8859-4', 'ISO-8859-3', 'ISO-8859-5', 'ISO-8859-7', 'ISO-8859-6', 'ISO-8859-8', 'ISO-8859-8-I', 'ISO-8859-9', 'ISO-8859-10', 'ISO-8859-14', 'ISO-8859-13', 'ISO-8859-15', 'ISO-8859-16', 'ARMSCII-8', 'BIG5', 'BIG5-HKSCS', 'CP866', 'EUC-JP', 'EUC-KR', 'EUC-TW', 'GB18030', 'GBK', 'GB2312', 'GEORGIAN-PS', 'IBM850', 'IBM852', 'IBM855', 'IBM857', 'IBM862', 'IBM864', 'ISO-2022-JP', 'ISO-2022-KR', 'ISO-IR-111', 'KOI8-R', 'KOI8-U', 'MAC_ARABIC', 'MAC_CE', 'MAC_CROATIAN', 'MAC-CYRILLIC', 'MAC_DEVANAGARI', 'MAC_FARSI', 'MAC_GREEK', 'MAC_GUJARATI', 'MAC_GURMUKHI', 'MAC_HEBREW', 'MAC_ICELANDIC', 'MAC_ROMAN', 'MAC_ROMANIAN', 'MAC_TURKISH', 'MAC_UKRAINIAN', 'SHIFT_JIS', 'TCVN', 'TIS-620', 'UHC', 'VISCII', 'WINDOWS-1250', 'WINDOWS-1251', 'WINDOWS-1252', 'WINDOWS-1253', 'WINDOWS-1254', 'WINDOWS-1255', 'WINDOWS-1256', 'WINDOWS-1257', 'WINDOWS-1258']
+gsettings set com.gexperts.Tilix.Settings quake-hide-lose-focus false
+gsettings set com.gexperts.Tilix.Settings search-default-match-case false
+gsettings set com.gexperts.Tilix.Settings middle-click-close false
+gsettings set com.gexperts.Tilix.Settings search-default-wrap-around true
+gsettings set org.gnome.brasero.filter replace-sym true
+gsettings set org.gnome.brasero.filter hidden true
+gsettings set org.gnome.brasero.filter broken-sym true
+gsettings set org.cinnamon.desktop.a11y.applications screen-keyboard-enabled false
+gsettings set org.cinnamon.desktop.a11y.applications screen-magnifier-enabled false
+gsettings set org.cinnamon.desktop.a11y.applications screen-reader-enabled false
+gsettings set org.compiz.gwd use-tooltips false
+gsettings set org.compiz.gwd metacity-theme-inactive-shade-opacity true
+gsettings set org.compiz.gwd mouse-wheel-action 'none'
+gsettings set org.compiz.gwd metacity-theme-active-shade-opacity true
+gsettings set org.compiz.gwd metacity-theme-inactive-opacity 1.0
+gsettings set org.compiz.gwd metacity-theme-active-opacity 1.0
+gsettings set org.compiz.gwd blur-type 'all'
+gsettings set org.compiz.gwd use-metacity-theme true
+gsettings set org.gnome.Evince.Default enable-spellchecking true
+gsettings set org.gnome.Evince.Default show-toolbar true
+gsettings set org.gnome.Evince.Default fullscreen false
+gsettings set org.gnome.Evince.Default window-ratio [0.87745098039215685, 0.41919191919191917]
+gsettings set org.gnome.Evince.Default dual-page-odd-left false
+gsettings set org.gnome.Evince.Default sidebar-size 132
+gsettings set org.gnome.Evince.Default continuous true
+gsettings set org.gnome.Evince.Default inverted-colors false
+gsettings set org.gnome.Evince.Default dual-page false
+gsettings set org.gnome.Evince.Default show-sidebar true
+gsettings set org.gnome.Evince.Default sizing-mode 'automatic'
+gsettings set org.gnome.Evince.Default sidebar-page 'links'
+gsettings set org.gnome.Evince.Default zoom 1.0
+gsettings set org.freedesktop.ibus.panel show 0
+gsettings set org.freedesktop.ibus.panel show-im-name false
+gsettings set org.freedesktop.ibus.panel y -1
+gsettings set org.freedesktop.ibus.panel xkb-icon-rgba '#415099'
+gsettings set org.freedesktop.ibus.panel show-icon-on-systray false
+gsettings set org.freedesktop.ibus.panel auto-hide-timeout 10000
+gsettings set org.freedesktop.ibus.panel lookup-table-orientation 1
+gsettings set org.freedesktop.ibus.panel custom-font 'Sans 10'
+gsettings set org.freedesktop.ibus.panel use-custom-font false
+gsettings set org.freedesktop.ibus.panel property-icon-delay-time 500
+gsettings set org.freedesktop.ibus.panel follow-input-cursor-when-always-shown false
+gsettings set org.freedesktop.ibus.panel x -1
+gsettings set org.gnome.gedit.plugins.externaltools font 'Monospace 10'
+gsettings set org.gnome.gedit.plugins.externaltools use-system-font true
+gsettings set org.gnome.gedit.preferences.print print-header true
+gsettings set org.gnome.gedit.preferences.print print-font-header-pango 'Sans 11'
+gsettings set org.gnome.gedit.preferences.print print-line-numbers uint32 0
+gsettings set org.gnome.gedit.preferences.print print-font-numbers-pango 'Sans 8'
+gsettings set org.gnome.gedit.preferences.print margin-top 15.0
+gsettings set org.gnome.gedit.preferences.print margin-left 25.0
+gsettings set org.gnome.gedit.preferences.print margin-right 25.0
+gsettings set org.gnome.gedit.preferences.print print-font-body-pango 'Monospace 9'
+gsettings set org.gnome.gedit.preferences.print print-syntax-highlighting true
+gsettings set org.gnome.gedit.preferences.print margin-bottom 25.0
+gsettings set org.gnome.gedit.preferences.print print-wrap-mode 'word'
+gsettings set org.gnome.gthumb.pixbuf-savers.tiff compression 'deflate'
+gsettings set org.gnome.gthumb.pixbuf-savers.tiff horizontal-resolution 72
+gsettings set org.gnome.gthumb.pixbuf-savers.tiff vertical-resolution 72
+gsettings set org.gnome.gthumb.pixbuf-savers.tiff default-ext 'tiff'
+gsettings set com.canonical.unity-gtk-module whitelist @as []
+gsettings set com.canonical.unity-gtk-module blacklist @as []
+gsettings set org.gnome.desktop.interface gtk-color-palette 'black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90'
+gsettings set org.gnome.desktop.interface toolkit-accessibility false
+gsettings set org.gnome.desktop.interface can-change-accels false
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.0
+gsettings set org.gnome.desktop.interface cursor-blink true
+gsettings set org.gnome.desktop.interface menus-have-icons true
+gsettings set org.gnome.desktop.interface icon-theme 'oomox-griggorii'
+gsettings set org.gnome.desktop.interface gtk-im-preedit-style 'callback'
+gsettings set org.gnome.desktop.interface automatic-mnemonics true
+gsettings set org.gnome.desktop.interface menus-have-tearoff false
+gsettings set org.gnome.desktop.interface cursor-size 24
+gsettings set org.gnome.desktop.interface buttons-have-icons true
+gsettings set org.gnome.desktop.interface gtk-im-module 'gtk-im-context-simple'
+gsettings set org.gnome.desktop.interface gtk-timeout-initial 200
+gsettings set org.gnome.desktop.interface scaling-factor uint32 2
+gsettings set org.gnome.desktop.interface gtk-theme 'Pop-dark-oomox-griggorii_theme_2020_V4'
+gsettings set org.gnome.desktop.interface clock-show-seconds true
+gsettings set org.gnome.desktop.interface gtk-color-scheme ''
+gsettings set org.gnome.desktop.interface clock-show-date true
+gsettings set org.gnome.desktop.interface cursor-blink-time 1200
+gsettings set org.gnome.desktop.interface toolbar-icons-size 'large'
+gsettings set org.gnome.desktop.interface clock-show-weekday true
+gsettings set org.gnome.desktop.interface gtk-timeout-repeat 20
+gsettings set org.gnome.desktop.interface enable-hot-corners true
+gsettings set org.gnome.desktop.interface monospace-font-name 'Ubuntu Mono 11'
+gsettings set org.gnome.desktop.interface toolbar-style 'both-horiz'
+gsettings set org.gnome.desktop.interface cursor-blink-timeout 10
+gsettings set org.gnome.desktop.interface overlay-scrolling true
+gsettings set org.gnome.desktop.interface gtk-key-theme 'Default'
+gsettings set org.gnome.desktop.interface show-unicode-menu true
+gsettings set org.gnome.desktop.interface toolbar-detachable false
+gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'
+gsettings set org.gnome.desktop.interface show-input-method-menu true
+gsettings set org.gnome.desktop.interface menubar-detachable false
+gsettings set org.gnome.desktop.interface gtk-im-status-style 'callback'
+gsettings set org.gnome.desktop.interface document-font-name 'DejaVu Sans Mono Bold 11'
+gsettings set org.gnome.desktop.interface menubar-accel 'F10'
+gsettings set org.gnome.desktop.interface clock-format '24h'
+gsettings set org.gnome.desktop.interface enable-animations true
+gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true
+gsettings set org.gnome.desktop.interface locate-pointer true
+gsettings set org.gnome.desktop.interface font-name 'Ubuntu 11'
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+gsettings set org.gnome.gthumb.pixbuf-savers.jpeg optimize true
+gsettings set org.gnome.gthumb.pixbuf-savers.jpeg progressive false
+gsettings set org.gnome.gthumb.pixbuf-savers.jpeg quality 85
+gsettings set org.gnome.gthumb.pixbuf-savers.jpeg smoothing 0
+gsettings set org.gnome.gthumb.pixbuf-savers.jpeg default-ext 'jpeg'
+gsettings set org.gnome.Sudoku print-multiple-sudokus-to-print 4
+gsettings set org.gnome.Sudoku highlighter false
+gsettings set org.gnome.Sudoku show-warnings true
+gsettings set org.gnome.Sudoku window-width 730
+gsettings set org.gnome.Sudoku window-height 630
+gsettings set org.gnome.Sudoku print-multiple-sudoku-difficulty 'easy'
+gsettings set org.gnome.Sudoku window-is-maximized false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.limiter lookahead 5.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.limiter release 50.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.limiter state false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.limiter asc false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.limiter installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.limiter input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.limiter post-messages false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.limiter oversampling 1
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.limiter limit 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.limiter asc-level 0.5
+gsettings set org.gnome.eog.ui image-gallery-position 'bottom'
+gsettings set org.gnome.eog.ui disable-close-confirmation false
+gsettings set org.gnome.eog.ui propsdialog-netbook-mode true
+gsettings set org.gnome.eog.ui image-gallery-resizable false
+gsettings set org.gnome.eog.ui statusbar false
+gsettings set org.gnome.eog.ui image-gallery false
+gsettings set org.gnome.eog.ui filechooser-xdg-fallback true
+gsettings set org.gnome.eog.ui scroll-buttons true
+gsettings set org.gnome.eog.ui disable-trash-confirmation false
+gsettings set org.gnome.eog.ui sidebar false
+gsettings set org.gnome.eog.fullscreen seconds 5
+gsettings set org.gnome.eog.fullscreen loop true
+gsettings set org.gnome.eog.fullscreen upscale true
+gsettings set org.cinnamon.desktop.keybindings custom-list @as []
+gsettings set org.cinnamon.desktop.keybindings looking-glass-keybinding ['<Super>l']
+gsettings set org.cinnamon.desktop.keybindings magnifier-zoom-in ['<Alt><Super>equal']
+gsettings set org.cinnamon.desktop.keybindings show-desklets ['<Super>s']
+gsettings set org.cinnamon.desktop.keybindings magnifier-zoom-out ['<Alt><Super>minus']
+gsettings set org.cinnamon.desktop.background.slideshow delay 15
+gsettings set org.cinnamon.desktop.background.slideshow random-order false
+gsettings set org.cinnamon.desktop.background.slideshow slideshow-paused false
+gsettings set org.cinnamon.desktop.background.slideshow image-source 'xml:///usr/share/gnome-background-properties/disco-wallpapers.xml'
+gsettings set org.cinnamon.desktop.background.slideshow slideshow-enabled false
+gsettings set org.gnome.sysprof3 window-size [831, 519]
+gsettings set org.gnome.sysprof3 last-spawn-inherit-env true
+gsettings set org.gnome.sysprof3 last-spawn-argv ''
+gsettings set org.gnome.sysprof3 last-spawn-env @as []
+gsettings set org.gnome.sysprof3 window-maximized false
+gsettings set org.gnome.sysprof3 window-position [64, 66]
+gsettings set org.gnome.Logs sort-order 'descending-time'
+gsettings set org.gnome.Logs ignore-warning true
+gsettings set org.xfce.mousepad.preferences.window remember-size true
+gsettings set org.xfce.mousepad.preferences.window statusbar-visible false
+gsettings set org.xfce.mousepad.preferences.window menubar-visible-in-fullscreen 'auto'
+gsettings set org.xfce.mousepad.preferences.window toolbar-visible false
+gsettings set org.xfce.mousepad.preferences.window statusbar-visible-in-fullscreen 'auto'
+gsettings set org.xfce.mousepad.preferences.window toolbar-visible-in-fullscreen 'auto'
+gsettings set org.xfce.mousepad.preferences.window recent-menu-items 10
+gsettings set org.xfce.mousepad.preferences.window cycle-tabs false
+gsettings set org.xfce.mousepad.preferences.window always-show-tabs false
+gsettings set org.xfce.mousepad.preferences.window path-in-title true
+gsettings set org.xfce.mousepad.preferences.window default-tab-sizes '2,3,4,8'
+gsettings set org.xfce.mousepad.preferences.window toolbar-style 'icons'
+gsettings set org.xfce.mousepad.preferences.window menubar-visible true
+gsettings set org.xfce.mousepad.preferences.window remember-position false
+gsettings set org.xfce.mousepad.preferences.window remember-state true
+gsettings set org.xfce.mousepad.preferences.window toolbar-icon-size 'small-toolbar'
+gsettings set com.canonical.unity.settings-daemon.plugins.rfkill priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.rfkill active true
+gsettings set org.gnome.desktop.a11y.keyboard bouncekeys-delay 300
+gsettings set org.gnome.desktop.a11y.keyboard togglekeys-enable true
+gsettings set org.gnome.desktop.a11y.keyboard mousekeys-max-speed 10
+gsettings set org.gnome.desktop.a11y.keyboard stickykeys-enable false
+gsettings set org.gnome.desktop.a11y.keyboard mousekeys-init-delay 300
+gsettings set org.gnome.desktop.a11y.keyboard bouncekeys-enable false
+gsettings set org.gnome.desktop.a11y.keyboard enable false
+gsettings set org.gnome.desktop.a11y.keyboard mousekeys-accel-time 300
+gsettings set org.gnome.desktop.a11y.keyboard bouncekeys-beep-reject false
+gsettings set org.gnome.desktop.a11y.keyboard feature-state-change-beep false
+gsettings set org.gnome.desktop.a11y.keyboard mousekeys-enable false
+gsettings set org.gnome.desktop.a11y.keyboard stickykeys-modifier-beep false
+gsettings set org.gnome.desktop.a11y.keyboard slowkeys-enable false
+gsettings set org.gnome.desktop.a11y.keyboard slowkeys-delay 300
+gsettings set org.gnome.desktop.a11y.keyboard timeout-enable false
+gsettings set org.gnome.desktop.a11y.keyboard slowkeys-beep-reject false
+gsettings set org.gnome.desktop.a11y.keyboard stickykeys-two-key-off false
+gsettings set org.gnome.desktop.a11y.keyboard slowkeys-beep-accept false
+gsettings set org.gnome.desktop.a11y.keyboard slowkeys-beep-press false
+gsettings set org.gnome.desktop.a11y.keyboard disable-timeout 200
+gsettings set com.canonical.unity.settings-daemon.plugins.a11y-settings priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.a11y-settings active true
+gsettings set org.gnome.nautilus.compression default-compression-format 'zip'
+gsettings set org.gnome.settings-daemon.plugins.print-notifications priority 0
+gsettings set org.gnome.settings-daemon.plugins.print-notifications active false
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar compact-progressbar false
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar display-type 1
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar enhanced-plugins true
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar playing-label false
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar enhanced-sidebar false
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar show-compact true
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar show-tooltips true
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar repeat-type 2
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar start-hidden false
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar volume-control false
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar inline-label true
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar show-source-toolbar false
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar horiz-categories false
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar expanders '{1:True}'
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar app-menu-display false
+gsettings set org.gnome.rhythmbox.plugins.alternative_toolbar dark-theme false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.maximizer state false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.maximizer release 3.1600000000000001
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.maximizer ceiling 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.maximizer installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.maximizer threshold 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.maximizer post-messages false
+gsettings set org.onboard.window.portrait width 600
+gsettings set org.onboard.window.portrait x 100
+gsettings set org.onboard.window.portrait dock-width 600
+gsettings set org.onboard.window.portrait y 50
+gsettings set org.onboard.window.portrait dock-expand true
+gsettings set org.onboard.window.portrait dock-height 200
+gsettings set org.onboard.window.portrait height 200
+gsettings set org.gnome.shell.window-switcher current-workspace-only true
+gsettings set org.gnome.shell.window-switcher app-icon-mode 'both'
+gsettings set org.freedesktop.ibus.general.hotkey previous-engine @as []
+gsettings set org.freedesktop.ibus.general.hotkey enable-unconditional @as []
+gsettings set org.freedesktop.ibus.general.hotkey disable-unconditional @as []
+gsettings set org.freedesktop.ibus.general.hotkey next-engine ['Alt+Shift_L']
+gsettings set org.freedesktop.ibus.general.hotkey trigger ['Control+space', 'Zenkaku_Hankaku', 'Alt+Kanji', 'Alt+grave', 'Hangul', 'Alt+Release+Alt_R']
+gsettings set org.freedesktop.ibus.general.hotkey next-engine-in-menu ['Alt+Shift_L']
+gsettings set org.freedesktop.ibus.general.hotkey prev-engine @as []
+gsettings set org.freedesktop.ibus.general.hotkey triggers ['<Shift>alt']
+gsettings set org.gnome.settings-daemon.plugins.screensaver-proxy priority 0
+gsettings set org.gnome.settings-daemon.plugins.screensaver-proxy active true
+gsettings set org.gnome.desktop.calendar show-weekdate true
+gsettings set org.gnome.shell.keybindings switch-to-application-1 ['<Super>1']
+gsettings set org.gnome.shell.keybindings switch-to-application-7 ['<Super>7']
+gsettings set org.gnome.shell.keybindings toggle-message-tray ['<Super>v', '<Super>m']
+gsettings set org.gnome.shell.keybindings switch-to-application-6 ['<Super>6']
+gsettings set org.gnome.shell.keybindings open-application-menu ['<Super>F10']
+gsettings set org.gnome.shell.keybindings switch-to-application-5 ['<Super>5']
+gsettings set org.gnome.shell.keybindings toggle-application-view ['<Super>a']
+gsettings set org.gnome.shell.keybindings switch-to-application-4 ['<Super>4']
+gsettings set org.gnome.shell.keybindings focus-active-notification ['<Super>n']
+gsettings set org.gnome.shell.keybindings switch-to-application-3 ['<Super>3']
+gsettings set org.gnome.shell.keybindings switch-to-application-9 ['<Super>9']
+gsettings set org.gnome.shell.keybindings switch-to-application-2 ['<Super>2']
+gsettings set org.gnome.shell.keybindings switch-to-application-8 ['<Super>8']
+gsettings set org.gnome.shell.keybindings toggle-overview ['<Super>s']
+gsettings set com.canonical.unity.settings-daemon.plugins.datetime priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.datetime active true
+gsettings set org.gnome.SessionManager auto-save-session false
+gsettings set org.gnome.SessionManager auto-save-session-one-shot false
+gsettings set org.gnome.SessionManager show-fallback-warning true
+gsettings set org.gnome.SessionManager logout-prompt true
+gsettings set com.canonical.unity.settings-daemon.peripherals.input-devices hotplug-command ''
+gsettings set org.gnome.gedit.plugins.wordcompletion interactive-completion true
+gsettings set org.gnome.gedit.plugins.wordcompletion minimum-word-size uint32 2
+gsettings set org.gnome.gnome-system-monitor.proctree col-11-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-13-width 80
+gsettings set org.gnome.gnome-system-monitor.proctree col-17-width 48
+gsettings set org.gnome.gnome-system-monitor.proctree col-23-width 100
+gsettings set org.gnome.gnome-system-monitor.proctree columns-order [0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+gsettings set org.gnome.gnome-system-monitor.proctree col-7-visible false
+gsettings set org.gnome.gnome-system-monitor.proctree col-4-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-1-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-25-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-12-width 60
+gsettings set org.gnome.gnome-system-monitor.proctree col-2-width 37
+gsettings set org.gnome.gnome-system-monitor.proctree col-6-width 0
+gsettings set org.gnome.gnome-system-monitor.proctree col-22-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-16-width 48
+gsettings set org.gnome.gnome-system-monitor.proctree col-18-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-12-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-26-width 100
+gsettings set org.gnome.gnome-system-monitor.proctree col-15-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-22-width 100
+gsettings set org.gnome.gnome-system-monitor.proctree col-9-width 80
+gsettings set org.gnome.gnome-system-monitor.proctree sort-order 0
+gsettings set org.gnome.gnome-system-monitor.proctree sort-col 15
+gsettings set org.gnome.gnome-system-monitor.proctree col-11-width 0
+gsettings set org.gnome.gnome-system-monitor.proctree col-21-width 0
+gsettings set org.gnome.gnome-system-monitor.proctree col-19-width 41
+gsettings set org.gnome.gnome-system-monitor.proctree col-2-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-15-width 0
+gsettings set org.gnome.gnome-system-monitor.proctree col-20-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-26-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-1-width 98
+gsettings set org.gnome.gnome-system-monitor.proctree col-5-width 90
+gsettings set org.gnome.gnome-system-monitor.proctree col-19-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-16-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-13-visible false
+gsettings set org.gnome.gnome-system-monitor.proctree col-10-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-0-width 228
+gsettings set org.gnome.gnome-system-monitor.proctree col-23-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-4-width 90
+gsettings set org.gnome.gnome-system-monitor.proctree col-10-width 70
+gsettings set org.gnome.gnome-system-monitor.proctree col-14-width 120
+gsettings set org.gnome.gnome-system-monitor.proctree col-18-width 70
+gsettings set org.gnome.gnome-system-monitor.proctree col-20-width 59
+gsettings set org.gnome.gnome-system-monitor.proctree col-24-width 100
+gsettings set org.gnome.gnome-system-monitor.proctree col-6-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-25-width 100
+gsettings set org.gnome.gnome-system-monitor.proctree col-0-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-24-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-21-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-9-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-8-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-3-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-5-visible false
+gsettings set org.gnome.gnome-system-monitor.proctree col-17-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-14-visible true
+gsettings set org.gnome.gnome-system-monitor.proctree col-7-width 90
+gsettings set org.gnome.gnome-system-monitor.proctree col-3-width 90
+gsettings set org.gnome.gnome-system-monitor.proctree col-8-width 71
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-yandex-fotki auth-token ''
+gsettings set com.canonical.unity.settings-daemon.plugins.remote-display priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.remote-display active true
+gsettings set org.gnome.rhythmbox.plugins.webremote access-key ''
+gsettings set org.gnome.rhythmbox.plugins.webremote listen-port uint16 0
+gsettings set org.nemo.sidebar-panels.tree show-only-directories false
+gsettings set org.nemo.compact-view default-zoom-level 'standard'
+gsettings set org.nemo.compact-view all-columns-have-same-width true
+gsettings set org.nemo.list-view default-zoom-level 'smaller'
+gsettings set org.nemo.list-view search-visible-columns ['name', 'size', 'type', 'where']
+gsettings set org.nemo.list-view default-visible-columns ['name', 'type', 'date_created', 'date_modified', 'size', 'where', 'owner', 'date_modified_with_time', 'group', 'date_accessed', 'selinux_context', 'detailed_type', 'permissions', 'octal_permissions', 'mime_type', 'date_created_with_time']
+gsettings set org.nemo.list-view default-column-order ['name', 'type', 'date_created', 'date_modified', 'size', 'where', 'owner', 'date_modified_with_time', 'group', 'date_accessed', 'selinux_context', 'detailed_type', 'permissions', 'octal_permissions', 'mime_type', 'date_created_with_time']
+gsettings set org.nemo.preferences.menu-config selection-menu-open-as-root true
+gsettings set org.nemo.preferences.menu-config background-menu-show-hidden-files true
+gsettings set org.nemo.preferences.menu-config selection-menu-duplicate true
+gsettings set org.nemo.preferences.menu-config background-menu-paste true
+gsettings set org.nemo.preferences.menu-config selection-menu-pin true
+gsettings set org.nemo.preferences.menu-config selection-menu-open-in-new-window true
+gsettings set org.nemo.preferences.menu-config iconview-menu-organize-by-name true
+gsettings set org.nemo.preferences.menu-config desktop-menu-customize true
+gsettings set org.nemo.preferences.menu-config selection-menu-copy-to true
+gsettings set org.nemo.preferences.menu-config selection-menu-open true
+gsettings set org.nemo.preferences.menu-config background-menu-scripts true
+gsettings set org.nemo.preferences.menu-config selection-menu-move-to true
+gsettings set org.nemo.preferences.menu-config selection-menu-scripts true
+gsettings set org.nemo.preferences.menu-config background-menu-properties true
+gsettings set org.nemo.preferences.menu-config selection-menu-cut true
+gsettings set org.nemo.preferences.menu-config selection-menu-copy true
+gsettings set org.nemo.preferences.menu-config background-menu-create-new-folder true
+gsettings set org.nemo.preferences.menu-config selection-menu-make-link true
+gsettings set org.nemo.preferences.menu-config selection-menu-move-to-trash true
+gsettings set org.nemo.preferences.menu-config selection-menu-rename true
+gsettings set org.nemo.preferences.menu-config iconview-menu-arrange-items true
+gsettings set org.nemo.preferences.menu-config background-menu-open-as-root true
+gsettings set org.nemo.preferences.menu-config background-menu-open-in-terminal true
+gsettings set org.nemo.preferences.menu-config selection-menu-open-in-new-tab true
+gsettings set org.nemo.preferences.menu-config selection-menu-paste true
+gsettings set org.nemo.preferences.menu-config selection-menu-properties true
+gsettings set org.nemo.preferences.menu-config selection-menu-open-in-terminal true
+gsettings set org.nemo.window-state devices-expanded true
+gsettings set org.nemo.window-state start-with-location-bar true
+gsettings set org.nemo.window-state my-computer-expanded true
+gsettings set org.nemo.window-state bookmarks-expanded true
+gsettings set org.nemo.window-state start-with-menu-bar true
+gsettings set org.nemo.window-state geometry '898x514+34+28'
+gsettings set org.nemo.window-state sidebar-bookmark-breakpoint 0
+gsettings set org.nemo.window-state network-expanded true
+gsettings set org.nemo.window-state sidebar-width 199
+gsettings set org.nemo.window-state maximized false
+gsettings set org.nemo.window-state side-pane-view 'places'
+gsettings set org.nemo.window-state start-with-sidebar true
+gsettings set org.nemo.window-state start-with-toolbar true
+gsettings set org.nemo.window-state start-with-status-bar true
+gsettings set org.nemo.plugins disabled-extensions @as []
+gsettings set org.nemo.plugins disabled-actions @as []
+gsettings set org.nemo.plugins disabled-scripts @as []
+gsettings set org.nemo.preferences saved-searches @as []
+gsettings set org.nemo.preferences click-double-parent-folder false
+gsettings set org.nemo.preferences tooltips-show-birth-date true
+gsettings set org.nemo.preferences show-compact-view-icon-toolbar true
+gsettings set org.nemo.preferences tabs-open-position 'after-current-tab'
+gsettings set org.nemo.preferences show-next-icon-toolbar true
+gsettings set org.nemo.preferences quick-renames-with-pause-in-between false
+gsettings set org.nemo.preferences close-device-view-on-device-eject false
+gsettings set org.nemo.preferences ignore-view-metadata false
+gsettings set org.nemo.preferences show-open-in-terminal-toolbar true
+gsettings set org.nemo.preferences mouse-forward-button 9
+gsettings set org.nemo.preferences confirm-move-to-trash true
+gsettings set org.nemo.preferences show-hidden-files false
+gsettings set org.nemo.preferences swap-trash-delete false
+gsettings set org.nemo.preferences disable-menu-warning false
+gsettings set org.nemo.preferences last-server-connect-method 5
+gsettings set org.nemo.preferences context-menus-show-all-actions true
+gsettings set org.nemo.preferences size-prefixes 'base-10'
+gsettings set org.nemo.preferences show-home-icon-toolbar true
+gsettings set org.nemo.preferences show-reload-icon-toolbar true
+gsettings set org.nemo.preferences enable-delete true
+gsettings set org.nemo.preferences tooltips-on-desktop true
+gsettings set org.nemo.preferences thumbnail-limit uint64 1073741824
+gsettings set org.nemo.preferences show-previous-icon-toolbar true
+gsettings set org.nemo.preferences inherit-folder-viewer false
+gsettings set org.nemo.preferences bulk-rename-tool @ay []
+gsettings set org.nemo.preferences desktop-is-home-dir false
+gsettings set org.nemo.preferences start-with-dual-pane false
+gsettings set org.nemo.preferences never-queue-file-ops false
+gsettings set org.nemo.preferences show-new-folder-icon-toolbar true
+gsettings set org.nemo.preferences default-sort-in-reverse-order false
+gsettings set org.nemo.preferences tooltips-show-mod-date true
+gsettings set org.nemo.preferences tooltips-show-path true
+gsettings set org.nemo.preferences tooltips-show-access-date true
+gsettings set org.nemo.preferences date-format 'locale'
+gsettings set org.nemo.preferences show-bookmarks-in-to-menus true
+gsettings set org.nemo.preferences show-image-thumbnails 'local-only'
+gsettings set org.nemo.preferences show-list-view-icon-toolbar true
+gsettings set org.nemo.preferences enable-mime-actions-make-executable false
+gsettings set org.nemo.preferences confirm-trash true
+gsettings set org.nemo.preferences click-policy 'single'
+gsettings set org.nemo.preferences tooltips-in-icon-view true
+gsettings set org.nemo.preferences default-sort-order 'name'
+gsettings set org.nemo.preferences mouse-use-extra-buttons true
+gsettings set org.nemo.preferences show-root-warning true
+gsettings set org.nemo.preferences show-location-entry true
+gsettings set org.nemo.preferences show-edit-icon-toolbar true
+gsettings set org.nemo.preferences show-places-in-to-menus true
+gsettings set org.nemo.preferences show-computer-icon-toolbar true
+gsettings set org.nemo.preferences show-search-icon-toolbar true
+gsettings set org.nemo.preferences show-up-icon-toolbar true
+gsettings set org.nemo.preferences always-use-browser true
+gsettings set org.nemo.preferences executable-text-activation 'ask'
+gsettings set org.nemo.preferences tooltips-in-list-view true
+gsettings set org.nemo.preferences inherit-show-thumbnails false
+gsettings set org.nemo.preferences tooltips-show-file-type true
+gsettings set org.nemo.preferences sort-directories-first true
+gsettings set org.nemo.preferences default-folder-viewer 'icon-view'
+gsettings set org.nemo.preferences show-show-thumbnails-toolbar true
+gsettings set org.nemo.preferences show-directory-item-counts 'local-only'
+gsettings set org.nemo.preferences show-advanced-permissions true
+gsettings set org.nemo.preferences show-full-path-titles false
+gsettings set org.nemo.preferences show-icon-view-icon-toolbar true
+gsettings set org.nemo.preferences mouse-back-button 8
+gsettings set org.nemo.icon-view captions ['none', 'size', 'date_modified']
+gsettings set org.nemo.icon-view default-use-tighter-layout true
+gsettings set org.nemo.icon-view default-zoom-level 'standard'
+gsettings set org.nemo.icon-view text-ellipsis-limit ['3']
+gsettings set org.nemo.icon-view labels-beside-icons false
+gsettings set org.nemo.icon-view thumbnail-size 64
+gsettings set org.nemo.desktop network-icon-visible false
+gsettings set org.nemo.desktop use-desktop-grid true
+gsettings set org.nemo.desktop computer-icon-visible true
+gsettings set org.nemo.desktop horizontal-grid-adjust 1.0
+gsettings set org.nemo.desktop text-ellipsis-limit 2
+gsettings set org.nemo.desktop show-desktop-icons true
+gsettings set org.nemo.desktop volumes-visible true
+gsettings set org.nemo.desktop vertical-grid-adjust 1.0
+gsettings set org.nemo.desktop background-fade true
+gsettings set org.nemo.desktop home-icon-visible true
+gsettings set org.nemo.desktop font 'Noto Sans 10.5'
+gsettings set org.nemo.desktop ignored-desktop-handlers ['conky', 'nemo', 'nemo-desktop', 'nautilus', 'nautilus-desktop']
+gsettings set org.nemo.desktop desktop-layout 'true::true'
+gsettings set org.nemo.desktop show-orphaned-desktop-icons true
+gsettings set org.nemo.desktop trash-icon-visible true
+gsettings set org.gnome.gedit.plugins.drawspaces draw-spaces ['space', 'tab', 'leading', 'text', 'trailing']
+gsettings set org.gnome.gedit.plugins.drawspaces show-white-space true
+gsettings set org.gnome.system.dns_sd extra-domains ''
+gsettings set org.gnome.system.dns_sd display-local 'merged'
+gsettings set org.gnome.shell.extensions.native-window-placement window-captions-on-top true
+gsettings set org.gnome.shell.extensions.native-window-placement use-more-screen true
+gsettings set org.cinnamon.desktop.lockdown disable-command-line false
+gsettings set org.cinnamon.desktop.lockdown disable-log-out false
+gsettings set org.cinnamon.desktop.lockdown disable-printing false
+gsettings set org.cinnamon.desktop.lockdown disable-lock-screen false
+gsettings set org.cinnamon.desktop.lockdown disable-print-setup false
+gsettings set org.cinnamon.desktop.lockdown disable-user-switching false
+gsettings set org.cinnamon.desktop.lockdown disable-application-handlers false
+gsettings set org.cinnamon.desktop.lockdown disable-save-to-disk false
+gsettings set org.gnome.Evolution.DefaultSources default-task-list 'system-task-list'
+gsettings set org.gnome.Evolution.DefaultSources default-address-book 'system'
+gsettings set org.gnome.Evolution.DefaultSources default-calendar 'system-calendar'
+gsettings set org.gnome.Evolution.DefaultSources default-memo-list 'system'
+gsettings set org.gnome.Evolution.DefaultSources default-mail-account 'system'
+gsettings set org.gnome.Evolution.DefaultSources default-mail-identity ''
+gsettings set org.gnome.settings-daemon.plugins.wwan unlock-sim false
+gsettings set org.fedoraproject.FirewallConfig show-icmp-types true
+gsettings set org.fedoraproject.FirewallConfig show-lockdown-whitelist true
+gsettings set org.fedoraproject.FirewallConfig show-ipsets true
+gsettings set org.fedoraproject.FirewallConfig show-helpers true
+gsettings set org.fedoraproject.FirewallConfig show-active-bindings true
+gsettings set org.fedoraproject.FirewallConfig show-direct true
+gsettings set io.github.GnomeMpv.window-state show-playlist false
+gsettings set io.github.GnomeMpv.window-state width 794
+gsettings set io.github.GnomeMpv.window-state playlist-width 250
+gsettings set io.github.GnomeMpv.window-state last-folder-uri ''
+gsettings set io.github.GnomeMpv.window-state volume 0.9375
+gsettings set io.github.GnomeMpv.window-state height 395
+gsettings set io.github.GnomeMpv.window-state show-controls true
+gsettings set org.yorba.shotwell.sharing.org-gnome-shotwell-publishing-google-photos last-album ''
+gsettings set org.yorba.shotwell.sharing.org-gnome-shotwell-publishing-google-photos default-size 2
+gsettings set org.yorba.shotwell.sharing.org-gnome-shotwell-publishing-google-photos strip-metadata false
+gsettings set org.yorba.shotwell.sharing.org-gnome-shotwell-publishing-google-photos refresh-token ''
+gsettings set org.gnome.rhythmbox show-album-art true
+gsettings set org.gnome.rhythmbox size [915, 542]
+gsettings set org.gnome.rhythmbox display-page-tree-height 300
+gsettings set org.gnome.rhythmbox follow-playing true
+gsettings set org.gnome.rhythmbox show-song-position-slider true
+gsettings set org.gnome.rhythmbox display-page-tree-visible true
+gsettings set org.gnome.rhythmbox paned-position 160
+gsettings set org.gnome.rhythmbox maximized false
+gsettings set org.gnome.rhythmbox right-paned-position 400
+gsettings set org.gnome.rhythmbox queue-as-sidebar false
+gsettings set org.gnome.rhythmbox time-display true
+gsettings set org.gnome.rhythmbox position [34, 28]
+gsettings set org.cinnamon.desktop.default-applications.office.calendar exec 'evolution -c calendar'
+gsettings set org.cinnamon.desktop.default-applications.office.calendar needs-term false
+gsettings set org.gnome.libgnomekbd.desktop load-extra-items true
+gsettings set org.gnome.libgnomekbd.desktop layout-names-as-group-names true
+gsettings set org.gnome.libgnomekbd.desktop handle-indicators false
+gsettings set org.gnome.libgnomekbd.desktop default-group -1
+gsettings set org.gnome.libgnomekbd.desktop group-per-window false
+gsettings set com.ubuntu.SoftwareProperties goa-account-id ''
+gsettings set org.gnome.desktop.peripherals.touchpad click-method 'fingers'
+gsettings set org.gnome.desktop.peripherals.touchpad edge-scrolling-enabled false
+gsettings set org.gnome.desktop.peripherals.touchpad disable-while-typing true
+gsettings set org.gnome.desktop.peripherals.touchpad two-finger-scrolling-enabled true
+gsettings set org.gnome.desktop.peripherals.touchpad send-events 'enabled'
+gsettings set org.gnome.desktop.peripherals.touchpad speed 0.0
+gsettings set org.gnome.desktop.peripherals.touchpad scroll-method 'two-finger-scrolling'
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
+gsettings set org.gnome.desktop.peripherals.touchpad middle-click-emulation false
+gsettings set org.gnome.desktop.peripherals.touchpad left-handed 'mouse'
+gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+gsettings set org.gnome.desktop.peripherals.touchpad tap-and-drag true
+gsettings set org.gnome.baobab.preferences excluded-uris @as []
+gsettings set com.ubuntu.touch.network gps true
+gsettings set com.ubuntu.touch.network flight-mode false
+gsettings set org.gnome.totem.plugins.pythonconsole rpdb2-password ''
+gsettings set org.gnome.settings-daemon.peripherals.smartcard removal-action 'none'
+gsettings set org.mate.typing-break enabled false
+gsettings set org.mate.typing-break allow-postpone false
+gsettings set org.mate.typing-break type-time 60
+gsettings set org.mate.typing-break break-time 3
+gsettings set org.gnome.gnote enable-wikiwords false
+gsettings set org.gnome.gnote enable-close-note-on-escape true
+gsettings set org.gnome.gnote enable-bulleted-lists true
+gsettings set org.gnome.gnote note-rename-behavior 0
+gsettings set org.gnome.gnote use-status-icon false
+gsettings set org.gnome.gnote sync-sshfs-username ''
+gsettings set org.gnome.gnote enable-icon-paste false
+gsettings set org.gnome.gnote search-window-width 723
+gsettings set org.gnome.gnote sync-sshfs-server ''
+gsettings set org.gnome.gnote enable-keybindings true
+gsettings set org.gnome.gnote menu-pinned-notes ''
+gsettings set org.gnome.gnote enable-custom-font false
+gsettings set org.gnome.gnote enable-auto-links true
+gsettings set org.gnome.gnote autosize-note-window false
+gsettings set org.gnome.gnote menu-note-count 10
+gsettings set org.gnome.gnote enable-url-links true
+gsettings set org.gnome.gnote start-note 'note://gnote/b0f59207-cdb1-407c-a97b-3648db7a9335'
+gsettings set org.gnome.gnote sync-sshfs-folder ''
+gsettings set org.gnome.gnote main-window-maximized false
+gsettings set org.gnome.gnote enable-spellchecking true
+gsettings set org.gnome.gnote search-sorting 'change:asc'
+gsettings set org.gnome.gnote sync-fuse-mount-timeout-ms 10000
+gsettings set org.gnome.gnote sync-sshfs-port 22
+gsettings set org.gnome.gnote search-window-height 400
+gsettings set org.gnome.gnote search-window-splitter-pos 150
+gsettings set org.gnome.gnote use-client-side-decorations 'gnome,ubuntu,pop'
+gsettings set org.gnome.gnote open-notes-in-new-window false
+gsettings set org.gnome.gnote custom-font-face 'Serif 11'
+gsettings set org.gnome.gthumb.file-manager last-folder ''
+gsettings set org.gnome.gthumb.file-manager copy-destination-history @as []
+gsettings set org.gnome.gthumb.file-manager view-destination true
+gsettings set org.cinnamon.desktop.default-applications.terminal exec-arg '-x'
+gsettings set org.cinnamon.desktop.default-applications.terminal exec 'gnome-terminal'
+gsettings set org.mate.media-handling autorun-never false
+gsettings set org.mate.media-handling autorun-x-content-open-folder @as []
+gsettings set org.mate.media-handling automount-open true
+gsettings set org.mate.media-handling autorun-x-content-ignore @as []
+gsettings set org.mate.media-handling automount true
+gsettings set org.mate.media-handling autorun-x-content-start-app ['x-content/software']
+gsettings set com.canonical.unity.settings-daemon.peripherals.smartcard removal-action 'none'
+gsettings set org.mate.applications-at-visual exec 'orca'
+gsettings set org.mate.applications-at-visual startup false
+gsettings set com.ubuntu.user-interface scale-factor {'LVDS-1': 8}
+gsettings set org.gnome.gthumb.webalbums.directories html-images 'html'
+gsettings set org.gnome.gthumb.webalbums.directories images 'images'
+gsettings set org.gnome.gthumb.webalbums.directories thumbnails 'thumbnails'
+gsettings set org.gnome.gthumb.webalbums.directories theme-files 'theme'
+gsettings set org.gnome.gthumb.webalbums.directories html-indexes 'html'
+gsettings set org.gnome.gthumb.webalbums.directories previews 'previews'
+gsettings set org.gnome.Maps zoom-level 4
+gsettings set org.gnome.Maps transportation-type 'pedestrian'
+gsettings set org.gnome.Maps recent-places-limit 50
+gsettings set org.gnome.Maps window-size [787, 572]
+gsettings set org.gnome.Maps checkin-foursquare-broadcast-twitter false
+gsettings set org.gnome.Maps checkin-facebook-privacy 'EVERYONE'
+gsettings set org.gnome.Maps osm-username ''
+gsettings set org.gnome.Maps last-viewed-location [76.168235701644321, -0.070145112634972126, -44.242737293243408, -164.12554979324341]
+gsettings set org.gnome.Maps max-search-results 20
+gsettings set org.gnome.Maps checkin-foursquare-broadcast-facebook false
+gsettings set org.gnome.Maps map-type 'MapsStreetSource'
+gsettings set org.gnome.Maps checkin-foursquare-privacy 'public'
+gsettings set org.gnome.Maps window-maximized false
+gsettings set org.gnome.Maps window-position [34, 28]
+gsettings set org.gnome.Maps recent-routes-limit 5
+gsettings set org.mate.lockdown disable-command-line false
+gsettings set org.mate.lockdown disable-log-out false
+gsettings set org.mate.lockdown disable-printing false
+gsettings set org.mate.lockdown disable-lock-screen false
+gsettings set org.mate.lockdown disable-print-setup false
+gsettings set org.mate.lockdown disable-theme-settings false
+gsettings set org.mate.lockdown disable-application-handlers false
+gsettings set org.mate.lockdown disable-save-to-disk false
+gsettings set org.mate.lockdown disable-user-switching false
+gsettings set org.gnome.settings-daemon.peripherals.touchscreen orientation-lock false
+gsettings set org.mate.applications-messenger exec ''
+gsettings set org.gnome.settings-daemon.plugins.datetime priority 0
+gsettings set org.gnome.settings-daemon.plugins.datetime active true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor post-messages false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor sidechain-source 'Middle'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor makeup 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor attack 20.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor installed false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor sidechain-listen false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor sidechain-reactivity 10.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor knee -6.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor sidechain-type 'Feed-forward'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor sidechain-preamp 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor sidechain-lookahead 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor threshold -18.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor state false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor release 250.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor mode 'Downward'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor ratio 2.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.compressor sidechain-mode 'RMS'
+gsettings set org.onboard.typing-assistance.word-suggestions delayed-word-separators-enabled false
+gsettings set org.onboard.typing-assistance.word-suggestions enabled false
+gsettings set org.onboard.typing-assistance.word-suggestions auto-learn true
+gsettings set org.onboard.typing-assistance.word-suggestions max-word-choices 5
+gsettings set org.onboard.typing-assistance.word-suggestions spelling-suggestions-enabled true
+gsettings set org.onboard.typing-assistance.word-suggestions pause-learning-locked false
+gsettings set org.onboard.typing-assistance.word-suggestions show-context-line false
+gsettings set org.onboard.typing-assistance.word-suggestions punctuation-assistance true
+gsettings set org.onboard.typing-assistance.word-suggestions stealth-mode false
+gsettings set org.onboard.typing-assistance.word-suggestions learning-behavior-paused 'nothing'
+gsettings set org.onboard.typing-assistance.word-suggestions accent-insensitive true
+gsettings set org.onboard.typing-assistance.word-suggestions wordlist-buttons ['previous-predictions', 'next-predictions', 'language', 'hide']
+gsettings set com.canonical.unity.Lenses always-search ['applications.scope', 'music.scope', 'videos.scope', 'files.scope']
+gsettings set com.canonical.unity.Lenses locked-scopes @as []
+gsettings set com.canonical.unity.Lenses hidden-scopes @as []
+gsettings set com.canonical.unity.Lenses remote-content-search 'none'
+gsettings set com.canonical.unity.Lenses disabled-scopes ['web-chromiumbookmarks.scope', 'photos-facebook.scope', 'photos-picasa.scope', 'photos-flickr.scope', 'web-firefoxbookmarks.scope', 'code-devhelp.scope', 'music-rhythmbox.scope', 'photos-shotwell.scope', 'notes-tomboy.scope', 'music-banshee.scope', 'reference-zotero.scope', 'help-yelp.scope']
+gsettings set com.canonical.unity.Lenses home-lens-default-view ['applications.scope', 'files.scope']
+gsettings set com.canonical.unity.Lenses home-lens-priority ['files.scope', 'music.scope']
+gsettings set com.canonical.unity.settings-daemon.plugins.keyboard priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.keyboard active true
+gsettings set org.gnome.gthumb.resize high-quality true
+gsettings set org.gnome.gthumb.resize unit 'percentage'
+gsettings set org.gnome.gthumb.resize width 100.0
+gsettings set org.gnome.gthumb.resize aspect-ratio-height 100
+gsettings set org.gnome.gthumb.resize aspect-ratio-width 239
+gsettings set org.gnome.gthumb.resize aspect-ratio-invert true
+gsettings set org.gnome.gthumb.resize height 74.479164123535156
+gsettings set org.gnome.gthumb.resize aspect-ratio '239x100'
+gsettings set org.gnome.desktop.peripherals.mouse middle-click-emulation false
+gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
+gsettings set org.gnome.desktop.peripherals.mouse speed 0.0
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'default'
+gsettings set org.gnome.desktop.peripherals.mouse left-handed false
+gsettings set x.dm.slick-greeter show-power true
+gsettings set x.dm.slick-greeter show-quit true
+gsettings set x.dm.slick-greeter xft-hintstyle 'hintslight'
+gsettings set x.dm.slick-greeter show-a11y true
+gsettings set x.dm.slick-greeter background ''
+gsettings set x.dm.slick-greeter draw-grid false
+gsettings set x.dm.slick-greeter activate-numlock false
+gsettings set x.dm.slick-greeter background-color '#000000'
+gsettings set x.dm.slick-greeter hidden-users @as []
+gsettings set x.dm.slick-greeter onscreen-keyboard false
+gsettings set x.dm.slick-greeter enable-hidpi 'auto'
+gsettings set x.dm.slick-greeter only-on-monitor 'auto'
+gsettings set x.dm.slick-greeter screen-reader false
+gsettings set x.dm.slick-greeter show-clock true
+gsettings set x.dm.slick-greeter icon-theme-name 'gnome'
+gsettings set x.dm.slick-greeter high-contrast false
+gsettings set x.dm.slick-greeter other-monitors-logo ''
+gsettings set x.dm.slick-greeter theme-name 'Adwaita'
+gsettings set x.dm.slick-greeter show-hostname true
+gsettings set x.dm.slick-greeter xft-rgba 'rgb'
+gsettings set x.dm.slick-greeter show-keyboard true
+gsettings set x.dm.slick-greeter group-filter @as []
+gsettings set x.dm.slick-greeter play-ready-sound ''
+gsettings set x.dm.slick-greeter logo ''
+gsettings set x.dm.slick-greeter xft-antialias true
+gsettings set x.dm.slick-greeter draw-user-backgrounds true
+gsettings set x.dm.slick-greeter font-name 'Sans 11'
+gsettings set x.dm.slick-greeter xft-dpi 96.0
+gsettings set com.canonical.unity.settings-daemon.plugins.xsettings antialiasing 'grayscale'
+gsettings set com.canonical.unity.settings-daemon.plugins.xsettings rgba-order 'rgb'
+gsettings set com.canonical.unity.settings-daemon.plugins.xsettings hinting 'slight'
+gsettings set com.canonical.unity.settings-daemon.plugins.xsettings overrides @a{sv} {}
+gsettings set com.canonical.unity.settings-daemon.plugins.xsettings disabled-gtk-modules @as []
+gsettings set com.canonical.unity.settings-daemon.plugins.xsettings enabled-gtk-modules @as []
+gsettings set com.canonical.unity.settings-daemon.plugins.xsettings priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.xsettings active true
+gsettings set org.gnome.gthumb.change-date time-adjustment 0
+gsettings set org.gnome.gthumb.change-date to-file-creation-date false
+gsettings set org.gnome.gthumb.change-date adjust-time false
+gsettings set org.gnome.gthumb.change-date date ''
+gsettings set org.gnome.gthumb.change-date set-last-modified-date false
+gsettings set org.gnome.gthumb.change-date to-following-date false
+gsettings set org.gnome.gthumb.change-date set-comment-date false
+gsettings set org.gnome.gthumb.change-date to-file-modified-date false
+gsettings set org.gnome.gthumb.change-date to-photo-original-date false
+gsettings set org.mate.applications-office.tasks exec 'evolution'
+gsettings set org.mate.applications-office.tasks needs-term false
+gsettings set org.gnome.Mines nmines 40
+gsettings set org.gnome.Mines window-width 600
+gsettings set org.gnome.Mines ysize 16
+gsettings set org.gnome.Mines use-question-marks true
+gsettings set org.gnome.Mines use-autoflag false
+gsettings set org.gnome.Mines use-animations false
+gsettings set org.gnome.Mines mode 0
+gsettings set org.gnome.Mines xsize 16
+gsettings set org.gnome.Mines theme 'bgcolors'
+gsettings set org.gnome.Mines window-height 400
+gsettings set org.gnome.Mines window-is-maximized false
+gsettings set org.gnome.settings-daemon.plugins.a11y-keyboard priority 0
+gsettings set org.gnome.settings-daemon.plugins.a11y-keyboard active true
+gsettings set org.gnome.nm-applet show-applet true
+gsettings set org.gnome.nm-applet disable-disconnected-notifications false
+gsettings set org.gnome.nm-applet disable-wifi-create false
+gsettings set org.gnome.nm-applet suppress-wireless-networks-available false
+gsettings set org.gnome.nm-applet disable-vpn-notifications false
+gsettings set org.gnome.nm-applet disable-connected-notifications false
+gsettings set org.gnome.nm-applet stamp 0
+gsettings set org.gnome.gthumb.browser thumbnail-list-visible true
+gsettings set org.gnome.gthumb.browser thumbnail-size 128
+gsettings set org.gnome.gthumb.browser viewer-thumbnails-orientation 'horizontal'
+gsettings set org.gnome.gthumb.browser sort-type 'file::mtime'
+gsettings set org.gnome.gthumb.browser show-hidden-files false
+gsettings set org.gnome.gthumb.browser properties-on-the-right false
+gsettings set org.gnome.gthumb.browser save-thumbnails true
+gsettings set org.gnome.gthumb.browser general-filter 'file::type::is_media'
+gsettings set org.gnome.gthumb.browser browser-sidebar-width 285
+gsettings set org.gnome.gthumb.browser open-files-in-fullscreen false
+gsettings set org.gnome.gthumb.browser maximized false
+gsettings set org.gnome.gthumb.browser sidebar-sections ['GthFileProperties:expanded', 'GthFileComment:expanded', 'GthFileDetails:expanded', 'GthImageHistogram:expanded']
+gsettings set org.gnome.gthumb.browser fullscreen-sidebar 'hidden'
+gsettings set org.gnome.gthumb.browser properties-visible false
+gsettings set org.gnome.gthumb.browser fast-file-type true
+gsettings set org.gnome.gthumb.browser startup-current-file ''
+gsettings set org.gnome.gthumb.browser sidebar-visible true
+gsettings set org.gnome.gthumb.browser thumbnail-limit 0
+gsettings set org.gnome.gthumb.browser statusbar-visible true
+gsettings set org.gnome.gthumb.browser fullscreen-thumbnails-visible false
+gsettings set org.gnome.gthumb.browser window-height 0
+gsettings set org.gnome.gthumb.browser go-to-last-location true
+gsettings set org.gnome.gthumb.browser single-click-activation true
+gsettings set org.gnome.gthumb.browser sort-inverse false
+gsettings set org.gnome.gthumb.browser startup-location ''
+gsettings set org.gnome.gthumb.browser viewer-sidebar 'hidden'
+gsettings set org.gnome.gthumb.browser use-startup-location false
+gsettings set org.gnome.gthumb.browser thumbnail-caption 'comment::note,comment::time'
+gsettings set org.gnome.gthumb.browser window-width 0
+gsettings set org.gnome.gthumb.browser reuse-active-window false
+gsettings set com.ubuntu.notifications.hub blacklist @a[ss] []
+gsettings set org.gnome.settings-daemon.plugins.xrandr default-monitors-setup 'follow-lid'
+gsettings set org.gnome.settings-daemon.plugins.xrandr priority 0
+gsettings set org.gnome.settings-daemon.plugins.xrandr default-configuration-file '/etc/gnome-settings-daemon/xrandr/monitors.xml'
+gsettings set org.gnome.settings-daemon.plugins.xrandr active true
+gsettings set com.canonical.unity.settings-daemon.plugins.housekeeping free-size-gb-no-notify 1
+gsettings set com.canonical.unity.settings-daemon.plugins.housekeeping ignore-paths @as []
+gsettings set com.canonical.unity.settings-daemon.plugins.housekeeping free-percent-notify 0.050000000000000003
+gsettings set com.canonical.unity.settings-daemon.plugins.housekeeping priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.housekeeping min-notify-period 10
+gsettings set com.canonical.unity.settings-daemon.plugins.housekeeping active true
+gsettings set com.canonical.unity.settings-daemon.plugins.housekeeping free-percent-notify-again 0.01
+gsettings set org.gnome.gthumb.slideshow wrap-around false
+gsettings set org.gnome.gthumb.slideshow change-delay 5.0
+gsettings set org.gnome.gthumb.slideshow random-order false
+gsettings set org.gnome.gthumb.slideshow automatic true
+gsettings set org.gnome.gthumb.slideshow transition 'fade-in'
+gsettings set org.gnome.FileRoller.Dialogs.LastOutput width 558
+gsettings set org.gnome.FileRoller.Dialogs.LastOutput height 316
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer split-channels false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer state true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer mode 'IIR'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer installed false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer post-messages true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.equalizer num-bands 30
+gsettings set org.cinnamon.desktop.thumbnail-cache maximum-age 180
+gsettings set org.cinnamon.desktop.thumbnail-cache maximum-size 512
+gsettings set org.gnome.gedit.state.window bottom-panel-size 21
+gsettings set org.gnome.gedit.state.window side-panel-size 553
+gsettings set org.gnome.gedit.state.window side-panel-active-page 'GeditFileBrowserPanel'
+gsettings set org.gnome.gedit.state.window bottom-panel-active-page 'GeditExternalToolsShellOutput'
+gsettings set org.gnome.gedit.state.window size [1633, 525]
+gsettings set org.gnome.gedit.state.window state 87168
+gsettings set org.cinnamon.desktop.sound theme-name 'freedesktop'
+gsettings set org.cinnamon.desktop.sound event-sounds false
+gsettings set org.cinnamon.desktop.sound input-feedback-sounds false
+gsettings set org.cinnamon.desktop.sound volume-sound-file '/usr/share/sounds/ubuntu/stereo/button-pressed.ogg'
+gsettings set org.cinnamon.desktop.sound maximum-volume 100
+gsettings set org.cinnamon.desktop.sound volume-sound-enabled true
+gsettings set com.canonical.unity.settings-daemon.plugins.color night-light-temperature uint32 4000
+gsettings set com.canonical.unity.settings-daemon.plugins.color night-light-enabled false
+gsettings set com.canonical.unity.settings-daemon.plugins.color recalibrate-display-threshold uint32 0
+gsettings set com.canonical.unity.settings-daemon.plugins.color night-light-schedule-automatic true
+gsettings set com.canonical.unity.settings-daemon.plugins.color night-light-schedule-to 6.0
+gsettings set com.canonical.unity.settings-daemon.plugins.color night-light-last-coordinates [91.0, 181.0]
+gsettings set com.canonical.unity.settings-daemon.plugins.color active true
+gsettings set com.canonical.unity.settings-daemon.plugins.color priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.color night-light-schedule-from 20.0
+gsettings set com.canonical.unity.settings-daemon.plugins.color recalibrate-printer-threshold uint32 0
+gsettings set org.yorba.shotwell.preferences.ui display-search-bar false
+gsettings set org.yorba.shotwell.preferences.ui transparent-background-type 'solid'
+gsettings set org.yorba.shotwell.preferences.ui display-photo-tags true
+gsettings set org.yorba.shotwell.preferences.ui use-dark-theme true
+gsettings set org.yorba.shotwell.preferences.ui photo-thumbnail-scale 179
+gsettings set org.yorba.shotwell.preferences.ui display-sidebar true
+gsettings set org.yorba.shotwell.preferences.ui display-photo-titles false
+gsettings set org.yorba.shotwell.preferences.ui display-event-comments false
+gsettings set org.yorba.shotwell.preferences.ui sidebar-position 199
+gsettings set org.yorba.shotwell.preferences.ui show-welcome-dialog false
+gsettings set org.yorba.shotwell.preferences.ui library-photos-sort-ascending false
+gsettings set org.yorba.shotwell.preferences.ui modify-originals false
+gsettings set org.yorba.shotwell.preferences.ui event-photos-sort-by 2
+gsettings set org.yorba.shotwell.preferences.ui use-24-hour-time false
+gsettings set org.yorba.shotwell.preferences.ui keep-relativity true
+gsettings set org.yorba.shotwell.preferences.ui display-photo-comments false
+gsettings set org.yorba.shotwell.preferences.ui display-extended-properties false
+gsettings set org.yorba.shotwell.preferences.ui event-photos-sort-ascending true
+gsettings set org.yorba.shotwell.preferences.ui display-basic-properties true
+gsettings set org.yorba.shotwell.preferences.ui hide-photos-already-imported false
+gsettings set org.yorba.shotwell.preferences.ui display-toolbar true
+gsettings set org.yorba.shotwell.preferences.ui display-photo-ratings true
+gsettings set org.yorba.shotwell.preferences.ui library-photos-sort-by 2
+gsettings set org.yorba.shotwell.preferences.ui events-sort-ascending false
+gsettings set org.yorba.shotwell.preferences.ui photo-rating-filter 0
+gsettings set org.yorba.shotwell.preferences.ui transparent-background-color 'rgb[51,48,47]'
+gsettings set org.yorba.shotwell.preferences.ui pin-toolbar-state false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor post-messages false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor sidechain-source 'Middle'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor makeup 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor attack 20.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor installed false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor sidechain-listen false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor sidechain-reactivity 10.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor knee -6.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor sidechain-type 'Feed-forward'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor sidechain-preamp 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor sidechain-lookahead 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor threshold -12.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor state false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor release 100.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor mode 'Downward'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor ratio 4.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.compressor sidechain-mode 'RMS'
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-piwigo password ''
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-piwigo remember-password false
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-piwigo last-photo-size -1
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-piwigo strip-metadata false
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-piwigo last-permission-level -1
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-piwigo url ''
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-piwigo last-title-as-comment false
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-piwigo last-category -1
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-piwigo username ''
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-piwigo last-no-upload-tags false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter autovolume-state false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter autovolume-target -12
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter lookahead 5.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter autovolume-tolerance 1
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter release 50.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter asc false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter installed true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter limit 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter autovolume-window 1000.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter oversampling 1
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter asc-level 0.5
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter autovolume-threshold -50
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter post-messages false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.limiter state false
+gsettings set org.cinnamon.desktop.background secondary-color '#000000'
+gsettings set org.cinnamon.desktop.background picture-options 'zoom'
+gsettings set org.cinnamon.desktop.background color-shading-type 'solid'
+gsettings set org.cinnamon.desktop.background picture-opacity 100
+gsettings set org.cinnamon.desktop.background primary-color '#000000'
+gsettings set org.onboard.keyboard long-press-delay 0.5
+gsettings set org.onboard.keyboard audio-feedback-enabled false
+gsettings set org.onboard.keyboard input-event-source 'XInput'
+gsettings set org.onboard.keyboard touch-feedback-size 0
+gsettings set org.onboard.keyboard sticky-key-release-delay 0.0
+gsettings set org.onboard.keyboard sticky-key-behavior {'all': 'cycle'}
+gsettings set org.onboard.keyboard audio-feedback-place-in-space false
+gsettings set org.onboard.keyboard touch-input 'multi'
+gsettings set org.onboard.keyboard modifier-update-delay 1.0
+gsettings set org.onboard.keyboard touch-feedback-enabled true
+gsettings set org.onboard.keyboard show-secondary-labels false
+gsettings set org.onboard.keyboard key-synth 'auto'
+gsettings set org.onboard.keyboard sticky-key-release-on-hide-delay 5.0
+gsettings set org.onboard.keyboard show-click-buttons false
+gsettings set org.onboard.keyboard default-key-action 'delayed-stroke'
+gsettings set org.onboard.keyboard key-press-modifiers {'button3': 'SHIFT'}
+gsettings set org.onboard.keyboard inter-key-stroke-delay 0.0
+gsettings set org.gnome.evolution-data-server.addressbook self-contact-uid ''
+gsettings set org.onboard.icon-palette.landscape width 53
+gsettings set org.onboard.icon-palette.landscape y 685
+gsettings set org.onboard.icon-palette.landscape height 45
+gsettings set org.onboard.icon-palette.landscape x 1060
+gsettings set org.freedesktop.ibus.general enable-by-default false
+gsettings set org.freedesktop.ibus.general xkb-latin-layouts ['ara', 'bg', 'cz', 'dev', 'gr', 'gur', 'in', 'jp[kana]', 'mal', 'mkd', 'ru', 'ua']
+gsettings set org.freedesktop.ibus.general use-xmodmap true
+gsettings set org.freedesktop.ibus.general preload-engines ['xkb:us::eng', 'xkb:ru::rus']
+gsettings set org.freedesktop.ibus.general dconf-preserve-name-prefixes ['/desktop/ibus/engine/pinyin', '/desktop/ibus/engine/bopomofo', '/desktop/ibus/engine/hangul']
+gsettings set org.freedesktop.ibus.general use-global-engine true
+gsettings set org.freedesktop.ibus.general engines-order ['xkb:us::eng', 'xkb:ru::rus']
+gsettings set org.freedesktop.ibus.general embed-preedit-text true
+gsettings set org.freedesktop.ibus.general switcher-delay-time 400
+gsettings set org.freedesktop.ibus.general use-system-keyboard-layout false
+gsettings set org.freedesktop.ibus.general version '1.5.17'
+gsettings set org.gnome.settings-daemon.plugins.keyboard priority 0
+gsettings set org.gnome.settings-daemon.plugins.keyboard active true
+gsettings set ca.desrt.dconf-editor.Demo dict-entry {'color', 'red'}
+gsettings set ca.desrt.dconf-editor.Demo pair-of-integers [800, 600]
+gsettings set ca.desrt.dconf-editor.Demo string-nullable @ms nothing
+gsettings set ca.desrt.dconf-editor.Demo string-array ['orange', 'banana', 'pear']
+gsettings set ca.desrt.dconf-editor.Demo weird-triv []
+gsettings set ca.desrt.dconf-editor.Demo integer-16-unsigned uint16 65535
+gsettings set ca.desrt.dconf-editor.Demo integer-16-signed int16 -32768
+gsettings set ca.desrt.dconf-editor.Demo dictionary {'title': <'Example'>, 'character': <uint32 56>, 'bold': <true>}
+gsettings set ca.desrt.dconf-editor.Demo weird-range 5
+gsettings set ca.desrt.dconf-editor.Demo string 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+gsettings set ca.desrt.dconf-editor.Demo double 3.1415926535897931
+gsettings set ca.desrt.dconf-editor.Demo byte byte 0x42
+gsettings set ca.desrt.dconf-editor.Demo dbus-object-path objectpath '/ca/desrt/dconf_editor'
+gsettings set ca.desrt.dconf-editor.Demo flags ['Blue', 'White', 'Red']
+gsettings set ca.desrt.dconf-editor.Demo integer-64-unsigned uint64 18446744073709551615
+gsettings set ca.desrt.dconf-editor.Demo boolean true
+gsettings set ca.desrt.dconf-editor.Demo bytestring-array [[byte 0x48, 0x65, 0x6c, 0x6c, 0x6c], [0x57, 0x6f, 0x72, 0x6c, 0x64], [0x21]]
+gsettings set ca.desrt.dconf-editor.Demo boolean-nullable @mb nothing
+gsettings set ca.desrt.dconf-editor.Demo integer-32-unsigned uint32 4294967295
+gsettings set ca.desrt.dconf-editor.Demo number-with-range 3
+gsettings set ca.desrt.dconf-editor.Demo bytestring [byte 0x48, 0x65, 0x6c, 0x6c, 0x6c]
+gsettings set ca.desrt.dconf-editor.Demo dbus-handle handle 0
+gsettings set ca.desrt.dconf-editor.Demo weird-enum 'only-choice'
+gsettings set ca.desrt.dconf-editor.Demo enumeration 'White'
+gsettings set ca.desrt.dconf-editor.Demo dbus-signature signature 'ii'
+gsettings set ca.desrt.dconf-editor.Demo integer-32-signed -2147483648
+gsettings set ca.desrt.dconf-editor.Demo integer-64-signed int64 -9223372036854775808
+gsettings set ca.desrt.dconf-editor.Demo dbus-object-path-array [objectpath '/ca/desrt/dconf_editor/menus/appmenu', '/ca/desrt/dconf_editor/window/1']
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band6 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band11 -10.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band6 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band11 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band6 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band1 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band1 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band1 10.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band10 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band7 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band12 -12.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band7 -2.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band12 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band7 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band2 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band11 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band2 8.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band2 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band8 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band8 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band8 -4.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer aggressive false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band3 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band12 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band3 6.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band9 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band9 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band9 -6.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band4 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band4 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band4 4.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band3 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer state true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band5 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band10 -8.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band5 2.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band10 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band5 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer bypass-band0 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer mute-band0 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer intensity-band0 12.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crystalizer post-messages true
+gsettings set org.gnome.nautilus.window-state sidebar-width 218
+gsettings set org.gnome.nautilus.window-state start-with-location-bar true
+gsettings set org.gnome.nautilus.window-state initial-size [880, 492]
+gsettings set org.gnome.nautilus.window-state start-with-sidebar true
+gsettings set org.gnome.nautilus.window-state maximized false
+gsettings set org.gnome.system.location enabled false
+gsettings set org.gnome.system.location max-accuracy-level 'exact'
+gsettings set org.onboard.icon-palette in-use false
+gsettings set org.onboard.icon-palette window-handles 'E SE S SW W NW N NE M'
+gsettings set org.yorba.shotwell.crop-settings last-crop-width 1
+gsettings set org.yorba.shotwell.crop-settings last-crop-height 1
+gsettings set org.yorba.shotwell.crop-settings last-crop-menu-choice 1
+gsettings set org.compiz existing-profiles ['Default', 'unity', 'unity-lowgfx']
+gsettings set org.compiz current-profile 'unity'
+gsettings set org.gnome.evolution.shell.network-config secure-port 0
+gsettings set org.gnome.evolution.shell.network-config use-authentication false
+gsettings set org.gnome.evolution.shell.network-config authentication-user ''
+gsettings set org.gnome.evolution.shell.network-config use-http-proxy false
+gsettings set org.gnome.evolution.shell.network-config http-port 0
+gsettings set org.gnome.evolution.shell.network-config ignore-hosts @as []
+gsettings set org.gnome.evolution.shell.network-config secure-host ''
+gsettings set org.gnome.evolution.shell.network-config authentication-password ''
+gsettings set org.gnome.evolution.shell.network-config proxy-type 0
+gsettings set org.gnome.evolution.shell.network-config socks-host ''
+gsettings set org.gnome.evolution.shell.network-config autoconfig-url ''
+gsettings set org.gnome.evolution.shell.network-config http-host ''
+gsettings set org.gnome.evolution.shell.network-config socks-port 0
+gsettings set org.onboard.auto-show enabled false
+gsettings set org.onboard.auto-show tablet-mode-detection-enabled true
+gsettings set org.onboard.auto-show tablet-mode-state-file ''
+gsettings set org.onboard.auto-show hide-on-key-press-pause 1800.0
+gsettings set org.onboard.auto-show tablet-mode-enter-key 0
+gsettings set org.onboard.auto-show tablet-mode-state-file-pattern '1'
+gsettings set org.onboard.auto-show reposition-method-floating 'prevent-occlusion'
+gsettings set org.onboard.auto-show reposition-method-docked 'prevent-occlusion'
+gsettings set org.onboard.auto-show keyboard-device-detection-enabled false
+gsettings set org.onboard.auto-show hide-on-key-press true
+gsettings set org.onboard.auto-show keyboard-device-detection-exceptions @as []
+gsettings set org.onboard.auto-show tablet-mode-leave-key 0
+gsettings set org.onboard.auto-show widget-clearance [25.0, 55.0, 25.0, 40.0]
+gsettings set org.mate.caja.window-state start-with-location-bar true
+gsettings set org.mate.caja.window-state sidebar-width 163
+gsettings set org.mate.caja.window-state geometry '894x551+380+150'
+gsettings set org.mate.caja.window-state start-with-toolbar true
+gsettings set org.mate.caja.window-state maximized false
+gsettings set org.mate.caja.window-state side-pane-view 'places'
+gsettings set org.mate.caja.window-state start-with-sidebar true
+gsettings set org.mate.caja.window-state start-with-status-bar true
+gsettings set org.gnome.desktop.notifications application-children ['gnome-control-center', 'org-gnome-tweaks', 'org-gnome-gedit', 'firefox', 'com-gexperts-tilix', 'mousepad', 'org-gnome-nautilus', 'org-gnome-terminal', 'org-gnome-fileroller', 'org-gnome-baobab', 'budgie-desktop-settings', 'nemo', 'brave-browser', 'jb-mission-control-jdk8', 'brave-browser-beta', 'thunar', 'gdebi', 'thunderbird', 'telegramdesktop', 'org-midori-browser-midori', 'vlc', 'xfce4-notifyd-config', 'nm-applet', 'com-obsproject-studio', 'yelp', 'gnome-power-panel', 'gnome-network-panel', 'displaycal', 'displaycal-scripting-client', 'stacer', 'chromium-browser', 'gnome-system-monitor', 'org-gnome-boxes', 'displaycal-vrml-to-x3d-converter', 'green-recorder', 'org-gnome-eog', 'io-github-celluloid-player-celluloid', 'update-manager', 'org-gnome-totem', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-extensions', 'sqlitebrowser', 'hardinfo', 'org-gnome-epiphany']
+gsettings set org.gnome.desktop.notifications show-banners true
+gsettings set org.gnome.desktop.notifications show-in-lock-screen true
+gsettings set org.gnome.gedit.preferences.ui statusbar-visible true
+gsettings set org.gnome.gedit.preferences.ui bottom-panel-visible false
+gsettings set org.gnome.gedit.preferences.ui side-panel-visible true
+gsettings set org.gnome.gedit.preferences.ui show-tabs-mode 'auto'
+gsettings set org.gnome.gthumb.crop grid-type 'thirds'
+gsettings set org.gnome.gthumb.crop aspect-ratio-invert false
+gsettings set org.gnome.gthumb.crop aspect-ratio-width 1
+gsettings set org.gnome.gthumb.crop bind-factor 8
+gsettings set org.gnome.gthumb.crop aspect-ratio 'none'
+gsettings set org.gnome.gthumb.crop aspect-ratio-height 1
+gsettings set org.gnome.gthumb.crop bind-dimensions false
+gsettings set com.canonical.unity.settings-daemon.peripherals priority 0
+gsettings set com.canonical.unity.settings-daemon.peripherals active true
+gsettings set org.gnome.settings-daemon.peripherals.keyboard click true
+gsettings set org.gnome.settings-daemon.peripherals.keyboard click-volume 0
+gsettings set org.gnome.settings-daemon.peripherals.keyboard bell-custom-file ''
+gsettings set org.gnome.settings-daemon.peripherals.keyboard bell-duration 100
+gsettings set org.gnome.settings-daemon.peripherals.keyboard bell-mode 'on'
+gsettings set org.gnome.settings-daemon.peripherals.keyboard bell-pitch 400
+gsettings set org.gnome.desktop.thumbnail-cache maximum-age 180
+gsettings set org.gnome.desktop.thumbnail-cache maximum-size 512
+gsettings set com.canonical.unity.settings-daemon.plugins.mouse priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.mouse active true
+gsettings set org.gnome.login-screen allowed-failures 3
+gsettings set org.gnome.login-screen logo '/usr/share/plymouth/ubuntu-logo.png'
+gsettings set org.gnome.login-screen fallback-logo ''
+gsettings set org.gnome.login-screen banner-message-text ''
+gsettings set org.gnome.login-screen disable-restart-buttons false
+gsettings set org.gnome.login-screen enable-fingerprint-authentication true
+gsettings set org.gnome.login-screen enable-smartcard-authentication false
+gsettings set org.gnome.login-screen disable-user-list false
+gsettings set org.gnome.login-screen banner-message-enable false
+gsettings set org.gnome.login-screen enable-password-authentication true
+gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature uint32 5700
+gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+gsettings set org.gnome.settings-daemon.plugins.color recalibrate-display-threshold uint32 0
+gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-automatic true
+gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-to 6.0
+gsettings set org.gnome.settings-daemon.plugins.color night-light-last-coordinates [91.0, 181.0]
+gsettings set org.gnome.settings-daemon.plugins.color active true
+gsettings set org.gnome.settings-daemon.plugins.color priority 0
+gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-from 20.0
+gsettings set org.gnome.settings-daemon.plugins.color recalibrate-printer-threshold uint32 0
+gsettings set org.gnome.metacity alt-tab-thumbnails false
+gsettings set org.gnome.metacity compositing-manager false
+gsettings set org.gnome.metacity placement-mode 'smart'
+gsettings set org.gnome.metacity edge-tiling true
+gsettings set org.gnome.metacity reduced-resources false
+gsettings set org.gnome.settings-daemon.plugins.xsettings antialiasing 'grayscale'
+gsettings set org.gnome.settings-daemon.plugins.xsettings rgba-order 'rgb'
+gsettings set org.gnome.settings-daemon.plugins.xsettings hinting 'slight'
+gsettings set org.gnome.settings-daemon.plugins.xsettings overrides {'Gtk/ShellShowsAppMenu': 0, 'Gtk/DecorationLayout': 'menu:minimize,maximize,close'}
+gsettings set org.gnome.settings-daemon.plugins.xsettings disabled-gtk-modules @as []
+gsettings set org.gnome.settings-daemon.plugins.xsettings enabled-gtk-modules @as []
+gsettings set org.gnome.settings-daemon.plugins.xsettings priority 0
+gsettings set org.gnome.settings-daemon.plugins.xsettings active true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb treble-cut 5000.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb bass-cut 300.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb predelay 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb diffusion 0.5
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb state false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb amount -12.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb installed true
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb hf-damp 5000.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb decay-time 1.5
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb room-size 'Large'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb dry 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.reverb post-messages false
+gsettings set org.mate.debug caja false
+gsettings set org.mate.debug mate-settings-daemon false
+gsettings set org.mate.debug marco false
+gsettings set org.mate.debug mate-panel false
+gsettings set org.mate.debug mate-session false
+gsettings set org.freedesktop.Tracker.Extract wait-for-miner-fs false
+gsettings set org.freedesktop.Tracker.Extract max-bytes 1048576
+gsettings set org.freedesktop.Tracker.Extract verbosity 'errors'
+gsettings set org.freedesktop.Tracker.Extract sched-idle 'first-index'
+gsettings set org.cinnamon.desktop.session settings-daemon-uses-logind true
+gsettings set org.cinnamon.desktop.session session-name 'cinnamon'
+gsettings set org.cinnamon.desktop.session session-manager-uses-logind true
+gsettings set org.cinnamon.desktop.session idle-delay uint32 900
+gsettings set org.gnome.crypto.cache gpg-cache-ttl 300
+gsettings set org.gnome.crypto.cache gpg-cache-method 'session'
+gsettings set com.hughski.colorhug-client enable-test-firmware false
+gsettings set com.hughski.colorhug-client server-uri 'http://www.hughski.com/downloads'
+gsettings set org.xfce.mousepad.preferences.view show-whitespace false
+gsettings set org.xfce.mousepad.preferences.view smart-home-end 'disabled'
+gsettings set org.xfce.mousepad.preferences.view color-scheme 'tango'
+gsettings set org.xfce.mousepad.preferences.view show-right-margin false
+gsettings set org.xfce.mousepad.preferences.view show-line-marks false
+gsettings set org.xfce.mousepad.preferences.view show-line-endings false
+gsettings set org.xfce.mousepad.preferences.view indent-on-tab true
+gsettings set org.xfce.mousepad.preferences.view auto-indent false
+gsettings set org.xfce.mousepad.preferences.view insert-spaces false
+gsettings set org.xfce.mousepad.preferences.view tab-width 8
+gsettings set org.xfce.mousepad.preferences.view highlight-current-line false
+gsettings set org.xfce.mousepad.preferences.view show-line-numbers false
+gsettings set org.xfce.mousepad.preferences.view word-wrap true
+gsettings set org.xfce.mousepad.preferences.view use-default-monospace-font false
+gsettings set org.xfce.mousepad.preferences.view indent-width -1
+gsettings set org.xfce.mousepad.preferences.view font-name 'Noto Sans 12'
+gsettings set org.xfce.mousepad.preferences.view right-margin-position 80
+gsettings set org.xfce.mousepad.preferences.view match-braces false
+gsettings set org.gnome.metacity.theme name ''
+gsettings set org.gnome.metacity.theme type 'gtk'
+gsettings set org.gnome.eog.view use-background-color true
+gsettings set org.gnome.eog.view autorotate true
+gsettings set org.gnome.eog.view transparency 'checked'
+gsettings set org.gnome.eog.view trans-color '#000000'
+gsettings set org.gnome.eog.view background-color 'rgb[0,0,0]'
+gsettings set org.gnome.eog.view extrapolate true
+gsettings set org.gnome.eog.view interpolate true
+gsettings set org.gnome.eog.view scroll-wheel-zoom true
+gsettings set org.gnome.eog.view zoom-multiplier 0.050000000000000003
+gsettings set org.gnome.gthumb.pixbuf-savers.webp method 4
+gsettings set org.gnome.gthumb.pixbuf-savers.webp lossless false
+gsettings set org.gnome.gthumb.pixbuf-savers.webp quality 75
+gsettings set org.gnome.shell.weather automatic-location true
+gsettings set org.gnome.desktop.wm.preferences theme 'Materia-dark'
+gsettings set org.gnome.desktop.wm.preferences focus-new-windows 'smart'
+gsettings set org.gnome.desktop.wm.preferences raise-on-click true
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
+gsettings set org.gnome.desktop.wm.preferences disable-workarounds false
+gsettings set org.gnome.desktop.wm.preferences titlebar-uses-system-font false
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Ubuntu Bold 11'
+gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier '<Super>'
+gsettings set org.gnome.desktop.wm.preferences auto-raise true
+gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'none'
+gsettings set org.gnome.desktop.wm.preferences resize-with-right-button false
+gsettings set org.gnome.desktop.wm.preferences action-right-click-titlebar 'menu'
+gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'toggle-maximize'
+gsettings set org.gnome.desktop.wm.preferences workspace-names ['Рабочее место 1', 'Рабочее место 2', '', '', '']
+gsettings set org.gnome.desktop.wm.preferences visual-bell-type 'frame-flash'
+gsettings set org.gnome.desktop.wm.preferences focus-mode 'click'
+gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
+gsettings set org.gnome.desktop.wm.preferences auto-raise-delay 1000
+gsettings set org.gnome.desktop.wm.preferences audible-bell true
+gsettings set org.gnome.desktop.wm.preferences visual-bell false
+gsettings set org.gnome.gedit.plugins.filebrowser.nautilus click-policy 'double'
+gsettings set org.gnome.gedit.plugins.filebrowser.nautilus confirm-trash true
+gsettings set com.ubuntu.user-interface.desktop text-scaling-factor 1.0
+gsettings set com.ubuntu.user-interface.desktop scaling-factor uint32 0
+gsettings set com.ubuntu.user-interface.desktop cursor-size 24
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer split-channels false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer state false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer mode 'IIR'
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer installed false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer post-messages false
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sourceoutputs.equalizer num-bands 30
+gsettings set ca.desrt.dconf-editor.Settings show-warning false
+gsettings set ca.desrt.dconf-editor.Settings small-keys-list-rows false
+gsettings set ca.desrt.dconf-editor.Settings refresh-settings-schema-source true
+gsettings set ca.desrt.dconf-editor.Settings relocatable-schemas-enabled-mappings ['User', 'Built-in', 'Internal', 'Startup']
+gsettings set ca.desrt.dconf-editor.Settings mouse-back-button 8
+gsettings set ca.desrt.dconf-editor.Settings mouse-use-extra-buttons true
+gsettings set ca.desrt.dconf-editor.Settings saved-pathbar-path '/org/gnome/desktop/lockdown/'
+gsettings set ca.desrt.dconf-editor.Settings relocatable-schemas-user-paths {'gsettings set ca.desrt.dconf-editor.Demo.Relocatable': '/ca/desrt/dconf-editor/Demo/relocatable/'}
+gsettings set ca.desrt.dconf-editor.Settings saved-view '/org/gnome/desktop/lockdown/'
+gsettings set ca.desrt.dconf-editor.Settings behaviour 'always-confirm-implicit'
+gsettings set ca.desrt.dconf-editor.Settings mouse-forward-button 9
+gsettings set ca.desrt.dconf-editor.Settings use-shortpaths false
+gsettings set ca.desrt.dconf-editor.Settings sort-case-sensitive false
+gsettings set ca.desrt.dconf-editor.Settings restore-view true
+gsettings set org.gnome.libgnomekbd.keyboard layouts ['us', 'ru']
+gsettings set org.gnome.libgnomekbd.keyboard options ['grp\tgrp:alt_shift_toggle']
+gsettings set org.gnome.libgnomekbd.keyboard model ''
+gsettings set com.canonical.unity.settings-daemon.plugins.a11y-keyboard priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.a11y-keyboard active true
+gsettings set org.cinnamon.desktop.default-applications.office.tasks exec 'evolution -c tasks'
+gsettings set org.cinnamon.desktop.default-applications.office.tasks needs-term false
+gsettings set org.gnome.gthumb.pixbuf-savers.tga rle-compression true
+gsettings set com.gexperts.Tilix.Keybindings terminal-insert-password 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings win-switch-to-session-1 '<Ctrl><Alt>1'
+gsettings set com.gexperts.Tilix.Keybindings terminal-find-next '<Ctrl><Shift>g'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-7 '<Alt>7'
+gsettings set com.gexperts.Tilix.Keybindings terminal-copy-as-html 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings terminal-page-up '<Shift>Page_Up'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-left '<Alt>Left'
+gsettings set com.gexperts.Tilix.Keybindings terminal-page-down '<Shift>Page_Down'
+gsettings set com.gexperts.Tilix.Keybindings app-new-window '<Shift><Ctrl>N'
+gsettings set com.gexperts.Tilix.Keybindings terminal-file-browser 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings terminal-title-style 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings terminal-insert-number 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings win-switch-to-session-2 '<Ctrl><Alt>2'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-8 '<Alt>8'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-down '<Alt>Down'
+gsettings set com.gexperts.Tilix.Keybindings terminal-toggle-margin '<Ctrl><Alt>m'
+gsettings set com.gexperts.Tilix.Keybindings terminal-zoom-out '<Ctrl>minus'
+gsettings set com.gexperts.Tilix.Keybindings terminal-previous-prompt 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings terminal-copy '<Ctrl><Shift>c'
+gsettings set com.gexperts.Tilix.Keybindings session-add-down '<Ctrl><Alt>d'
+gsettings set com.gexperts.Tilix.Keybindings terminal-find-previous '<Ctrl><Shift>h'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-9 '<Alt>9'
+gsettings set com.gexperts.Tilix.Keybindings win-fullscreen 'F11'
+gsettings set com.gexperts.Tilix.Keybindings app-new-session '<Shift><Ctrl>T'
+gsettings set com.gexperts.Tilix.Keybindings terminal-next-prompt 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings win-switch-to-next-session '<Ctrl>Page_Down'
+gsettings set com.gexperts.Tilix.Keybindings win-switch-to-session-3 '<Ctrl><Alt>3'
+gsettings set com.gexperts.Tilix.Keybindings terminal-close '<Shift><Ctrl>W'
+gsettings set com.gexperts.Tilix.Keybindings win-switch-to-session-4 '<Ctrl><Alt>4'
+gsettings set com.gexperts.Tilix.Keybindings terminal-profile-preference 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings session-save-as 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings session-save '<Shift><Ctrl>s'
+gsettings set com.gexperts.Tilix.Keybindings session-name 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings terminal-add-bookmark 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings terminal-scroll-down '<Ctrl><Shift>Down'
+gsettings set com.gexperts.Tilix.Keybindings terminal-sync-input-override 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-next-terminal '<Ctrl>Tab'
+gsettings set com.gexperts.Tilix.Keybindings app-shortcuts 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings terminal-paste-primary '<Shift>Insert'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-0 '<Alt>0'
+gsettings set com.gexperts.Tilix.Keybindings win-switch-to-session-5 '<Ctrl><Alt>5'
+gsettings set com.gexperts.Tilix.Keybindings win-switch-to-session-6 '<Ctrl><Alt>6'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-1 '<Alt>1'
+gsettings set com.gexperts.Tilix.Keybindings terminal-advanced-paste 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings win-switch-to-session-7 '<Ctrl><Alt>7'
+gsettings set com.gexperts.Tilix.Keybindings terminal-save 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings win-view-sidebar 'F12'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-up '<Alt>Up'
+gsettings set com.gexperts.Tilix.Keybindings terminal-select-bookmark '<Ctrl><Shift>b'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-2 '<Alt>2'
+gsettings set com.gexperts.Tilix.Keybindings session-synchronize-input 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings terminal-paste '<Ctrl><Shift>v'
+gsettings set com.gexperts.Tilix.Keybindings win-switch-to-session-8 '<Ctrl><Alt>8'
+gsettings set com.gexperts.Tilix.Keybindings session-close '<Shift><Ctrl>Q'
+gsettings set com.gexperts.Tilix.Keybindings terminal-maximize '<Shift><Ctrl>X'
+gsettings set com.gexperts.Tilix.Keybindings terminal-monitor-silence 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings session-resize-terminal-up '<Shift><Alt>Up'
+gsettings set com.gexperts.Tilix.Keybindings session-add-auto '<Ctrl><Alt>a'
+gsettings set com.gexperts.Tilix.Keybindings terminal-read-only 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-3 '<Alt>3'
+gsettings set com.gexperts.Tilix.Keybindings terminal-find '<Ctrl><Shift>f'
+gsettings set com.gexperts.Tilix.Keybindings session-add-right '<Ctrl><Alt>r'
+gsettings set com.gexperts.Tilix.Keybindings terminal-zoom-in '<Ctrl>plus'
+gsettings set com.gexperts.Tilix.Keybindings session-resize-terminal-down '<Shift><Alt>Down'
+gsettings set com.gexperts.Tilix.Keybindings session-open '<Shift><Ctrl>o'
+gsettings set com.gexperts.Tilix.Keybindings app-preferences 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings terminal-layout 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-4 '<Alt>4'
+gsettings set com.gexperts.Tilix.Keybindings terminal-reset 'disabled'
+gsettings set com.gexperts.Tilix.Keybindings win-switch-to-session-9 '<Ctrl><Alt>9'
+gsettings set com.gexperts.Tilix.Keybindings terminal-zoom-normal '<Ctrl>0'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-previous-terminal '<Ctrl><Shift>Tab'
+gsettings set com.gexperts.Tilix.Keybindings session-resize-terminal-left '<Shift><Alt>Left'
+gsettings set com.gexperts.Tilix.Keybindings terminal-select-all '<Ctrl><Shift>a'
+gsettings set com.gexperts.Tilix.Keybindings nautilus-open '<Ctrl><Alt>t'
+gsettings set com.gexperts.Tilix.Keybindings win-reorder-next-session '<Ctrl><Shift>Page_Down'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-5 '<Alt>5'
+gsettings set com.gexperts.Tilix.Keybindings win-reorder-previous-session '<Ctrl><Shift>Page_Up'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-right '<Alt>Right'
+gsettings set com.gexperts.Tilix.Keybindings session-resize-terminal-right '<Shift><Alt>Right'
+gsettings set com.gexperts.Tilix.Keybindings win-switch-to-session-0 '<Ctrl><Alt>0'
+gsettings set com.gexperts.Tilix.Keybindings terminal-scroll-up '<Ctrl><Shift>Up'
+gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-6 '<Alt>6'
+gsettings set com.gexperts.Tilix.Keybindings win-switch-to-previous-session '<Ctrl>Page_Up'
+gsettings set com.gexperts.Tilix.Keybindings terminal-reset-and-clear 'disabled'
+gsettings set org.cinnamon.desktop.interface gtk-color-palette 'black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90'
+gsettings set org.cinnamon.desktop.interface toolkit-accessibility false
+gsettings set org.cinnamon.desktop.interface can-change-accels false
+gsettings set org.cinnamon.desktop.interface gtk-theme-backup 'Adwaita'
+gsettings set org.cinnamon.desktop.interface cursor-blink true
+gsettings set org.cinnamon.desktop.interface automatic-mnemonics true
+gsettings set org.cinnamon.desktop.interface icon-theme 'oomox-griggorii'
+gsettings set org.cinnamon.desktop.interface gtk-im-preedit-style 'callback'
+gsettings set org.cinnamon.desktop.interface menus-have-icons true
+gsettings set org.cinnamon.desktop.interface menus-have-tearoff false
+gsettings set org.cinnamon.desktop.interface cursor-size 24
+gsettings set org.cinnamon.desktop.interface buttons-have-icons false
+gsettings set org.cinnamon.desktop.interface keyboard-layout-use-upper false
+gsettings set org.cinnamon.desktop.interface icon-theme-backup 'gnome'
+gsettings set org.cinnamon.desktop.interface gtk-timeout-initial 200
+gsettings set org.cinnamon.desktop.interface gtk-theme 'Pop-dark-oomox-griggorii_theme_2020_V4'
+gsettings set org.cinnamon.desktop.interface clock-show-seconds true
+gsettings set org.cinnamon.desktop.interface keyboard-layout-show-flags true
+gsettings set org.cinnamon.desktop.interface scaling-factor uint32 0
+gsettings set org.cinnamon.desktop.interface gtk-color-scheme ''
+gsettings set org.cinnamon.desktop.interface gtk-im-module ''
+gsettings set org.cinnamon.desktop.interface clock-show-date true
+gsettings set org.cinnamon.desktop.interface cursor-blink-time 1200
+gsettings set org.cinnamon.desktop.interface toolbar-icons-size 'large'
+gsettings set org.cinnamon.desktop.interface first-day-of-week 7
+gsettings set org.cinnamon.desktop.interface gtk-timeout-repeat 20
+gsettings set org.cinnamon.desktop.interface toolbar-style 'both-horiz'
+gsettings set org.cinnamon.desktop.interface cursor-blink-timeout 10
+gsettings set org.cinnamon.desktop.interface show-unicode-menu true
+gsettings set org.cinnamon.desktop.interface gtk-key-theme 'Default'
+gsettings set org.cinnamon.desktop.interface toolbar-detachable false
+gsettings set org.cinnamon.desktop.interface keyboard-layout-prefer-variant-names false
+gsettings set org.cinnamon.desktop.interface cursor-theme 'breeze_cursors'
+gsettings set org.cinnamon.desktop.interface show-input-method-menu true
+gsettings set org.cinnamon.desktop.interface gtk-overlay-scrollbars true
+gsettings set org.cinnamon.desktop.interface gtk-im-status-style 'callback'
+gsettings set org.cinnamon.desktop.interface menubar-accel 'F10'
+gsettings set org.cinnamon.desktop.interface clock-use-24h true
+gsettings set org.cinnamon.desktop.interface enable-animations true
+gsettings set org.cinnamon.desktop.interface font-name 'Ubuntu 11.5'
+gsettings set org.cinnamon.desktop.interface text-scaling-factor 1.0
+gsettings set org.cinnamon.desktop.interface menubar-detachable false
+gsettings set com.canonical.a11y-profile-manager active-profile ''
+gsettings set org.gnome.Terminal.Legacy.Settings shortcuts-enabled true
+gsettings set org.gnome.Terminal.Legacy.Settings unified-menu false
+gsettings set org.gnome.Terminal.Legacy.Settings schema-version uint32 3
+gsettings set org.gnome.Terminal.Legacy.Settings shell-integration-enabled true
+gsettings set org.gnome.Terminal.Legacy.Settings new-terminal-mode 'window'
+gsettings set org.gnome.Terminal.Legacy.Settings tab-position 'top'
+gsettings set org.gnome.Terminal.Legacy.Settings new-tab-position 'last'
+gsettings set org.gnome.Terminal.Legacy.Settings mnemonics-enabled false
+gsettings set org.gnome.Terminal.Legacy.Settings headerbar @mb nothing
+gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar true
+gsettings set org.gnome.Terminal.Legacy.Settings menu-accelerator-enabled true
+gsettings set org.gnome.Terminal.Legacy.Settings confirm-close true
+gsettings set org.gnome.Terminal.Legacy.Settings tab-policy 'automatic'
+gsettings set org.gnome.Terminal.Legacy.Settings theme-variant 'dark'
+gsettings set org.gnome.Terminal.Legacy.Keybindings reset-and-clear 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-2 '<Alt>2'
+gsettings set org.gnome.Terminal.Legacy.Keybindings prev-tab '<Control>Page_Up'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-last 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-13 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-25 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-3 '<Alt>3'
+gsettings set org.gnome.Terminal.Legacy.Keybindings close-window '<Ctrl><Shift>q'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-14 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings export 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings find-previous '<Control><Shift>H'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-26 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings save-contents 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-4 '<Alt>4'
+gsettings set org.gnome.Terminal.Legacy.Keybindings new-tab '<Ctrl><Shift>t'
+gsettings set org.gnome.Terminal.Legacy.Keybindings header-menu 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-15 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings toggle-menubar 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings close-tab '<Ctrl><Shift>w'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-27 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings find '<Control><Shift>F'
+gsettings set org.gnome.Terminal.Legacy.Keybindings preferences 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings find-next '<Control><Shift>G'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-16 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-5 '<Alt>5'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-28 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-6 '<Alt>6'
+gsettings set org.gnome.Terminal.Legacy.Keybindings copy-html 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings move-tab-right '<Ctrl><Shift>Page_Down'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-17 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-29 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings move-tab-left '<Ctrl><Shift>Page_Up'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-7 '<Alt>7'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-18 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings full-screen 'F11'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-30 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings next-tab '<Control>Page_Down'
+gsettings set org.gnome.Terminal.Legacy.Keybindings select-all 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-8 '<Alt>8'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-19 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-31 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings help 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-9 '<Alt>9'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-20 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings zoom-normal '<Ctrl>0'
+gsettings set org.gnome.Terminal.Legacy.Keybindings new-window '<Ctrl><Shift>n'
+gsettings set org.gnome.Terminal.Legacy.Keybindings detach-tab 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-32 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings paste '<Ctrl><Shift>v'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-21 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings print 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-33 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings copy '<Ctrl><Shift>c'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-10 '<Alt>0'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-22 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings read-only 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings zoom-out '<Ctrl>minus'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-34 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings find-clear '<Control><Shift>J'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-11 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings reset 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-23 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-1 '<Alt>1'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-35 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-12 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings zoom-in '<Ctrl>plus'
+gsettings set org.gnome.Terminal.Legacy.Keybindings switch-to-tab-24 'disabled'
+gsettings set org.gnome.Charmap snap-cols-pow2 false
+gsettings set org.gnome.Charmap group-by 'script'
+gsettings set org.gnome.Charmap font @ms 'Courier New 20'
+gsettings set org.gnome.Charmap last-char uint32 65
+gsettings set org.gnome.gnote.sync.wdfs url ''
+gsettings set org.gnome.gnote.sync.wdfs accept-sslcert false
+gsettings set org.gnome.gnote.sync.wdfs username ''
+gsettings set org.gnome.gedit.plugins active-plugins ['docinfo', 'externaltools', 'terminal', 'commander', 'snippets', 'time', 'modelines', 'quickopen', 'git', 'findinfiles', 'joinlines', 'colorpicker', 'smartspaces', 'textsize', 'filebrowser', 'bracketcompletion', 'translate', 'spell', 'charmap', 'colorschemer', 'codecomment', 'quickhighlight', 'wordcompletion', 'sort', 'multiedit', 'pythonconsole', 'synctex']
+gsettings set org.gnome.evolution-data-server.calendar contacts-reminder-interval 15
+gsettings set org.gnome.evolution-data-server.calendar notify-window-width -1
+gsettings set org.gnome.evolution-data-server.calendar reminders-past ['']
+gsettings set org.gnome.evolution-data-server.calendar contacts-reminder-enabled false
+gsettings set org.gnome.evolution-data-server.calendar contacts-reminder-units 'minutes'
+gsettings set org.gnome.evolution-data-server.calendar notify-window-y -1
+gsettings set org.gnome.evolution-data-server.calendar notify-programs @as []
+gsettings set org.gnome.evolution-data-server.calendar reminders-snoozed ['']
+gsettings set org.gnome.evolution-data-server.calendar notify-last-snooze-minutes 5
+gsettings set org.gnome.evolution-data-server.calendar notify-window-height -1
+gsettings set org.gnome.evolution-data-server.calendar notify-with-tray false
+gsettings set org.gnome.evolution-data-server.calendar notify-past-events true
+gsettings set org.gnome.evolution-data-server.calendar notify-custom-snooze-minutes @ai []
+gsettings set org.gnome.evolution-data-server.calendar notify-window-on-top true
+gsettings set org.gnome.evolution-data-server.calendar notify-window-x -1
+gsettings set org.gnome.evolution-data-server.calendar notify-completed-tasks true
+gsettings set org.gnome.Cheese saturation 1.0
+gsettings set org.gnome.Cheese brightness 0.0
+gsettings set org.gnome.Cheese selected-effect 'Без эффектов'
+gsettings set org.gnome.Cheese photo-x-resolution 640
+gsettings set org.gnome.Cheese contrast 1.0
+gsettings set org.gnome.Cheese countdown true
+gsettings set org.gnome.Cheese burst-delay 1000
+gsettings set org.gnome.Cheese photo-y-resolution 480
+gsettings set org.gnome.Cheese countdown-duration 3
+gsettings set org.gnome.Cheese hue 0.0
+gsettings set org.gnome.Cheese burst-repeat 4
+gsettings set org.gnome.Cheese video-path ''
+gsettings set org.gnome.Cheese video-x-resolution 640
+gsettings set org.gnome.Cheese flash true
+gsettings set org.gnome.Cheese photo-path ''
+gsettings set org.gnome.Cheese video-y-resolution 480
+gsettings set org.gnome.Cheese camera 'HD WebCam: HD WebCam'
+gsettings set com.canonical.unity.settings-daemon.plugins.sharing priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.sharing active true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate range1 -24.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate attack2 150.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate release3 300.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate freq0 120.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate knee1 9.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate ratio2 2.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate bypass2 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate detection2 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate range2 -24.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate makeup0 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate attack3 150.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate freq1 1000.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate threshold0 -12.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate knee2 9.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate ratio3 2.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate bypass3 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate mode 'LR8'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate detection3 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate range3 -24.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate makeup1 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate threshold1 -12.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate solo0 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate freq2 6000.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate knee3 9.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate release0 300.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate input-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate solo1 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate makeup2 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate threshold2 -12.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate attack0 150.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate output-gain 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate release1 300.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate makeup3 0.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate ratio0 2.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate bypass0 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate state false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate detection0 'RMS'
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate range0 -24.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate threshold3 -12.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate attack1 150.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate release2 300.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate solo2 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate solo3 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate knee0 9.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate ratio1 2.0
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate bypass1 false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate post-messages false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.multibandgate detection1 'RMS'
+gsettings set org.gnome.system-tools.users showall false
+gsettings set org.gnome.system-tools.users showroot false
+gsettings set org.gnome.gnome-system-monitor.memmapstree sort-order 0
+gsettings set org.gnome.gnome-system-monitor.memmapstree sort-col 0
+gsettings set org.gnome.settings-daemon.plugins.mouse priority 0
+gsettings set org.gnome.settings-daemon.plugins.mouse active true
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-rajce show-album false
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-rajce last-photo-size -1
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-rajce token ''
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-rajce strip-metadata false
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-rajce url 'http://rajce.net/'
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-rajce username ''
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-rajce hide-album false
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-rajce remember false
+gsettings set org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-rajce last-category -1
+gsettings set org.cinnamon.desktop.a11y.keyboard bouncekeys-delay 300
+gsettings set org.cinnamon.desktop.a11y.keyboard togglekeys-enable false
+gsettings set org.cinnamon.desktop.a11y.keyboard togglekeys-sound-off '/usr/share/cinnamon/sounds/togglekeys-sound-off.ogg'
+gsettings set org.cinnamon.desktop.a11y.keyboard mousekeys-max-speed 10
+gsettings set org.cinnamon.desktop.a11y.keyboard stickykeys-enable false
+gsettings set org.cinnamon.desktop.a11y.keyboard mousekeys-init-delay 300
+gsettings set org.cinnamon.desktop.a11y.keyboard bouncekeys-enable false
+gsettings set org.cinnamon.desktop.a11y.keyboard enable false
+gsettings set org.cinnamon.desktop.a11y.keyboard mousekeys-accel-time 300
+gsettings set org.cinnamon.desktop.a11y.keyboard bouncekeys-beep-reject false
+gsettings set org.cinnamon.desktop.a11y.keyboard feature-state-change-beep false
+gsettings set org.cinnamon.desktop.a11y.keyboard mousekeys-enable false
+gsettings set org.cinnamon.desktop.a11y.keyboard togglekeys-enable-beep false
+gsettings set org.cinnamon.desktop.a11y.keyboard stickykeys-modifier-beep false
+gsettings set org.cinnamon.desktop.a11y.keyboard slowkeys-enable false
+gsettings set org.cinnamon.desktop.a11y.keyboard togglekeys-sound-on '/usr/share/cinnamon/sounds/togglekeys-sound-on.ogg'
+gsettings set org.cinnamon.desktop.a11y.keyboard slowkeys-delay 300
+gsettings set org.cinnamon.desktop.a11y.keyboard timeout-enable false
+gsettings set org.cinnamon.desktop.a11y.keyboard slowkeys-beep-reject false
+gsettings set org.cinnamon.desktop.a11y.keyboard stickykeys-two-key-off false
+gsettings set org.cinnamon.desktop.a11y.keyboard slowkeys-beep-accept false
+gsettings set org.cinnamon.desktop.a11y.keyboard slowkeys-beep-press false
+gsettings set org.cinnamon.desktop.a11y.keyboard disable-timeout 200
+gsettings set org.cinnamon.desktop.a11y.keyboard togglekeys-enable-osd false
+gsettings set org.yorba.shotwell.sharing last-used-service ''
+gsettings set org.yorba.shotwell.sharing default-service 1
+gsettings set org.onboard.icon-palette.portrait width 64
+gsettings set org.onboard.icon-palette.portrait y 50
+gsettings set org.onboard.icon-palette.portrait height 64
+gsettings set org.onboard.icon-palette.portrait x 100
+gsettings set org.gnome.settings-daemon.plugins.rfkill priority 0
+gsettings set org.gnome.settings-daemon.plugins.rfkill active true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crossfeed fcut 700
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crossfeed post-messages false
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crossfeed installed true
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crossfeed feed 4.5
+gsettings set com.github.wwmm.pulseeffects.sinkinputs.crossfeed state false
+gsettings set org.gnome.gedit.state.file-filter filter-id 0
+gsettings set org.gnome.rhythmbox.plugins.iradio initial-stations-loaded true
+gsettings set org.gnome.rhythmbox.plugins.iradio.source search-type 'search-match'
+gsettings set org.gnome.rhythmbox.plugins.iradio.source show-browser true
+gsettings set org.gnome.rhythmbox.plugins.iradio.source paned-position 200
+gsettings set org.gnome.rhythmbox.plugins.iradio.source sorting ['Title', true]
+gsettings set org.gnome.brasero.config minbuf-value 0
+gsettings set org.gnome.brasero.config tmpdir ''
+gsettings set org.gnome.brasero.config immed-flag false
+gsettings set org.gnome.brasero.config plugins @as []
+gsettings set org.gnome.brasero.config engine-group ''
+gsettings set org.gnome.brasero.config checksum-image 0
+gsettings set org.gnome.brasero.config raw-flag false
+gsettings set org.gnome.brasero.config checksum-files 0
+gsettings set org.gnome.brasero.config dao-flag false
+gsettings set org.gnome.gedit.state.history-entry replace-with-entry ['/usr/share/backgrounds']
+gsettings set org.gnome.gedit.state.history-entry search-for-entry ['/usr/share/chromeos-assets/wallpaper']
+gsettings set org.gnome.shell.extensions.user-theme name 'Orchis'
+gsettings set org.gnome.system.smb workgroup ''
+gsettings set com.canonical.unity.settings-daemon.plugins.power lid-close-ac-action 'suspend'
+gsettings set com.canonical.unity.settings-daemon.plugins.power time-critical 300
+gsettings set com.canonical.unity.settings-daemon.plugins.power power-button-action 'suspend'
+gsettings set com.canonical.unity.settings-daemon.plugins.power lid-close-suspend-with-external-monitor false
+gsettings set com.canonical.unity.settings-daemon.plugins.power button-hibernate 'hibernate'
+gsettings set com.canonical.unity.settings-daemon.plugins.power idle-dim true
+gsettings set com.canonical.unity.settings-daemon.plugins.power button-power 'suspend'
+gsettings set com.canonical.unity.settings-daemon.plugins.power lid-close-battery-action 'suspend'
+gsettings set com.canonical.unity.settings-daemon.plugins.power priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.power idle-brightness 30
+gsettings set com.canonical.unity.settings-daemon.plugins.power active true
+gsettings set com.canonical.unity.settings-daemon.plugins.power critical-battery-action 'hibernate'
+gsettings set com.canonical.unity.settings-daemon.plugins.power button-suspend 'suspend'
+gsettings set com.canonical.unity.settings-daemon.plugins.power button-sleep 'hibernate'
+gsettings set com.canonical.unity.settings-daemon.plugins.power percentage-critical 3
+gsettings set com.canonical.unity.settings-daemon.plugins.power sleep-inactive-ac-timeout 1200
+gsettings set com.canonical.unity.settings-daemon.plugins.power sleep-inactive-ac-type 'suspend'
+gsettings set com.canonical.unity.settings-daemon.plugins.power ambient-enabled true
+gsettings set com.canonical.unity.settings-daemon.plugins.power notify-perhaps-recall true
+gsettings set com.canonical.unity.settings-daemon.plugins.power percentage-low 10
+gsettings set com.canonical.unity.settings-daemon.plugins.power percentage-action 2
+gsettings set com.canonical.unity.settings-daemon.plugins.power sleep-inactive-battery-type 'suspend'
+gsettings set com.canonical.unity.settings-daemon.plugins.power time-low 1200
+gsettings set com.canonical.unity.settings-daemon.plugins.power sleep-inactive-battery-timeout 1200
+gsettings set com.canonical.unity.settings-daemon.plugins.power time-action 120
+gsettings set com.canonical.unity.settings-daemon.plugins.power use-time-for-policy true
+gsettings set net.launchpad.plank enabled-docks ['dock1']
+gsettings set net.launchpad.plank.dock.settings position 'bottom'
+gsettings set net.launchpad.plank.dock.settings icon-size 48
+gsettings set net.launchpad.plank.dock.settings auto-pinning true
+gsettings set net.launchpad.plank.dock.settings pressure-reveal false
+gsettings set net.launchpad.plank.dock.settings show-dock-item false
+gsettings set net.launchpad.plank.dock.settings items-alignment 'center'
+gsettings set net.launchpad.plank.dock.settings theme 'Default'
+gsettings set net.launchpad.plank.dock.settings zoom-percent 150
+gsettings set net.launchpad.plank.dock.settings monitor ''
+gsettings set net.launchpad.plank.dock.settings lock-items false
+gsettings set net.launchpad.plank.dock.settings dock-items @as []
+gsettings set net.launchpad.plank.dock.settings tooltips-enabled true
+gsettings set net.launchpad.plank.dock.settings unhide-delay 0
+gsettings set net.launchpad.plank.dock.settings current-workspace-only false
+gsettings set net.launchpad.plank.dock.settings alignment 'center'
+gsettings set net.launchpad.plank.dock.settings hide-delay 0
+gsettings set net.launchpad.plank.dock.settings hide-mode 'intelligent'
+gsettings set net.launchpad.plank.dock.settings zoom-enabled false
+gsettings set net.launchpad.plank.dock.settings pinned-only false
+gsettings set net.launchpad.plank.dock.settings offset 0
+gsettings set com.canonical.unity.settings-daemon.plugins.print-notifications priority 0
+gsettings set com.canonical.unity.settings-daemon.plugins.print-notifications active true
+gsettings set org.freedesktop.Tracker.Writeback verbosity 'errors'
+gsettings set org.gnome.settings-daemon.plugins.background priority 0
+gsettings set org.gnome.settings-daemon.plugins.background active false
+gsettings set org.gnome.Evince page-cache-size uint32 50
+gsettings set org.gnome.Evince override-restrictions true
+gsettings set org.gnome.Evince auto-reload true
+gsettings set org.gnome.Evince document-directory @ms ''
+gsettings set org.gnome.Evince pictures-directory @ms nothing
+gsettings set org.gnome.Evince show-caret-navigation-message true
+gsettings set org.gnome.Evince allow-links-change-zoom true
+gsettings set org.gnome.system.proxy.http use-authentication false
+gsettings set org.gnome.system.proxy.http enabled false
+gsettings set org.gnome.system.proxy.http authentication-password ''
+gsettings set org.gnome.system.proxy.http port 8080
+gsettings set org.gnome.system.proxy.http host ''
+gsettings set org.gnome.system.proxy.http authentication-user ''
+gsettings set org.gnome.system.proxy.socks port 0
+gsettings set org.gnome.system.proxy.socks host ''
+gsettings set org.gnome.system.proxy ignore-hosts ['localhost', '127.0.0.0/8', '::1']
+gsettings set org.gnome.system.proxy use-same-proxy false
+gsettings set org.gnome.system.proxy mode 'none'
+gsettings set org.gnome.system.proxy autoconfig-url ''
+gsettings set org.gnome.system.proxy.https port 0
+gsettings set org.gnome.system.proxy.https host ''
+gsettings set org.gnome.system.proxy.ftp port 0
+gsettings set org.gnome.system.proxy.ftp host ''
+gsettings set org.nemo.desktop show-desktop-icons false
+gsettings set org.gnome.nautilus.preferences always-use-location-entry true
+gsettings set org.gnome.nautilus.preferences list-view-on-search true
+gsettings set org.gnome.Vinagre shared-flag false
+gnome-extensions disable desktop-icons@csoriano
+gnome-extensions enable ubuntu-dock@ubuntu.com
+gnome-extensions enable windowsNavigator@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable workspace-indicator@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable ubuntu-appindicators@ubuntu.com
+gnome-extensions enable TilixDropdown@ivkuzev@gmail.com
+gnome-extensions enable screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable system-monitor@paradoxxx.zero.gmail.com
+gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable printers@linux-man.org
+gnome-extensions enable popthemetoggle@kylecorry31.github.io
+gnome-extensions enable openweather-extension@jenslody.de
+gnome-extensions enable native-window-placement@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable launch-new-instance@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable impatience@gfxmonk.net
+gnome-extensions enable hidetopbar@mathieu.bidon.ca
+gnome-extensions enable CoverflowAltTab@palatis.blogspot.com
+gnome-extensions enable compiz-alike-magic-lamp-effect@hermes83.github.com
+gnome-extensions enable auto-move-windows@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable apps-menu@gnome-shell-extensions.gcampax.github.com
+gnome-extensions disable window-list@gnome-shell-extensions.gcampax.github.com
+gnome-extensions disable dash-to-panel@jderose9.github.com
+gnome-extensions enable ding@rastersoft.com
+gnome-extensions disable desktop-icons@csoriano
+gsettings set org.nemo.desktop show-desktop-icons false
+gsettings set org.gnome.desktop.background show-desktop-icons false
+gsettings set org.gnome.desktop.background show-desktop-icons true
+gsettings set org.gnome.nautilus.preferences always-use-location-entry true
+gsettings set org.gnome.nautilus.preferences list-view-on-search true
+gsettings set org.gnome.Vinagre shared-flag false
+gnome-extensions disable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable gsconnect@andyholmes.github.io
+gnome-extensions disable unite@hardpixel.eu
+gsettings set auto-ovpn@yahoo.com true
+gsettings set gsconnect@andyholmes.github.io true
+gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+gsettings set org.gnome.shell.extensions.user-theme name "Orchis"
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.0
+gsettings set org.gnome.desktop.interface document-font-name 'Sans 10'
+gsettings set org.gnome.desktop.interface font-name 'Ubuntu 11'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Ubuntu Mono 11'
 EOF
 cat << EOF > qt5ct.conf
 [Appearance]
@@ -3974,7 +9327,6 @@ exec='tilix'
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/wallpaperbetter.com_7680x4320_3.jpg'
 primary-color='#2c001e'
 secondary-color='#2c001e'
 show-desktop-icons=false
@@ -6499,7 +11851,7 @@ EOF
 cp nautilus-autostart.desktop ~/.config/autostart/
 EOF
 clear
-EOF
+
 sudo mv nautilus-autostart.desktop /etc/xdg/autostart/
 EOF
 rm nautilus-autostart.desktop
@@ -7378,6 +12730,14 @@ EOF
 gnome-extensions enable unite@hardpixel.eu
 EOF
 gsettings set org.nemo.desktop show-desktop-icons false
+EOF
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.0
+EOF
+gsettings set org.gnome.desktop.interface document-font-name 'Sans 10'
+EOF
+gsettings set org.gnome.desktop.interface font-name 'Ubuntu 11'
+EOF
+gsettings set org.gnome.desktop.interface monospace-font-name 'Ubuntu Mono 11'
 EOF
 clear
 EOF
