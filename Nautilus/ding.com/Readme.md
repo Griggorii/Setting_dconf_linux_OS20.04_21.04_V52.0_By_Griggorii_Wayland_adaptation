@@ -10,7 +10,7 @@ Proview https://www.youtube.com/watch?v=dbaI42nYtQ0
 
                                     dump ding@rastersoft.com.tar.xz)
                                     
-Wayland Session effect Proview unite live icons https://www.youtube.com/watch?v=dbaI42nYtQ0                                    
+Wayland Session effect Proview unite live icons https://www.youtube.com/watch?v=dbaI42nYtQ0
 
 Download thems + icons https://github.com/Griggorii/ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso/archive/refs/heads/main.zip unpack ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso-main.zip run folder unpack all deb terminal command $ sudo dpkg -i *.deb
 
@@ -32,7 +32,7 @@ $ sudo tar xvpf ding@rastersoft.com_ubuntu_21.04.tar.xz -C /
 
 $ sudo tar xvpf unite_ubuntu_20.04.tar.xz -C /
 
-$ ./Replace_nemo-to-nautilus_dconf_linux_OS21.04_V50.0_By_Griggorii_Wayland_vertical_adaptation.sh
+$ ./Setting_dconf_linux_OS21.04_V50.0_By_Griggorii_Wayland_vertical_adaptation.sh
 
 $ gnome-extensions enable unite@hardpixel.eu && effect special os 20.04 https://youtu.be/dbaI42nYtQ0
 
