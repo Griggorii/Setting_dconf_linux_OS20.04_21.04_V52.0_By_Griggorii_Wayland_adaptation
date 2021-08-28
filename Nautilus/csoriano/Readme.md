@@ -23,7 +23,7 @@ End ubuntu 21.04 Или убунту 21.04
 
 $ sudo tar xvpf  desktop-icons@csoriano_21.04.tar.xz -C /
 
-$ ./Replace_nemo-to-nautilus_dconf_linux_OS21.04_V50.0_By_Griggorii_Wayland_vertical_adaptation.sh
+$ ./Setting_dconf_linux_OS21.04_V50.0_By_Griggorii_Wayland_vertical_adaptation.sh
 
 $ gnome-extensions disable unite@hardpixel.eu
 
