@@ -9,7 +9,9 @@ Fix script kill budgie-panel session to next sudo passwd
 
 Download thems + icons https://github.com/Griggorii/ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso/archive/refs/heads/main.zip unpack ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso-main.zip run folder unpack all deb terminal command $ sudo dpkg -i *.deb
 
-Ubuntu 20.04 new gnome-shell install https://github.com/Griggorii/gnome-control-center-3.36.8-ubuntu-20.04-source-deb/releases/download/ubuntu-20.04/gnome-shell_ubuntu-20.04_bonus_rebuild.zip
+
+Ubuntu 20.04 new gnome-shell install deb https://github.com/Griggorii/gnome-control-center-3.36.8-ubuntu-20.04-update-new/releases/tag/ubuntu-20.04
+
 
 Ubuntu 21.04 new gnome-shell install https://github.com/Griggorii/ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso/releases/download/pulseaudio-14.2/gnome-shell+control-center-griggorii_build_ubuntu_21.04.zip
 
