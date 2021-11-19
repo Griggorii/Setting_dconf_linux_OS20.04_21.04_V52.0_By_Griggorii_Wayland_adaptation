@@ -14192,6 +14192,10 @@ gsettings set org.gnome.mutter experimental-features "['kms'"', '"'vkms']"
 EOF
 clear
 
+sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+EOF
+glib-compile-schemas /usr/share/glib-2.0/schemas/
+EOF
 sudo mv nautilus-autostart.desktop /etc/xdg/autostart/
 EOF
 rm nautilus-autostart.desktop
