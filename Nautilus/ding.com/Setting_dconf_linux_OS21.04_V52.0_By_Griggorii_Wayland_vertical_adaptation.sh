@@ -14345,6 +14345,8 @@ sudo sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_max_freq_mhz"
 EOF
 sudo sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_RP1_freq_mhz"
 EOF
+sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor <<<performance
+EOF
 # Variant root not sudo repeat fix griggorii
 
 sh -c "/usr/bin/echo 4194304 > /proc/sys/vm/dirty_bytes"
@@ -14410,6 +14412,8 @@ sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_boost_freq_mhz"
 sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_max_freq_mhz"
 
 sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_RP1_freq_mhz"
+EOF
+tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor <<<performance
 EOF
 cd ~/
 EOF
