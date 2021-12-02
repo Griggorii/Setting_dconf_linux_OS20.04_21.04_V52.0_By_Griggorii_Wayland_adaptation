@@ -11935,6 +11935,24 @@ grep -H -r -n "Exec" /etc/xdg/autostart/tracker-extract.desktop && sudo echo -e 
 
 grep -H -r -n "Exec" /etc/xdg/autostart/tracker-miner-fs.desktop && sudo echo -e "\nHidden=true\n"|sudo tee --append /etc/xdg/autostart/tracker-miner-fs.desktop && sudo sed -i 's/Hidden=true//g' /etc/xdg/autostart/tracker-miner-fs.desktop && sudo echo -e "\nHidden=true\n"|sudo tee --append /etc/xdg/autostart/tracker-miner-fs.desktop
 EOF
+sudo sh -c "/usr/bin/echo  200000 > /proc/sys/dev/raid/speed_limit_min"
+EOF
+sudo sh -c "/usr/bin/echo 2000000 > /proc/sys/dev/raid/speed_limit_max"
+EOF
+sudo bash -c "echo dev.raid.speed_limit_min=200000 >> /etc/sysctl.d/raid_speed_limit_min.conf"
+EOF
+sudo bash -c "echo dev.raid.speed_limit_max=2000000 >> /etc/sysctl.d/raid_speed_limit_max.conf"
+EOF
+sudo rm /etc/sysctl.d/60-dirty.conf
+EOF
+sudo bash -c "echo >> /etc/sysctl.d/60-dirty.conf" && sudo echo -e "\nvm.dirty_bytes = 67108864\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_background_bytes = 16777216\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_expire_centisecs = 500\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_background_ratio = 10\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_expire_centisecs = 1500\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_ratio = 20\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_writeback_centisecs = 1500\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.drop_caches = 0\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_writeback_centisecs = 1500\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.lowmem_reserve_ratio = 256	256	32	0	0\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.max_map_count = 65530\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.max_map_count = 65530\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf
+EOF
+sudo rm /etc/sysctl.d/gt_mhz.conf
+EOF
+sudo bash -c "echo >> /etc/sysctl.d/gt_mhz.conf" && sudo echo -e "\ndev.char.226:0.gt_RP1_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_RPn_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_act_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_cur_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_min_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_RP0_freq_mhz = 2200\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_boost_freq_mhz = 2200\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_max_freq_mhz = 2200\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_RP1_freq_mhz = 2200\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf
+EOF
+sudo sysctl --system
+EOF
 cat << EOF > securetty
 # /etc/securetty: list of terminals on which root is allowed to login.
 # See securetty(5) and login(1).
