@@ -11939,7 +11939,11 @@ sudo sh -c "/usr/bin/echo  200000 > /proc/sys/dev/raid/speed_limit_min"
 EOF
 sudo sh -c "/usr/bin/echo 2000000 > /proc/sys/dev/raid/speed_limit_max"
 EOF
+sudo rm /etc/sysctl.d/raid_speed_limit_min.conf
+EOF
 sudo bash -c "echo dev.raid.speed_limit_min=200000 >> /etc/sysctl.d/raid_speed_limit_min.conf"
+EOF
+sudo rm /etc/sysctl.d/raid_speed_limit_max.conf
 EOF
 sudo bash -c "echo dev.raid.speed_limit_max=2000000 >> /etc/sysctl.d/raid_speed_limit_max.conf"
 EOF
