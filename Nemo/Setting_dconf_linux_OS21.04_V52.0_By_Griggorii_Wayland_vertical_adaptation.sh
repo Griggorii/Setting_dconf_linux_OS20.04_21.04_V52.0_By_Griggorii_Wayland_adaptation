@@ -11873,7 +11873,7 @@ mkdir ~/.local/share/gnome-shell/extensions
 EOF
 sudo mkdir ~/.local/share/gnome-shell/extensions
 EOF
-cd /usr/share/gnome-shell/
+cd /usr/share/gnome-shell/extensions/
 EOF
 cp -r auto-ovpn@yahoo.com ~/.local/share/gnome-shell/extensions/
 EOF
