@@ -12422,3 +12422,5 @@ EOF
 apt purge app-install-data-partner libruby2.7 rake ruby ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.7 rubygems-integration ruby-json -y
 EOF
 clear
+lightdm --test-mode
+clear
