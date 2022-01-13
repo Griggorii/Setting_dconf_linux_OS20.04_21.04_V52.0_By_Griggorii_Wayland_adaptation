@@ -10620,8 +10620,10 @@ echo && clear && (sleep 1; killall /usr/bin/* )
 gsettings set org.gnome.mutter experimental-features "['kms'"', '"'vkms']"
 
 EOF
-clear
-
+clear 
+EOF
+sudo sysctl -w kernel.unprivileged_bpf_disabled=1
+EOF
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 EOF
 glib-compile-schemas /usr/share/glib-2.0/schemas/
