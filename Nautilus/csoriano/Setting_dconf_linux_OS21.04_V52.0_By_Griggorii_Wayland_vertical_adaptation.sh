@@ -12417,4 +12417,7 @@ apt purge app-install-data-partner libruby2.7 rake ruby ruby-minitest ruby-net-t
 EOF
 clear
 lightdm --test-mode
+EOF
+systemctl status systemd-sysctl
+EOF
 clear
