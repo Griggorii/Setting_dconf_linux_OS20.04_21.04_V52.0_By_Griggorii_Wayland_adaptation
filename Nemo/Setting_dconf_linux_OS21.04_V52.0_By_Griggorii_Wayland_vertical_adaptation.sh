@@ -12016,7 +12016,7 @@ cat << EOF > sysctl.conf
 # See sysctl.conf (5) for information.
 #
 
-#kernel.domainname = example.com
+# kernel.domainname = example.com
 
 # Uncomment the following to stop low-level messages on console
 # kernel.printk = 3 4 1 3
