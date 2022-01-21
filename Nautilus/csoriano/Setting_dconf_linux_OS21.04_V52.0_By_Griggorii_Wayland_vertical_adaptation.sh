@@ -10624,6 +10624,24 @@ clear
 EOF
 sudo sysctl -w kernel.unprivileged_bpf_disabled=1
 EOF
+sudo rm /etc/sysctl.d/userns.conf
+EOF
+sudo rm '/etc/sysctl.d/userns.conf'
+EOF
+rm /etc/sysctl.d/userns.conf
+EOF
+rm '/etc/sysctl.d/userns.conf'
+EOF
+sudo sysctl -w user.max_user_namespaces=0
+EOF
+sudo bash -c "echo user.max_user_namespaces=0 >> /etc/sysctl.d/userns.conf"
+EOF
+bash -c "echo user.max_user_namespaces=0 >> /etc/sysctl.d/userns.conf"
+EOF
+sudo sysctl -p /etc/sysctl.d/userns.conf
+EOF
+sysctl -p /etc/sysctl.d/userns.conf
+EOF
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 EOF
 glib-compile-schemas /usr/share/glib-2.0/schemas/
@@ -11981,7 +11999,7 @@ sudo rm /etc/sysctl.d/gt_mhz.conf
 EOF
 sudo bash -c "echo >> /etc/sysctl.d/gt_mhz.conf" && sudo echo -e "\ndev.char.226:0.gt_RP1_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_RPn_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_act_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_cur_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_min_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_RP0_freq_mhz = 2200\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_boost_freq_mhz = 2200\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_max_freq_mhz = 2200\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_RP1_freq_mhz = 2200\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf
 EOF
-sudo sysctl --system
+cd /tmp/
 EOF
 sudo rm '/etc/sysctl.d/99-sysctl.conf'
 EOF
@@ -12510,8 +12528,6 @@ sudo rm ./securetty
 EOF
 sudo rm securetty
 EOF
-cd -
-EOF
 gsettings-data-convert ibus totem opensubtitles pythonconsole wm-schemas libgnomekbd pulseaudio mousetweaks mutter-schemas nm-applet org.gnome.Vinagre gvfs-dns-sd gnome-shell-overrides evolution-data-server folks update-manager org.gnome.crypto.pgp eog org.gnome.crypto.pgp_keyservers gnome-screenshot gnome-session gnome-settings-daemon gsettings-desktop-schemas org.gnome.crypto.cache gvfs-smb evince
 EOF
 sudo sed -i '/disable ghostscript format types/,+6d' /etc/ImageMagick-6/policy.xml
@@ -12520,8 +12536,15 @@ sudo sed -i -E 's/name="map" value=".+"/name="map" value="8GiB"/g' /etc/ImageMag
 sudo sed -i -E 's/name="area" value=".+"/name="area" value="8GiB"/g' /etc/ImageMagick-6/policy.xml
 sudo sed -i -E 's/name="disk" value=".+"/name="disk" value="8GiB"/g' /etc/ImageMagick-6/policy.xml
 EOF
-clear
+sudo chown root:$USER /opt/google/chrome/chrome-sandbox
 EOF
+sudo chmod 4755 /opt/google/chrome/chrome-sandbox
+EOF
+sudo chown root:$USER /usr/lib/chromium-browser/chrome-sandbox
+EOF
+sudo chmod 4755 /usr/lib/chromium-browser/chrome-sandbox
+EOF
+clear
 (sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation") | (sleep 1; killall sh)
 EOF
 (sh -c budgie-panel) 
@@ -12531,7 +12554,7 @@ EOF
 apt purge app-install-data-partner libruby2.7 rake ruby ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.7 rubygems-integration ruby-json -y
 EOF
 clear
-lightdm --test-mode
+lightdm --test-mode | (sleep 5; killall lightdm bash )
 EOF
 systemctl status systemd-sysctl
 EOF
