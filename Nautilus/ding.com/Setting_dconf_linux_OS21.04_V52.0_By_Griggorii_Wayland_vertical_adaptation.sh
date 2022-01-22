@@ -12549,9 +12549,13 @@ clear
 EOF
 (sh -c budgie-panel) 
 EOF
-sudo apt purge app-install-data-partner libruby2.7 rake ruby ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.7 rubygems-integration ruby-json -y
+# sudo apt purge app-install-data-partner libruby2.7 rake ruby ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.7 rubygems-integration ruby-json -y
 EOF
-apt purge app-install-data-partner libruby2.7 rake ruby ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.7 rubygems-integration ruby-json -y
+# apt purge app-install-data-partner libruby2.7 rake ruby ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.7 rubygems-integration ruby-json -y
+EOF
+sudo apt purge ruby* -y && sudo apt autoremove -y
+EOF
+sudo apt purge rygel* -y && sudo apt autoremove -y
 EOF
 clear
 lightdm --test-mode | (sleep 5; killall lightdm bash )
