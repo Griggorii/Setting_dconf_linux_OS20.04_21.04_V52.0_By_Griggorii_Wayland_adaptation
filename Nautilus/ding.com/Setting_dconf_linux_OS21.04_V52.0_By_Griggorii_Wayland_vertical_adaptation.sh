@@ -201,6 +201,26 @@ mkdir ~/.config/autostart/
 EOF
 dconf dump / > dconf-settings-original-restore_21.04.ini
 EOF
+mkdir ~/reserv_backup_dconf
+EOF
+mv ~/.config/dconf ~/reserv_backup_dconf
+EOF
+# sudo mv ~/.config/dconf ~/reserv_backup_dconf
+EOF
+mv $HOME/.config/dconf $HOME/reserv_backup_dconf
+EOF
+# sudo mv $HOME/.config/dconf $HOME/reserv_backup_dconf
+EOF
+# sudo mv ~/.config/dconf ~/reserv_backup_dconf
+EOF
+# sudo rm -rf $HOME/.config/dconf
+EOF
+rm -rf $HOME/.config/dconf
+EOF
+# sudo rm -rf ~/.config/dconf
+EOF
+rm -rf ~/.config/dconf
+EOF
 # dconf reset -f /
 EOF
 gsettings set org.gnome.shell.extensions.user-theme name "Orchis"
