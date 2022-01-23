@@ -12561,12 +12561,161 @@ EOF
 EOF
 # apt purge app-install-data-partner libruby2.7 rake ruby ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.7 rubygems-integration ruby-json -y
 EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libhandy-0.0.so.0 /usr/lib/x86_64-linux-gnu/libhandy-1.so.0
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libhandy-1.so.0 /usr/lib/x86_64-linux-gnu/libhandy-1.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgtk-3.so.0 /usr/lib/x86_64-linux-gnu/libgtk-3.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgdk-3.so.0 /usr/lib/x86_64-linux-gnu/libgdk-3.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libudisks2.so.0 /usr/lib/x86_64-linux-gnu/libudisks2.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgtop-2.0.so.11 /usr/lib/x86_64-linux-gnu/libgtop-2.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libepoxy.so.0 /usr/lib/x86_64-linux-gnu/libepoxy.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgnome-desktop-3.so.19 /usr/lib/x86_64-linux-gnu/libgnome-desktop-3.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libcheese.so.8 /usr/lib/x86_64-linux-gnu/libcheese.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libclutter-1.0.so.0 /usr/lib/x86_64-linux-gnu/libclutter-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libcogl-path.so.20 /usr/lib/x86_64-linux-gnu/libcogl-path.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libcogl-pango.so.20 /usr/lib/x86_64-linux-gnu/libcogl-pango.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libcogl.so.20 /usr/lib/x86_64-linux-gnu/libcogl.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libjson-glib-1.0.so.0 /usr/lib/x86_64-linux-gnu/libjson-glib-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0 /usr/lib/x86_64-linux-gnu/libwayland-cursor.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libwayland-client.so.0 /usr/lib/x86_64-linux-gnu/libwayland-client.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libwayland-server.so.0 /usr/lib/x86_64-linux-gnu/libwayland-server.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0 /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libcheese-gtk.so.25 /usr/lib/x86_64-linux-gnu/libcheese-gtk.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libclutter-gtk-1.0.so.0 /usr/lib/x86_64-linux-gnu/libclutter-gtk-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libsnapd-glib.so.1 /usr/lib/x86_64-linux-gnu/libsnapd-glib.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgoa-1.0.so.0 /usr/lib/x86_64-linux-gnu/libgoa-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libxml2.so.2 /usr/lib/x86_64-linux-gnu/libxml2.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgrilo-0.3.so.0 /usr/lib/x86_64-linux-gnu/libgrilo-0.3.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libcolord.so.2 /usr/lib/x86_64-linux-gnu/libcolord.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libcolord-gtk.so.1 /usr/lib/x86_64-linux-gnu/libcolord-gtk.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libsoup-2.4.so.1 /usr/lib/x86_64-linux-gnu/libsoup-2.4.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libnm.so.0 /usr/lib/x86_64-linux-gnu/libnm.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libnma.so.0 /usr/lib/x86_64-linux-gnu/libnma.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libmm-glib.so.0 /usr/lib/x86_64-linux-gnu/libmm-glib.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libpolkit-gobject-1.so.0 /usr/lib/x86_64-linux-gnu/libpolkit-gobject-1.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libwhoopsie-preferences.so.0 /usr/lib/x86_64-linux-gnu/libwhoopsie-preferences.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgoa-backend-1.0.so.1 /usr/lib/x86_64-linux-gnu/libgoa-backend-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgnome-bluetooth.so.13 /usr/lib/x86_64-linux-gnu/libgnome-bluetooth.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libsmbclient.so.0 /usr/lib/x86_64-linux-gnu/libsmbclient.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libaccountsservice.so.0 /usr/lib/x86_64-linux-gnu/libaccountsservice.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libibus-1.0.so.5 /usr/lib/x86_64-linux-gnu/libibus-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libsecret-1.so.0 /usr/lib/x86_64-linux-gnu/libsecret-1.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libpulse.so.0 /usr/lib/x86_64-linux-gnu/libpulse.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libpulse-mainloop-glib.so.0 /usr/lib/x86_64-linux-gnu/libpulse-mainloop-glib.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgsound.so.0 /usr/lib/x86_64-linux-gnu/libgsound.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libkrb5.so.26 /usr/lib/x86_64-linux-gnu/libkrb5.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libcom_err.so.2 /usr/lib/x86_64-linux-gnu/libcom_err.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libpwquality.so.1 /usr/lib/x86_64-linux-gnu/libpwquality.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0 /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0 /usr/lib/x86_64-linux-gnu/libpango-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0 /usr/lib/x86_64-linux-gnu/libharfbuzz.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0 /usr/lib/x86_64-linux-gnu/libatk-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libcairo-gobject.so.2 /usr/lib/x86_64-linux-gnu/libcairo-gobject.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libcairo.so.2 /usr/lib/x86_64-linux-gnu/libcairo.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0 /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libX11.so.6 /usr/lib/x86_64-linux-gnu/libX11.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libXi.so.6 /usr/lib/x86_64-linux-gnu/libXi.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgudev-1.0.so.0 /usr/lib/x86_64-linux-gnu/libgudev-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libwacom.so.2 /usr/lib/x86_64-linux-gnu/libwacom.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libXrandr.so.2 /usr/lib/x86_64-linux-gnu/libXrandr.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libxkbcommon.so.0 /usr/lib/x86_64-linux-gnu/libxkbcommon.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libXext.so.6 /usr/lib/x86_64-linux-gnu/libXext.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libXdamage.so.1 /usr/lib/x86_64-linux-gnu/libXdamage.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libXfixes.so.3 /usr/lib/x86_64-linux-gnu/libXfixes.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libXcomposite.so.1 /usr/lib/x86_64-linux-gnu/libXcomposite.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libwhoopsie-preferences.so.0 /usr/lib/x86_64-linux-gnu/libwhoopsie-preferences.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libupower-glib.so.3 /usr/lib/x86_64-linux-gnu/libupower-glib.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgoa-backend-1.0.so.1 /usr/lib/x86_64-linux-gnu/libgoa-backend-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libgnome-bluetooth.so.13 /usr/lib/x86_64-linux-gnu/libgnome-bluetooth.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libsmbclient.so.0 /usr/lib/x86_64-linux-gnu/libsmbclient.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libaccountsservice.so.0 /usr/lib/x86_64-linux-gnu/libaccountsservice.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libibus-1.0.so.5 /usr/lib/x86_64-linux-gnu/libibus-1.0.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libfontconfig.so.1 /usr/lib/x86_64-linux-gnu/libfontconfig.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libfreetype.so.6 /usr/lib/x86_64-linux-gnu/libfreetype.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libsecret-1.so.0 /usr/lib/x86_64-linux-gnu/libsecret-1.so
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libpulse.so.0 /usr/lib/x86_64-linux-gnu/libpulse.so
+EOF
+sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Xorg_1.28-Mesa_21.0.3_Ubuntu_20.04/releases/tag/libmesa_dri"
+EOF
+notify-send "UI_Perfomance_Ubuntu_20.04_development.sh <- Only real technologies, not any fictional parasitic distributions support real technology investments and donate VISA 4817 7601 8112 4706"
+EOF
 sudo apt purge ruby* -y && sudo apt autoremove -y
 EOF
 sudo apt purge rygel* -y && sudo apt autoremove -y
 EOF
+# lightdm --test-mode | (sleep 5; killall lightdm bash )
 clear
-lightdm --test-mode | (sleep 5; killall lightdm bash )
+lightdm --test-mode
 EOF
 systemctl status systemd-sysctl
 EOF
