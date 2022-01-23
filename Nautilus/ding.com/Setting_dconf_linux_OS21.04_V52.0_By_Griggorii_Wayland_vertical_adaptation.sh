@@ -12727,6 +12727,7 @@ sudo apt purge rygel* -y && sudo apt autoremove -y
 EOF
 # lightdm --test-mode | (sleep 5; killall lightdm bash )
 clear
+grep -H -r -n "egrep" /usr/bin
 lightdm --test-mode
 EOF
 systemctl status systemd-sysctl
