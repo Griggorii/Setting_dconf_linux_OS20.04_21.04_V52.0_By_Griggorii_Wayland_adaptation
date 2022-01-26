@@ -12769,11 +12769,19 @@ sudo apt purge ruby* -y && sudo apt autoremove -y
 EOF
 sudo apt purge rygel* -y && sudo apt autoremove -y
 EOF
+sudo apt install gnome-shell-extension-prefs -y
+EOF
+sudo apt install gnome-shell-extension-autohidetopbar -y
+EOF
+sudo apt install gnome-shell-extensions -y
+EOF
+sudo apt install gnome-tweaks
+EOF
 # lightdm --test-mode | (sleep 5; killall lightdm bash )
 clear
 grep -H -r -n "egrep" /usr/bin
 lightdm --test-mode
 EOF
-systemctl status systemd-sysctl
+# systemctl status systemd-sysctl
 EOF
 clear
