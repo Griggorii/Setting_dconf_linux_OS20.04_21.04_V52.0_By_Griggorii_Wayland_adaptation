@@ -12775,7 +12775,7 @@ sudo apt install gnome-shell-extension-autohidetopbar -y
 EOF
 sudo apt install gnome-shell-extensions -y
 EOF
-sudo apt install gnome-tweaks
+sudo apt install gnome-tweaks -y
 EOF
 # lightdm --test-mode | (sleep 5; killall lightdm bash )
 clear
