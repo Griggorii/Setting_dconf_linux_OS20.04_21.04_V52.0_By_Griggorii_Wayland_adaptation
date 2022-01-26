@@ -3,6 +3,42 @@
 
 ####Griggorii@gmail.com mit license dconf-config
 
+XDG_TEMPLATES_DIR=$(xdg-user-dir TEMPLATES)
+
+cd "$XDG_TEMPLATES_DIR"
+
+touch 'DOC.doc'
+
+touch 'DOCX.docx'
+
+touch 'LibreOffice Calc.ods'
+
+touch 'LibreOffice Draw.odg'
+
+touch 'LibreOffice Impress.odp'
+
+touch 'LibreOffice Writer.odt'
+
+touch 'MS Excel.xlsx'
+
+touch 'MS PowerPoint.pptx'
+
+touch 'MS Word.docx'
+
+touch 'PPT.ppt'
+
+touch 'PPTX.pptx'
+
+touch 'TXT.txt'
+
+touch 'XLS.xls'
+
+touch 'XLSX.xlsx'
+
+gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['UTF-8', 'WINDOWS-1251', 'KOI8-R', 'CURRENT', 'ISO-8859-15', 'UTF-16']"
+
+cd -
+
 cp /tmp/.backup_original_bashrc ~/.bashrc
 
 cp ~/.bashrc /tmp/.backup_original_bashrc
