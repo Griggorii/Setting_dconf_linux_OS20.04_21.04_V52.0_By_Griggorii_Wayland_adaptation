@@ -12777,6 +12777,8 @@ sudo apt install gnome-shell-extensions -y
 EOF
 sudo apt install gnome-tweaks -y
 EOF
+sudo apt install firewalld firewall-applet -y
+EOF
 # lightdm --test-mode | (sleep 5; killall lightdm bash )
 clear
 grep -H -r -n "egrep" /usr/bin
