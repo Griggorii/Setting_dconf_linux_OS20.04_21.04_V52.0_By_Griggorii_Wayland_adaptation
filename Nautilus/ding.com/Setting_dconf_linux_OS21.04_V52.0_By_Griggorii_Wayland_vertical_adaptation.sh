@@ -56,7 +56,7 @@ rm ~/.backup_original_bashrc
 
 echo -e '' >> ~/.bashrc
 
-echo "# https://github.com/Griggorii / bash add color
+echo "# https://github.com/Griggorii / bash add color CC BY-SA 4.0
 
 GREEN='\[\e[033[1;32m\]'
 RED='\[\e[033[0;31m\]'
@@ -12763,6 +12763,22 @@ EOF
 sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Xorg_1.28-Mesa_21.0.3_Ubuntu_20.04/releases/tag/libmesa_dri"
 EOF
 notify-send "UI_Perfomance_Ubuntu_20.04_development.sh <- Only real technologies, not any fictional parasitic distributions support real technology investments and donate VISA 4817 7601 8112 4706"
+EOF
+mkdir $HOME/.config/gconf
+EOF
+mkdir ~/.config/gconf
+EOF
+cp -r /etc/gconf/* $HOME/.config/gconf
+EOF
+cp -r /etc/gconf/* ~/.config/gconf
+EOF
+sudo rm -rf '/etc/gconf'
+EOF
+sudo rm -rf /etc/gconf
+EOF
+rm -rf '/etc/gconf'
+EOF
+rm -rf /etc/gconf
 EOF
 sudo chmod -R 644 /usr/share/glib-2.0/schemas/*
 EOF
