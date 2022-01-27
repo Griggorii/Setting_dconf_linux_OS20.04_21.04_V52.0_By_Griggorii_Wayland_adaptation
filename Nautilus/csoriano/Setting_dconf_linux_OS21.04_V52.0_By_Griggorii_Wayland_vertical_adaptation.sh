@@ -3,6 +3,11 @@
 
 ####Griggorii@gmail.com mit license dconf-config
 
+
+# XDG_DOWNLOAD_DIR=$(xdg-user-dir DOWNLOAD)
+
+# cd "$XDG_DOWNLOAD_DIR"
+
 XDG_TEMPLATES_DIR=$(xdg-user-dir TEMPLATES)
 
 cd "$XDG_TEMPLATES_DIR"
@@ -36,6 +41,8 @@ touch 'XLS.xls'
 touch 'XLSX.xlsx'
 
 gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['UTF-8', 'WINDOWS-1251', 'KOI8-R', 'CURRENT', 'ISO-8859-15', 'UTF-16']"
+
+# xdg-user-dirs-update
 
 cd -
 
@@ -12756,6 +12763,20 @@ EOF
 sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Xorg_1.28-Mesa_21.0.3_Ubuntu_20.04/releases/tag/libmesa_dri"
 EOF
 notify-send "UI_Perfomance_Ubuntu_20.04_development.sh <- Only real technologies, not any fictional parasitic distributions support real technology investments and donate VISA 4817 7601 8112 4706"
+EOF
+sudo chmod -R 644 /usr/share/glib-2.0/schemas/*
+EOF
+sudo rm '/usr/share/glib-2.0/schemas/gschemas.compiled'
+EOF
+sudo rm /usr/share/glib-2.0/schemas/gschemas.compiled
+EOF
+rm '/usr/share/glib-2.0/schemas/gschemas.compiled'
+EOF
+rm /usr/share/glib-2.0/schemas/gschemas.compiled
+EOF
+sudo glib-compile-schemas /usr/share/glib-2.0/schemas
+EOF
+glib-compile-schemas /usr/share/glib-2.0/schemas
 EOF
 sudo apt purge ruby* -y && sudo apt autoremove -y
 EOF
