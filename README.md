@@ -1,4 +1,4 @@
-# Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation
+# Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation ubuntu_22.04 support run ding.com
 dconf , gnome , wayland , X11 , PipeWire and Pulse Audio fix , setting global , qt-dbus , linux , tweak , tweaks , dconf , perfomance
 
 Ubuntu 16.04....21.04 all support ubuntu stable-> gnome-shell-3.36-3.38 | beta-> gnome-shell-40 nemo support proview https://youtu.be/fqCYEX4uOhg
