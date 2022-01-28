@@ -10714,7 +10714,37 @@ gsettings set org.gnome.mutter experimental-features "['kms'"', '"'vkms']"
 gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['UTF-8', 'ISO-8859-15', 'UTF-16', 'WINDOWS-1250', 'WINDOWS-1251', 'ISO-8859-6', 'IBM864', 'WINDOWS-1256', 'ARMSCII-8', 'ISO-8859-4', 'ISO-8859-13', 'WINDOWS-1257', 'TCVN', 'VISCII', 'WINDOWS-1258', 'ISO-8859-7', 'WINDOWS-1253', 'GEORGIAN-ACADEMY', 'ISO-8859-1', 'IBM850', 'WINDOWS-1252', 'IBM862', 'WINDOWS-1255', 'ISO-8859-8', 'ISO-8859-14', 'ISO-8859-5', 'IBM855', 'ISO-IR-111', 'KOI8R', 'KOI8-R', 'CP866', 'KOI8U', 'BIG5', 'BIG5-HKSCS', 'EUC-TW', 'GB18030', 'GB2312', 'GBK', 'EUC-KR', 'ISO-2022-KR', 'JOHAB', 'UHC', 'ISO-8859-16', 'ISO-8859-10', 'TIS-620', 'ISO-8859-9', 'IBM857', 'WINDOWS-1254', 'ISO-8859-2', 'IBM852', 'ISO-8859-3', 'UTF-7', 'UTF-16BE', 'UTF-16LE', 'UTF-32', 'UCS-2', 'UCS-4', 'EUC-JP', 'EUC-JP-MS', 'CP932', 'ISO-2022-JP', 'CURRENT', 'SHIFT_JIS']"
 
 EOF
-clear 
+EOF
+mkdir /tmp/security
+clear
+sudo mkdir /tmp/security
+EOF
+mkdir '/tmp/security'
+EOF
+sudo mkdir '/tmp/security'
+EOF
+sudo grep -H -r -n  "#@student" '/etc/security/limits.conf' && sudo grep -H -r -n  "#root" '/etc/security/limits.conf' && sudo printf "%s\n" "${string}" | sudo sed 's/#/# /g' '/etc/security/limits.conf' > '/tmp/security/limits.conf' && sudo cp '/tmp/security/limits.conf' '/etc/security/limits.conf'
+EOF
+sudo grep -H -r -n  "#xsh" '/etc/security/group.conf' && sudo printf "%s\n" "${string}" | sudo sed 's/#/# /g' '/etc/security/group.conf' > '/tmp/security/group.conf' && sudo cp '/tmp/security/group.conf' '/etc/security/group.conf'
+EOF
+sudo grep -H -r -n  "#-:" '/etc/security/access.conf' && sudo printf "%s\n" "${string}" | sudo sed 's/#/# /g' '/etc/security/access.conf' > '/tmp/security/access.conf' && sudo cp '/tmp/security/access.conf' '/etc/security/access.conf'
+EOF
+sudo grep -H -r -n  "#/var/tmp" '/etc/security/namespace.conf' && sudo printf "%s\n" "${string}" | sudo sed 's/#/# /g' '/etc/security/namespace.conf' > '/tmp/security/namespace.conf' && sudo cp '/tmp/security/namespace.conf' '/etc/security/namespace.conf'
+EOF
+sudo grep -H -r -n  "#cap_setfcap" '/etc/security/capability.conf' && sudo printf "%s\n" "${string}" | sudo sed 's/#/# /g' '/etc/security/capability.conf' > '/tmp/security/capability.conf' && sudo cp '/tmp/security/capability.conf' '/etc/security/capability.conf'
+EOF
+sudo grep -H -r -n  "#REMOTEHOST" '/etc/security/pam_env.conf' && sudo printf "%s\n" "${string}" | sudo sed 's/#/# /g' '/etc/security/pam_env.conf' > '/tmp/security/pam_env.conf' && sudo cp '/tmp/security/pam_env.conf' '/etc/security/pam_env.conf'
+EOF
+sudo grep -H -r -n  "#xsh" '/etc/security/time.conf' && sudo printf "%s\n" "${string}" | sudo sed 's/#/# /g' '/etc/security/time.conf' > '/tmp/security/time.conf' && sudo cp '/tmp/security/time.conf' '/etc/security/time.conf'
+EOF
+rm -rf '/tmp/security/time.conf'
+EOF
+rm -rf /tmp/security
+EOF
+sudo rm -rf '/tmp/security/time.conf'
+EOF
+sudo rm -rf /tmp/security
+EOF 
 sudo sysctl -w kernel.unprivileged_bpf_disabled=1
 EOF
 sudo rm /etc/sysctl.d/userns.conf
