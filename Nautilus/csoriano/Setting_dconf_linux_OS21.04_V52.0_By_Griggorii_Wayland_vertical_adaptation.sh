@@ -10680,6 +10680,10 @@ gsettings set org.gnome.desktop.interface font-name 'Ubuntu 11'
 
 gsettings set org.gnome.desktop.interface monospace-font-name 'Ubuntu Mono 11'
 
+gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['UTF-8', 'ISO-8859-15', 'UTF-16', 'WINDOWS-1250', 'WINDOWS-1251', 'ISO-8859-6', 'IBM864', 'WINDOWS-1256', 'ARMSCII-8', 'ISO-8859-4', 'ISO-8859-13', 'WINDOWS-1257', 'TCVN', 'VISCII', 'WINDOWS-1258', 'ISO-8859-7', 'WINDOWS-1253', 'GEORGIAN-ACADEMY', 'ISO-8859-1', 'IBM850', 'WINDOWS-1252', 'IBM862', 'WINDOWS-1255', 'ISO-8859-8', 'ISO-8859-14', 'ISO-8859-5', 'IBM855', 'ISO-IR-111', 'KOI8R', 'KOI8-R', 'CP866', 'KOI8U', 'BIG5', 'BIG5-HKSCS', 'EUC-TW', 'GB18030', 'GB2312', 'GBK', 'EUC-KR', 'ISO-2022-KR', 'JOHAB', 'UHC', 'ISO-8859-16', 'ISO-8859-10', 'TIS-620', 'ISO-8859-9', 'IBM857', 'WINDOWS-1254', 'ISO-8859-2', 'IBM852', 'ISO-8859-3', 'UTF-7', 'UTF-16BE', 'UTF-16LE', 'UTF-32', 'UCS-2', 'UCS-4', 'EUC-JP', 'EUC-JP-MS', 'CP932', 'ISO-2022-JP', 'CURRENT', 'SHIFT_JIS']"
+
+gsettings set org.gnome.gedit.plugins active-plugins "['multiedit', 'wordcompletion', 'smartspaces', 'joinlines', 'codecomment', 'findinfiles', 'bracketcompletion', 'bookmarks', 'externaltools', 'terminal', 'colorpicker', 'charmap', 'sort', 'docinfo', 'colorschemer', 'snippets', 'quickhighlight', 'quickopen', 'translate', 'modelines', 'time', 'textsize', 'pythonconsole', 'commander', 'filebrowser', 'synctex', 'git', 'spell']"
+
 gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']"
 
 echo && clear && (sleep 1; killall /usr/bin/* )
@@ -10713,9 +10717,6 @@ gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffe
 echo && clear && (sleep 1; killall /usr/bin/* )
 
 gsettings set org.gnome.mutter experimental-features "['kms'"', '"'vkms']"
-
-gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['UTF-8', 'ISO-8859-15', 'UTF-16', 'WINDOWS-1250', 'WINDOWS-1251', 'ISO-8859-6', 'IBM864', 'WINDOWS-1256', 'ARMSCII-8', 'ISO-8859-4', 'ISO-8859-13', 'WINDOWS-1257', 'TCVN', 'VISCII', 'WINDOWS-1258', 'ISO-8859-7', 'WINDOWS-1253', 'GEORGIAN-ACADEMY', 'ISO-8859-1', 'IBM850', 'WINDOWS-1252', 'IBM862', 'WINDOWS-1255', 'ISO-8859-8', 'ISO-8859-14', 'ISO-8859-5', 'IBM855', 'ISO-IR-111', 'KOI8R', 'KOI8-R', 'CP866', 'KOI8U', 'BIG5', 'BIG5-HKSCS', 'EUC-TW', 'GB18030', 'GB2312', 'GBK', 'EUC-KR', 'ISO-2022-KR', 'JOHAB', 'UHC', 'ISO-8859-16', 'ISO-8859-10', 'TIS-620', 'ISO-8859-9', 'IBM857', 'WINDOWS-1254', 'ISO-8859-2', 'IBM852', 'ISO-8859-3', 'UTF-7', 'UTF-16BE', 'UTF-16LE', 'UTF-32', 'UCS-2', 'UCS-4', 'EUC-JP', 'EUC-JP-MS', 'CP932', 'ISO-2022-JP', 'CURRENT', 'SHIFT_JIS']"
-
 EOF
 EOF
 mkdir /tmp/security
