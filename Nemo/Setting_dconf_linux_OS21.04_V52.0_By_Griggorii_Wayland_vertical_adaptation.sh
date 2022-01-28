@@ -1269,10 +1269,10 @@ win-switch-to-session-9='<Ctrl><Alt>9'
 win-view-sidebar='F12'
 
 [com/gexperts/Tilix/profiles]
-default='0a1407fe-7c1d-4fe6-98e6-f9863431f084'
-list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d', '0a1407fe-7c1d-4fe6-98e6-f9863431f084', 'c2f53d1c-a3d6-4098-8c59-cd4bbbb6ace3', 'bf9a5e07-866e-4922-9a06-e72991ae65a8', 'c7f52fa9-1a85-4a45-b07e-0e765fb6c358', 'd984ae7f-3048-478f-afdf-b13768f02875', 'c2f53d1c-a3d6-4098-8c59-cd4bbbb6ace4', '0a1407fe-7c1d-4fe6-98e6-f9863431f085']
+default='GRIGGORII_TILIX_1'
+list=['GRIGGORII_TILIX_1', 'GRIGGORII_TILIX_2', 'GRIGGORII_TILIX_3', 'GRIGGORII_TILIX_4', 'GRIGGORII_TILIX_5', 'GRIGGORII_TILIX_6', 'GRIGGORII_TILIX_7', 'GRIGGORII_TILIX_8', 'GRIGGORII_TILIX_9']
 
-[com/gexperts/Tilix/profiles/0a1407fe-7c1d-4fe6-98e6-f9863431f084]
+[com/gexperts/Tilix/profiles/GRIGGORII_TILIX_1]
 background-color='#33302F'
 background-transparency-percent=0
 badge-color='#AC7EA8'
@@ -1292,9 +1292,9 @@ highlight-foreground-color='#000046466C6C'
 palette=['#040450503C3C', '#CC0000', '#009600', '#D06B00', '#0000CC', '#0578B4', '#D66D06', '#CCCCCC', '#808080', '#CC0000', '#009600', '#D06B00', '#0000CC', '#F57900', '#0087CC', '#FFFFFF']
 use-system-font=false
 use-theme-colors=false
-visible-name='By Griggorii'
+visible-name='GRIGGORII_TILIX_1'
 
-[com/gexperts/Tilix/profiles/0a1407fe-7c1d-4fe6-98e6-f9863431f085]
+[com/gexperts/Tilix/profiles/GRIGGORII_TILIX_2]
 background-color='#393634'
 background-transparency-percent=0
 badge-color='#AC7EA8'
@@ -1314,9 +1314,9 @@ highlight-foreground-color='#000046466C6C'
 palette=['#2E3436', '#CC0403', '#19CB00', '#CECB00', '#000027275B5B', '#CB1ED1', '#0DCDCD', '#E5E5E5', '#4D4D4D', '#CC0000', '#23FD00', '#FFFD00', '#F57900', '#FD28FF', '#14FFFF', '#FFFFFF']
 use-system-font=false
 use-theme-colors=false
-visible-name='By Griggorii 7'
+visible-name='GRIGGORII_TILIX_2'
 
-[com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+[com/gexperts/Tilix/profiles/GRIGGORII_TILIX_3]
 background-color='#1E1E1E'
 background-transparency-percent=76
 badge-color-set=false
@@ -1333,9 +1333,9 @@ highlight-foreground-color='#7373D2D21616'
 palette=['#2E3436', '#CC0000', '#4E9A06', '#C4A000', '#3465A4', '#75507B', '#06979A', '#D3D7CF', '#555753', '#EF2929', '#8AE234', '#FCE94F', '#729FCF', '#AD7FA8', '#34E2E2', '#EEEEEC']
 use-system-font=false
 use-theme-colors=true
-visible-name='По умолчанию'
+visible-name='GRIGGORII_TILIX_3'
 
-[com/gexperts/Tilix/profiles/7348b39f-b0f1-4a07-8cf3-ecf7fc4398d4]
+[com/gexperts/Tilix/profiles/GRIGGORII_TILIX_4]
 allow-bold=true
 automatic-switch=@as []
 background-color='#393634'
@@ -1391,12 +1391,9 @@ triggers=@as []
 use-custom-command=false
 use-system-font=false
 use-theme-colors=false
-visible-name='By Griggorii 3'
+visible-name='GRIGGORII_TILIX_4'
 
-[com/gexperts/Tilix/profiles/9af45e22-72fc-4f6f-a128-8c69e3da4d88]
-visible-name='By Griggorii 3'
-
-[com/gexperts/Tilix/profiles/bf9a5e07-866e-4922-9a06-e72991ae65a8]
+[com/gexperts/Tilix/profiles/GRIGGORII_TILIX_5]
 allow-bold=true
 automatic-switch=@as []
 background-color='#FFFFFFFFFFFF'
@@ -1452,9 +1449,9 @@ triggers=@as []
 use-custom-command=false
 use-system-font=false
 use-theme-colors=false
-visible-name='By Griggorii 3'
+visible-name='GRIGGORII_TILIX_5'
 
-[com/gexperts/Tilix/profiles/c2f53d1c-a3d6-4098-8c59-cd4bbbb6ace3]
+[com/gexperts/Tilix/profiles/GRIGGORII_TILIX_6]
 allow-bold=true
 automatic-switch=@as []
 background-color='#393634'
@@ -1510,9 +1507,9 @@ triggers=@as []
 use-custom-command=false
 use-system-font=false
 use-theme-colors=false
-visible-name='By Griggorii 2'
+visible-name='GRIGGORII_TILIX_6'
 
-[com/gexperts/Tilix/profiles/c2f53d1c-a3d6-4098-8c59-cd4bbbb6ace4]
+[com/gexperts/Tilix/profiles/GRIGGORII_TILIX_7]
 allow-bold=true
 automatic-switch=@as []
 background-color='#393634'
@@ -1568,9 +1565,9 @@ triggers=@as []
 use-custom-command=false
 use-system-font=false
 use-theme-colors=false
-visible-name='By Griggorii 6'
+visible-name='GRIGGORII_TILIX_7'
 
-[com/gexperts/Tilix/profiles/c7f52fa9-1a85-4a45-b07e-0e765fb6c358]
+[com/gexperts/Tilix/profiles/GRIGGORII_TILIX_8]
 allow-bold=true
 automatic-switch=@as []
 background-color='#020236363D3D'
@@ -1626,9 +1623,9 @@ triggers=@as []
 use-custom-command=false
 use-system-font=false
 use-theme-colors=false
-visible-name='By Griggorii 4'
+visible-name='GRIGGORII_TILIX_8'
 
-[com/gexperts/Tilix/profiles/d984ae7f-3048-478f-afdf-b13768f02875]
+[com/gexperts/Tilix/profiles/GRIGGORII_TILIX_9]
 allow-bold=true
 automatic-switch=@as []
 background-color='#DFDBC3'
@@ -1684,7 +1681,7 @@ triggers=@as []
 use-custom-command=false
 use-system-font=false
 use-theme-colors=false
-visible-name='By Griggorii 5'
+visible-name='GRIGGORII_TILIX_9'
 
 [com/github/maoschanz/drawing]
 big-icons=false
