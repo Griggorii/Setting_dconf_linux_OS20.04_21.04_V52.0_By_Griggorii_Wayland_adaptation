@@ -6309,7 +6309,7 @@ active-view='month'
 follow-night-light=false
 weather-settings=(true, false, '', @mv nothing)
 window-maximized=false
-window-position=(26, 23)
+window-position=(34, 28)
 window-size=(1111, 695)
 
 [org/gnome/charmap]
@@ -6886,7 +6886,7 @@ session-name='ubuntu'
 allow-volume-above-100-percent=true
 event-sounds=true
 input-feedback-sounds=true
-theme-name='Yaru'
+theme-name='freedesktop'
 
 [org/gnome/desktop/thumbnail-cache]
 maximum-age=180
@@ -7339,8 +7339,8 @@ replace-with-entry=['/usr/share/backgrounds']
 search-for-entry=['/usr/share/chromeos-assets/wallpaper']
 
 [org/gnome/gedit/state/window]
-bottom-panel-active-page='GeditExternalToolsShellOutput'
-bottom-panel-size=50
+bottom-panel-active-page='GeditPythonConsolePanel'
+bottom-panel-size=46
 side-panel-active-page='GeditFileBrowserPanel'
 side-panel-size=289
 size=(996, 658)
@@ -7490,7 +7490,7 @@ smooth-refresh=true
 solaris-mode=true
 swap-color='rgb(0,255,31)'
 update-interval=5000
-window-state=(844, 520, 23, 15)
+window-state=(844, 520, 26, 23)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -8527,6 +8527,8 @@ click-volume=0
 numlock-state='off'
 
 [org/gnome/settings-daemon/peripherals/mouse]
+double-click=400
+drag-threshold=8
 locate-pointer=true
 
 [org/gnome/settings-daemon/peripherals/smartcard]
@@ -8860,6 +8862,7 @@ antialiasing='grayscale'
 hinting='slight'
 overrides={'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'menu:minimize,maximize,close'>}
 priority=0
+rgba-order='rgb'
 
 [org/gnome/shell]
 always-show-log-out=true
@@ -9423,8 +9426,8 @@ maximized=false
 window-size=(712, 437)
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(1.0, 0.0, 0.0, 1.0), (0.070588235294117646, 0.37647058823529411, 0.47058823529411764, 1.0), (0.0078431372549019607, 0.21176470588235294, 0.23921568627450981, 1.0), (0.011764705882352929, 0.21176470588235297, 0.23921568627450981, 1.0), (0.87450980392156863, 0.85882352941176465, 0.76470588235294112, 1.0), (0.20000000000000001, 0.18823529411764706, 0.18431372549019609, 1.0), (0.27058823529411763, 0.25882352941176473, 0.25098039215686274, 1.0), (1.0, 1.0, 0.0, 0.5)]
-selected-color=(true, 1.0, 1.0, 1.0, 1.0)
+custom-colors=[(0.0, 1.0, 0.12156862745098039, 1.0), (1.0, 0.0, 0.0, 1.0), (0.070588235294117646, 0.37647058823529411, 0.47058823529411764, 1.0), (0.0078431372549019607, 0.21176470588235294, 0.23921568627450981, 1.0), (0.011764705882352929, 0.21176470588235297, 0.23921568627450981, 1.0), (0.87450980392156863, 0.85882352941176465, 0.76470588235294112, 1.0), (0.20000000000000001, 0.18823529411764706, 0.18431372549019609, 1.0), (0.27058823529411763, 0.25882352941176473, 0.25098039215686274, 1.0)]
+selected-color=(true, 0.0, 1.0, 0.12156862745098039, 1.0)
 
 [org/gtk/settings/debug]
 enable-inspector-keybinding=true
@@ -9447,7 +9450,7 @@ sort-directories-first=true
 sort-order='ascending'
 startup-mode='cwd'
 type-format='category'
-window-position=(34, 28)
+window-position=(26, 23)
 window-size=(925, 504)
 
 [org/mate/caja/compact-view]
@@ -9822,7 +9825,7 @@ home-icon-visible=true
 horizontal-grid-adjust=1.0
 ignored-desktop-handlers=['conky', 'nemo', 'nemo-desktop', 'nautilus', 'nautilus-desktop']
 network-icon-visible=false
-show-desktop-icons=false
+show-desktop-icons=true
 show-orphaned-desktop-icons=false
 text-ellipsis-limit=2
 trash-icon-visible=true
@@ -9948,7 +9951,7 @@ show-only-directories=true
 [org/nemo/window-state]
 bookmarks-expanded=true
 devices-expanded=true
-geometry='892x497+34+28'
+geometry='892x505+34+28'
 maximized=false
 my-computer-expanded=true
 network-expanded=true
@@ -10229,7 +10232,7 @@ remember-state=true
 statusbar-visible=false
 statusbar-visible-in-fullscreen='auto'
 toolbar-icon-size='small-toolbar'
-toolbar-style='both-horiz'
+toolbar-style='icons'
 toolbar-visible=false
 toolbar-visible-in-fullscreen='auto'
 
@@ -10242,11 +10245,11 @@ replace-all-location=1
 
 [org/xfce/mousepad/state/window]
 fullscreen=false
-height=473
+height=481
 left=-1
 maximized=false
 top=-1
-width=826
+width=854
 
 [org/yorba/shotwell/crop-settings]
 last-crop-height=1
