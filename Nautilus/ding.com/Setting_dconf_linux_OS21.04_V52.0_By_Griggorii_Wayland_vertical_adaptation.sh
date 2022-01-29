@@ -9330,7 +9330,7 @@ use-theme-colors=true
 visible-name='gnome'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-background-color='rgb(68,69,67)'
+background-color='rgb(43,41,40)'
 bold-color-same-as-fg=true
 bold-is-bright=false
 cursor-background-color='rgb(165,116,34)'
@@ -9342,7 +9342,7 @@ highlight-background-color='rgb(184,116,20)'
 highlight-colors-set=true
 palette=['rgb(0,0,0)', 'rgb(170,0,0)', 'rgb(0,170,0)', 'rgb(170,85,0)', 'rgb(0,0,170)', 'rgb(170,0,170)', 'rgb(0,170,170)', 'rgb(170,170,170)', 'rgb(85,85,85)', 'rgb(255,85,85)', 'rgb(85,255,85)', 'rgb(255,255,85)', 'rgb(85,85,255)', 'rgb(255,85,255)', 'rgb(85,255,255)', 'rgb(255,255,255)']
 use-system-font=false
-use-theme-colors=true
+use-theme-colors=false
 visible-name='By Griggorii_2'
 
 [org/gnome/terminal/legacy/profiles:/:f4631098-7198-4ab9-9ab6-7375d697048f]
