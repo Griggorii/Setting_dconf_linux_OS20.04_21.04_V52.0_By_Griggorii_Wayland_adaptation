@@ -9303,7 +9303,7 @@ use-transparent-background=false
 visible-name='By Griggorii'
 
 [org/gnome/terminal/legacy/profiles:/:7fc9d712-165e-4ae8-9bf1-639fc99f92de]
-background-color='rgb(57,54,52)'
+background-color='rgb(19,2,25)'
 bold-color='rgb(72,0,79)'
 bold-color-same-as-fg=false
 bold-is-bright=false
