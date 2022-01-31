@@ -271,6 +271,8 @@ lsof /home/griggorii && systemctl --user mask evolution-addressbook-factory.serv
 lsof /home/griggorii && systemctl --user mask org.gnome.evolution.dataserver.AddressBook.service org.gnome.evolution.dataserver.Calendar.service org.gnome.evolution.dataserver.Sources.service org.gnome.evolution.dataserver.UserPrompter.service
 
 lsof /home/griggorii && systemctl --user mask org.freedesktop.Tracker1.Miner.Extract.service org.freedesktop.Tracker1.Miner.Files.service org.freedesktop.Tracker1.service org.freedesktop.Tracker1.Writeback.service
+
+lsof /home/griggorii && systemctl mask --user --now tracker-miner-fs-3.service
 EOF
 # dconf reset -f /
 EOF
