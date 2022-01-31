@@ -10748,6 +10748,8 @@ sudo rm -rf /tmp/security
 EOF 
 sudo sysctl -w kernel.unprivileged_bpf_disabled=1
 EOF
+sudo sysctl -w kernel.unprivileged_userns_clone=0
+EOF
 sudo rm /etc/sysctl.d/userns.conf
 EOF
 sudo rm '/etc/sysctl.d/userns.conf'
