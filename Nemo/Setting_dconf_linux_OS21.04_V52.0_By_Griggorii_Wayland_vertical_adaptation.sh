@@ -12882,6 +12882,8 @@ sudo apt install firewalld firewall-applet -y
 EOF
 sudo apt install yaru-theme-icon yaru-theme-gtk yaru-theme-sound libreoffice-style-yaru -y
 EOF
+sudo apt install chrome-gnome-shell -y
+EOF
 # lightdm --test-mode | (sleep 5; killall lightdm bash )
 clear
 grep -H -r -n "egrep" /usr/bin
