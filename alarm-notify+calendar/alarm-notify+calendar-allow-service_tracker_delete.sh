@@ -1,6 +1,6 @@
 #!/bin/bash
 
-####Griggorii@gmail.com mit license update sync-monitor calendar beta test language 2020.11.07.
+####Griggorii@gmail.com mit license update sync-monitor calendar beta test language 2020.11.07. Restore calendar functionality | update 2022.02.11 Восстановить функционал календаря | add rm -rf  null symbol link unlock ~/.config/systemd rm -rf  $HOME/.config/systemd
 
 
 sudo rm -rf tracker-extract-*
@@ -142,7 +142,11 @@ sudo mv * /usr/share/dbus-1/services
 EOF
 rm -rf  ~/source_service_systemd
 EOF
-(sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V51.0_By_Griggorii_Wayland_adaptation")
+rm -rf  ~/.config/systemd
 EOF
-chromium-browser github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V51.0_By_Griggorii_Wayland_adaptation
+rm -rf  $HOME/.config/systemd
+EOF
+(sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation")
+EOF
+chromium-browser github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation
 EOF

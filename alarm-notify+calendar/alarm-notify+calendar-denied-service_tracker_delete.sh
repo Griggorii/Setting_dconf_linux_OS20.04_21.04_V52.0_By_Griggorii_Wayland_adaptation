@@ -121,7 +121,7 @@ cp ./sync-monitor-calendar.desktop ~/.local/share/applications/
 EOF
 rm sync-monitor-calendar.desktop
 EOF
-(sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V51.0_By_Griggorii_Wayland_adaptation")
+(sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation")
 EOF
-chromium-browser github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V51.0_By_Griggorii_Wayland_adaptation
+chromium-browser github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation
 EOF
