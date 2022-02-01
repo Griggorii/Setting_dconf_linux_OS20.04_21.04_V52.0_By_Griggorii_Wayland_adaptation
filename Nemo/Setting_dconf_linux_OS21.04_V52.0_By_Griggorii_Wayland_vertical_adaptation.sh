@@ -277,6 +277,16 @@ EOF
 EOF
 gsettings set org.gnome.shell.extensions.user-theme name "Orchis"
 EOF
+gnome-extensions disable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
+EOF
+gsettings set org.gnome.shell.extensions.dash-to-dock animation-time 0.99999999999999989
+EOF
+gsettings set org.gnome.shell.extensions.dash-to-dock show-delay 0.99999999999999989
+EOF
+gsettings set org.gnome.shell.extensions.dash-to-dock hide-delay  0.99999999999999989
+EOF
+gsettings set org.gnome.shell.extensions.dash-to-dock animation-time 0.88888888888888878
+EOF
 xdg-mime default nautilus.desktop inode/directory
 EOF
 xdg-mime default org.gnome.Nautilus.desktop inode/directory
@@ -8874,7 +8884,7 @@ switcher-style='Coverflow'
 [org/gnome/shell/extensions/dash-to-dock]
 activate-single-window=true
 animate-show-apps=true
-animation-time=0.20000000000000001
+animation-time=0.88888888888888873
 apply-custom-theme=true
 apply-glossy-effect=true
 autohide=true
@@ -8896,7 +8906,7 @@ dock-position='LEFT'
 extend-height=false
 force-straight-corner=false
 height-fraction=0.90000000000000002
-hide-delay=0.20000000000000001
+hide-delay=0.99999999999999989
 hot-keys=true
 hotkeys-overlay=true
 hotkeys-show-dock=true
@@ -8922,7 +8932,7 @@ shift-middle-click-action='minimize'
 shortcut-text='<Super>q'
 shortcut-timeout=2.0
 show-apps-at-top=false
-show-delay=0.25
+show-delay=0.99999999999999989
 show-favorites=true
 show-mounts=true
 show-running=true
@@ -9038,6 +9048,8 @@ window-position=(412, 50)
 window-size=(640, 440)
 
 [org/gnome/shell/extensions/hidetopbar]
+animation-time-autohide=0.99999999999999989
+animation-time-overview=0.99999999999999989
 enable-active-window=true
 enable-intellihide=true
 hot-corner=false
@@ -10660,8 +10672,6 @@ gnome-extensions disable ding@rastersoft.com
 
 gnome-extensions disable desktop-icons@csoriano
 
-gnome-extensions disable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
-
 gnome-extensions enable gsconnect@andyholmes.github.io
 
 gnome-extensions disable unite@hardpixel.eu
@@ -10683,6 +10693,22 @@ gsettings set org.nemo.desktop show-desktop-icons true
 gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['UTF-8 ', 'ISO-8859-15 ', 'UTF-16 ', 'WINDOWS-1250 ', 'WINDOWS-1251 ', 'ISO-8859-6 ', 'WINDOWS-1256 ', 'ARMSCII-8 ', 'ISO-8859-4 ', 'ISO-8859-13 ', 'WINDOWS-1257 ', 'TCVN ', 'VISCII ', 'WINDOWS-1258 ', 'ISO-8859-7 ', 'WINDOWS-1253 ', 'ISO-8859-1 ', 'WINDOWS-1252 ', 'WINDOWS-1255 ', 'ISO-8859-8 ', 'ISO-8859-14 ', 'ISO-8859-5 ', 'ISO-IR-111 ', 'KOI8R ', 'KOI8-RU ', 'KOI8-R ', 'CP866 ', 'KOI8-U ', 'KOI8U ', 'KOI-8 ', 'KOI8-T ', 'BIG5 ', 'BIG5-HKSCS ', 'EUC-TW ', 'GB18030 ', 'GB2312 ', 'GBK ', 'EUC-KR ', 'ISO-2022-KR ', 'JOHAB ', 'UHC ', 'ISO-8859-16 ', 'ISO-8859-10 ', 'TIS-620 ', 'ISO-8859-9 ', 'WINDOWS-1254 ', 'ISO-8859-2 ', 'ISO-8859-3 ', 'UTF-7 ', 'UTF-16BE ', 'UTF-16LE ', 'UTF-32 ', 'UCS-2 ', 'UCS-4 ', 'CURRENT ', 'SHIFT_JIS ', 'ANSI_X3.110 ', 'ASMO_449 ', 'BIG5HKSCS ', 'BRF ', 'CP10007 ', 'CP1125 ', 'CP1250 ', 'CP1251 ', 'CP1252 ', 'CP1253 ', 'CP1254 ', 'CP1255 ', 'CP1256 ', 'CP1257 ', 'CP1258 ', 'CP737 ', 'CP770 ', 'CP771 ', 'CP772 ', 'CP773 ', 'CP774 ', 'CP775 ', 'CP932 ', 'CSN_369103 ', 'CWI ', 'DEC-MCS ', 'EBCDIC-AT-DE-A ', 'EBCDIC-AT-DE ', 'EBCDIC-CA-FR ', 'EBCDIC-DK-NO-A ', 'EBCDIC-DK-NO ', 'EBCDIC-ES-A ', 'EBCDIC-ES-S ', 'EBCDIC-ES ', 'EBCDIC-FI-SE-A ', 'EBCDIC-FI-SE ', 'EBCDIC-FR ', 'EBCDIC-IS-FRISS ', 'EBCDIC-IT ', 'EBCDIC-PT ', 'EBCDIC-UK ', 'EBCDIC-US ', 'ECMA-CYRILLIC ', 'EUC-CN ', 'EUC-JISX0213 ', 'EUC-JP-MS ', 'EUC-JP ', 'GBBIG5 ', 'GBGBK ', 'GEORGIAN-ACADEMY ', 'GEORGIAN-PS ', 'GOST_19768-74 ', 'GREEK-CCITT ', 'GREEK7-OLD ', 'GREEK7 ', 'HP-GREEK8 ', 'HP-ROMAN8 ', 'HP-ROMAN9 ', 'HP-THAI8 ', 'HP-TURKISH8 ', 'IBM037 ', 'IBM038 ', 'IBM1004 ', 'IBM1008 ', 'IBM1008_420 ', 'IBM1025 ', 'IBM1026 ', 'IBM1046 ', 'IBM1047 ', 'IBM1097 ', 'IBM1112 ', 'IBM1122 ', 'IBM1123 ', 'IBM1124 ', 'IBM1129 ', 'IBM1130 ', 'IBM1132 ', 'IBM1133 ', 'IBM1137 ', 'IBM1140 ', 'IBM1141 ', 'IBM1142 ', 'IBM1143 ', 'IBM1144 ', 'IBM1145 ', 'IBM1146 ', 'IBM1147 ', 'IBM1148 ', 'IBM1149 ', 'IBM1153 ', 'IBM1154 ', 'IBM1155 ', 'IBM1156 ', 'IBM1157 ', 'IBM1158 ', 'IBM1160 ', 'IBM1161 ', 'IBM1162 ', 'IBM1163 ', 'IBM1164 ', 'IBM1166 ', 'IBM1167 ', 'IBM12712 ', 'IBM1364 ', 'IBM1371 ', 'IBM1388 ', 'IBM1390 ', 'IBM1399 ', 'IBM16804 ', 'IBM256 ', 'IBM273 ', 'IBM274 ', 'IBM275 ', 'IBM277 ', 'IBM278 ', 'IBM280 ', 'IBM281 ', 'IBM284 ', 'IBM285 ', 'IBM290 ', 'IBM297 ', 'IBM420 ', 'IBM423 ', 'IBM424 ', 'IBM437 ', 'IBM4517 ', 'IBM4899 ', 'IBM4909 ', 'IBM4971 ', 'IBM500 ', 'IBM5347 ', 'IBM803 ', 'IBM850 ', 'IBM851 ', 'IBM852 ', 'IBM855 ', 'IBM856 ', 'IBM857 ', 'IBM858 ', 'IBM860 ', 'IBM861 ', 'IBM862 ', 'IBM863 ', 'IBM864 ', 'IBM865 ', 'IBM866 ', 'IBM866NAV ', 'IBM868 ', 'IBM869 ', 'IBM870 ', 'IBM871 ', 'IBM874 ', 'IBM875 ', 'IBM880 ', 'IBM891 ', 'IBM901 ', 'IBM902 ', 'IBM903 ', 'IBM9030 ', 'IBM904 ', 'IBM905 ', 'IBM9066 ', 'IBM918 ', 'IBM921 ', 'IBM922 ', 'IBM930 ', 'IBM932 ', 'IBM933 ', 'IBM935 ', 'IBM937 ', 'IBM939 ', 'IBM943 ', 'IBM9448 ', 'IEC_P27-1 ', 'INIS-8 ', 'INIS-CYRILLIC ', 'INIS ', 'ISIRI-3342 ', 'ISO-2022-CN-EXT ', 'ISO-2022-CN ', 'ISO-2022-JP-3 ', 'ISO-2022-JP ', 'ISO-IR-197 ', 'ISO-IR-209 ', 'ISO646 ', 'ISO8859-1 ', 'ISO8859-10 ', 'ISO8859-11 ', 'ISO8859-13 ', 'ISO8859-14 ', 'ISO8859-15 ', 'ISO8859-16 ', 'ISO8859-2 ', 'ISO8859-3 ', 'ISO8859-4 ', 'ISO8859-5 ', 'ISO8859-6 ', 'ISO8859-7 ', 'ISO8859-8 ', 'ISO8859-9 ', 'ISO8859-9E ', 'ISO_10367-BOX ', 'ISO_11548-1 ', 'ISO_2033 ', 'ISO_5427-EXT ', 'ISO_5427 ', 'ISO_5428 ', 'ISO_6937-2 ', 'ISO_6937 ', 'LATIN-GREEK-1 ', 'LATIN-GREEK ', 'MAC-CENTRALEUROPE ', 'MAC-IS ', 'MAC-SAMI ', 'MAC-UK ', 'MACINTOSH ', 'MIK ', 'NATS-DANO ', 'NATS-SEFI ', 'PT154 ', 'RK1048 ', 'SAMI-WS2 ', 'SHIFT_JISX0213 ', 'SJIS ', 'T.61 ', 'TCVN5712-1 ', 'TSCII ', 'UNICODE']"
 
 gsettings set org.gnome.gedit.plugins active-plugins "['multiedit', 'wordcompletion', 'smartspaces', 'joinlines', 'codecomment', 'findinfiles', 'bracketcompletion', 'bookmarks', 'externaltools', 'terminal', 'colorpicker', 'charmap', 'sort', 'docinfo', 'colorschemer', 'snippets', 'quickhighlight', 'quickopen', 'translate', 'modelines', 'time', 'textsize', 'pythonconsole', 'commander', 'filebrowser', 'synctex', 'git', 'spell']"
+
+gnome-extensions disable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
+
+grep -H -r -n  "21.10" /etc/lsb-release && gnome-extensions enable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
+
+grep -H -r -n  "22." /etc/lsb-release && gnome-extensions enable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
+
+gnome-extensions disable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
+
+gsettings set org.gnome.shell.extensions.dash-to-dock animation-time 0.99999999999999989
+
+gsettings set org.gnome.shell.extensions.dash-to-dock show-delay 0.99999999999999989
+
+gsettings set org.gnome.shell.extensions.dash-to-dock hide-delay  0.99999999999999989
+
+gsettings set org.gnome.shell.extensions.dash-to-dock animation-time 0.88888888888888878
 
 grep -H -r -n  "21.04" /etc/lsb-release && gsettings set org.gnome.shell always-show-log-out false
 
@@ -11857,6 +11883,10 @@ EOF
 gnome-extensions disable desktop-icons@csoriano
 EOF
 gnome-extensions disable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
+EOF
+grep -H -r -n  "21.10" /etc/lsb-release && gnome-extensions enable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
+EOF
+grep -H -r -n  "22." /etc/lsb-release && gnome-extensions enable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
 EOF
 gnome-extensions enable gsconnect@andyholmes.github.io
 EOF
