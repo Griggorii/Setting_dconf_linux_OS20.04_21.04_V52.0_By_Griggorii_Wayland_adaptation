@@ -12898,6 +12898,26 @@ EOF
 sudo apt install chrome-gnome-shell -y
 EOF
 # lightdm --test-mode | (sleep 5; killall lightdm bash )
+EOF
+mkdir /tmp/pipewire
+EOF
+cat << EOF > /tmp/pipewire/default-routes
+{
+ "default.route.alsa_card.pci-0000_00_1b.0:profile:off": [ ],
+ "default.route.alsa_card.pci-0000_00_1b.0:profile:output:analog-stereo+input:analog-stereo": [ ]
+}
+EOF
+cat << EOF > /tmp/pipewire/bluez-autoswitch
+{ }
+EOF
+grep -H -r -n  "21.04" /etc/lsb-release && (mv  /tmp/pipewire/default-routes ~/.local/state/pipewire/media-session.d/) | (mv  /tmp/pipewire/bluez-autoswitch ~/.local/state/pipewire/media-session.d/) && m -rf  ~/.config/autostart/pulseaudio.desktop $HOME/.config/autostart/pulseaudio.desktop && grep -H -r -n "Default ALSA Output" /usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf && grep -H -r -n "pipewire-audio-client-lib" /var/lib/dpkg/info && sudo cp '/usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf' '/usr/share/alsa/alsa.conf.d' && ssudo ln -s '/usr/share/alsa/alsa.conf.d/99-pipewire-default.conf' '/etc/alsa/conf.d/99-pipewire-default.conf' && systemctl --user --now disable pulseaudio.service pulseaudio.socket && systemctl --user daemon-reload && systemctl --user --now enable pipewire pipewire-pulse
+EOF
+grep -H -r -n  "21.10" /etc/lsb-release && (mv  /tmp/pipewire/default-routes ~/.local/state/pipewire/media-session.d/) | (mv  /tmp/pipewire/bluez-autoswitch ~/.local/state/pipewire/media-session.d/) && m -rf  ~/.config/autostart/pulseaudio.desktop $HOME/.config/autostart/pulseaudio.desktop && grep -H -r -n "Default ALSA Output" /usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf && grep -H -r -n "pipewire-audio-client-lib" /var/lib/dpkg/info && sudo cp '/usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf' '/usr/share/alsa/alsa.conf.d' && ssudo ln -s '/usr/share/alsa/alsa.conf.d/99-pipewire-default.conf' '/etc/alsa/conf.d/99-pipewire-default.conf' && systemctl --user --now disable pulseaudio.service pulseaudio.socket && systemctl --user daemon-reload && systemctl --user --now enable pipewire pipewire-pulse
+EOF
+grep -H -r -n  "22.04" /etc/lsb-release && (mv  /tmp/pipewire/default-routes ~/.local/state/pipewire/media-session.d/) | (mv  /tmp/pipewire/bluez-autoswitch ~/.local/state/pipewire/media-session.d/) && m -rf  ~/.config/autostart/pulseaudio.desktop $HOME/.config/autostart/pulseaudio.desktop && grep -H -r -n "Default ALSA Output" /usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf && grep -H -r -n "pipewire-audio-client-lib" /var/lib/dpkg/info && sudo cp '/usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf' '/usr/share/alsa/alsa.conf.d' && ssudo ln -s '/usr/share/alsa/alsa.conf.d/99-pipewire-default.conf' '/etc/alsa/conf.d/99-pipewire-default.conf' && systemctl --user --now disable pulseaudio.service pulseaudio.socket && systemctl --user daemon-reload && systemctl --user --now enable pipewire pipewire-pulse
+EOF
+rm -rf /tmp/pipewire
+EOF
 clear
 grep -H -r -n "egrep" /usr/bin
 lightdm --test-mode

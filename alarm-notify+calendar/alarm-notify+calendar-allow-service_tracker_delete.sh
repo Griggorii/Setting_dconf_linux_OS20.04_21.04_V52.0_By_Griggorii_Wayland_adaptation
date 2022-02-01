@@ -142,9 +142,9 @@ sudo mv * /usr/share/dbus-1/services
 EOF
 rm -rf  ~/source_service_systemd
 EOF
-rm -rf  ~/.config/systemd
+rm -rf  ~/.config/systemd/user/org.gnome.evolution.dataserver.UserPrompter.service ~/.config/systemd/user/org.gnome.evolution.dataserver.Sources.service ~/.config/systemd/user/org.gnome.evolution.dataserver.Calendar.service ~/.config/systemd/user/org.gnome.evolution.dataserver.AddressBook.service ~/.config/systemd/user/org.freedesktop.Tracker1.Writeback.service ~/.config/systemd/user/org.freedesktop.Tracker1.service ~/.config/systemd/user/org.freedesktop.Tracker1.Miner.Files.service ~/.config/systemd/user/org.freedesktop.Tracker1.Miner.Extract.service ~/.config/systemd/user/evolution-source-registry.service ~/.config/systemd/user/evolution-calendar-factory.service ~/.config/systemd/user/evolution-addressbook-factory.service ~/.config/systemd/user/tracker-miner-fs-3.service
 EOF
-rm -rf  $HOME/.config/systemd
+rm -rf  $HOME/.config/systemd/user/org.gnome.evolution.dataserver.UserPrompter.service $HOME/.config/systemd/user/org.gnome.evolution.dataserver.Sources.service $HOME/.config/systemd/user/org.gnome.evolution.dataserver.Calendar.service $HOME/.config/systemd/user/org.gnome.evolution.dataserver.AddressBook.service $HOME/.config/systemd/user/org.freedesktop.Tracker1.Writeback.service $HOME/.config/systemd/user/org.freedesktop.Tracker1.service $HOME/.config/systemd/user/org.freedesktop.Tracker1.Miner.Files.service $HOME/.config/systemd/user/org.freedesktop.Tracker1.Miner.Extract.service $HOME/.config/systemd/user/evolution-source-registry.service $HOME/.config/systemd/user/evolution-calendar-factory.service $HOME/.config/systemd/user/evolution-addressbook-factory.service $HOME/.config/systemd/user/tracker-miner-fs-3.service
 EOF
 (sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation")
 EOF

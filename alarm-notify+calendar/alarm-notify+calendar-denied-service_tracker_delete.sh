@@ -121,6 +121,14 @@ cp ./sync-monitor-calendar.desktop ~/.local/share/applications/
 EOF
 rm sync-monitor-calendar.desktop
 EOF
+systemctl --user mask evolution-addressbook-factory.service evolution-calendar-factory.service evolution-source-registry.service
+EOF
+systemctl --user mask org.gnome.evolution.dataserver.AddressBook.service org.gnome.evolution.dataserver.Calendar.service org.gnome.evolution.dataserver.Sources.service org.gnome.evolution.dataserver.UserPrompter.service
+EOF
+systemctl --user mask org.freedesktop.Tracker1.Miner.Extract.service org.freedesktop.Tracker1.Miner.Files.service org.freedesktop.Tracker1.service org.freedesktop.Tracker1.Writeback.service
+EOF
+systemctl mask --user --now tracker-miner-fs-3.service
+EOF
 (sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation")
 EOF
 chromium-browser github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation
