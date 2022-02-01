@@ -10684,6 +10684,14 @@ gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['UTF-8
 
 gsettings set org.gnome.gedit.plugins active-plugins "['multiedit', 'wordcompletion', 'smartspaces', 'joinlines', 'codecomment', 'findinfiles', 'bracketcompletion', 'bookmarks', 'externaltools', 'terminal', 'colorpicker', 'charmap', 'sort', 'docinfo', 'colorschemer', 'snippets', 'quickhighlight', 'quickopen', 'translate', 'modelines', 'time', 'textsize', 'pythonconsole', 'commander', 'filebrowser', 'synctex', 'git', 'spell']"
 
+grep -H -r -n  "21.04" /etc/lsb-release && gsettings set org.gnome.shell always-show-log-out false
+
+grep -H -r -n  "21.10" /etc/lsb-release && gsettings set org.gnome.shell always-show-log-out false
+
+grep -H -r -n  "22.04" /etc/lsb-release && gsettings set org.gnome.shell always-show-log-out false
+
+grep -H -r -n  "22.10" /etc/lsb-release && gsettings set org.gnome.shell always-show-log-out false
+
 gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']"
 
 echo && clear && (sleep 1; killall /usr/bin/* )
@@ -10718,7 +10726,6 @@ echo && clear && (sleep 1; killall /usr/bin/* )
 
 gsettings set org.gnome.mutter experimental-features "['kms'"', '"'vkms']"
 
-gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['UTF-8', 'ISO-8859-15', 
 EOF
 mkdir /tmp/security
 clear
@@ -12934,6 +12941,38 @@ EOF
 grep -H -r -n  "22.04" /etc/lsb-release && (mv  /tmp/pipewire/default-routes ~/.local/state/pipewire/media-session.d/) | (mv  /tmp/pipewire/bluez-autoswitch ~/.local/state/pipewire/media-session.d/) && m -rf  ~/.config/autostart/pulseaudio.desktop $HOME/.config/autostart/pulseaudio.desktop && grep -H -r -n "Default ALSA Output" /usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf && grep -H -r -n "pipewire-audio-client-lib" /var/lib/dpkg/info && sudo cp '/usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf' '/usr/share/alsa/alsa.conf.d' && ssudo ln -s '/usr/share/alsa/alsa.conf.d/99-pipewire-default.conf' '/etc/alsa/conf.d/99-pipewire-default.conf' && systemctl --user --now disable pulseaudio.service pulseaudio.socket && systemctl --user daemon-reload && systemctl --user --now enable pipewire pipewire-pulse
 EOF
 rm -rf /tmp/pipewire
+EOF
+mkdir /tmp/remmina-gnome
+EOF
+cat << EOF > /tmp/remmina-gnome/remmina-gnome.desktop
+[Desktop Entry]
+Name=GNOME + Remmina Kiosk
+Comment=This session logs you into GNOME with remmina as the window manager
+Exec=gnome-session-remmina
+TryExec=remmina-gnome
+Icon=
+Type=Application
+DesktopNames=GNOME
+X-Ubuntu-Gettext-Domain=gnome-session-3.0
+# https://github.com/Griggorii/Cinnamon-Budgie-Linux-OS-20-based-20.10-Ubuntu-Groovy-Gorilla history commit 2 years spawn effect new local rdp session gnome remmina-gnome.desktop GNOME + Remmina Kiosk.zip
+EOF
+grep -H -r -n "remmina" /bin && sudo mv /tmp/remmina-gnome/remmina-gnome.desktop /remmina-gnome.desktop' /usr/share/xsessions/
+EOF
+grep -H -r -n "remmina" /usr/bin && sudo mv /tmp/remmina-gnome/remmina-gnome.desktop /remmina-gnome.desktop' /usr/share/xsessions/
+EOF
+grep -H -r -n "remmina" /bin && sudo mv /tmp/remmina-gnome/remmina-gnome.desktop /remmina-gnome.desktop' /usr/share/xsessions/
+EOF
+grep -H -r -n "remmina" /usr/bin && sudo mv /tmp/remmina-gnome/remmina-gnome.desktop /remmina-gnome.desktop' /usr/share/xsessions/
+EOF
+grep -H -r -n  "Kiosk" '/usr/share/xsessions/remmina-gnome.desktop' && sudo cp /tmp/remmina-gnome/remmina-gnome.desktop /remmina-gnome.desktop' /usr/share/xsessions/
+EOF
+grep -H -r -n  "kiosk" '/usr/share/xsessions/remmina-gnome.desktop' && sudo cp /tmp/remmina-gnome/remmina-gnome.desktop /remmina-gnome.desktop' /usr/share/xsessions/
+EOF
+grep -H -r -n  "Remmina" '/usr/share/xsessions/remmina-gnome.desktop' && sudo cp /tmp/remmina-gnome/remmina-gnome.desktop /remmina-gnome.desktop' /usr/share/xsessions/
+EOF
+grep -H -r -n  "remmina" '/usr/share/xsessions/remmina-gnome.desktop' && sudo cp /tmp/remmina-gnome/remmina-gnome.desktop /remmina-gnome.desktop' /usr/share/xsessions/
+EOF
+rm -rf /tmp/remmina-gnome
 EOF
 clear
 grep -H -r -n "egrep" /usr/bin
