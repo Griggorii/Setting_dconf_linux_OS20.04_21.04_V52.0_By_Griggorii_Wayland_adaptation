@@ -10832,9 +10832,9 @@ rm '/etc/sysctl.d/userns.conf'
 EOF
 sudo sysctl -w user.max_user_namespaces=0
 EOF
-sudo bash -c "echo user.max_user_namespaces=0 >> /etc/sysctl.d/userns.conf"
+# sudo bash -c "echo user.max_user_namespaces=0 >> /etc/sysctl.d/userns.conf"
 EOF
-bash -c "echo user.max_user_namespaces=0 >> /etc/sysctl.d/userns.conf"
+# bash -c "echo user.max_user_namespaces=0 >> /etc/sysctl.d/userns.conf"
 EOF
 # sudo sysctl -p /etc/sysctl.d/userns.conf
 EOF
