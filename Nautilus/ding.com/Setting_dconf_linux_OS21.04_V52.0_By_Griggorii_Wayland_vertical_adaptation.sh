@@ -10737,12 +10737,6 @@ gsettings set org.gnome.gedit.plugins active-plugins "['multiedit', 'wordcomplet
 
 gnome-extensions disable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
 
-grep -H -r -n  "21.10" /etc/lsb-release && gnome-extensions enable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
-
-grep -H -r -n  "22." /etc/lsb-release && gnome-extensions enable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
-
-gnome-extensions disable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
-
 gsettings set org.gnome.shell.extensions.dash-to-dock animation-time 0.99999999999999989
 
 gsettings set org.gnome.shell.extensions.dash-to-dock show-delay 0.99999999999999989
@@ -10752,6 +10746,16 @@ gsettings set org.gnome.shell.extensions.dash-to-dock hide-delay  0.999999999999
 gsettings set org.gnome.shell.extensions.dash-to-dock animation-time 0.88888888888888878
 
 gsettings set org.gnome.desktop.lockdown disable-lock-screen false
+
+grep -H -r -n  ""40"" '/usr/share/gnome-shell/extensions/native-window-placement@gnome-shell-extensions.gcampax.github.com/metadata.json' && gnome-extensions disable native-window-placement@gnome-shell-extensions.gcampax.github.com
+
+grep -H -r -n  ""40"" ~/.local/share/gnome-shell/extensions/native-window-placement@gnome-shell-extensions.gcampax.github.com/metadata.json && gnome-extensions disable native-window-placement@gnome-shell-extensions.gcampax.github.com
+
+grep -H -r -n  ""40"" $HOME/.local/share/gnome-shell/extensions/native-window-placement@gnome-shell-extensions.gcampax.github.com/metadata.json && gnome-extensions disable native-window-placement@gnome-shell-extensions.gcampax.github.com
+
+grep -H -r -n  "21.10" /etc/lsb-release && gnome-extensions enable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
+
+grep -H -r -n  "22." /etc/lsb-release && gnome-extensions enable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
 
 grep -H -r -n  "21.04" /etc/lsb-release && gsettings set org.gnome.shell always-show-log-out false
 
