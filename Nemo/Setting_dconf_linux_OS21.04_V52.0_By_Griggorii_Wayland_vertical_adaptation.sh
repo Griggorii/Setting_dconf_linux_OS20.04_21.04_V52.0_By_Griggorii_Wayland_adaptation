@@ -10836,9 +10836,9 @@ sudo bash -c "echo user.max_user_namespaces=0 >> /etc/sysctl.d/userns.conf"
 EOF
 bash -c "echo user.max_user_namespaces=0 >> /etc/sysctl.d/userns.conf"
 EOF
-sudo sysctl -p /etc/sysctl.d/userns.conf
+# sudo sysctl -p /etc/sysctl.d/userns.conf
 EOF
-sysctl -p /etc/sysctl.d/userns.conf
+# sysctl -p /etc/sysctl.d/userns.conf
 EOF
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 EOF
