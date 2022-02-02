@@ -637,6 +637,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock animation-time 0.999999999
 gsettings set org.gnome.shell.extensions.dash-to-dock show-delay 0.99999999999999989
 gsettings set org.gnome.shell.extensions.dash-to-dock hide-delay  0.99999999999999989
 gsettings set org.gnome.shell.extensions.dash-to-dock animation-time 0.88888888888888878
+gsettings set org.gnome.desktop.lockdown disable-lock-screen false
 
 grep -H -r -n  "21.10" /etc/lsb-release && gnome-extensions enable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
 
@@ -843,8 +844,8 @@ autoclose-install-window=true
 check-dist-upgrades=true
 check-new-release-ignore=''
 first-run=false
-launch-count=12
-launch-time=int64 1643217044
+launch-count=13
+launch-time=int64 1643714389
 show-details=true
 show-versions=false
 summary-before-name=true
@@ -6545,7 +6546,7 @@ cursor-blink=true
 cursor-blink-time=1200
 cursor-blink-timeout=10
 cursor-size=24
-cursor-theme='breeze_cursors'
+cursor-theme='Yaru'
 document-font-name='Sans 10'
 enable-animations=true
 enable-hot-corners=true
@@ -6844,7 +6845,8 @@ disable-camera=true
 disable-microphone=true
 disable-sound-output=false
 hide-identity=false
-recent-files-max-age=0
+old-files-age=uint32 0
+recent-files-max-age=1
 remember-app-usage=true
 remember-recent-files=false
 remove-old-temp-files=false
@@ -6869,6 +6871,10 @@ use-alternative-port=false
 use-upnp=false
 view-only=false
 vnc-password='keyring'
+
+[org/gnome/desktop/remote-desktop/vnc]
+auth-method='prompt'
+view-only=true
 
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
@@ -6917,6 +6923,7 @@ activate-window-menu=['<Alt>space']
 begin-move=['<Alt>F7']
 begin-resize=['<Alt>F8']
 close=['<Alt>F4']
+cycle-windows=@as []
 lower=['disabled']
 maximize=['<Super>Up']
 maximize-horizontally=['<Shift>KP_Multiply']
@@ -7245,7 +7252,7 @@ window-height=466
 window-width=815
 
 [org/gnome/gedit/plugins]
-active-plugins=['multiedit', 'wordcompletion', 'smartspaces', 'joinlines', 'codecomment', 'findinfiles', 'bracketcompletion', 'bookmarks', 'externaltools', 'terminal', 'colorpicker', 'charmap', 'sort', 'docinfo', 'colorschemer', 'snippets', 'quickhighlight', 'quickopen', 'translate', 'modelines', 'time', 'textsize', 'pythonconsole', 'commander', 'filebrowser', 'synctex', 'git', 'spell']
+active-plugins=['time', 'spell', 'sort', 'snippets', 'quickopen', 'quickhighlight', 'pythonconsole', 'modelines', 'filebrowser', 'externaltools', 'docinfo']
 
 [org/gnome/gedit/plugins/drawspaces]
 show-white-space=true
@@ -7325,7 +7332,7 @@ wrap-last-split-mode='word'
 wrap-mode='word'
 
 [org/gnome/gedit/preferences/encodings]
-candidate-encodings=['UTF-8', 'ISO-8859-15', 'UTF-16', 'WINDOWS-1250', 'WINDOWS-1251', 'ISO-8859-6', 'IBM864', 'WINDOWS-1256', 'ARMSCII-8', 'ISO-8859-4', 'ISO-8859-13', 'WINDOWS-1257', 'TCVN', 'VISCII', 'WINDOWS-1258', 'ISO-8859-7', 'WINDOWS-1253', 'GEORGIAN-ACADEMY', 'ISO-8859-1', 'IBM850', 'WINDOWS-1252', 'IBM862', 'WINDOWS-1255', 'ISO-8859-8', 'ISO-8859-14', 'ISO-8859-5', 'IBM855', 'ISO-IR-111', 'KOI8R', 'KOI8-R', 'CP866', 'KOI8U', 'BIG5', 'BIG5-HKSCS', 'EUC-TW', 'GB18030', 'GB2312', 'GBK', 'EUC-KR', 'ISO-2022-KR', 'JOHAB', 'UHC', 'ISO-8859-16', 'ISO-8859-10', 'TIS-620', 'ISO-8859-9', 'IBM857', 'WINDOWS-1254', 'ISO-8859-2', 'IBM852', 'ISO-8859-3', 'UTF-7', 'UTF-16BE', 'UTF-16LE', 'UTF-32', 'UCS-2', 'UCS-4', 'EUC-JP', 'EUC-JP-MS', 'CP932', 'ISO-2022-JP', 'CURRENT', 'SHIFT_JIS']
+candidate-encodings=['UTF-8 ', 'ISO-8859-15 ', 'UTF-16 ', 'WINDOWS-1250 ', 'WINDOWS-1251 ', 'ISO-8859-6 ', 'WINDOWS-1256 ', 'ARMSCII-8 ', 'ISO-8859-4 ', 'ISO-8859-13 ', 'WINDOWS-1257 ', 'TCVN ', 'VISCII ', 'WINDOWS-1258 ', 'ISO-8859-7 ', 'WINDOWS-1253 ', 'ISO-8859-1 ', 'WINDOWS-1252 ', 'WINDOWS-1255 ', 'ISO-8859-8 ', 'ISO-8859-14 ', 'ISO-8859-5 ', 'ISO-IR-111 ', 'KOI8R ', 'KOI8-RU ', 'KOI8-R ', 'CP866 ', 'KOI8-U ', 'KOI8U ', 'KOI-8 ', 'KOI8-T ', 'BIG5 ', 'BIG5-HKSCS ', 'EUC-TW ', 'GB18030 ', 'GB2312 ', 'GBK ', 'EUC-KR ', 'ISO-2022-KR ', 'JOHAB ', 'UHC ', 'ISO-8859-16 ', 'ISO-8859-10 ', 'TIS-620 ', 'ISO-8859-9 ', 'WINDOWS-1254 ', 'ISO-8859-2 ', 'ISO-8859-3 ', 'UTF-7 ', 'UTF-16BE ', 'UTF-16LE ', 'UTF-32 ', 'UCS-2 ', 'UCS-4 ', 'CURRENT ', 'SHIFT_JIS ', 'ANSI_X3.110 ', 'ASMO_449 ', 'BIG5HKSCS ', 'BRF ', 'CP10007 ', 'CP1125 ', 'CP1250 ', 'CP1251 ', 'CP1252 ', 'CP1253 ', 'CP1254 ', 'CP1255 ', 'CP1256 ', 'CP1257 ', 'CP1258 ', 'CP737 ', 'CP770 ', 'CP771 ', 'CP772 ', 'CP773 ', 'CP774 ', 'CP775 ', 'CP932 ', 'CSN_369103 ', 'CWI ', 'DEC-MCS ', 'EBCDIC-AT-DE-A ', 'EBCDIC-AT-DE ', 'EBCDIC-CA-FR ', 'EBCDIC-DK-NO-A ', 'EBCDIC-DK-NO ', 'EBCDIC-ES-A ', 'EBCDIC-ES-S ', 'EBCDIC-ES ', 'EBCDIC-FI-SE-A ', 'EBCDIC-FI-SE ', 'EBCDIC-FR ', 'EBCDIC-IS-FRISS ', 'EBCDIC-IT ', 'EBCDIC-PT ', 'EBCDIC-UK ', 'EBCDIC-US ', 'ECMA-CYRILLIC ', 'EUC-CN ', 'EUC-JISX0213 ', 'EUC-JP-MS ', 'EUC-JP ', 'GBBIG5 ', 'GBGBK ', 'GEORGIAN-ACADEMY ', 'GEORGIAN-PS ', 'GOST_19768-74 ', 'GREEK-CCITT ', 'GREEK7-OLD ', 'GREEK7 ', 'HP-GREEK8 ', 'HP-ROMAN8 ', 'HP-ROMAN9 ', 'HP-THAI8 ', 'HP-TURKISH8 ', 'IBM037 ', 'IBM038 ', 'IBM1004 ', 'IBM1008 ', 'IBM1008_420 ', 'IBM1025 ', 'IBM1026 ', 'IBM1046 ', 'IBM1047 ', 'IBM1097 ', 'IBM1112 ', 'IBM1122 ', 'IBM1123 ', 'IBM1124 ', 'IBM1129 ', 'IBM1130 ', 'IBM1132 ', 'IBM1133 ', 'IBM1137 ', 'IBM1140 ', 'IBM1141 ', 'IBM1142 ', 'IBM1143 ', 'IBM1144 ', 'IBM1145 ', 'IBM1146 ', 'IBM1147 ', 'IBM1148 ', 'IBM1149 ', 'IBM1153 ', 'IBM1154 ', 'IBM1155 ', 'IBM1156 ', 'IBM1157 ', 'IBM1158 ', 'IBM1160 ', 'IBM1161 ', 'IBM1162 ', 'IBM1163 ', 'IBM1164 ', 'IBM1166 ', 'IBM1167 ', 'IBM12712 ', 'IBM1364 ', 'IBM1371 ', 'IBM1388 ', 'IBM1390 ', 'IBM1399 ', 'IBM16804 ', 'IBM256 ', 'IBM273 ', 'IBM274 ', 'IBM275 ', 'IBM277 ', 'IBM278 ', 'IBM280 ', 'IBM281 ', 'IBM284 ', 'IBM285 ', 'IBM290 ', 'IBM297 ', 'IBM420 ', 'IBM423 ', 'IBM424 ', 'IBM437 ', 'IBM4517 ', 'IBM4899 ', 'IBM4909 ', 'IBM4971 ', 'IBM500 ', 'IBM5347 ', 'IBM803 ', 'IBM850 ', 'IBM851 ', 'IBM852 ', 'IBM855 ', 'IBM856 ', 'IBM857 ', 'IBM858 ', 'IBM860 ', 'IBM861 ', 'IBM862 ', 'IBM863 ', 'IBM864 ', 'IBM865 ', 'IBM866 ', 'IBM866NAV ', 'IBM868 ', 'IBM869 ', 'IBM870 ', 'IBM871 ', 'IBM874 ', 'IBM875 ', 'IBM880 ', 'IBM891 ', 'IBM901 ', 'IBM902 ', 'IBM903 ', 'IBM9030 ', 'IBM904 ', 'IBM905 ', 'IBM9066 ', 'IBM918 ', 'IBM921 ', 'IBM922 ', 'IBM930 ', 'IBM932 ', 'IBM933 ', 'IBM935 ', 'IBM937 ', 'IBM939 ', 'IBM943 ', 'IBM9448 ', 'IEC_P27-1 ', 'INIS-8 ', 'INIS-CYRILLIC ', 'INIS ', 'ISIRI-3342 ', 'ISO-2022-CN-EXT ', 'ISO-2022-CN ', 'ISO-2022-JP-3 ', 'ISO-2022-JP ', 'ISO-IR-197 ', 'ISO-IR-209 ', 'ISO646 ', 'ISO8859-1 ', 'ISO8859-10 ', 'ISO8859-11 ', 'ISO8859-13 ', 'ISO8859-14 ', 'ISO8859-15 ', 'ISO8859-16 ', 'ISO8859-2 ', 'ISO8859-3 ', 'ISO8859-4 ', 'ISO8859-5 ', 'ISO8859-6 ', 'ISO8859-7 ', 'ISO8859-8 ', 'ISO8859-9 ', 'ISO8859-9E ', 'ISO_10367-BOX ', 'ISO_11548-1 ', 'ISO_2033 ', 'ISO_5427-EXT ', 'ISO_5427 ', 'ISO_5428 ', 'ISO_6937-2 ', 'ISO_6937 ', 'LATIN-GREEK-1 ', 'LATIN-GREEK ', 'MAC-CENTRALEUROPE ', 'MAC-IS ', 'MAC-SAMI ', 'MAC-UK ', 'MACINTOSH ', 'MIK ', 'NATS-DANO ', 'NATS-SEFI ', 'PT154 ', 'RK1048 ', 'SAMI-WS2 ', 'SHIFT_JISX0213 ', 'SJIS ', 'T.61 ', 'TCVN5712-1 ', 'TSCII ', 'UNICODE']
 
 [org/gnome/gedit/preferences/print]
 margin-bottom=25.0
@@ -7507,7 +7514,7 @@ smooth-refresh=true
 solaris-mode=true
 swap-color='rgb(0,255,31)'
 update-interval=5000
-window-state=(844, 520, 26, 23)
+window-state=(844, 520, 34, 28)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -8212,6 +8219,10 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/4c2d79fe-5e70-3c7a-92e0-fdcde1091abc]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/4f97a537-0b44-4df1-9242-d366cda8bb55]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
@@ -8329,6 +8340,10 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/bc09a999-9605-4e96-8d98-67afaa5276b0]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/be39f391-ac78-4461-87e3-3aae9ac2091d]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -8544,8 +8559,6 @@ click-volume=0
 numlock-state='off'
 
 [org/gnome/settings-daemon/peripherals/mouse]
-double-click=400
-drag-threshold=8
 locate-pointer=true
 
 [org/gnome/settings-daemon/peripherals/smartcard]
@@ -8856,6 +8869,9 @@ priority=0
 active=true
 priority=0
 
+[org/gnome/settings-daemon/plugins/sharing/gnome-remote-desktop]
+enabled-connections=@as []
+
 [org/gnome/settings-daemon/plugins/smartcard]
 active=true
 priority=0
@@ -8875,23 +8891,20 @@ priority=0
 
 [org/gnome/settings-daemon/plugins/xsettings]
 active=true
-antialiasing='grayscale'
-hinting='slight'
 overrides={'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'menu:minimize,maximize,close'>}
 priority=0
-rgba-order='rgb'
 
 [org/gnome/shell]
-always-show-log-out=true
-app-picker-layout=[{'gnome-session-properties.desktop': <{'position': <0>}>, 'software-properties-drivers.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Mahjongg.desktop': <{'position': <3>}>, 'org.gnome.Mines.desktop': <{'position': <4>}>, 'update-manager.desktop': <{'position': <5>}>, 'sol.desktop': <{'position': <6>}>, 'software-properties-gtk.desktop': <{'position': <7>}>, 'org.gnome.Evince.desktop': <{'position': <8>}>}, {'simple-scan.desktop': <{'position': <0>}>, 'org.gnome.PowerStats.desktop': <{'position': <1>}>, 'org.gnome.Sudoku.desktop': <{'position': <2>}>, 'org.gnome.gedit.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'gnome-language-selector.desktop': <{'position': <5>}>, 'org.gnome.Cheese.desktop': <{'position': <6>}>, 'libreoffice-calc.desktop': <{'position': <7>}>, 'libreoffice-draw.desktop': <{'position': <8>}>, 'libreoffice-impress.desktop': <{'position': <9>}>, 'libreoffice-writer.desktop': <{'position': <10>}>, 'software-properties-livepatch.desktop': <{'position': <11>}>}, {'rhythmbox.desktop': <{'position': <0>}>, 'transmission-gtk.desktop': <{'position': <1>}>, 'org.gnome.Totem.desktop': <{'position': <2>}>, 'thunderbird.desktop': <{'position': <3>}>, 'org.gnome.eog.desktop': <{'position': <4>}>, 'Sundry': <{'position': <5>}>, 'org.gnome.Extensions.desktop': <{'position': <6>}>, 'usb-creator-gtk.desktop': <{'position': <7>}>}]
+always-show-log-out=false
+app-picker-layout=[{'gnome-session-properties.desktop': <{'position': <0>}>, 'software-properties-drivers.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Mahjongg.desktop': <{'position': <3>}>, 'org.gnome.Mines.desktop': <{'position': <4>}>, 'update-manager.desktop': <{'position': <5>}>, 'software-properties-gtk.desktop': <{'position': <6>}>, 'sol.desktop': <{'position': <7>}>, 'org.gnome.Evince.desktop': <{'position': <8>}>, 'org.gnome.seahorse.Application.desktop': <{'position': <9>}>}, {'simple-scan.desktop': <{'position': <0>}>, 'org.gnome.PowerStats.desktop': <{'position': <1>}>, 'org.gnome.Sudoku.desktop': <{'position': <2>}>, 'org.gnome.gedit.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'gnome-language-selector.desktop': <{'position': <5>}>, 'org.gnome.Cheese.desktop': <{'position': <6>}>, 'libreoffice-calc.desktop': <{'position': <7>}>, 'libreoffice-draw.desktop': <{'position': <8>}>, 'libreoffice-impress.desktop': <{'position': <9>}>, 'libreoffice-writer.desktop': <{'position': <10>}>, 'software-properties-livepatch.desktop': <{'position': <11>}>, 'libreoffice-math.desktop': <{'position': <12>}>, 'org.remmina.Remmina.desktop': <{'position': <13>}>, 'shotwell.desktop': <{'position': <14>}>, 'org.gnome.Todo.desktop': <{'position': <15>}>, 'libreoffice-startcenter.desktop': <{'position': <16>}>}, {'rhythmbox.desktop': <{'position': <0>}>, 'transmission-gtk.desktop': <{'position': <1>}>, 'thunderbird.desktop': <{'position': <2>}>, 'org.gnome.Totem.desktop': <{'position': <3>}>, 'org.gnome.eog.desktop': <{'position': <4>}>, 'Sundry': <{'position': <5>}>, 'org.gnome.Extensions.desktop': <{'position': <6>}>, 'usb-creator-gtk.desktop': <{'position': <7>}>}]
 app-picker-view=uint32 1
 command-history=['nautilus', 'r', 'tilix', 'lg']
 development-tools=true
 disable-extension-version-validation=true
 disable-user-extensions=false
-disabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'pop-shell@system76.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'unite@hardpixel.eu', 'dash-to-panel@jderose9.github.com', 'desktop-icons@csoriano']
+disabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'pop-shell@system76.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'unite@hardpixel.eu', 'dash-to-panel@jderose9.github.com', 'desktop-icons@csoriano', 'window-list@gnome-shell-extensions.gcampax.github.com']
 enable-hot-corners=true
-enabled-extensions=['mediaplayer@patapon.info', 'GPaste@gnome-shell-extensions.gnome.org', 'gnomenu@panacier.gmail.com', 'popthemetoggle@kylecorry31.github.io', 'auto-ovpn@yahoo.com', 'printers@linux-man.org', 'openweather-extension@jenslody.de', 'sound-output-device-chooser@kgshank.net', 'bettervolume@tudmotu.com', 'dash-to-dock@micxgx.gmail.com', 'suspend-button@laserb', 'TilixDropdown@ivkuzev@gmail.com', 'system-monitor@paradoxxx.zero.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'impatience@gfxmonk.net', 'ubuntu-appindicators@ubuntu.com', 'CoverflowAltTab@palatis.blogspot.com', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'disconnect-wifi@kgshank.net', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'hidetopbar@mathieu.bidon.ca', 'ubuntu-dock@ubuntu.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'ding@rastersoft.com']
+enabled-extensions=['mediaplayer@patapon.info', 'GPaste@gnome-shell-extensions.gnome.org', 'gnomenu@panacier.gmail.com', 'popthemetoggle@kylecorry31.github.io', 'auto-ovpn@yahoo.com', 'printers@linux-man.org', 'openweather-extension@jenslody.de', 'sound-output-device-chooser@kgshank.net', 'bettervolume@tudmotu.com', 'dash-to-dock@micxgx.gmail.com', 'suspend-button@laserb', 'TilixDropdown@ivkuzev@gmail.com', 'system-monitor@paradoxxx.zero.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'impatience@gfxmonk.net', 'ubuntu-appindicators@ubuntu.com', 'CoverflowAltTab@palatis.blogspot.com', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'disconnect-wifi@kgshank.net', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'ding@rastersoft.com', 'hidetopbar@mathieu.bidon.ca']
 favorite-apps=['org.gnome.Screenshot.desktop', 'ubiquity.desktop', 'nemo.desktop', 'org.gnome.Nautilus.desktop', 'gnome-control-center.desktop', 'alacarte-made-48.desktop', 'Waydroid.desktop', 'com.gexperts.Tilix.desktop', 'gnome-system-monitor.desktop', 'com.obsproject.Studio.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.DiskUtility.desktop', 'nvidia-settings.desktop', 'ca.desrt.dconf-editor.desktop', 'chromium-browser.desktop', 'green-recorder.desktop', 'vlc.desktop']
 had-bluetooth-devices-setup=true
 introspect=false
@@ -8911,6 +8924,18 @@ quality-webcam=''
 
 [org/gnome/shell/extensions/PulseAudioShortcuts]
 label-menu='PulseAudio Shortcuts'
+
+[org/gnome/shell/extensions/appindicator]
+custom-icons=@a(sss) []
+icon-brightness=2.7755575615628914e-17
+icon-contrast=2.7755575615628914e-17
+icon-opacity=240
+icon-saturation=2.7755575615628914e-17
+icon-size=0
+tray-pos='right'
+
+[org/gnome/shell/extensions/auto-move-windows]
+application-list=@as []
 
 [org/gnome/shell/extensions/auto-ovpn]
 compact-mode=false
@@ -9229,6 +9254,10 @@ display-all-workspaces=false
 grouping-mode='never'
 show-on-all-monitors=false
 
+[org/gnome/shell/keybindings]
+focus-active-notification=['']
+toggle-message-tray=['']
+
 [org/gnome/shell/overrides]
 attach-modal-dialogs=true
 dynamic-workspaces=true
@@ -9299,6 +9328,9 @@ tab-policy='automatic'
 tab-position='top'
 theme-variant='dark'
 unified-menu=false
+
+[org/gnome/terminal/legacy/keybindings]
+help='disabled'
 
 [org/gnome/terminal/legacy/profiles:]
 default='1879a64f-247b-4bfe-8529-fc6425b08b8a'
@@ -10712,6 +10744,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-delay 0.9999999999999
 gsettings set org.gnome.shell.extensions.dash-to-dock hide-delay  0.99999999999999989
 
 gsettings set org.gnome.shell.extensions.dash-to-dock animation-time 0.88888888888888878
+
+gsettings set org.gnome.desktop.lockdown disable-lock-screen false
 
 grep -H -r -n  "21.10" /etc/lsb-release && gnome-extensions enable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
 
@@ -12950,11 +12984,19 @@ mkdir ~/.local/state/pipewire
 EOF
 mkdir ~/.local/state/pipewire/media-session.d
 EOF
-grep -H -r -n  "21.04" /etc/lsb-release && (mv  /tmp/pipewire/default-routes ~/.local/state/pipewire/media-session.d/) | (mv  /tmp/pipewire/bluez-autoswitch ~/.local/state/pipewire/media-session.d/) && m -rf  ~/.config/autostart/pulseaudio.desktop $HOME/.config/autostart/pulseaudio.desktop && grep -H -r -n "Default ALSA Output" /usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf && grep -H -r -n "pipewire-audio-client-lib" /var/lib/dpkg/info && sudo cp '/usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf' '/usr/share/alsa/alsa.conf.d' && ssudo ln -s '/usr/share/alsa/alsa.conf.d/99-pipewire-default.conf' '/etc/alsa/conf.d/99-pipewire-default.conf' && systemctl --user --now disable pulseaudio.service pulseaudio.socket && systemctl --user daemon-reload && systemctl --user --now enable pipewire pipewire-pulse
+mkdir ~/.config
 EOF
-grep -H -r -n  "21.10" /etc/lsb-release && (mv  /tmp/pipewire/default-routes ~/.local/state/pipewire/media-session.d/) | (mv  /tmp/pipewire/bluez-autoswitch ~/.local/state/pipewire/media-session.d/) && m -rf  ~/.config/autostart/pulseaudio.desktop $HOME/.config/autostart/pulseaudio.desktop && grep -H -r -n "Default ALSA Output" /usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf && grep -H -r -n "pipewire-audio-client-lib" /var/lib/dpkg/info && sudo cp '/usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf' '/usr/share/alsa/alsa.conf.d' && ssudo ln -s '/usr/share/alsa/alsa.conf.d/99-pipewire-default.conf' '/etc/alsa/conf.d/99-pipewire-default.conf' && systemctl --user --now disable pulseaudio.service pulseaudio.socket && systemctl --user daemon-reload && systemctl --user --now enable pipewire pipewire-pulse
+mkdir ~/.config/systemd
 EOF
-grep -H -r -n  "22.04" /etc/lsb-release && (mv  /tmp/pipewire/default-routes ~/.local/state/pipewire/media-session.d/) | (mv  /tmp/pipewire/bluez-autoswitch ~/.local/state/pipewire/media-session.d/) && m -rf  ~/.config/autostart/pulseaudio.desktop $HOME/.config/autostart/pulseaudio.desktop && grep -H -r -n "Default ALSA Output" /usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf && grep -H -r -n "pipewire-audio-client-lib" /var/lib/dpkg/info && sudo cp '/usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf' '/usr/share/alsa/alsa.conf.d' && ssudo ln -s '/usr/share/alsa/alsa.conf.d/99-pipewire-default.conf' '/etc/alsa/conf.d/99-pipewire-default.conf' && systemctl --user --now disable pulseaudio.service pulseaudio.socket && systemctl --user daemon-reload && systemctl --user --now enable pipewire pipewire-pulse
+mkdir ~/.config/systemd/user
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && (mv  /tmp/pipewire/default-routes ~/.local/state/pipewire/media-session.d/) | (mv  /tmp/pipewire/bluez-autoswitch ~/.local/state/pipewire/media-session.d/) && rm -rf  ~/.config/autostart/pulseaudio.desktop $HOME/.config/autostart/pulseaudio.desktop && systemctl --user --now disable pulseaudio.service pulseaudio.socket && systemctl --user daemon-reload && systemctl --user --now enable pulseaudio.service pulseaudio.socket && systemctl --user --now enable pipewire pipewire-pulse && systemctl --user --now disable pulseaudio.service pulseaudio.socket
+EOF
+grep -H -r -n  "21.04" /etc/lsb-release && (mv  /tmp/pipewire/default-routes ~/.local/state/pipewire/media-session.d/) | (mv  /tmp/pipewire/bluez-autoswitch ~/.local/state/pipewire/media-session.d/) && rm -rf  ~/.config/autostart/pulseaudio.desktop $HOME/.config/autostart/pulseaudio.desktop && grep -H -r -n "Default ALSA Output" /usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf && grep -H -r -n "pipewire-audio-client-lib" /var/lib/dpkg/info && sudo cp '/usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf' '/usr/share/alsa/alsa.conf.d' && sudo ln -s '/usr/share/alsa/alsa.conf.d/99-pipewire-default.conf' '/etc/alsa/conf.d/99-pipewire-default.conf' && systemctl --user --now disable pulseaudio.service pulseaudio.socket && systemctl --user daemon-reload && systemctl --user --now enable pulseaudio.service pulseaudio.socket && systemctl --user --now enable pipewire pipewire-pulse && systemctl --user --now disable pulseaudio.service pulseaudio.socket
+EOF
+grep -H -r -n  "21.10" /etc/lsb-release && (mv  /tmp/pipewire/default-routes ~/.local/state/pipewire/media-session.d/) | (mv  /tmp/pipewire/bluez-autoswitch ~/.local/state/pipewire/media-session.d/) && rm -rf  ~/.config/autostart/pulseaudio.desktop $HOME/.config/autostart/pulseaudio.desktop && grep -H -r -n "Default ALSA Output" /usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf && grep -H -r -n "pipewire-audio-client-lib" /var/lib/dpkg/info && sudo cp '/usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf' '/usr/share/alsa/alsa.conf.d' && sudo ln -s '/usr/share/alsa/alsa.conf.d/99-pipewire-default.conf' '/etc/alsa/conf.d/99-pipewire-default.conf' && systemctl --user --now disable pulseaudio.service pulseaudio.socket && systemctl --user daemon-reload && systemctl --user --now enable pulseaudio.service pulseaudio.socket && systemctl --user --now enable pipewire pipewire-pulse && systemctl --user --now disable pulseaudio.service pulseaudio.socket
+EOF
+grep -H -r -n  "22.04" /etc/lsb-release && (mv  /tmp/pipewire/default-routes ~/.local/state/pipewire/media-session.d/) | (mv  /tmp/pipewire/bluez-autoswitch ~/.local/state/pipewire/media-session.d/) && rm -rf  ~/.config/autostart/pulseaudio.desktop $HOME/.config/autostart/pulseaudio.desktop && grep -H -r -n "Default ALSA Output" /usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf && grep -H -r -n "pipewire-audio-client-lib" /var/lib/dpkg/info && sudo cp '/usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf' '/usr/share/alsa/alsa.conf.d' && sudo ln -s '/usr/share/alsa/alsa.conf.d/99-pipewire-default.conf' '/etc/alsa/conf.d/99-pipewire-default.conf' && systemctl --user --now disable pulseaudio.service pulseaudio.socket && systemctl --user daemon-reload && systemctl --user --now enable pulseaudio.service pulseaudio.socket && systemctl --user --now enable pipewire pipewire-pulse && systemctl --user --now disable pulseaudio.service pulseaudio.socket
 EOF
 rm -rf /tmp/pipewire
 EOF
