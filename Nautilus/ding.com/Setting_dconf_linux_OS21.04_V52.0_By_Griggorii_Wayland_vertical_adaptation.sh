@@ -13034,6 +13034,18 @@ grep -H -r -n  "remmina" '/usr/share/xsessions/remmina-gnome.desktop' && sudo cp
 EOF
 rm -rf /tmp/remmina-gnome
 EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+sudo iptables -I INPUT -s 157.249.73.170 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+iptables -I INPUT -s 157.249.73.170 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+sudo iptables -I INPUT -s 3.233.149.202 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+iptables -I INPUT -s 3.233.149.202 -j DROP
+EOF
 clear
 grep -H -r -n "egrep" /usr/bin
 lightdm --test-mode
