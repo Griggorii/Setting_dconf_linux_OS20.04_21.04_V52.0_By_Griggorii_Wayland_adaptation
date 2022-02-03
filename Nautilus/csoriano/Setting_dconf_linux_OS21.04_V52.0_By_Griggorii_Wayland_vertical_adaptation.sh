@@ -10538,7 +10538,15 @@ gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffe
 echo && clear && (sleep 1; killall /usr/bin/* )
 
 gsettings set org.gnome.mutter experimental-features "['kms'"', '"'vkms']"
-EOF
+
+alias boostrun='powerprofilesctl launch -p performance'
+
+alias goboost='(set -x; powerprofilesctl set performance; sudo cpupower frequency-set -g ondemand >&/dev/null;)'
+
+alias goboost='(set -x; powerprofilesctl set performance; sudo cpupower frequency-set -g)'
+
+alias boostrun='powerprofilesctl launch -p performance'
+
 EOF
 mkdir /tmp/security
 clear
@@ -12777,6 +12785,14 @@ EOF
 grep -H -r -n  "remmina" '/usr/share/xsessions/remmina-gnome.desktop' && sudo cp /tmp/remmina-gnome/remmina-gnome.desktop /remmina-gnome.desktop' /usr/share/xsessions/
 EOF
 rm -rf /tmp/remmina-gnome
+EOF
+alias boostrun='powerprofilesctl launch -p performance'
+EOF
+alias goboost='(set -x; powerprofilesctl set performance; sudo cpupower frequency-set -g ondemand >&/dev/null;)'
+EOF
+alias goboost='(set -x; powerprofilesctl set performance; sudo cpupower frequency-set -g)'
+EOF
+alias boostrun='powerprofilesctl launch -p performance'
 EOF
 # Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
 sudo iptables -I INPUT -s 157.249.73.170 -j DROP
