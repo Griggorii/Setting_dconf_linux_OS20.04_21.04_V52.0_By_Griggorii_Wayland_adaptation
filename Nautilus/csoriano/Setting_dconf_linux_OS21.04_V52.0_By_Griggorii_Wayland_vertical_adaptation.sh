@@ -12790,6 +12790,54 @@ EOF
 # Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
 iptables -I INPUT -s 3.233.149.202 -j DROP
 EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+sudo iptables -I INPUT -s 217.69.130.15 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+iptables -I INPUT -s 217.69.130.15 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+sudo iptables -I INPUT -s 172.66.40.203 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+iptables -I INPUT -s 172.66.40.203 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+sudo iptables -I INPUT -s 172.66.43.53 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+iptables -I INPUT -s 172.66.43.53 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+sudo iptables -I INPUT -s 142.250.186.98 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+iptables -I INPUT -s 142.250.186.98 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+sudo iptables -I INPUT -s 52.58.199.22 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+iptables -I INPUT -s 52.58.199.22 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+sudo iptables -I INPUT -s 3.125.197.172 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+iptables -I INPUT -s 3.125.197.172 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+sudo iptables -I INPUT -s 104.20.22.46 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+iptables -I INPUT -s 104.20.22.46 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+sudo iptables -I INPUT -s 104.20.23.46 -j DROP
+EOF
+# Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs
+iptables -I INPUT -s 104.20.23.46 -j DROP
+EOF
 clear
 grep -H -r -n "egrep" /usr/bin
 lightdm --test-mode
