@@ -12920,6 +12920,8 @@ sudo iptables -I INPUT -s 13.33.141.89 -j DROP
 iptables -I INPUT -s 13.33.141.89 -j DROP
 sudo iptables -I INPUT -s 195.42.179.197 -j DROP
 iptables -I INPUT -s 195.42.179.197 -j DROP
+sudo iptables -I INPUT -s 178.248.233.6 -j DROP
+iptables -I INPUT -s 178.248.233.6 -j DROP
 EOF
 # Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs , I will continue to search and block because I am losing investments due to the falsification of the history of the creation of technologies, and you will lose advertising, technologies were not created at the click of a finger, these were hard assembly days where sometimes it took the whole day and you had to sacrifice sleep, which was reflected in the life graph while you crazy in the Maldives or somewhere else emulating that you work there , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance
 firewall-cmd --permanent --zone=drop --add-source=3.233.149.202
@@ -12965,6 +12967,7 @@ firewall-cmd --permanent --zone=drop --add-source=13.33.141.85
 firewall-cmd --permanent --zone=drop --add-source=13.33.141.7
 firewall-cmd --permanent --zone=drop --add-source=13.33.141.89
 firewall-cmd --permanent --zone=drop --add-source=195.42.179.197
+firewall-cmd --permanent --zone=drop --add-source=178.248.233.6
 firewall-cmd --reload
 firewall-cmd --complete-reload
 systemctl restart firewalld
@@ -13011,6 +13014,7 @@ sudo firewall-cmd --permanent --zone=drop --add-source=13.33.141.85
 sudo firewall-cmd --permanent --zone=drop --add-source=13.33.141.7
 sudo firewall-cmd --permanent --zone=drop --add-source=13.33.141.89
 sudo firewall-cmd --permanent --zone=drop --add-source=195.42.179.197
+sudo firewall-cmd --permanent --zone=drop --add-source=178.248.233.6
 sudo firewall-cmd --reload
 sudo firewall-cmd --complete-reload
 sudo systemctl restart firewalld
