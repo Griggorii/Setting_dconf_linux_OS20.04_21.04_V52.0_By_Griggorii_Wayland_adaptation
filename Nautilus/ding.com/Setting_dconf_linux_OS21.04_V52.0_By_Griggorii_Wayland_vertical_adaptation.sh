@@ -13043,6 +13043,7 @@ cat > '/tmp/baniplist.txt' <<EOL
 13.33.141.7
 13.33.141.89
 195.42.179.197
+178.248.233.6
 EOL
 sudo firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file='/tmp/baniplist.txt'
 EOF
