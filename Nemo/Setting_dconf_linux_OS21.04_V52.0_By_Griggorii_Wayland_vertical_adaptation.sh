@@ -13015,11 +13015,74 @@ sudo firewall-cmd --permanent --zone=drop --add-source=13.33.141.7
 sudo firewall-cmd --permanent --zone=drop --add-source=13.33.141.89
 sudo firewall-cmd --permanent --zone=drop --add-source=195.42.179.197
 sudo firewall-cmd --permanent --zone=drop --add-source=178.248.233.6
+EOF
+cat > '/tmp/baniplist.txt' <<EOL
+157.249.73.170
+3.233.149.202
+217.69.130.15
+172.66.40.203
+172.66.43.53
+142.250.186.98
+52.58.199.22
+3.125.197.172
+104.20.22.46
+104.20.23.46
+194.226.130.228
+37.18.16.22
+31.172.81.172
+188.42.29.196
+178.154.212.160
+188.42.29.196
+185.15.175.130
+142.250.186.130
+178.154.131.217
+178.154.131.216
+178.154.131.215
+77.88.21.119
+87.250.250.119
+87.250.251.119
+93.158.134.119
+142.250.184.226
+142.250.185.162
+142.250.185.65
+173.230.142.254
+128.30.52.100
+52.216.109.171
+13.32.103.34
+66.102.1.155
+142.250.186.78
+35.185.44.232
+31.173.164.46
+140.82.113.22
+147.75.198.156
+13.33.141.38
+13.33.141.85
+13.33.141.7
+13.33.141.89
+195.42.179.197
+EOL
+sudo firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file='/tmp/baniplist.txt'
+EOF
+sudo firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file=/tmp/baniplist.txt
+EOL
+firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file='/tmp/baniplist.txt'
+EOF
+firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file=/tmp/baniplist.txt
+EOF
+rm '/tmp/baniplist.txt'
+EOF
+sudo rm '/tmp/baniplist.txt'
+EOF
 sudo firewall-cmd --reload
 sudo firewall-cmd --complete-reload
 sudo systemctl restart firewalld
+firewall-cmd --reload
+firewall-cmd --complete-reload
+systemctl restart firewalld
 EOF
 sudo systemctl disable cron
+EOF
+systemctl disable cron
 EOF
 clear
 grep -H -r -n "egrep" /usr/bin
