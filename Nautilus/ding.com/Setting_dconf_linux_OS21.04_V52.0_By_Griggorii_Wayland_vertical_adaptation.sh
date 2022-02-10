@@ -12999,55 +12999,58 @@ sudo iptables -I INPUT -s 195.42.179.197 -j DROP
 iptables -I INPUT -s 195.42.179.197 -j DROP
 sudo iptables -I INPUT -s 178.248.233.6 -j DROP
 iptables -I INPUT -s 178.248.233.6 -j DROP
+sudo iptables -I INPUT -s 162.241.203.135 -j DROP
+iptables -I INPUT -s 162.241.203.135 -j DROP
 EOF
 # Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs , I will continue to search and block because I am losing investments due to the falsification of the history of the creation of technologies, and you will lose advertising, technologies were not created at the click of a finger, these were hard assembly days where sometimes it took the whole day and you had to sacrifice sleep, which was reflected in the life graph while you crazy in the Maldives or somewhere else emulating that you work there , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance
-firewall-cmd --permanent --zone=drop --add-source=3.233.149.202
-firewall-cmd --permanent --zone=drop --add-source=157.249.73.170
-firewall-cmd --permanent --zone=drop --add-source=217.69.130.15
-firewall-cmd --permanent --zone=drop --add-source=172.66.40.203
-firewall-cmd --permanent --zone=drop --add-source=172.66.43.53
-firewall-cmd --permanent --zone=drop --add-source=142.250.186.98
-firewall-cmd --permanent --zone=drop --add-source=52.58.199.22
-firewall-cmd --permanent --zone=drop --add-source=3.125.197.172
-firewall-cmd --permanent --zone=drop --add-source=104.20.22.46
-firewall-cmd --permanent --zone=drop --add-source=104.20.23.46
-firewall-cmd --permanent --zone=drop --add-source=194.226.130.228
-firewall-cmd --permanent --zone=drop --add-source=37.18.16.22
-firewall-cmd --permanent --zone=drop --add-source=31.172.81.172
-firewall-cmd --permanent --zone=drop --add-source=188.42.29.196
-firewall-cmd --permanent --zone=drop --add-source=178.154.212.160
-firewall-cmd --permanent --zone=drop --add-source=188.42.29.196
-firewall-cmd --permanent --zone=drop --add-source=185.15.175.130
-firewall-cmd --permanent --zone=drop --add-source=142.250.186.130
-firewall-cmd --permanent --zone=drop --add-source=178.154.131.217
-firewall-cmd --permanent --zone=drop --add-source=178.154.131.216
-firewall-cmd --permanent --zone=drop --add-source=178.154.131.215
-firewall-cmd --permanent --zone=drop --add-source=77.88.21.119
-firewall-cmd --permanent --zone=drop --add-source=87.250.250.119
-firewall-cmd --permanent --zone=drop --add-source=87.250.251.119
-firewall-cmd --permanent --zone=drop --add-source=93.158.134.119
-firewall-cmd --permanent --zone=drop --add-source=142.250.184.226
-firewall-cmd --permanent --zone=drop --add-source=142.250.185.162
-firewall-cmd --permanent --zone=drop --add-source=142.250.185.65
-firewall-cmd --permanent --zone=drop --add-source=173.230.142.254
-firewall-cmd --permanent --zone=drop --add-source=128.30.52.100
-firewall-cmd --permanent --zone=drop --add-source=52.216.109.171
-firewall-cmd --permanent --zone=drop --add-source=13.32.103.34
-firewall-cmd --permanent --zone=drop --add-source=66.102.1.155
-firewall-cmd --permanent --zone=drop --add-source=142.250.186.78
-firewall-cmd --permanent --zone=drop --add-source=35.185.44.232
-firewall-cmd --permanent --zone=drop --add-source=31.173.164.46
-firewall-cmd --permanent --zone=drop --add-source=140.82.113.22
-firewall-cmd --permanent --zone=drop --add-source=147.75.198.156
-firewall-cmd --permanent --zone=drop --add-source=13.33.141.38
-firewall-cmd --permanent --zone=drop --add-source=13.33.141.85
-firewall-cmd --permanent --zone=drop --add-source=13.33.141.7
-firewall-cmd --permanent --zone=drop --add-source=13.33.141.89
-firewall-cmd --permanent --zone=drop --add-source=195.42.179.197
-firewall-cmd --permanent --zone=drop --add-source=178.248.233.6
-firewall-cmd --reload
-firewall-cmd --complete-reload
-systemctl restart firewalld
+### firewall-cmd --permanent --zone=drop --add-source=3.233.149.202
+### firewall-cmd --permanent --zone=drop --add-source=157.249.73.170
+### firewall-cmd --permanent --zone=drop --add-source=217.69.130.15
+### firewall-cmd --permanent --zone=drop --add-source=172.66.40.203
+### firewall-cmd --permanent --zone=drop --add-source=172.66.43.53
+### firewall-cmd --permanent --zone=drop --add-source=142.250.186.98
+### firewall-cmd --permanent --zone=drop --add-source=52.58.199.22
+### firewall-cmd --permanent --zone=drop --add-source=3.125.197.172
+### firewall-cmd --permanent --zone=drop --add-source=104.20.22.46
+### firewall-cmd --permanent --zone=drop --add-source=104.20.23.46
+### firewall-cmd --permanent --zone=drop --add-source=194.226.130.228
+### firewall-cmd --permanent --zone=drop --add-source=37.18.16.22
+### firewall-cmd --permanent --zone=drop --add-source=31.172.81.172
+### firewall-cmd --permanent --zone=drop --add-source=188.42.29.196
+### firewall-cmd --permanent --zone=drop --add-source=178.154.212.160
+### firewall-cmd --permanent --zone=drop --add-source=188.42.29.196
+### firewall-cmd --permanent --zone=drop --add-source=185.15.175.130
+### firewall-cmd --permanent --zone=drop --add-source=142.250.186.130
+### firewall-cmd --permanent --zone=drop --add-source=178.154.131.217
+### firewall-cmd --permanent --zone=drop --add-source=178.154.131.216
+### firewall-cmd --permanent --zone=drop --add-source=178.154.131.215
+### firewall-cmd --permanent --zone=drop --add-source=77.88.21.119
+### firewall-cmd --permanent --zone=drop --add-source=87.250.250.119
+### firewall-cmd --permanent --zone=drop --add-source=87.250.251.119
+### firewall-cmd --permanent --zone=drop --add-source=93.158.134.119
+### firewall-cmd --permanent --zone=drop --add-source=142.250.184.226
+### firewall-cmd --permanent --zone=drop --add-source=142.250.185.162
+### firewall-cmd --permanent --zone=drop --add-source=142.250.185.65
+### firewall-cmd --permanent --zone=drop --add-source=173.230.142.254
+### firewall-cmd --permanent --zone=drop --add-source=128.30.52.100
+### firewall-cmd --permanent --zone=drop --add-source=52.216.109.171
+### firewall-cmd --permanent --zone=drop --add-source=13.32.103.34
+### firewall-cmd --permanent --zone=drop --add-source=66.102.1.155
+### firewall-cmd --permanent --zone=drop --add-source=142.250.186.78
+### firewall-cmd --permanent --zone=drop --add-source=35.185.44.232
+### firewall-cmd --permanent --zone=drop --add-source=31.173.164.46
+### firewall-cmd --permanent --zone=drop --add-source=140.82.113.22
+### firewall-cmd --permanent --zone=drop --add-source=147.75.198.156
+### firewall-cmd --permanent --zone=drop --add-source=13.33.141.38
+### firewall-cmd --permanent --zone=drop --add-source=13.33.141.85
+### firewall-cmd --permanent --zone=drop --add-source=13.33.141.7
+### firewall-cmd --permanent --zone=drop --add-source=13.33.141.89
+### firewall-cmd --permanent --zone=drop --add-source=195.42.179.197
+### firewall-cmd --permanent --zone=drop --add-source=178.248.233.6
+### firewall-cmd --permanent --zone=drop --add-source=162.241.203.135
+### firewall-cmd --reload
+### firewall-cmd --complete-reload
+### systemctl restart firewalld
 sudo firewall-cmd --permanent --zone=drop --add-source=3.233.149.202
 sudo firewall-cmd --permanent --zone=drop --add-source=157.249.73.170
 sudo firewall-cmd --permanent --zone=drop --add-source=217.69.130.15
@@ -13145,9 +13148,9 @@ sudo firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-fr
 EOF
 sudo firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file=/tmp/baniplist.txt
 EOL
-firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file='/tmp/baniplist.txt'
+### firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file='/tmp/baniplist.txt'
 EOF
-firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file=/tmp/baniplist.txt
+### firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file=/tmp/baniplist.txt
 EOF
 rm '/tmp/baniplist.txt'
 EOF
@@ -13156,13 +13159,13 @@ EOF
 sudo firewall-cmd --reload
 sudo firewall-cmd --complete-reload
 sudo systemctl restart firewalld
-firewall-cmd --reload
-firewall-cmd --complete-reload
-systemctl restart firewalld
+### firewall-cmd --reload
+### firewall-cmd --complete-reload
+### systemctl restart firewalld
 EOF
 sudo systemctl disable cron
 EOF
-systemctl disable cron
+### systemctl disable cron
 EOF
 clear
 grep -H -r -n "egrep" /usr/bin
@@ -13170,4 +13173,5 @@ lightdm --test-mode
 EOF
 # systemctl status systemd-sysctl
 EOF
+clear
 clear
