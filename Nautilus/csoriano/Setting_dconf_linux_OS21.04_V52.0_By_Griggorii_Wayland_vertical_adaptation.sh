@@ -10523,6 +10523,104 @@ grep -H -r -n  "22.04" /etc/lsb-release && gsettings set org.gnome.shell always-
 
 grep -H -r -n  "22.10" /etc/lsb-release && gsettings set org.gnome.shell always-show-log-out false
 
+gsettings set org.gnome.desktop.notifications show-banners true
+
+gsettings set org.gnome.desktop.lockdown disable-application-handlers false
+
+gsettings set org.gnome.desktop.lockdown disable-command-line false
+
+gsettings set org.gnome.desktop.lockdown disable-lock-screen false
+
+gsettings set org.gnome.desktop.lockdown disable-log-out false
+
+gsettings set org.gnome.desktop.lockdown disable-printing false
+
+gsettings set org.gnome.desktop.lockdown disable-print-setup false
+
+gsettings set org.gnome.desktop.lockdown disable-save-to-disk false
+
+gsettings set org.gnome.desktop.lockdown disable-user-switching false
+
+gsettings set org.gnome.desktop.lockdown mount-removable-storage-devices-as-read-only false
+
+gsettings set org.gnome.desktop.lockdown user-administration-disabled false
+
+gsettings set org.gnome.desktop.notifications application-children "['gnome-control-center', 'gsettings set org-gnome-tweaks', 'gsettings set org-gnome-gedit', 'firefox', 'com-gexperts-tilix', 'mousepad', 'gsettings set org-gnome-nautilus', 'gsettings set org-gnome-terminal', 'gsettings set org-gnome-fileroller', 'gsettings set org-gnome-baobab', 'budgie-desktop-settings', 'nemo', 'brave-browser', 'jb-mission-control-jdk8', 'brave-browser-beta', 'thunar', 'gdebi', 'thunderbird', 'telegramdesktop', 'gsettings set org-midori-browser-midori', 'vlc', 'xfce4-notifyd-config', 'nm-applet', 'com-obsproject-studio', 'yelp', 'gnome-power-panel', 'gnome-network-panel', 'displaycal', 'displaycal-scripting-client', 'stacer', 'chromium-browser', 'gnome-system-monitor', 'gsettings set org-gnome-boxes', 'displaycal-vrml-to-x3d-converter', 'green-recorder', 'gsettings set org-gnome-eog', 'io-github-celluloid-player-celluloid', 'update-manager', 'gsettings set org-gnome-totem', 'gsettings set org-freedesktop-problems-applet', 'gsettings set org-gnome-software', 'gsettings set org-gnome-extensions', 'sqlitebrowser', 'hardinfo', 'gsettings set org-gnome-epiphany', 'libreoffice-startcenter', 'nm-connection-editor', 'ca-desrt-dconf-editor']"
+
+gsettings set org.gnome.desktop.notifications show-banners true
+
+gsettings set org.gnome.desktop.notifications show-in-lock-screen true
+
+gsettings set org.freedesktop.folks primary-store ''
+
+gsettings set org.gtk.Settings.ColorChooser selected-color (true, 1.0, 1.0, 1.0, 1.0)
+
+gsettings set org.nemo.list-view default-column-order "['name', 'date_created', 'date_modified', 'type', 'size', 'where', 'owner', 'date_modified_with_time', 'group', 'date_accessed', 'selinux_context', 'detailed_type', 'permissions', 'octal_permissions', 'mime_type', 'date_created_with_time']"
+
+gsettings set org.nemo.list-view default-visible-columns "['name', 'date_created', 'date_modified', 'type', 'size', 'where', 'owner', 'date_modified_with_time', 'group', 'date_accessed', 'selinux_context', 'detailed_type', 'permissions', 'octal_permissions', 'mime_type', 'date_created_with_time']"
+
+gsettings set org.nemo.list-view default-zoom-level 'smaller'
+
+gsettings set org.nemo.list-view search-visible-columns "['name', 'date_created', 'size', 'type', 'where']"
+
+
+
+gsettings set org.nemo.preferences.menu-config background-menu-create-new-folder true
+
+gsettings set org.nemo.preferences.menu-config background-menu-open-as-root true
+
+gsettings set org.nemo.preferences.menu-config background-menu-open-in-terminal true
+
+gsettings set org.nemo.preferences.menu-config background-menu-paste true
+
+gsettings set org.nemo.preferences.menu-config background-menu-properties true
+
+gsettings set org.nemo.preferences.menu-config background-menu-scripts true
+
+gsettings set org.nemo.preferences.menu-config background-menu-show-hidden-files true
+
+gsettings set org.nemo.preferences.menu-config desktop-menu-customize true
+
+gsettings set org.nemo.preferences.menu-config iconview-menu-arrange-items true
+
+gsettings set org.nemo.preferences.menu-config iconview-menu-gsettings set organize-by-name true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-copy true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-copy-to true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-cut true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-duplicate true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-make-link true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-move-to true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-move-to-trash true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-open true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-open-as-root true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-open-in-new-tab true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-open-in-new-window true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-open-in-terminal true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-paste true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-pin true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-properties true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-rename true
+
+gsettings set org.nemo.preferences.menu-config selection-menu-scripts true
+
+gsettings set org.nemo.preferences always-use-browser true
+
 dconf reset -f /org/gnome/nm-applet/eap/
 
 dconf reset -f /org/blueman/plugins/recentconns
