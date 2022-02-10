@@ -13113,6 +13113,7 @@ sudo firewall-cmd --permanent --zone=drop --add-source=13.33.141.7
 sudo firewall-cmd --permanent --zone=drop --add-source=13.33.141.89
 sudo firewall-cmd --permanent --zone=drop --add-source=195.42.179.197
 sudo firewall-cmd --permanent --zone=drop --add-source=178.248.233.6
+sudo firewall-cmd --permanent --zone=drop --add-source=162.241.203.135
 EOF
 cat > '/tmp/baniplist.txt' <<EOL
 157.249.73.170
@@ -13159,6 +13160,7 @@ cat > '/tmp/baniplist.txt' <<EOL
 13.33.141.89
 195.42.179.197
 178.248.233.6
+162.241.203.135
 EOL
 sudo firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file='/tmp/baniplist.txt'
 EOF
