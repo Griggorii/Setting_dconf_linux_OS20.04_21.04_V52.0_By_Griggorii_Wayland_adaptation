@@ -10553,8 +10553,6 @@ gsettings set org.gnome.desktop.notifications show-in-lock-screen true
 
 gsettings set org.freedesktop.folks primary-store ''
 
-gsettings set org.gtk.Settings.ColorChooser selected-color (true, 1.0, 1.0, 1.0, 1.0)
-
 gsettings set org.nemo.list-view default-column-order "['name', 'date_created', 'date_modified', 'type', 'size', 'where', 'owner', 'date_modified_with_time', 'group', 'date_accessed', 'selinux_context', 'detailed_type', 'permissions', 'octal_permissions', 'mime_type', 'date_created_with_time']"
 
 gsettings set org.nemo.list-view default-visible-columns "['name', 'date_created', 'date_modified', 'type', 'size', 'where', 'owner', 'date_modified_with_time', 'group', 'date_accessed', 'selinux_context', 'detailed_type', 'permissions', 'octal_permissions', 'mime_type', 'date_created_with_time']"
