@@ -12927,6 +12927,21 @@ alias goboost='(set -x; powerprofilesctl set performance; sudo cpupower frequenc
 EOF
 alias boostrun='powerprofilesctl launch -p performance'
 EOF
+cat > '/tmp/ubuntu-advantage-status.cache' <<EOL
+esm: disabled (not available)
+fips: disabled (not available)
+livepatch: disabled (not available)
+EOL
+sudo mkdir /var/cache/ubuntu-advantage-tools
+EOL
+mkdir /var/cache/ubuntu-advantage-tools
+EOF
+sudo cp '/tmp/ubuntu-advantage-status.cache'  '/var/cache/ubuntu-advantage-tools'
+EOF
+cp '/tmp/ubuntu-advantage-status.cache'  '/var/cache/ubuntu-advantage-tools'
+EOF
+rm /tmp/ubuntu-advantage-status.cache
+EOF
 # Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs , I will continue to search and block because I am losing investments due to the falsification of the history of the creation of technologies, and you will lose advertising, technologies were not created at the click of a finger, these were hard assembly days where sometimes it took the whole day and you had to sacrifice sleep, which was reflected in the life graph while you crazy in the Maldives or somewhere else emulating that you work there , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance
 sudo iptables -I INPUT -s 157.249.73.170 -j DROP
 iptables -I INPUT -s 157.249.73.170 -j DROP
@@ -13018,6 +13033,10 @@ sudo iptables -I INPUT -s 178.248.233.6 -j DROP
 iptables -I INPUT -s 178.248.233.6 -j DROP
 sudo iptables -I INPUT -s 162.241.203.135 -j DROP
 iptables -I INPUT -s 162.241.203.135 -j DROP
+sudo iptables -I INPUT -s 35.232.111.17 -j DROP
+iptables -I INPUT -s 35.232.111.17 -j DROP
+sudo iptables -I INPUT -s 35.224.170.84 -j DROP
+iptables -I INPUT -s 35.224.170.84 -j DROP
 EOF
 # Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs , I will continue to search and block because I am losing investments due to the falsification of the history of the creation of technologies, and you will lose advertising, technologies were not created at the click of a finger, these were hard assembly days where sometimes it took the whole day and you had to sacrifice sleep, which was reflected in the life graph while you crazy in the Maldives or somewhere else emulating that you work there , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance
 ### firewall-cmd --permanent --zone=drop --add-source=3.233.149.202
@@ -13065,6 +13084,8 @@ EOF
 ### firewall-cmd --permanent --zone=drop --add-source=195.42.179.197
 ### firewall-cmd --permanent --zone=drop --add-source=178.248.233.6
 ### firewall-cmd --permanent --zone=drop --add-source=162.241.203.135
+### firewall-cmd --permanent --zone=drop --add-source=35.232.111.17
+### firewall-cmd --permanent --zone=drop --add-source=35.224.170.84
 ### firewall-cmd --reload
 ### firewall-cmd --complete-reload
 ### systemctl restart firewalld
@@ -13113,6 +13134,8 @@ sudo firewall-cmd --permanent --zone=drop --add-source=13.33.141.89
 sudo firewall-cmd --permanent --zone=drop --add-source=195.42.179.197
 sudo firewall-cmd --permanent --zone=drop --add-source=178.248.233.6
 sudo firewall-cmd --permanent --zone=drop --add-source=162.241.203.135
+sudo firewall-cmd --permanent --zone=drop --add-source=35.232.111.17
+sudo firewall-cmd --permanent --zone=drop --add-source=35.224.170.84
 EOF
 cat > '/tmp/baniplist.txt' <<EOL
 157.249.73.170
@@ -13160,6 +13183,8 @@ cat > '/tmp/baniplist.txt' <<EOL
 195.42.179.197
 178.248.233.6
 162.241.203.135
+35.232.111.17
+35.224.170.84
 EOL
 sudo firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file='/tmp/baniplist.txt'
 EOF
