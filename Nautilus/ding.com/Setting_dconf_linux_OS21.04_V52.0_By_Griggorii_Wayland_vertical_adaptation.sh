@@ -12908,6 +12908,54 @@ grep -H -r -n  "remmina" '/usr/share/xsessions/remmina-gnome.desktop' && sudo cp
 EOF
 rm -rf /tmp/remmina-gnome
 EOF
+cat > '/tmp/mini-browser.svg' <<EOL
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#FFFFFF" d="M44,24c0,11.044-8.956,20-20,20S4,35.044,4,24S12.956,4,24,4S44,12.956,44,24z"/><path fill="#007D80" d="M41,24c0,9.391-7.609,17-17,17S7,33.391,7,24S14.609,7,24,7S41,14.609,41,24z"/><polygon fill="#7B0000" points="35.301,12.699 35.298,12.702 35.3,12.699 21.924,21.924 26.073,26.073 26.074,26.073 26.074,26.073"/><polygon fill="#FFFFFF" points="26.073,26.073 21.924,21.924 12.699,35.3 12.702,35.298 12.699,35.301 26.073,26.074 26.073,26.074"/><path fill="#FFFFFF" d="M17.102,10.699c0.598-0.301,1.199-0.598,1.797-0.801l1.203,2.703l-1.801,0.797L17.102,10.699z M36,25h2.898c0-0.301,0.102-0.699,0.102-1s0-0.699-0.102-1H36V25z M12.699,14.102l2.102,2.098l1.398-1.398L14.101,12.7 C13.602,13.199,13.199,13.602,12.699,14.102z M25,9.102C24.699,9,24.301,9,24,9s-0.699,0-1,0.102V12h2V9.102z M30.398,10.5 C29.8,10.199,29.199,10,28.5,9.801l-1.102,2.801l1.902,0.699L30.398,10.5z M12.5,20.5l0.699-1.898L10.5,17.5 c-0.301,0.602-0.5,1.199-0.699,1.898L12.5,20.5z M12,23H9.102C9,23.301,9,23.699,9,24s0,0.699,0.102,1H12V23z M35.5,27.5 l-0.699,1.898L37.5,30.5c0.301-0.602,0.5-1.199,0.699-1.898L35.5,27.5z M38.102,18.898c-0.203-0.598-0.5-1.199-0.801-1.797 L34.602,18.3l0.797,1.801L38.102,18.898z M35.301,33.898L33.199,31.8l-1.398,1.398l2.098,2.102 C34.398,34.801,34.801,34.398,35.301,33.898z M13.398,29.699l-0.797-1.801l-2.703,1.203c0.203,0.598,0.5,1.199,0.801,1.797 L13.398,29.699z M29.699,34.602l-1.801,0.797l1.203,2.703c0.598-0.203,1.199-0.5,1.797-0.801L29.699,34.602z M20.5,35.5 l-1.898-0.699L17.5,37.5c0.602,0.301,1.199,0.5,1.898,0.699L20.5,35.5z M25,38.898V36h-2v2.898c0.301,0,0.699,0.102,1,0.102 S24.699,39,25,38.898z"/># Griggorii edit my new color generate cayan patent #007D80 red #7B0000 https://github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V51.0_By_Griggorii_Wayland_adaptation https://github.com/Griggorii/gnome-applications-menu_zadanie</svg>
+EOL
+sudo grep -H -r -n "MiniBrowser" /usr/lib/x86_64-linux-gnu/webkit2gtk-4.0 && sudo cp '/tmp/mini-browser.svg' '/usr/share/pixmaps'
+EOF
+grep -H -r -n "MiniBrowser" /usr/lib/x86_64-linux-gnu/webkit2gtk-4.0 && cp '/tmp/mini-browser.svg' '/usr/share/pixmaps'
+EOF
+rm /tmp/mini-browser.svg
+EOF
+cat > '/tmp/mini-browser.desktop' <<EOL
+[Desktop Entry]
+Encoding=UTF-8
+Version=2.0
+Type=Application
+Icon=mini-browser
+Exec=mini-browser %U
+GenericName=mini-browser
+Categories=Network;WebBrowser;
+OnlyShowIn=XFCE;Budgie;X-Cinnamon;KDE;Unity;GNOME;
+StartupNotify=true
+X-GNOME-Autostart-Notify=true
+X-KDE-StartupNotify=true
+MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;
+Name=MiniBrowser
+Name[en_IN]=MiniBrowser
+Name[ru]=Веб-браузер MiniBrowser
+Name[ru_RU]=Веб-браузер MiniBrowser
+EOL
+chmod -R a+rx /tmp/mini-browser.desktop
+EOF
+sudo grep -H -r -n "MiniBrowser" /usr/lib/x86_64-linux-gnu/webkit2gtk-4.0 && sudo cp '/tmp/mini-browser.desktop' '/usr/share/applications'
+EOF
+grep -H -r -n "MiniBrowser" /usr/lib/x86_64-linux-gnu/webkit2gtk-4.0 && cp '/tmp/mini-browser.desktop' '/usr/share/applications'
+EOF
+rm /tmp/mini-browser.desktop
+EOF
+cat > '/tmp/mini-browser' <<EOL
+#! /bin/sh
+exec /usr/lib/x86_64-linux-gnu/webkit2gtk-4.0/MiniBrowser "$@"
+EOL
+chmod -R a+rx /tmp/mini-browser
+EOF
+sudo grep -H -r -n "MiniBrowser" /usr/lib/x86_64-linux-gnu/webkit2gtk-4.0 && sudo cp '/tmp/mini-browser' '/usr/bin'
+EOF
+grep -H -r -n "MiniBrowser" /usr/lib/x86_64-linux-gnu/webkit2gtk-4.0 && cp '/tmp/mini-browser' '/usr/bin'
+EOF
+rm /tmp/mini-browser
+EOF
 alias boostrun='powerprofilesctl launch -p performance'
 EOF
 alias goboost='(set -x; powerprofilesctl set performance; sudo cpupower frequency-set -g ondemand >&/dev/null;)'
