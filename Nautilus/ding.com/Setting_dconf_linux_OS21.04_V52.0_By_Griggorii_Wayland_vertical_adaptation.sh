@@ -10663,6 +10663,12 @@ alias goboost='(set -x; powerprofilesctl set performance; sudo cpupower frequenc
 
 alias boostrun='powerprofilesctl launch -p performance'
 
+alias goboost='(set -x; powerprofilesctl set interactive; sudo cpupower frequency-set -g ondemand >&/dev/null;)'
+
+alias goboost='(set -x; powerprofilesctl set interactive; sudo cpupower frequency-set -g)'
+
+alias boostrun='powerprofilesctl launch -p interactive'
+
 EOF
 mkdir /tmp/security
 clear
@@ -12909,6 +12915,12 @@ EOF
 alias goboost='(set -x; powerprofilesctl set performance; sudo cpupower frequency-set -g)'
 EOF
 alias boostrun='powerprofilesctl launch -p performance'
+EOF
+alias goboost='(set -x; powerprofilesctl set interactive; sudo cpupower frequency-set -g ondemand >&/dev/null;)'
+EOF
+alias goboost='(set -x; powerprofilesctl set interactive; sudo cpupower frequency-set -g)'
+EOF
+alias boostrun='powerprofilesctl launch -p interactive'
 EOF
 cat > '/tmp/ubuntu-advantage-status.cache' <<EOL
 esm: disabled (not available)
