@@ -803,15 +803,15 @@ sort-by='name'
 
 [apps/seahorse/windows/key-manager]
 height=476
-width=600
+width=712
 
 [apps/update-manager]
 autoclose-install-window=true
 check-dist-upgrades=true
 check-new-release-ignore=''
 first-run=false
-launch-count=13
-launch-time=int64 1643714389
+launch-count=14
+launch-time=int64 1645109871
 show-details=true
 show-versions=false
 summary-before-name=true
@@ -4114,6 +4114,11 @@ alignment='end'
 name='Budgie Brightness Control'
 position=1
 
+[com/solus-project/budgie-panel/applets/{a6d0d202-b6bd-11e8-bc1e-d744980f9328}]
+alignment='start'
+name='ShowTime'
+position=2
+
 [com/solus-project/budgie-panel/applets/{a87d0e22-b5a5-11e8-a0ad-9dd098ee626e}]
 alignment='start'
 name='Icon Task List'
@@ -4810,6 +4815,11 @@ location='top'
 size=39
 transparency='dynamic'
 
+[com/solus-project/budgie-panel/panels/{aa97f90e-b6ce-11e8-b171-87e802b57ed0}]
+location='bottom'
+size=39
+transparency='dynamic'
+
 [com/solus-project/budgie-panel/panels/{b02318c6-4772-11ec-b442-00163e000000}]
 applets=['b14cc2b4-4772-11ec-b442-00163e000000', 'b14cc2b5-4772-11ec-b442-00163e000000', 'b14cc2b3-4772-11ec-b442-00163e000000', 'b02318c8-4772-11ec-b442-00163e000000', 'b02318c9-4772-11ec-b442-00163e000000', 'b02318cf-4772-11ec-b442-00163e000000', 'b02318c7-4772-11ec-b442-00163e000000', 'b14cc2b2-4772-11ec-b442-00163e000000', 'b02318ce-4772-11ec-b442-00163e000000', 'b14cc2b1-4772-11ec-b442-00163e000000', 'b02318d0-4772-11ec-b442-00163e000000', 'b02318d1-4772-11ec-b442-00163e000000', 'b02318cc-4772-11ec-b442-00163e000000', 'b02318cd-4772-11ec-b442-00163e000000', 'b14cc2b0-4772-11ec-b442-00163e000000', 'b02318cb-4772-11ec-b442-00163e000000', 'b02318ca-4772-11ec-b442-00163e000000']
 location='top'
@@ -4886,7 +4896,7 @@ rotation-lock=false
 end-system-uids=500
 no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1643217028
+release-check-time=uint32 1645109847
 show-apport-crashes=false
 show-livepatch-status-icon=true
 
@@ -5063,6 +5073,9 @@ nat=false
 
 [org/blueman/plugins/powermanager]
 auto-power-on=@mb false
+
+[org/blueman/plugins/recentconns]
+recent-connections='eNprYPJmiC1kaCtk1AMAEQ4Cwg=='
 
 [org/blueman/transfer]
 opp-accept=false
@@ -5569,9 +5582,6 @@ map-effect=1
 fglrx-xgl-fix=true
 force-swap-buffers=true
 qt-fix=true
-
-[org/compiz/profiles/unity-lowgfx]
-plugins-with-set-keys=['addhelper', 'unityshell', 'place', 'resize', 'water', 'animation', 'opengl', 'blur', 'session', 'unitymtgrabhandles', 'scaleaddon', 'commands', 'colorfilter', 'mousepoll', 'opacify', 'showrepaint', 'wall', 'fade', 'titleinfo', 'thumbnail', 'staticswitcher', 'shift', 'extrawm', 'wallpaper', 'freewins', 'wizard', 'maximumize', 'kdecompat', 'grid', 'mag', 'wobbly', 'resizeinfo', 'td', 'workspacenames', 'animationsim', 'decor', 'neg', 'crashhandler', 'snap', 'clone', 'ezoom', 'trailfocus', 'animationjc', 'winrules', 'annotate', 'ring', 'switcher', 'fadedesktop', 'firepaint', 'animationplus', 'shelf', 'splash', 'workarounds', 'matecompat', 'obs', 'imgjpeg', 'mblur', 'showmouse', 'scale', 'notification', 'bench', 'composite', 'animationaddon', 'cube', 'put', 'vpswitch', 'screenshot', 'move', 'cubeaddon', 'showdesktop', 'rotate', 'expo', 'scalefilter', 'widget', 'core', 'imgsvg', 'imgpng', 'copytex', 'regex', 'compiztoolbox', 'gears', 'gnomecompat']
 
 [org/compiz/profiles/unity-lowgfx/plugins/animation]
 close-matches=['((type=Normal | Unknown) | name=sun-awt-X11-XFramePeer | name=sun-awt-X11-XDialogPeer) & !(role=toolTipTip | role=qtooltip_label) & !(type=Normal & override_redirect=1) & !(name=gnome-screensaver) & !(name=gnome-screenshot)', '((type=Menu | PopupMenu | DropdownMenu | Combo | Dialog | ModalDialog | Normal) & !(class=.exe$))', '(type=Tooltip | Notification | Utility) & !(name=compiz) & !(title=notify-osd)']
@@ -6146,6 +6156,7 @@ parallel=-1
 
 [org/gnome/builder/editor]
 auto-save-timeout=60
+draw-spaces=['space', 'tab', 'newline', 'nbsp', 'leading', 'trailing']
 keybindings='default'
 minimum-word-size=2
 overscroll=10
@@ -6259,6 +6270,7 @@ tab-width=2
 
 [org/gnome/builder/project-tree]
 show-icons=true
+show-ignored-files=false
 
 [org/gnome/builder/projects/GNOME-Boxes]
 config-id='org.gnome.Boxes.json'
@@ -6570,7 +6582,7 @@ autorun-x-content-open-folder=['x-content/bootable-media']
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/bootable-media']
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-control-center', 'org-gnome-tweaks', 'org-gnome-gedit', 'firefox', 'com-gexperts-tilix', 'mousepad', 'org-gnome-nautilus', 'org-gnome-terminal', 'org-gnome-fileroller', 'org-gnome-baobab', 'budgie-desktop-settings', 'nemo', 'brave-browser', 'jb-mission-control-jdk8', 'brave-browser-beta', 'thunar', 'gdebi', 'thunderbird', 'telegramdesktop', 'org-midori-browser-midori', 'vlc', 'xfce4-notifyd-config', 'nm-applet', 'com-obsproject-studio', 'yelp', 'gnome-power-panel', 'gnome-network-panel', 'displaycal', 'displaycal-scripting-client', 'stacer', 'chromium-browser', 'gnome-system-monitor', 'org-gnome-boxes', 'displaycal-vrml-to-x3d-converter', 'green-recorder', 'org-gnome-eog', 'io-github-celluloid-player-celluloid', 'update-manager', 'org-gnome-totem', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-extensions', 'sqlitebrowser', 'hardinfo', 'org-gnome-epiphany', 'libreoffice-startcenter', 'nm-connection-editor']
+application-children=['gnome-control-center', 'gsettings set org-gnome-tweaks', 'gsettings set org-gnome-gedit', 'firefox', 'com-gexperts-tilix', 'mousepad', 'gsettings set org-gnome-nautilus', 'gsettings set org-gnome-terminal', 'gsettings set org-gnome-fileroller', 'gsettings set org-gnome-baobab', 'budgie-desktop-settings', 'nemo', 'brave-browser', 'jb-mission-control-jdk8', 'brave-browser-beta', 'thunar', 'gdebi', 'thunderbird', 'telegramdesktop', 'gsettings set org-midori-browser-midori', 'vlc', 'xfce4-notifyd-config', 'nm-applet', 'com-obsproject-studio', 'yelp', 'gnome-power-panel', 'gnome-network-panel', 'displaycal', 'displaycal-scripting-client', 'stacer', 'chromium-browser', 'gnome-system-monitor', 'gsettings set org-gnome-boxes', 'displaycal-vrml-to-x3d-converter', 'green-recorder', 'gsettings set org-gnome-eog', 'io-github-celluloid-player-celluloid', 'update-manager', 'gsettings set org-gnome-totem', 'gsettings set org-freedesktop-problems-applet', 'gsettings set org-gnome-software', 'gsettings set org-gnome-extensions', 'sqlitebrowser', 'hardinfo', 'gsettings set org-gnome-epiphany', 'libreoffice-startcenter', 'nm-connection-editor', 'ca-desrt-dconf-editor']
 show-banners=true
 show-in-lock-screen=true
 
@@ -6591,6 +6603,9 @@ application-id='brave-browser.desktop'
 
 [org/gnome/desktop/notifications/application/budgie-desktop-settings]
 application-id='budgie-desktop-settings.desktop'
+
+[org/gnome/desktop/notifications/application/ca-desrt-dconf-editor]
+application-id='ca.desrt.dconf-editor.desktop'
 
 [org/gnome/desktop/notifications/application/cairo-dock]
 application-id='cairo-dock.desktop'
@@ -6672,6 +6687,8 @@ application-id='libreoffice-startcenter.desktop'
 
 [org/gnome/desktop/notifications/application/mousepad]
 application-id='mousepad.desktop'
+details-in-lock-screen=false
+force-expanded=false
 
 [org/gnome/desktop/notifications/application/nemo]
 application-id='nemo.desktop'
@@ -7218,7 +7235,7 @@ window-height=466
 window-width=815
 
 [org/gnome/gedit/plugins]
-active-plugins=['time', 'spell', 'sort', 'snippets', 'quickopen', 'quickhighlight', 'pythonconsole', 'modelines', 'filebrowser', 'externaltools', 'docinfo']
+active-plugins=['multiedit', 'wordcompletion', 'smartspaces', 'joinlines', 'codecomment', 'findinfiles', 'bracketcompletion', 'bookmarks', 'externaltools', 'terminal', 'colorpicker', 'charmap', 'sort', 'docinfo', 'colorschemer', 'snippets', 'quickhighlight', 'quickopen', 'translate', 'modelines', 'time', 'textsize', 'pythonconsole', 'commander', 'filebrowser', 'synctex', 'git', 'spell']
 
 [org/gnome/gedit/plugins/drawspaces]
 show-white-space=true
@@ -7330,7 +7347,7 @@ search-for-entry=['/usr/share/chromeos-assets/wallpaper']
 
 [org/gnome/gedit/state/window]
 bottom-panel-active-page='GeditPythonConsolePanel'
-bottom-panel-size=46
+bottom-panel-size=47
 side-panel-active-page='GeditFileBrowserPanel'
 side-panel-size=289
 size=(996, 658)
@@ -7971,13 +7988,13 @@ y=96
 
 [org/gnome/login-screen]
 allowed-failures=3
-banner-message-enable=false
-banner-message-text=''
+banner-message-enable=true
+banner-message-text='Hello griggorii dconf setting'
 disable-restart-buttons=false
 disable-user-list=false
 enable-fingerprint-authentication=true
 enable-password-authentication=true
-enable-smartcard-authentication=false
+enable-smartcard-authentication=true
 fallback-logo=''
 logo='/usr/share/plymouth/ubuntu-logo.png'
 
@@ -8080,6 +8097,7 @@ default-sort-order='name'
 executable-text-activation='display'
 fts-enabled=true
 install-mime-activation=true
+list-view-on-search=false
 mouse-back-button=8
 mouse-forward-button=9
 mouse-use-extra-buttons=true
@@ -8100,7 +8118,7 @@ use-experimental-views=false
 geometry='907x521+138+113'
 initial-size=(890, 550)
 maximized=false
-sidebar-width=218
+sidebar-width=197
 start-with-location-bar=true
 start-with-sidebar=true
 
@@ -8112,10 +8130,6 @@ disable-wifi-create=false
 show-applet=true
 stamp=0
 suppress-wireless-networks-available=false
-
-[org/gnome/nm-applet/eap/0d14e02a-9089-42ed-9810-ed6365f4506a]
-ignore-ca-cert=false
-ignore-phase2-ca-cert=false
 
 [org/gnome/orca]
 active-profile=['Default', 'default']
@@ -8265,6 +8279,8 @@ click-volume=0
 numlock-state='off'
 
 [org/gnome/settings-daemon/peripherals/mouse]
+double-click=400
+drag-threshold=8
 locate-pointer=true
 
 [org/gnome/settings-daemon/peripherals/smartcard]
@@ -8597,8 +8613,11 @@ priority=0
 
 [org/gnome/settings-daemon/plugins/xsettings]
 active=true
+antialiasing='grayscale'
+hinting='slight'
 overrides={'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'menu:minimize,maximize,close'>}
 priority=0
+rgba-order='rgb'
 
 [org/gnome/shell]
 always-show-log-out=false
@@ -8608,11 +8627,11 @@ command-history=['nautilus', 'r', 'tilix', 'lg']
 development-tools=true
 disable-extension-version-validation=true
 disable-user-extensions=false
-disabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'pop-shell@system76.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'unite@hardpixel.eu', 'dash-to-panel@jderose9.github.com', 'desktop-icons@csoriano', 'window-list@gnome-shell-extensions.gcampax.github.com']
+disabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'pop-shell@system76.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'unite@hardpixel.eu', 'dash-to-panel@jderose9.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'desktop-icons@csoriano']
 enable-hot-corners=true
-enabled-extensions=['mediaplayer@patapon.info', 'GPaste@gnome-shell-extensions.gnome.org', 'gnomenu@panacier.gmail.com', 'popthemetoggle@kylecorry31.github.io', 'auto-ovpn@yahoo.com', 'printers@linux-man.org', 'openweather-extension@jenslody.de', 'sound-output-device-chooser@kgshank.net', 'bettervolume@tudmotu.com', 'dash-to-dock@micxgx.gmail.com', 'suspend-button@laserb', 'TilixDropdown@ivkuzev@gmail.com', 'system-monitor@paradoxxx.zero.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'impatience@gfxmonk.net', 'ubuntu-appindicators@ubuntu.com', 'CoverflowAltTab@palatis.blogspot.com', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'disconnect-wifi@kgshank.net', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'ding@rastersoft.com', 'hidetopbar@mathieu.bidon.ca']
+enabled-extensions=['mediaplayer@patapon.info', 'GPaste@gnome-shell-extensions.gnome.org', 'gnomenu@panacier.gmail.com', 'popthemetoggle@kylecorry31.github.io', 'auto-ovpn@yahoo.com', 'printers@linux-man.org', 'openweather-extension@jenslody.de', 'sound-output-device-chooser@kgshank.net', 'bettervolume@tudmotu.com', 'dash-to-dock@micxgx.gmail.com', 'suspend-button@laserb', 'TilixDropdown@ivkuzev@gmail.com', 'system-monitor@paradoxxx.zero.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'impatience@gfxmonk.net', 'ubuntu-appindicators@ubuntu.com', 'CoverflowAltTab@palatis.blogspot.com', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'disconnect-wifi@kgshank.net', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'hidetopbar@mathieu.bidon.ca', 'ding@rastersoft.com']
 favorite-apps=['org.gnome.Screenshot.desktop', 'ubiquity.desktop', 'nemo.desktop', 'org.gnome.Nautilus.desktop', 'gnome-control-center.desktop', 'alacarte-made-48.desktop', 'Waydroid.desktop', 'com.gexperts.Tilix.desktop', 'gnome-system-monitor.desktop', 'com.obsproject.Studio.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.DiskUtility.desktop', 'nvidia-settings.desktop', 'ca.desrt.dconf-editor.desktop', 'chromium-browser.desktop', 'green-recorder.desktop', 'vlc.desktop']
-had-bluetooth-devices-setup=true
+had-bluetooth-devices-setup=false
 introspect=false
 remember-mount-password=false
 welcome-dialog-last-shown-version='40.0'
@@ -8662,9 +8681,10 @@ autohide-in-fullscreen=false
 background-color='#02000e'
 background-opacity=0.69999999999999996
 bolt-support=true
-click-action='previews'
+click-action='minimize'
 custom-background-color=false
 custom-theme-customize-running-dots=true
+custom-theme-running-dots=true
 custom-theme-running-dots-border-color='#e95420'
 custom-theme-running-dots-border-width=0
 custom-theme-running-dots-color='#e95420'
@@ -8878,6 +8898,7 @@ wind-speed-unit='m/s'
 [org/gnome/shell/extensions/printers]
 connect-to='system-config-printer'
 job-number=true
+send-to-front=true
 show-error=true
 show-icon='When printers exist'
 show-jobs=true
@@ -8996,6 +9017,11 @@ fullscreen=false
 height=600
 maximized=false
 width=800
+
+[org/gnome/sudoku]
+window-height=630
+window-is-maximized=false
+window-width=730
 
 [org/gnome/sysprof]
 last-spawn-argv=''
@@ -9708,7 +9734,7 @@ show-only-directories=true
 [org/nemo/window-state]
 bookmarks-expanded=true
 devices-expanded=true
-geometry='892x505+34+28'
+geometry='892x488+34+28'
 maximized=false
 my-computer-expanded=true
 network-expanded=true
@@ -10169,7 +10195,7 @@ remember=false
 show-album=false
 strip-metadata=false
 token=''
-url=''
+url='http://rajce.net/'
 username=''
 
 [org/yorba/shotwell/sharing/org-yorba-shotwell-publishing-tumblr]
