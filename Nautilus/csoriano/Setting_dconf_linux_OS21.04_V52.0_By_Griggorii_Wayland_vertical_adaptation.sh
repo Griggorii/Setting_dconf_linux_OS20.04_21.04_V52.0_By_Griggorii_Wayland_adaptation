@@ -794,12 +794,12 @@ cat << EOF > dconf-settings.ini
 disable-midi=false
 
 [apps/indicator-session]
-force-restart-menuitem=false
+force-restart-menuitem=true
 show-real-name-on-panel=true
-suppress-logout-menuitem=false
-suppress-logout-restart-shutdown=false
-suppress-restart-menuitem=false
-suppress-shutdown-menuitem=false
+suppress-logout-menuitem=true
+suppress-logout-restart-shutdown=true
+suppress-restart-menuitem=true
+suppress-shutdown-menuitem=true
 user-show-menu=true
 
 [apps/light-locker]
@@ -10199,7 +10199,7 @@ remember=false
 show-album=false
 strip-metadata=false
 token=''
-url='http://rajce.net/'
+url=''
 username=''
 
 [org/yorba/shotwell/sharing/org-yorba-shotwell-publishing-tumblr]
@@ -10226,8 +10226,11 @@ mode='none'
 use-same-proxy=false
 
 [system/proxy/ftp]
+authentication-password=''
+authentication-user=''
 host=''
 port=0
+use-authentication=false
 
 [system/proxy/http]
 authentication-password=''
@@ -12988,6 +12991,30 @@ EOF
 rm /tmp/ubuntu-advantage-status.cache
 EOF
 # Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs , I will continue to search and block because I am losing investments due to the falsification of the history of the creation of technologies, and you will lose advertising, technologies were not created at the click of a finger, these were hard assembly days where sometimes it took the whole day and you had to sacrifice sleep, which was reflected in the life graph while you crazy in the Maldives or somewhere else emulating that you work there , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance
+sudo iptables -A OUTPUT -o eth0 -p tcp --dport 443 -j ACCEPT
+iptables -A OUTPUT -o eth0 -p tcp --dport 443 -j ACCEPT
+sudo iptables -A OUTPUT -o wlp3s0 -p tcp --dport 443 -j ACCEPT
+iptables -A OUTPUT -o wlp3s0 -p tcp --dport 443 -j ACCEPT
+sudo iptables -A OUTPUT -o wlp3s0 -p tcp --dport 80 -j ACCEPT
+iptables -A OUTPUT -o wlp3s0 -p tcp --dport 80 -j ACCEPT
+sudo iptables -A OUTPUT -o eth0 -p tcp --dport 80 -j ACCEPT
+iptables -A OUTPUT -o eth0 -p tcp --dport 80 -j ACCEPT
+sudo iptables -A OUTPUT -o wlp3s0 -p tcp --dport 8080 -j ACCEPT
+iptables -A OUTPUT -o wlp3s0 -p tcp --dport 8080 -j ACCEPT
+sudo iptables -A OUTPUT -o eth0 -p tcp --dport 8080 -j ACCEPT
+iptables -A OUTPUT -o eth0 -p tcp --dport 8080 -j ACCEPT
+sudo iptables -A OUTPUT -o wlp3s0 -p tcp --dport 0 -j ACCEPT
+iptables -A OUTPUT -o wlp3s0 -p tcp --dport 0 -j ACCEPT
+sudo iptables -A OUTPUT -o eth0 -p tcp --dport 0 -j ACCEPT
+iptables -A OUTPUT -o eth0 -p tcp --dport 0 -j ACCEPT
+sudo iptables -A OUTPUT -o wlp3s0 -p tcp --dport 22 -j ACCEPT
+iptables -A OUTPUT -o wlp3s0 -p tcp --dport 22 -j ACCEPT
+sudo iptables -A OUTPUT -o eth0 -p tcp --dport 22 -j ACCEPT
+iptables -A OUTPUT -o eth0 -p tcp --dport 22 -j ACCEPT
+sudo iptables -A OUTPUT -o wlp3s0 -p tcp --dport 8888 -j ACCEPT
+iptables -A OUTPUT -o wlp3s0 -p tcp --dport 8888 -j ACCEPT
+sudo iptables -A OUTPUT -o eth0 -p tcp --dport 8888 -j ACCEPT
+iptables -A OUTPUT -o eth0 -p tcp --dport 8888 -j ACCEPT
 sudo iptables -I INPUT -s 157.249.73.170 -j DROP
 iptables -I INPUT -s 157.249.73.170 -j DROP
 sudo iptables -I INPUT -s 3.233.149.202 -j DROP
@@ -13080,6 +13107,20 @@ sudo iptables -I INPUT -s 162.241.203.135 -j DROP
 iptables -I INPUT -s 162.241.203.135 -j DROP
 sudo iptables -I INPUT -s 35.232.111.17 -j DROP
 iptables -I INPUT -s 35.232.111.17 -j DROP
+sudo iptables -I INPUT -s 35.224.170.84 -j DROP
+iptables -I INPUT -s 35.224.170.84 -j DROP
+sudo iptables -I INPUT -s 185.17.117.177 -j DROP
+iptables -I INPUT -s 185.17.117.177 -j DROP
+sudo iptables -I INPUT -s 89.187.162.249 -j DROP
+iptables -I INPUT -s 89.187.162.249 -j DROP
+sudo iptables -I INPUT -s 140.211.166.212 -j DROP
+iptables -I INPUT -s 140.211.166.212 -j DROP
+sudo iptables -I INPUT -s 209.87.16.39 -j DROP
+iptables -I INPUT -s 209.87.16.39 -j DROP
+sudo iptables -I INPUT -s 209.87.16.64 -j DROP
+iptables -I INPUT -s 209.87.16.64 -j DROP
+sudo iptables -I INPUT -s 130.89.148.77 -j DROP
+iptables -I INPUT -s 130.89.148.77 -j DROP
 EOF
 # Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs , I will continue to search and block because I am losing investments due to the falsification of the history of the creation of technologies, and you will lose advertising, technologies were not created at the click of a finger, these were hard assembly days where sometimes it took the whole day and you had to sacrifice sleep, which was reflected in the life graph while you crazy in the Maldives or somewhere else emulating that you work there , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance
 ### firewall-cmd --permanent --zone=drop --add-source=3.233.149.202
@@ -13128,6 +13169,13 @@ EOF
 ### firewall-cmd --permanent --zone=drop --add-source=178.248.233.6
 ### firewall-cmd --permanent --zone=drop --add-source=162.241.203.135
 ### firewall-cmd --permanent --zone=drop --add-source=35.232.111.17
+### firewall-cmd --permanent --zone=drop --add-source=35.224.170.84
+### firewall-cmd --permanent --zone=drop --add-source=185.17.117.177
+### firewall-cmd --permanent --zone=drop --add-source=89.187.162.249
+### firewall-cmd --permanent --zone=drop --add-source=140.211.166.212
+### firewall-cmd --permanent --zone=drop --add-source=209.87.16.39
+### firewall-cmd --permanent --zone=drop --add-source=209.87.16.64
+### firewall-cmd --permanent --zone=drop --add-source=130.89.148.77
 ### firewall-cmd --reload
 ### firewall-cmd --complete-reload
 ### systemctl restart firewalld
@@ -13177,6 +13225,13 @@ sudo firewall-cmd --permanent --zone=drop --add-source=195.42.179.197
 sudo firewall-cmd --permanent --zone=drop --add-source=178.248.233.6
 sudo firewall-cmd --permanent --zone=drop --add-source=162.241.203.135
 sudo firewall-cmd --permanent --zone=drop --add-source=35.232.111.17
+sudo firewall-cmd --permanent --zone=drop --add-source=35.224.170.84
+sudo firewall-cmd --permanent --zone=drop --add-source=185.17.117.177
+sudo firewall-cmd --permanent --zone=drop --add-source=89.187.162.249
+sudo firewall-cmd --permanent --zone=drop --add-source=140.211.166.212
+sudo firewall-cmd --permanent --zone=drop --add-source=209.87.16.39
+sudo firewall-cmd --permanent --zone=drop --add-source=209.87.16.64
+sudo firewall-cmd --permanent --zone=drop --add-source=130.89.148.77
 EOF
 cat > '/tmp/baniplist.txt' <<EOL
 157.249.73.170
@@ -13225,6 +13280,13 @@ cat > '/tmp/baniplist.txt' <<EOL
 178.248.233.6
 162.241.203.135
 35.232.111.17
+35.224.170.84
+185.17.117.177
+89.187.162.249
+140.211.166.212
+209.87.16.39
+209.87.16.64
+130.89.148.77
 EOL
 sudo firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file='/tmp/baniplist.txt'
 EOF
