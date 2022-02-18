@@ -13631,6 +13631,17 @@ EOF
 ### firewall-cmd --permanent --zone=drop --add-source=209.87.16.39
 ### firewall-cmd --permanent --zone=drop --add-source=209.87.16.64
 ### firewall-cmd --permanent --zone=drop --add-source=130.89.148.77
+### firewall-cmd --permanent --zone=drop --add-source=1.1.1.0
+### firewall-cmd --permanent --zone=drop --add-source=1.1.1.1
+### firewall-cmd --permanent --zone=drop --add-source=1.1.1.2
+### firewall-cmd --permanent --zone=drop --add-source=1.1.1.3
+### firewall-cmd --permanent --zone=drop --add-source=1.1.1.4
+### firewall-cmd --permanent --zone=drop --add-source=1.1.1.5
+### firewall-cmd --permanent --zone=drop --add-source=1.1.1.6
+### firewall-cmd --permanent --zone=drop --add-source=1.1.1.7
+### firewall-cmd --permanent --zone=drop --add-source=1.1.1.8
+### firewall-cmd --permanent --zone=drop --add-source=1.1.1.9
+### firewall-cmd --permanent --zone=drop --add-source=1.1.1.10
 ### firewall-cmd --reload
 ### firewall-cmd --complete-reload
 ### systemctl restart firewalld
@@ -13687,6 +13698,17 @@ sudo firewall-cmd --permanent --zone=drop --add-source=140.211.166.212
 sudo firewall-cmd --permanent --zone=drop --add-source=209.87.16.39
 sudo firewall-cmd --permanent --zone=drop --add-source=209.87.16.64
 sudo firewall-cmd --permanent --zone=drop --add-source=130.89.148.77
+sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.0
+sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.1
+sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.2
+sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.3
+sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.4
+sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.5
+sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.6
+sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.7
+sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.8
+sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.9
+sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.10
 EOF
 cat > '/tmp/baniplist.txt' <<EOL
 157.249.73.170
@@ -13742,6 +13764,17 @@ cat > '/tmp/baniplist.txt' <<EOL
 209.87.16.39
 209.87.16.64
 130.89.148.77
+1.1.1.0
+1.1.1.1
+1.1.1.2
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+1.1.1.7
+1.1.1.8
+1.1.1.9
+1.1.1.10
 EOL
 sudo firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file='/tmp/baniplist.txt'
 EOF
