@@ -13172,6 +13172,424 @@ iptables -I INPUT -s 209.87.16.64 -j DROP
 sudo iptables -I INPUT -s 130.89.148.77 -j DROP
 iptables -I INPUT -s 130.89.148.77 -j DROP
 EOF
+sudo iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 443 -j DROP
+sudo iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 80 -j DROP
+sudo iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 22 -j DROP
+sudo iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 8888 -j DROP
+sudo iptables -I INPUT 1 -p tcp -s 157.249.73.170 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 157.249.73.170 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 157.249.73.170 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 157.249.73.170 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 217.69.130.15 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 217.69.130.15 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 217.69.130.15 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 217.69.130.15 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 172.66.40.203 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 172.66.40.203 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 172.66.40.203 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 172.66.40.203 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 172.66.43.53 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 172.66.43.53 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 172.66.43.53 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 172.66.43.53 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 142.250.186.98 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 142.250.186.98 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 142.250.186.98 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 142.250.186.98 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 52.58.199.22 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 52.58.199.22 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 52.58.199.22 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 52.58.199.22 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 3.125.197.172 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 3.125.197.172 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 3.125.197.172 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 3.125.197.172 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 104.20.22.46 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 104.20.22.46 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 104.20.22.46 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 104.20.22.46 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 104.20.23.46 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 104.20.23.46 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 104.20.23.46 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 104.20.23.46 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 194.226.130.228 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 194.226.130.228 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 194.226.130.228 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 194.226.130.228 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 37.18.16.22 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 37.18.16.22 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 37.18.16.22 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 37.18.16.22 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 31.172.81.172 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 31.172.81.172 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 31.172.81.172 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 31.172.81.172 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 178.154.212.160 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 178.154.212.160 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 178.154.212.160 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 178.154.212.160 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 185.15.175.130 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 185.15.175.130 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 185.15.175.130 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 185.15.175.130 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 142.250.186.130 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 142.250.186.130 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 142.250.186.130 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 142.250.186.130 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 178.154.131.217 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 178.154.131.217 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 178.154.131.217 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 178.154.131.217 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 178.154.131.216 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 178.154.131.216 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 178.154.131.216 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 178.154.131.216 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 178.154.131.215 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 178.154.131.215 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 178.154.131.215 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 178.154.131.215 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 77.88.21.119 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 77.88.21.119 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 77.88.21.119 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 77.88.21.119 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 87.250.250.119 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 87.250.250.119 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 87.250.250.119 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 87.250.250.119 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 93.158.134.119 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 93.158.134.119 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 93.158.134.119 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 93.158.134.119 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 142.250.184.226 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 142.250.184.226 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 142.250.184.226 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 142.250.184.226 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 142.250.185.162 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 142.250.185.162 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 142.250.185.162 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 142.250.185.162 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 142.250.185.65 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 142.250.185.65 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 142.250.185.65 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 142.250.185.65 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 173.230.142.254 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 173.230.142.254 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 173.230.142.254 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 173.230.142.254 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 128.30.52.100 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 128.30.52.100 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 128.30.52.100 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 128.30.52.100 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 52.216.109.171 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 52.216.109.171 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 52.216.109.171 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 52.216.109.171 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 13.32.103.34 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 13.32.103.34 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 13.32.103.34 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 13.32.103.34 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 66.102.1.155 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 66.102.1.155 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 66.102.1.155 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 66.102.1.155 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 142.250.186.78 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 142.250.186.78 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 142.250.186.78 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 142.250.186.78 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 35.185.44.232 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 35.185.44.232 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 35.185.44.232 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 35.185.44.232 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 31.173.164.46 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 31.173.164.46 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 31.173.164.46 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 31.173.164.46 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 140.82.113.22 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 140.82.113.22 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 140.82.113.22 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 140.82.113.22 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 147.75.198.156 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 147.75.198.156 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 147.75.198.156 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 147.75.198.156 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.38 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.38 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.38 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.38 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.85 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.85 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.85 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.85 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.7 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.7 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.7 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.7 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.89 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.89 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.89 --dport 20
+sudo iptables -I INPUT 1 -p tcp -s 13.33.141.89 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 195.42.179.197 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 195.42.179.197 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 195.42.179.197 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 195.42.179.197 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 178.248.233.6 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 178.248.233.6 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 178.248.233.6 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 178.248.233.6 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 162.241.203.135 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 162.241.203.135 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 162.241.203.135 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 162.241.203.135 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 35.232.111.17 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 35.232.111.17 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 35.232.111.17 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 35.232.111.17 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 35.224.170.84 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 35.224.170.84 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 35.224.170.84 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 35.224.170.84 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 185.17.117.177 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 185.17.117.177 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 185.17.117.177 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 185.17.117.177 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 89.187.162.249 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 89.187.162.249 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 89.187.162.249 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 89.187.162.249 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 140.211.166.212 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 140.211.166.212 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 140.211.166.212 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 140.211.166.212 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 209.87.16.39 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 209.87.16.39 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 209.87.16.39 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 209.87.16.39 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 209.87.16.64 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 209.87.16.64 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 209.87.16.64 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 209.87.16.64 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 8888
+EOF
+iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 443 -j DROP
+iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 80 -j DROP
+iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 22 -j DROP
+iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 8888 -j DROP
+iptables -I INPUT 1 -p tcp -s 157.249.73.170 --dport 443
+iptables -I INPUT 1 -p tcp -s 157.249.73.170 --dport 80
+iptables -I INPUT 1 -p tcp -s 157.249.73.170 --dport 22
+iptables -I INPUT 1 -p tcp -s 157.249.73.170 --dport 8888
+iptables -I INPUT 1 -p tcp -s 217.69.130.15 --dport 443
+iptables -I INPUT 1 -p tcp -s 217.69.130.15 --dport 80
+iptables -I INPUT 1 -p tcp -s 217.69.130.15 --dport 22
+iptables -I INPUT 1 -p tcp -s 217.69.130.15 --dport 8888
+iptables -I INPUT 1 -p tcp -s 172.66.40.203 --dport 443
+iptables -I INPUT 1 -p tcp -s 172.66.40.203 --dport 80
+iptables -I INPUT 1 -p tcp -s 172.66.40.203 --dport 22
+iptables -I INPUT 1 -p tcp -s 172.66.40.203 --dport 8888
+iptables -I INPUT 1 -p tcp -s 172.66.43.53 --dport 443
+iptables -I INPUT 1 -p tcp -s 172.66.43.53 --dport 80
+iptables -I INPUT 1 -p tcp -s 172.66.43.53 --dport 22
+iptables -I INPUT 1 -p tcp -s 172.66.43.53 --dport 8888
+iptables -I INPUT 1 -p tcp -s 142.250.186.98 --dport 443
+iptables -I INPUT 1 -p tcp -s 142.250.186.98 --dport 80
+iptables -I INPUT 1 -p tcp -s 142.250.186.98 --dport 22
+iptables -I INPUT 1 -p tcp -s 142.250.186.98 --dport 8888
+iptables -I INPUT 1 -p tcp -s 52.58.199.22 --dport 443
+iptables -I INPUT 1 -p tcp -s 52.58.199.22 --dport 80
+iptables -I INPUT 1 -p tcp -s 52.58.199.22 --dport 22
+iptables -I INPUT 1 -p tcp -s 52.58.199.22 --dport 8888
+iptables -I INPUT 1 -p tcp -s 3.125.197.172 --dport 443
+iptables -I INPUT 1 -p tcp -s 3.125.197.172 --dport 80
+iptables -I INPUT 1 -p tcp -s 3.125.197.172 --dport 22
+iptables -I INPUT 1 -p tcp -s 3.125.197.172 --dport 8888
+iptables -I INPUT 1 -p tcp -s 104.20.22.46 --dport 443
+iptables -I INPUT 1 -p tcp -s 104.20.22.46 --dport 80
+iptables -I INPUT 1 -p tcp -s 104.20.22.46 --dport 22
+iptables -I INPUT 1 -p tcp -s 104.20.22.46 --dport 8888
+iptables -I INPUT 1 -p tcp -s 104.20.23.46 --dport 443
+iptables -I INPUT 1 -p tcp -s 104.20.23.46 --dport 80
+iptables -I INPUT 1 -p tcp -s 104.20.23.46 --dport 22
+iptables -I INPUT 1 -p tcp -s 104.20.23.46 --dport 8888
+iptables -I INPUT 1 -p tcp -s 194.226.130.228 --dport 443
+iptables -I INPUT 1 -p tcp -s 194.226.130.228 --dport 80
+iptables -I INPUT 1 -p tcp -s 194.226.130.228 --dport 22
+iptables -I INPUT 1 -p tcp -s 194.226.130.228 --dport 8888
+iptables -I INPUT 1 -p tcp -s 37.18.16.22 --dport 443
+iptables -I INPUT 1 -p tcp -s 37.18.16.22 --dport 80
+iptables -I INPUT 1 -p tcp -s 37.18.16.22 --dport 22
+iptables -I INPUT 1 -p tcp -s 37.18.16.22 --dport 8888
+iptables -I INPUT 1 -p tcp -s 31.172.81.172 --dport 443
+iptables -I INPUT 1 -p tcp -s 31.172.81.172 --dport 80
+iptables -I INPUT 1 -p tcp -s 31.172.81.172 --dport 22
+iptables -I INPUT 1 -p tcp -s 31.172.81.172 --dport 8888
+iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 443
+iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 80
+iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 22
+iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 8888
+iptables -I INPUT 1 -p tcp -s 178.154.212.160 --dport 443
+iptables -I INPUT 1 -p tcp -s 178.154.212.160 --dport 80
+iptables -I INPUT 1 -p tcp -s 178.154.212.160 --dport 22
+iptables -I INPUT 1 -p tcp -s 178.154.212.160 --dport 8888
+iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 443
+iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 80
+iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 22
+iptables -I INPUT 1 -p tcp -s 188.42.29.196 --dport 8888
+iptables -I INPUT 1 -p tcp -s 185.15.175.130 --dport 443
+iptables -I INPUT 1 -p tcp -s 185.15.175.130 --dport 80
+iptables -I INPUT 1 -p tcp -s 185.15.175.130 --dport 22
+iptables -I INPUT 1 -p tcp -s 185.15.175.130 --dport 8888
+iptables -I INPUT 1 -p tcp -s 142.250.186.130 --dport 443
+iptables -I INPUT 1 -p tcp -s 142.250.186.130 --dport 80
+iptables -I INPUT 1 -p tcp -s 142.250.186.130 --dport 22
+iptables -I INPUT 1 -p tcp -s 142.250.186.130 --dport 8888
+iptables -I INPUT 1 -p tcp -s 178.154.131.217 --dport 443
+iptables -I INPUT 1 -p tcp -s 178.154.131.217 --dport 80
+iptables -I INPUT 1 -p tcp -s 178.154.131.217 --dport 22
+iptables -I INPUT 1 -p tcp -s 178.154.131.217 --dport 8888
+iptables -I INPUT 1 -p tcp -s 178.154.131.216 --dport 443
+iptables -I INPUT 1 -p tcp -s 178.154.131.216 --dport 80
+iptables -I INPUT 1 -p tcp -s 178.154.131.216 --dport 22
+iptables -I INPUT 1 -p tcp -s 178.154.131.216 --dport 8888
+iptables -I INPUT 1 -p tcp -s 178.154.131.215 --dport 443
+iptables -I INPUT 1 -p tcp -s 178.154.131.215 --dport 80
+iptables -I INPUT 1 -p tcp -s 178.154.131.215 --dport 22
+iptables -I INPUT 1 -p tcp -s 178.154.131.215 --dport 8888
+iptables -I INPUT 1 -p tcp -s 77.88.21.119 --dport 443
+iptables -I INPUT 1 -p tcp -s 77.88.21.119 --dport 80
+iptables -I INPUT 1 -p tcp -s 77.88.21.119 --dport 22
+iptables -I INPUT 1 -p tcp -s 77.88.21.119 --dport 8888
+iptables -I INPUT 1 -p tcp -s 87.250.250.119 --dport 443
+iptables -I INPUT 1 -p tcp -s 87.250.250.119 --dport 80
+iptables -I INPUT 1 -p tcp -s 87.250.250.119 --dport 22
+iptables -I INPUT 1 -p tcp -s 87.250.250.119 --dport 8888
+iptables -I INPUT 1 -p tcp -s 93.158.134.119 --dport 443
+iptables -I INPUT 1 -p tcp -s 93.158.134.119 --dport 80
+iptables -I INPUT 1 -p tcp -s 93.158.134.119 --dport 22
+iptables -I INPUT 1 -p tcp -s 93.158.134.119 --dport 8888
+iptables -I INPUT 1 -p tcp -s 142.250.184.226 --dport 443
+iptables -I INPUT 1 -p tcp -s 142.250.184.226 --dport 80
+iptables -I INPUT 1 -p tcp -s 142.250.184.226 --dport 22
+iptables -I INPUT 1 -p tcp -s 142.250.184.226 --dport 8888
+iptables -I INPUT 1 -p tcp -s 142.250.185.162 --dport 443
+iptables -I INPUT 1 -p tcp -s 142.250.185.162 --dport 80
+iptables -I INPUT 1 -p tcp -s 142.250.185.162 --dport 22
+iptables -I INPUT 1 -p tcp -s 142.250.185.162 --dport 8888
+iptables -I INPUT 1 -p tcp -s 142.250.185.65 --dport 443
+iptables -I INPUT 1 -p tcp -s 142.250.185.65 --dport 80
+iptables -I INPUT 1 -p tcp -s 142.250.185.65 --dport 22
+iptables -I INPUT 1 -p tcp -s 142.250.185.65 --dport 8888
+iptables -I INPUT 1 -p tcp -s 173.230.142.254 --dport 443
+iptables -I INPUT 1 -p tcp -s 173.230.142.254 --dport 80
+iptables -I INPUT 1 -p tcp -s 173.230.142.254 --dport 22
+iptables -I INPUT 1 -p tcp -s 173.230.142.254 --dport 8888
+iptables -I INPUT 1 -p tcp -s 128.30.52.100 --dport 443
+iptables -I INPUT 1 -p tcp -s 128.30.52.100 --dport 80
+iptables -I INPUT 1 -p tcp -s 128.30.52.100 --dport 22
+iptables -I INPUT 1 -p tcp -s 128.30.52.100 --dport 8888
+iptables -I INPUT 1 -p tcp -s 52.216.109.171 --dport 443
+iptables -I INPUT 1 -p tcp -s 52.216.109.171 --dport 80
+iptables -I INPUT 1 -p tcp -s 52.216.109.171 --dport 22
+iptables -I INPUT 1 -p tcp -s 52.216.109.171 --dport 8888
+iptables -I INPUT 1 -p tcp -s 13.32.103.34 --dport 443
+iptables -I INPUT 1 -p tcp -s 13.32.103.34 --dport 80
+iptables -I INPUT 1 -p tcp -s 13.32.103.34 --dport 22
+iptables -I INPUT 1 -p tcp -s 13.32.103.34 --dport 8888
+iptables -I INPUT 1 -p tcp -s 66.102.1.155 --dport 443
+iptables -I INPUT 1 -p tcp -s 66.102.1.155 --dport 80
+iptables -I INPUT 1 -p tcp -s 66.102.1.155 --dport 22
+iptables -I INPUT 1 -p tcp -s 66.102.1.155 --dport 8888
+iptables -I INPUT 1 -p tcp -s 142.250.186.78 --dport 443
+iptables -I INPUT 1 -p tcp -s 142.250.186.78 --dport 80
+iptables -I INPUT 1 -p tcp -s 142.250.186.78 --dport 22
+iptables -I INPUT 1 -p tcp -s 142.250.186.78 --dport 8888
+iptables -I INPUT 1 -p tcp -s 35.185.44.232 --dport 443
+iptables -I INPUT 1 -p tcp -s 35.185.44.232 --dport 80
+iptables -I INPUT 1 -p tcp -s 35.185.44.232 --dport 22
+iptables -I INPUT 1 -p tcp -s 35.185.44.232 --dport 8888
+iptables -I INPUT 1 -p tcp -s 31.173.164.46 --dport 443
+iptables -I INPUT 1 -p tcp -s 31.173.164.46 --dport 80
+iptables -I INPUT 1 -p tcp -s 31.173.164.46 --dport 22
+iptables -I INPUT 1 -p tcp -s 31.173.164.46 --dport 8888
+iptables -I INPUT 1 -p tcp -s 140.82.113.22 --dport 443
+iptables -I INPUT 1 -p tcp -s 140.82.113.22 --dport 80
+iptables -I INPUT 1 -p tcp -s 140.82.113.22 --dport 22
+iptables -I INPUT 1 -p tcp -s 140.82.113.22 --dport 8888
+iptables -I INPUT 1 -p tcp -s 147.75.198.156 --dport 443
+iptables -I INPUT 1 -p tcp -s 147.75.198.156 --dport 80
+iptables -I INPUT 1 -p tcp -s 147.75.198.156 --dport 22
+iptables -I INPUT 1 -p tcp -s 147.75.198.156 --dport 8888
+iptables -I INPUT 1 -p tcp -s 13.33.141.38 --dport 443
+iptables -I INPUT 1 -p tcp -s 13.33.141.38 --dport 80
+iptables -I INPUT 1 -p tcp -s 13.33.141.38 --dport 22
+iptables -I INPUT 1 -p tcp -s 13.33.141.38 --dport 8888
+iptables -I INPUT 1 -p tcp -s 13.33.141.85 --dport 443
+iptables -I INPUT 1 -p tcp -s 13.33.141.85 --dport 80
+iptables -I INPUT 1 -p tcp -s 13.33.141.85 --dport 22
+iptables -I INPUT 1 -p tcp -s 13.33.141.85 --dport 8888
+iptables -I INPUT 1 -p tcp -s 13.33.141.7 --dport 443
+iptables -I INPUT 1 -p tcp -s 13.33.141.7 --dport 80
+iptables -I INPUT 1 -p tcp -s 13.33.141.7 --dport 22
+iptables -I INPUT 1 -p tcp -s 13.33.141.7 --dport 8888
+iptables -I INPUT 1 -p tcp -s 13.33.141.89 --dport 443
+iptables -I INPUT 1 -p tcp -s 13.33.141.89 --dport 80
+iptables -I INPUT 1 -p tcp -s 13.33.141.89 --dport 20
+iptables -I INPUT 1 -p tcp -s 13.33.141.89 --dport 8888
+iptables -I INPUT 1 -p tcp -s 195.42.179.197 --dport 443
+iptables -I INPUT 1 -p tcp -s 195.42.179.197 --dport 80
+iptables -I INPUT 1 -p tcp -s 195.42.179.197 --dport 22
+iptables -I INPUT 1 -p tcp -s 195.42.179.197 --dport 8888
+iptables -I INPUT 1 -p tcp -s 178.248.233.6 --dport 443
+iptables -I INPUT 1 -p tcp -s 178.248.233.6 --dport 80
+iptables -I INPUT 1 -p tcp -s 178.248.233.6 --dport 22
+iptables -I INPUT 1 -p tcp -s 178.248.233.6 --dport 8888
+iptables -I INPUT 1 -p tcp -s 162.241.203.135 --dport 443
+iptables -I INPUT 1 -p tcp -s 162.241.203.135 --dport 80
+iptables -I INPUT 1 -p tcp -s 162.241.203.135 --dport 22
+iptables -I INPUT 1 -p tcp -s 162.241.203.135 --dport 8888
+iptables -I INPUT 1 -p tcp -s 35.232.111.17 --dport 443
+iptables -I INPUT 1 -p tcp -s 35.232.111.17 --dport 80
+iptables -I INPUT 1 -p tcp -s 35.232.111.17 --dport 22
+iptables -I INPUT 1 -p tcp -s 35.232.111.17 --dport 8888
+iptables -I INPUT 1 -p tcp -s 35.224.170.84 --dport 443
+iptables -I INPUT 1 -p tcp -s 35.224.170.84 --dport 80
+iptables -I INPUT 1 -p tcp -s 35.224.170.84 --dport 22
+iptables -I INPUT 1 -p tcp -s 35.224.170.84 --dport 8888
+iptables -I INPUT 1 -p tcp -s 185.17.117.177 --dport 443
+iptables -I INPUT 1 -p tcp -s 185.17.117.177 --dport 80
+iptables -I INPUT 1 -p tcp -s 185.17.117.177 --dport 22
+iptables -I INPUT 1 -p tcp -s 185.17.117.177 --dport 8888
+iptables -I INPUT 1 -p tcp -s 89.187.162.249 --dport 443
+iptables -I INPUT 1 -p tcp -s 89.187.162.249 --dport 80
+iptables -I INPUT 1 -p tcp -s 89.187.162.249 --dport 22
+iptables -I INPUT 1 -p tcp -s 89.187.162.249 --dport 8888
+iptables -I INPUT 1 -p tcp -s 140.211.166.212 --dport 443
+iptables -I INPUT 1 -p tcp -s 140.211.166.212 --dport 80
+iptables -I INPUT 1 -p tcp -s 140.211.166.212 --dport 22
+iptables -I INPUT 1 -p tcp -s 140.211.166.212 --dport 8888
+iptables -I INPUT 1 -p tcp -s 209.87.16.39 --dport 443
+iptables -I INPUT 1 -p tcp -s 209.87.16.39 --dport 80
+iptables -I INPUT 1 -p tcp -s 209.87.16.39 --dport 22
+iptables -I INPUT 1 -p tcp -s 209.87.16.39 --dport 8888
+iptables -I INPUT 1 -p tcp -s 209.87.16.64 --dport 443
+iptables -I INPUT 1 -p tcp -s 209.87.16.64 --dport 80
+iptables -I INPUT 1 -p tcp -s 209.87.16.64 --dport 22
+iptables -I INPUT 1 -p tcp -s 209.87.16.64 --dport 8888
+iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 443
+iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 80
+iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 22
+iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 8888
+EOF
 # Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs , I will continue to search and block because I am losing investments due to the falsification of the history of the creation of technologies, and you will lose advertising, technologies were not created at the click of a finger, these were hard assembly days where sometimes it took the whole day and you had to sacrifice sleep, which was reflected in the life graph while you crazy in the Maldives or somewhere else emulating that you work there , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance
 ### firewall-cmd --permanent --zone=drop --add-source=3.233.149.202
 ### firewall-cmd --permanent --zone=drop --add-source=157.249.73.170
