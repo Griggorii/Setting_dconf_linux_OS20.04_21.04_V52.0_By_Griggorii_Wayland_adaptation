@@ -13158,6 +13158,36 @@ sudo iptables -I INPUT -s 209.87.16.64 -j DROP
 iptables -I INPUT -s 209.87.16.64 -j DROP
 sudo iptables -I INPUT -s 130.89.148.77 -j DROP
 iptables -I INPUT -s 130.89.148.77 -j DROP
+sudo iptables -I INPUT -s 54.171.230.55 -j DROP
+iptables -I INPUT -s 54.171.230.55 -j DROP
+sudo iptables -I INPUT -s 34.243.160.129 -j DROP
+iptables -I INPUT -s 34.243.160.129 -j DROP
+sudo iptables -I INPUT -s 185.125.190.17 -j DROP
+iptables -I INPUT -s 185.125.190.17 -j DROP
+sudo iptables -I INPUT -s 91.189.88.185 -j DROP
+iptables -I INPUT -s 91.189.88.185 -j DROP
+sudo iptables -I INPUT -s 91.189.91.49 -j DROP
+iptables -I INPUT -s 91.189.91.49 -j DROP
+sudo iptables -I INPUT -s 185.125.190.18 -j DROP
+iptables -I INPUT -s 185.125.190.18 -j DROP
+sudo iptables -I INPUT -s 91.189.88.184 -j DROP
+iptables -I INPUT -s 91.189.88.184 -j DROP
+sudo iptables -I INPUT -s 91.189.91.48 -j DROP
+iptables -I INPUT -s 91.189.91.48 -j DROP
+sudo iptables -I INPUT -s 91.189.90.173 -j DROP
+iptables -I INPUT -s 91.189.90.173 -j DROP
+sudo iptables -I INPUT -s 91.189.89.90 -j DROP
+iptables -I INPUT -s 91.189.89.90 -j DROP
+sudo iptables -I INPUT -s 91.189.88.180 -j DROP
+iptables -I INPUT -s 91.189.88.180 -j DROP
+sudo iptables -I INPUT -s 185.125.190.20 -j DROP
+iptables -I INPUT -s 185.125.190.20 -j DROP
+sudo iptables -I INPUT -s 91.189.88.181 -j DROP
+iptables -I INPUT -s 91.189.88.181 -j DROP
+sudo iptables -I INPUT -s 185.125.190.20 -j DROP
+iptables -I INPUT -s 185.125.190.20 -j DROP
+sudo iptables -I INPUT -s 185.125.190.29 -j DROP
+iptables -I INPUT -s 185.125.190.29 -j DROP
 EOF
 sudo iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 443 -j DROP
 sudo iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 80 -j DROP
@@ -13367,6 +13397,66 @@ sudo iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 443
 sudo iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 80
 sudo iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 22
 sudo iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 54.171.230.55 --dport 443 -j DROP
+sudo iptables -I INPUT 1 -p tcp -s 54.171.230.55 --dport 80 -j DROP
+sudo iptables -I INPUT 1 -p tcp -s 54.171.230.55 --dport 22 -j DROP
+sudo iptables -I INPUT 1 -p tcp -s 54.171.230.55 --dport 8888 -j DROP
+sudo iptables -I INPUT 1 -p tcp -s 34.243.160.129 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 34.243.160.129 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 34.243.160.129 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 34.243.160.129 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.17 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.17 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.17 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.17 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.185 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.185 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.185 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.185 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 91.189.91.49 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 91.189.91.49 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 91.189.91.49 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 91.189.91.49 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.18 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.18 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.18 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.18 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.184 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.184 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.184 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.184 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 91.189.91.48 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 91.189.91.48 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 91.189.91.48 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 91.189.91.48 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 91.189.90.173 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 91.189.90.173 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 91.189.90.173 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 91.189.90.173 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 91.189.89.90 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 91.189.89.90 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 91.189.89.90 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 91.189.89.90 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.180 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.180 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.180 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.180 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.21 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.21 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.21 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.21 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.181 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.181 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.181 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 91.189.88.181 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.20 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.20 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.20 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.20 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.29 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.29 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.29 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 185.125.190.29 --dport 8888
 EOF
 iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 443 -j DROP
 iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 80 -j DROP
@@ -13576,6 +13666,81 @@ iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 443
 iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 80
 iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 22
 iptables -I INPUT 1 -p tcp -s 130.89.148.77 --dport 8888
+iptables -I INPUT 1 -p tcp -s 54.171.230.55 --dport 443 -j DROP
+iptables -I INPUT 1 -p tcp -s 54.171.230.55 --dport 80 -j DROP
+iptables -I INPUT 1 -p tcp -s 54.171.230.55 --dport 22 -j DROP
+iptables -I INPUT 1 -p tcp -s 54.171.230.55 --dport 8888 -j DROP
+iptables -I INPUT 1 -p tcp -s 34.243.160.129 --dport 443
+iptables -I INPUT 1 -p tcp -s 34.243.160.129 --dport 80
+iptables -I INPUT 1 -p tcp -s 34.243.160.129 --dport 22
+iptables -I INPUT 1 -p tcp -s 34.243.160.129 --dport 8888
+iptables -I INPUT 1 -p tcp -s 185.125.190.17 --dport 443
+iptables -I INPUT 1 -p tcp -s 185.125.190.17 --dport 80
+iptables -I INPUT 1 -p tcp -s 185.125.190.17 --dport 22
+iptables -I INPUT 1 -p tcp -s 185.125.190.17 --dport 8888
+iptables -I INPUT 1 -p tcp -s 91.189.88.185 --dport 443
+iptables -I INPUT 1 -p tcp -s 91.189.88.185 --dport 80
+iptables -I INPUT 1 -p tcp -s 91.189.88.185 --dport 22
+iptables -I INPUT 1 -p tcp -s 91.189.88.185 --dport 8888
+iptables -I INPUT 1 -p tcp -s 91.189.91.49 --dport 443
+iptables -I INPUT 1 -p tcp -s 91.189.91.49 --dport 80
+iptables -I INPUT 1 -p tcp -s 91.189.91.49 --dport 22
+iptables -I INPUT 1 -p tcp -s 91.189.91.49 --dport 8888
+iptables -I INPUT 1 -p tcp -s 185.125.190.18 --dport 443
+iptables -I INPUT 1 -p tcp -s 185.125.190.18 --dport 80
+iptables -I INPUT 1 -p tcp -s 185.125.190.18 --dport 22
+iptables -I INPUT 1 -p tcp -s 185.125.190.18 --dport 8888
+iptables -I INPUT 1 -p tcp -s 91.189.88.184 --dport 443
+iptables -I INPUT 1 -p tcp -s 91.189.88.184 --dport 80
+iptables -I INPUT 1 -p tcp -s 91.189.88.184 --dport 22
+iptables -I INPUT 1 -p tcp -s 91.189.88.184 --dport 8888
+iptables -I INPUT 1 -p tcp -s 91.189.91.48 --dport 443
+iptables -I INPUT 1 -p tcp -s 91.189.91.48 --dport 80
+iptables -I INPUT 1 -p tcp -s 91.189.91.48 --dport 22
+iptables -I INPUT 1 -p tcp -s 91.189.91.48 --dport 8888
+iptables -I INPUT 1 -p tcp -s 91.189.90.173 --dport 443
+iptables -I INPUT 1 -p tcp -s 91.189.90.173 --dport 80
+iptables -I INPUT 1 -p tcp -s 91.189.90.173 --dport 22
+iptables -I INPUT 1 -p tcp -s 91.189.90.173 --dport 8888
+iptables -I INPUT 1 -p tcp -s 91.189.89.90 --dport 443
+iptables -I INPUT 1 -p tcp -s 91.189.89.90 --dport 80
+iptables -I INPUT 1 -p tcp -s 91.189.89.90 --dport 22
+iptables -I INPUT 1 -p tcp -s 91.189.89.90 --dport 8888
+iptables -I INPUT 1 -p tcp -s 91.189.88.180 --dport 443
+iptables -I INPUT 1 -p tcp -s 91.189.88.180 --dport 80
+iptables -I INPUT 1 -p tcp -s 91.189.88.180 --dport 22
+iptables -I INPUT 1 -p tcp -s 91.189.88.180 --dport 8888
+iptables -I INPUT 1 -p tcp -s 185.125.190.21 --dport 443
+iptables -I INPUT 1 -p tcp -s 185.125.190.21 --dport 80
+iptables -I INPUT 1 -p tcp -s 185.125.190.21 --dport 22
+iptables -I INPUT 1 -p tcp -s 185.125.190.21 --dport 8888
+iptables -I INPUT 1 -p tcp -s 91.189.88.181 --dport 443
+iptables -I INPUT 1 -p tcp -s 91.189.88.181 --dport 80
+iptables -I INPUT 1 -p tcp -s 91.189.88.181 --dport 22
+iptables -I INPUT 1 -p tcp -s 91.189.88.181 --dport 8888
+iptables -I INPUT 1 -p tcp -s 185.125.190.20 --dport 443
+iptables -I INPUT 1 -p tcp -s 185.125.190.20 --dport 80
+iptables -I INPUT 1 -p tcp -s 185.125.190.20 --dport 22
+iptables -I INPUT 1 -p tcp -s 185.125.190.20 --dport 8888
+iptables -I INPUT 1 -p tcp -s 185.125.190.29 --dport 443
+iptables -I INPUT 1 -p tcp -s 185.125.190.29 --dport 80
+iptables -I INPUT 1 -p tcp -s 185.125.190.29 --dport 22
+iptables -I INPUT 1 -p tcp -s 185.125.190.29 --dport 8888
+54.171.230.55
+34.243.160.129
+185.125.190.17
+91.189.88.185
+91.189.91.49
+185.125.190.18
+91.189.88.184
+91.189.91.48
+91.189.90.173
+91.189.89.90
+91.189.88.180
+185.125.190.21
+91.189.88.181
+185.125.190.20
+185.125.190.29
 EOF
 # Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs , I will continue to search and block because I am losing investments due to the falsification of the history of the creation of technologies, and you will lose advertising, technologies were not created at the click of a finger, these were hard assembly days where sometimes it took the whole day and you had to sacrifice sleep, which was reflected in the life graph while you crazy in the Maldives or somewhere else emulating that you work there , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance
 ### firewall-cmd --permanent --zone=drop --add-source=3.233.149.202
@@ -13644,6 +13809,21 @@ EOF
 ### firewall-cmd --permanent --zone=drop --add-source=1.1.1.8
 ### firewall-cmd --permanent --zone=drop --add-source=1.1.1.9
 ### firewall-cmd --permanent --zone=drop --add-source=1.1.1.10
+### firewall-cmd --permanent --zone=drop --add-source=54.171.230.55
+### firewall-cmd --permanent --zone=drop --add-source=34.243.160.129
+### firewall-cmd --permanent --zone=drop --add-source=185.125.190.17
+### firewall-cmd --permanent --zone=drop --add-source=91.189.88.185
+### firewall-cmd --permanent --zone=drop --add-source=91.189.91.49
+### firewall-cmd --permanent --zone=drop --add-source=185.125.190.18
+### firewall-cmd --permanent --zone=drop --add-source=91.189.88.184
+### firewall-cmd --permanent --zone=drop --add-source=91.189.91.48
+### firewall-cmd --permanent --zone=drop --add-source=91.189.90.173
+### firewall-cmd --permanent --zone=drop --add-source=91.189.89.90
+### firewall-cmd --permanent --zone=drop --add-source=91.189.88.180
+### firewall-cmd --permanent --zone=drop --add-source=185.125.190.21
+### firewall-cmd --permanent --zone=drop --add-source=91.189.88.181
+### firewall-cmd --permanent --zone=drop --add-source=185.125.190.20
+### firewall-cmd --permanent --zone=drop --add-source=185.125.190.29
 ### firewall-cmd --reload
 ### firewall-cmd --complete-reload
 ### systemctl restart firewalld
@@ -13702,6 +13882,21 @@ sudo firewall-cmd --permanent --zone=drop --add-source=209.87.16.64
 sudo firewall-cmd --permanent --zone=drop --add-source=130.89.148.77
 sudo firewall-cmd --permanent --zone=drop --add-source=104.16.123.96
 sudo firewall-cmd --permanent --zone=drop --add-source=104.16.124.96
+sudo firewall-cmd --permanent --zone=drop --add-source=54.171.230.55
+sudo firewall-cmd --permanent --zone=drop --add-source=34.243.160.129
+sudo firewall-cmd --permanent --zone=drop --add-source=185.125.190.17
+sudo firewall-cmd --permanent --zone=drop --add-source=91.189.88.185
+sudo firewall-cmd --permanent --zone=drop --add-source=91.189.91.49
+sudo firewall-cmd --permanent --zone=drop --add-source=185.125.190.18
+sudo firewall-cmd --permanent --zone=drop --add-source=91.189.88.184
+sudo firewall-cmd --permanent --zone=drop --add-source=91.189.91.48
+sudo firewall-cmd --permanent --zone=drop --add-source=91.189.90.173
+sudo firewall-cmd --permanent --zone=drop --add-source=91.189.89.90
+sudo firewall-cmd --permanent --zone=drop --add-source=91.189.88.180
+sudo firewall-cmd --permanent --zone=drop --add-source=185.125.190.21
+sudo firewall-cmd --permanent --zone=drop --add-source=91.189.88.181
+sudo firewall-cmd --permanent --zone=drop --add-source=185.125.190.20
+sudo firewall-cmd --permanent --zone=drop --add-source=185.125.190.29
 sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.0
 sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.1
 sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.2
@@ -13770,6 +13965,21 @@ cat > '/tmp/baniplist.txt' <<EOL
 130.89.148.77
 104.16.123.96
 104.16.124.96
+54.171.230.55
+34.243.160.129
+185.125.190.17
+91.189.88.185
+91.189.91.49
+185.125.190.18
+91.189.88.184
+91.189.91.48
+91.189.90.173
+91.189.89.90
+91.189.88.180
+185.125.190.21
+91.189.88.181
+185.125.190.20
+185.125.190.29
 1.1.1.0
 1.1.1.1
 1.1.1.2
