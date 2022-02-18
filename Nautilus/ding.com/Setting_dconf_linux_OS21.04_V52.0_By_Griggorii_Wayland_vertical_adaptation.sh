@@ -13631,6 +13631,8 @@ EOF
 ### firewall-cmd --permanent --zone=drop --add-source=209.87.16.39
 ### firewall-cmd --permanent --zone=drop --add-source=209.87.16.64
 ### firewall-cmd --permanent --zone=drop --add-source=130.89.148.77
+### firewall-cmd --permanent --zone=drop --add-source=104.16.123.96
+### firewall-cmd --permanent --zone=drop --add-source=104.16.124.96
 ### firewall-cmd --permanent --zone=drop --add-source=1.1.1.0
 ### firewall-cmd --permanent --zone=drop --add-source=1.1.1.1
 ### firewall-cmd --permanent --zone=drop --add-source=1.1.1.2
@@ -13698,6 +13700,8 @@ sudo firewall-cmd --permanent --zone=drop --add-source=140.211.166.212
 sudo firewall-cmd --permanent --zone=drop --add-source=209.87.16.39
 sudo firewall-cmd --permanent --zone=drop --add-source=209.87.16.64
 sudo firewall-cmd --permanent --zone=drop --add-source=130.89.148.77
+sudo firewall-cmd --permanent --zone=drop --add-source=104.16.123.96
+sudo firewall-cmd --permanent --zone=drop --add-source=104.16.124.96
 sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.0
 sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.1
 sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.2
@@ -13764,6 +13768,8 @@ cat > '/tmp/baniplist.txt' <<EOL
 209.87.16.39
 209.87.16.64
 130.89.148.77
+104.16.123.96
+104.16.124.96
 1.1.1.0
 1.1.1.1
 1.1.1.2
