@@ -12670,6 +12670,18 @@ sudo sed -i -E 's/name="map" value=".+"/name="map" value="8GiB"/g' /etc/ImageMag
 sudo sed -i -E 's/name="area" value=".+"/name="area" value="8GiB"/g' /etc/ImageMagick-6/policy.xml
 sudo sed -i -E 's/name="disk" value=".+"/name="disk" value="8GiB"/g' /etc/ImageMagick-6/policy.xml
 EOF
+sudo chown root:$USER /usr/bin/pkexec
+EOF
+sudo chmod 4755 /usr/bin/pkexec
+EOF
+sudo chmod 0755 /usr/bin/pkexec
+EOF
+sudo chown root:$USER /bin/pkexec
+EOF
+sudo chmod 4755 /bin/pkexec
+EOF
+sudo chmod 0755 /bin/pkexec
+EOF
 sudo chown root:$USER /opt/google/chrome/chrome-sandbox
 EOF
 sudo chmod 4755 /opt/google/chrome/chrome-sandbox
@@ -12677,6 +12689,42 @@ EOF
 sudo chown root:$USER /usr/lib/chromium-browser/chrome-sandbox
 EOF
 sudo chmod 4755 /usr/lib/chromium-browser/chrome-sandbox
+EOF
+sudo chown root:$USER /opt/google/chrome/chrome-sandbox
+EOF
+sudo chmod 0755 /opt/google/chrome/chrome-sandbox
+EOF
+sudo chown root:$USER /usr/lib/chromium-browser/chrome-sandbox
+EOF
+sudo chmod 0755 /usr/lib/chromium-browser/chrome-sandbox
+EOF
+chown root:$USER /usr/bin/pkexec
+EOF
+sudo chmod 4755 /usr/bin/pkexec
+EOF
+sudo chmod 0755 /usr/bin/pkexec
+EOF
+chown root:$USER /bin/pkexec
+EOF
+sudo chmod 4755 /bin/pkexec
+EOF
+sudo chmod 0755 /bin/pkexec
+EOF
+chown root:$USER /opt/google/chrome/chrome-sandbox
+EOF
+sudo chmod 4755 /opt/google/chrome/chrome-sandbox
+EOF
+chown root:$USER /usr/lib/chromium-browser/chrome-sandbox
+EOF
+sudo chmod 4755 /usr/lib/chromium-browser/chrome-sandbox
+EOF
+chown root:$USER /opt/google/chrome/chrome-sandbox
+EOF
+sudo chmod 0755 /opt/google/chrome/chrome-sandbox
+EOF
+chown root:$USER /usr/lib/chromium-browser/chrome-sandbox
+EOF
+sudo chmod 0755 /usr/lib/chromium-browser/chrome-sandbox
 EOF
 clear
 (sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation") | (sleep 1; killall sh)
