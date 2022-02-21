@@ -13264,6 +13264,8 @@ sudo iptables -I INPUT -s 192.243.59.12 -j DROP
 iptables -I INPUT -s 192.243.59.12 -j DROP
 sudo iptables -I INPUT -s 192.243.59.13 -j DROP
 iptables -I INPUT -s 192.243.59.13 -j DROP
+sudo iptables -I INPUT -s 104.75.89.182 -j DROP
+iptables -I INPUT -s 104.75.89.182 -j DROP
 EOF
 sudo iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 443 -j DROP
 sudo iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 80 -j DROP
@@ -13586,6 +13588,10 @@ sudo iptables -I INPUT 1 -p tcp -s 192.243.59.13 --dport 443
 sudo iptables -I INPUT 1 -p tcp -s 192.243.59.13 --dport 80
 sudo iptables -I INPUT 1 -p tcp -s 192.243.59.13 --dport 22
 sudo iptables -I INPUT 1 -p tcp -s 192.243.59.13 --dport 8888
+sudo iptables -I INPUT 1 -p tcp -s 104.75.89.182 --dport 443
+sudo iptables -I INPUT 1 -p tcp -s 104.75.89.182 --dport 80
+sudo iptables -I INPUT 1 -p tcp -s 104.75.89.182 --dport 22
+sudo iptables -I INPUT 1 -p tcp -s 104.75.89.182 --dport 8888
 EOF
 iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 443 -j DROP
 iptables -I INPUT 1 -p tcp -s 3.233.149.202 --dport 80 -j DROP
@@ -13908,6 +13914,10 @@ iptables -I INPUT 1 -p tcp -s 192.243.59.13 --dport 443
 iptables -I INPUT 1 -p tcp -s 192.243.59.13 --dport 80
 iptables -I INPUT 1 -p tcp -s 192.243.59.13 --dport 22
 iptables -I INPUT 1 -p tcp -s 192.243.59.13 --dport 8888
+iptables -I INPUT 1 -p tcp -s 104.75.89.182 --dport 443
+iptables -I INPUT 1 -p tcp -s 104.75.89.182 --dport 80
+iptables -I INPUT 1 -p tcp -s 104.75.89.182 --dport 22
+iptables -I INPUT 1 -p tcp -s 104.75.89.182 --dport 8888
 EOF
 # Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs , I will continue to search and block because I am losing investments due to the falsification of the history of the creation of technologies, and you will lose advertising, technologies were not created at the click of a finger, these were hard assembly days where sometimes it took the whole day and you had to sacrifice sleep, which was reflected in the life graph while you crazy in the Maldives or somewhere else emulating that you work there , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance
 ### firewall-cmd --permanent --zone=drop --add-source=3.233.149.202
@@ -13993,6 +14003,7 @@ EOF
 ### firewall-cmd --permanent --zone=drop --add-source=185.125.190.29
 ### firewall-cmd --permanent --zone=drop --add-source=192.243.59.12
 ### firewall-cmd --permanent --zone=drop --add-source=192.243.59.13
+### firewall-cmd --permanent --zone=drop --add-source=104.75.89.182
 ### firewall-cmd --reload
 ### firewall-cmd --complete-reload
 ### systemctl restart firewalld
@@ -14079,6 +14090,7 @@ sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.9
 sudo firewall-cmd --permanent --zone=drop --add-source=1.1.1.10
 sudo firewall-cmd --permanent --zone=drop --add-source=192.243.59.12
 sudo firewall-cmd --permanent --zone=drop --add-source=192.243.59.13
+sudo firewall-cmd --permanent --zone=drop --add-source=104.75.89.182
 EOF
 cat > '/tmp/baniplist.txt' <<EOL
 157.249.73.170
@@ -14164,6 +14176,7 @@ cat > '/tmp/baniplist.txt' <<EOL
 1.1.1.10
 192.243.59.12
 192.243.59.13
+104.75.89.182
 EOL
 sudo firewall-cmd --permanent --ipset=blacklist --type=hash:net --add-entries-from-file='/tmp/baniplist.txt'
 EOF
