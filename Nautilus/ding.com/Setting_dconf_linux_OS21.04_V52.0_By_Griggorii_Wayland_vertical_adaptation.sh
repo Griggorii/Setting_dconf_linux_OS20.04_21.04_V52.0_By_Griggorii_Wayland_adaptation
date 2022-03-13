@@ -12725,7 +12725,7 @@ EOF
 chmod 0755 /usr/lib/chromium-browser/chrome-sandbox
 EOF
 clear
-(sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation") | (sleep 1; killall sh)
+# (sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation") | (sleep 1; killall sh)
 EOF
 (sh -c budgie-panel) 
 EOF
