@@ -14402,6 +14402,10 @@ sudo systemctl disable cron
 EOF
 ### systemctl disable cron
 EOF
+update-alternatives --config gdm3-theme.gresource
+EOF
+sudo update-alternatives --config gdm3-theme.gresource
+EOF
 clear
 grep -H -r -n "egrep" /usr/bin
 lightdm --test-mode
