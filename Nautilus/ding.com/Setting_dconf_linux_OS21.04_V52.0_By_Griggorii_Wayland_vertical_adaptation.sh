@@ -10712,6 +10712,141 @@ alias goboost='(set -x; powerprofilesctl set interactive; sudo cpupower frequenc
 alias boostrun='powerprofilesctl launch -p interactive'
 
 EOF
+cat > '/tmp/.drirc' <<EOL
+<driconf>
+   <device driver="i915">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+         <option name="precise_trig" value="true"/>
+      </application>
+   </device>
+   <device driver="i965">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+      </application>
+   </device>
+   <device driver="r200">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+      </application>
+   </device>
+   <device driver="radeon">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+      </application>
+   </device>
+   <device driver="iris">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+         <option name="precise_trig" value="true"/>
+      </application>
+   </device>
+   <device driver="kms_swrast">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+      </application>
+   </device>
+   <device driver="nouveau">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+      </application>
+   </device>
+   <device driver="r300">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+      </application>
+   </device>
+   <device driver="r600">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+      </application>
+   </device>
+   <device driver="radeonsi">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+      </application>
+   </device>
+   <device driver="swrast">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+      </application>
+   </device>
+   <device driver="virtio_gpu">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+      </application>
+   </device>
+   <device driver="vmwgfx_dri">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+      </application>
+   </device>
+   <device driver="zink">
+      <application name="Default">
+         <!-- Force on S3TC hardware decompression support -->
+         <option name="force_s3tc_enable" value="true"/>
+      </application>
+   </device>
+</driconf>
+
+# New config testing /etc/.drirc | remove $ rm /etc/.drirc | logical my idea dri driver /usr/lib/x86_64-linux-gnu/dri and alternative dri locations distros /usr/lib/dri /lib/dri
+
+# https://github.com/Griggorii/drirc_acceleration_idea
+
+# copyright generation drirc my chromium os 77 https://github.com/Griggorii/Chromium_OS_77  , my license is not free re-edit vendor Intel, AMD, nvidia and alternate vendor fork submit publish prohibited ! Examples of using $ sudo cp drirc /etc/ and home $ cp drirc ~/.drirc and rename .drirc
+
+# Only real technologies, not any fictional parasitic distributions support real technology investments and donate sberbank dollar card VISA 4817 7601 8112 4706 griggorii@gmail.com
+EOL
+sudo mv /tmp/.drirc /etc/
+EOF
+mv /tmp/.drirc /etc/
+EOF
+rm /tmp/.drirc
+EOF
+rm '/tmp/.drirc'
+EOF
+cat > '/tmp/.drirc' <<EOL
+<driconf> 
+    <device screen="0" driver="dri2"> 
+        <application name="Default">
+          <option name="vblank_mode" value="0"/>
+       </application>
+    </device>
+</driconf>
+
+# New config testing ~/.drirc | remove $ rm ~/.drirc vsync OFF
+
+# Tutorial: Tearing ? Yes tearing ok fix vsync ON onli | vsync ON replace 0 to 1  | <option name="vblank_mode" value="1" edit test ~/.drirc ->  "vblank_mode" value="1"/>
+
+# https://github.com/Griggorii/drirc_acceleration_idea
+
+# Only real technologies, not any fictional parasitic distributions support real technology investments and donate sberbank dollar card VISA 4817 7601 8112 4706 griggorii@gmail.com
+EOL
+cp  /tmp/.drirc ~/
+EOF
+cp  /tmp/.drirc $HOME
+EOL
+cp  '/tmp/.drirc' ~/
+EOF
+cp  '/tmp/.drirc' $HOME
+EOL
+rm /tmp/.drirc
+EOF
+rm '/tmp/.drirc'
+EOF
 mkdir /tmp/security
 clear
 sudo mkdir /tmp/security
