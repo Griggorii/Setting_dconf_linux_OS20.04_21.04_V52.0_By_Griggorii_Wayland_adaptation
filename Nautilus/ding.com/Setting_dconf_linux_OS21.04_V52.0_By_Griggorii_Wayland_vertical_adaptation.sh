@@ -10822,14 +10822,14 @@ cat > '/tmp/.drirc' <<EOL
 <driconf> 
     <device screen="0" driver="dri2"> 
         <application name="Default">
-          <option name="vblank_mode" value="0"/>
+          <option name="vblank_mode" value="1"/>
        </application>
     </device>
 </driconf>
 
-# New config testing ~/.drirc | remove $ rm ~/.drirc vsync OFF
+# New config testing ~/.drirc | remove $ rm ~/.drirc vsync ON
 
-# Tutorial: Tearing ? Yes tearing ok fix vsync ON onli | vsync ON replace 0 to 1  | <option name="vblank_mode" value="1" edit test ~/.drirc ->  "vblank_mode" value="1"/>
+# Tutorial: Tearing onli ON ? | vsync OFF replace 1 to 0  | <option name="vblank_mode" value="0" edit test ~/.drirc ->  "vblank_mode" value="0"/> exit new session X11 test https://www.youtube.com/watch?v=9hIRq5HTh5s
 
 # https://github.com/Griggorii/drirc_acceleration_idea
 
