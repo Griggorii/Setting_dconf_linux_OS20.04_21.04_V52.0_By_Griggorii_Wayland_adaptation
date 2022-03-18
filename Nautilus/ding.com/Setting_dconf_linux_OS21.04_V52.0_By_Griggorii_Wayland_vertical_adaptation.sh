@@ -12250,25 +12250,223 @@ grep -H -r -n "Exec" /etc/xdg/autostart/tracker-miner-fs.desktop && sudo echo -e
 
 # grep -H -r -n "Exec" /etc/xdg/autostart/tracker-miner-fs.desktop && sudo echo -e "\nHidden=true\n"|sudo tee --append /etc/xdg/autostart/tracker-miner-fs.desktop && sudo sed -i 's/Hidden=true//g' /etc/xdg/autostart/tracker-miner-fs.desktop && sudo echo -e "\nHidden=true\n"|sudo tee --append /etc/xdg/autostart/tracker-miner-fs.desktop
 EOF
+# Griggorii example /proc fix patch security tutorial 2022 add /etc/sysctl.d echo bash sh
+EOF
+sudo rm /etc/sysctl.d/kernel_unprivileged_bpf_disabled.conf
+EOF
+rm /etc/sysctl.d/kernel_unprivileged_bpf_disabled.conf
+EOF
+echo 1 > /proc/sys/kernel/unprivileged_bpf_disabled
+EOF
+sudo bash -c "echo 1 > /proc/sys/kernel/unprivileged_bpf_disabled"
+EOF
+sh -c "echo 1 > /proc/sys/kernel/unprivileged_bpf_disabled"
+EOF
+sudo sh -c "echo 1 > /proc/sys/kernel/unprivileged_bpf_disabled"
+EOF
+rm /etc/sysctl.d/kernel_unprivileged_bpf_disabled.conf
+EOF
+sudo rm /etc/sysctl.d/kernel_unprivileged_bpf_disabled.conf
+EOF
+sysctl kernel.unprivileged_bpf_disabled=1
+EOF
+sudo sysctl kernel.unprivileged_bpf_disabled=1
+EOF
+# bash -c "echo kernel.unprivileged_bpf_disabled=1 >> /etc/sysctl.d/kernel_unprivileged_bpf_disabled.conf"
+EOF
+# sudo bash -c "echo kernel.unprivileged_bpf_disabled=1 >> /etc/sysctl.d/kernel_unprivileged_bpf_disabled.conf"
+EOF
+# sh -c "echo kernel.unprivileged_bpf_disabled=1 >> /etc/sysctl.d/kernel_unprivileged_bpf_disabled.conf"
+EOF
+sudo sh -c "echo kernel.unprivileged_bpf_disabled=1 >> /etc/sysctl.d/kernel_unprivileged_bpf_disabled.conf"
+EOF
+sudo rm /etc/sysctl.d/vm_unprivileged_userfaultfd.conf
+EOF
+rm /etc/sysctl.d/vm_unprivileged_userfaultfd.conf
+EOF
+echo 0 > /proc/sys/vm/unprivileged_userfaultfd
+EOF
+sudo bash -c "echo 0 > /proc/sys/vm/unprivileged_userfaultfd"
+EOF
+sh -c "echo 0 > /proc/sys/vm/unprivileged_userfaultfd"
+EOF
+sudo sh -c "echo 0 > /proc/sys/vm/unprivileged_userfaultfd"
+EOF
+sysctl vm.unprivileged_userfaultfd=0
+EOF
+sudo sysctl vm.unprivileged_userfaultfd=0
+EOF
+# bash -c "echo vm.unprivileged_userfaultfd=0 >> /etc/sysctl.d/vm_unprivileged_userfaultfd.conf"
+EOF
+# sudo bash -c "echo vm.unprivileged_userfaultfd=0 >> /etc/sysctl.d/vm_unprivileged_userfaultfd.conf"
+EOF
+# sh -c "echo vm.unprivileged_userfaultfd=0 >> /etc/sysctl.d/vm_unprivileged_userfaultfd.conf"
+EOF
+sudo sh -c "echo vm.unprivileged_userfaultfd=0 >> /etc/sysctl.d/vm_unprivileged_userfaultfd.conf"
+EOF
+sudo rm /etc/sysctl.d/net_ipv4_ip_unprivileged_port_start.conf
+EOF
+rm /etc/sysctl.d/net_ipv4_ip_unprivileged_port_start.conf
+EOF
+echo 0 > /proc/sys/net/ipv4/ip_unprivileged_port_start
+EOF
+sudo bash -c "echo 0 > /proc/sys/net/ipv4/ip_unprivileged_port_start"
+EOF
+sh -c "echo 0 > /proc/sys/net/ipv4/ip_unprivileged_port_start"
+EOF
+sudo sh -c "echo 0 > /proc/sys/net/ipv4/ip_unprivileged_port_start"
+EOF
+sysctl net.ipv4.ip_unprivileged_port_start=0
+EOF
+sudo sysctl net.ipv4.ip_unprivileged_port_start=0
+EOF
+# bash -c "echo net.ipv4.ip_unprivileged_port_start=0 >> /etc/sysctl.d/net_ipv4_ip_unprivileged_port_start.conf"
+EOF
+# sudo bash -c "echo net.ipv4.ip_unprivileged_port_start=0 >> /etc/sysctl.d/net_ipv4_ip_unprivileged_port_start.conf"
+EOF
+# sh -c "echo net.ipv4.ip_unprivileged_port_start=0 >> /etc/sysctl.d/net_ipv4_ip_unprivileged_port_start.conf"
+EOF
+sudo sh -c "echo net.ipv4.ip_unprivileged_port_start=0 >> /etc/sysctl.d/net_ipv4_ip_unprivileged_port_start.conf"
+EOF
+# не трогать max_user_namespaces это питание в контрольном центре griggorii /etc/sysctl.d
+EOF
+sudo rm /etc/sysctl.d/user_max_user_namespaces.conf
+EOF
+rm /etc/sysctl.d/user_max_user_namespaces.conf
+EOF
+echo 0 > /proc/sys/user/max_user_namespaces
+EOF
+sudo bash -c "echo 0 > /proc/sys/user/max_user_namespaces"
+EOF
+sh -c "echo 0 > /proc/sys/user/max_user_namespaces"
+EOF
+sudo sh -c "echo 0 > /proc/sys/user/max_user_namespaces"
+EOF
+sysctl user.max_user_namespaces=0
+EOF
+sudo sysctl user.max_user_namespaces=0
+EOF
+# bash -c "echo user.max_user_namespaces=0 >> /etc/sysctl.d/user_max_user_namespaces.conf"
+EOF
+# sudo bash -c "echo user.max_user_namespaces=0 >> /etc/sysctl.d/user_max_user_namespaces.conf"
+EOF
+# sh -c "echo user.max_user_namespaces=0 >> /etc/sysctl.d/user_max_user_namespaces.conf"
+EOF
+sudo sh -c "echo user.max_user_namespaces=0 >> /etc/sysctl.d/user_max_user_namespaces.conf"
+EOF
+sudo rm /etc/sysctl.d/user_max_user_namespaces.conf
+EOF
+rm /etc/sysctl.d/user_max_user_namespaces.conf
+EOF
+# не трогать unprivileged_userns_clone это chromium-sandbox zygote_linux.cc(646) just example
+EOF
+sudo rm /etc/sysctl.d/kernel_unprivileged_userns_clone.conf
+EOF
+rm /etc/sysctl.d/kernel_unprivileged_userns_clone.conf
+EOF
+echo 0 > /proc/sys/kernel/unprivileged_userns_clone
+EOF
+sudo bash -c "echo 0 > /proc/sys/kernel/unprivileged_userns_clone"
+EOF
+sh -c "echo 0 > /proc/sys/kernel/unprivileged_userns_clone"
+EOF
+sudo sh -c "echo 0 > /proc/sys/kernel/unprivileged_userns_clone"
+EOF
+sysctl kernel.unprivileged_userns_clone=0
+EOF
+sudo sysctl kernel.unprivileged_userns_clone=0
+EOF
+# bash -c "echo kernel.unprivileged_userns_clone=0 >> /etc/sysctl.d/kernel_unprivileged_userns_clone.conf"
+EOF
+# sudo bash -c "echo kernel.unprivileged_userns_clone=0 >> /etc/sysctl.d/kernel_unprivileged_userns_clone.conf"
+EOF
+# sh -c "echo kernel.unprivileged_userns_clone=0 >> /etc/sysctl.d/kernel_unprivileged_userns_clone.conf"
+EOF
+sudo sh -c "echo kernel.unprivileged_userns_clone=0 >> /etc/sysctl.d/kernel_unprivileged_userns_clone.conf"
+EOF
+rm /etc/sysctl.d/kernel_unprivileged_userns_clone.conf
+EOF
+sudo rm /etc/sysctl.d/kernel_unprivileged_userns_clone.conf
+EOF
+# raid скорость накопителей
+EOF
+bash -c "/usr/bin/echo  200000 > /proc/sys/dev/raid/speed_limit_min"
+EOF
+sudo bash -c "/usr/bin/echo  200000 > /proc/sys/dev/raid/speed_limit_min"
+EOF
+sh -c "/usr/bin/echo  200000 > /proc/sys/dev/raid/speed_limit_min"
+EOF
 sudo sh -c "/usr/bin/echo  200000 > /proc/sys/dev/raid/speed_limit_min"
+EOF
+echo 200000 > /proc/sys/dev/raid/speed_limit_min
+EOF
+sudo bash -c "echo 200000 > /proc/sys/dev/raid/speed_limit_min"
+EOF
+sh -c "echo 200000 > /proc/sys/dev/raid/speed_limit_min"
+EOF
+sudo sh -c "echo 200000 > /proc/sys/dev/raid/speed_limit_min"
+EOF
+bash -c "/usr/bin/echo 2000000 > /proc/sys/dev/raid/speed_limit_max"
+EOF
+sudo bash -c "/usr/bin/echo 2000000 > /proc/sys/dev/raid/speed_limit_max"
+EOF
+sh -c "/usr/bin/echo 2000000 > /proc/sys/dev/raid/speed_limit_max"
 EOF
 sudo sh -c "/usr/bin/echo 2000000 > /proc/sys/dev/raid/speed_limit_max"
 EOF
+echo 2000000 > /proc/sys/dev/raid/speed_limit_max
+EOF
+sudo bash -c "echo 2000000 > /proc/sys/dev/raid/speed_limit_max"
+EOF
+sh -c "echo 2000000 > /proc/sys/dev/raid/speed_limit_max"
+EOF
+sudo sh -c "echo 2000000 > /proc/sys/dev/raid/speed_limit_max"
+EOF
+rm /etc/sysctl.d/99-i915psp.conf
+EOF
 sudo rm /etc/sysctl.d/99-i915psp.conf
 EOF
-sudo bash -c "echo dev.i915.perf_stream_paranoid=0 >> /etc/sysctl.d/99-i915psp.conf"
+# bash -c "echo dev.i915.perf_stream_paranoid=0 >> /etc/sysctl.d/99-i915psp.conf"
+EOF
+# sudo bash -c "echo dev.i915.perf_stream_paranoid=0 >> /etc/sysctl.d/99-i915psp.conf"
+EOF
+# sh -c "echo dev.i915.perf_stream_paranoid=0 >> /etc/sysctl.d/99-i915psp.conf"
+EOF
+sudo sh -c "echo dev.i915.perf_stream_paranoid=0 >> /etc/sysctl.d/99-i915psp.conf"
+EOF
+echo 0 > /proc/sys/dev/i915/perf_stream_paranoid
+EOF
+sudo bash -c "echo 0 > /proc/sys/dev/i915/perf_stream_paranoid"
+EOF
+sh -c "echo 0 > /proc/sys/dev/i915/perf_stream_paranoid"
+EOF
+sudo sh -c "echo 0 > /proc/sys/dev/i915/perf_stream_paranoid"
+EOF
+rm /etc/sysctl.d/raid_speed_limit_min.conf
 EOF
 sudo rm /etc/sysctl.d/raid_speed_limit_min.conf
 EOF
+# bash -c "echo dev.raid.speed_limit_min=200000 >> /etc/sysctl.d/raid_speed_limit_min.conf"
+EOF
 sudo bash -c "echo dev.raid.speed_limit_min=200000 >> /etc/sysctl.d/raid_speed_limit_min.conf"
+EOF
+rm /etc/sysctl.d/raid_speed_limit_max.conf
 EOF
 sudo rm /etc/sysctl.d/raid_speed_limit_max.conf
 EOF
+sudo rm /etc/sysctl.d/raid_speed_limit_max.conf
+EOF
+# bash -c "echo dev.raid.speed_limit_max=2000000 >> /etc/sysctl.d/raid_speed_limit_max.conf"
+EOF
 sudo bash -c "echo dev.raid.speed_limit_max=2000000 >> /etc/sysctl.d/raid_speed_limit_max.conf"
+EOF
+rm /etc/sysctl.d/60-dirty.conf
 EOF
 sudo rm /etc/sysctl.d/60-dirty.conf
 EOF
 sudo bash -c "echo >> /etc/sysctl.d/60-dirty.conf" && sudo echo -e "\nvm.dirty_bytes = 67108864\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_background_bytes = 16777216\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_expire_centisecs = 500\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_background_ratio = 10\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_expire_centisecs = 1500\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_ratio = 20\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_writeback_centisecs = 1500\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.drop_caches = 0\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_writeback_centisecs = 1500\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.lowmem_reserve_ratio = 256	256	32	0	0\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.max_map_count = 65530\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.max_map_count = 65530\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf
+EOF
+rm /etc/sysctl.d/gt_mhz.conf
 EOF
 sudo rm /etc/sysctl.d/gt_mhz.conf
 EOF
@@ -12276,21 +12474,21 @@ sudo bash -c "echo >> /etc/sysctl.d/gt_mhz.conf" && sudo echo -e "\ndev.char.226
 EOF
 cd /tmp/
 EOF
-sudo rm '/etc/sysctl.d/99-sysctl.conf'
-EOF
-sudo rm /etc/sysctl.d/99-sysctl.conf
-EOF
-sudo rm '/etc/sysctl.conf'
-EOF
-sudo rm /etc/sysctl.conf
-EOF
 rm '/etc/sysctl.d/99-sysctl.conf'
+EOF
+sudo rm '/etc/sysctl.d/99-sysctl.conf'
 EOF
 rm /etc/sysctl.d/99-sysctl.conf
 EOF
+sudo rm /etc/sysctl.d/99-sysctl.conf
+EOF
 rm '/etc/sysctl.conf'
 EOF
+sudo rm '/etc/sysctl.conf'
+EOF
 rm /etc/sysctl.conf
+EOF
+sudo rm /etc/sysctl.conf
 EOF
 cat << EOF > sysctl.conf
 #
