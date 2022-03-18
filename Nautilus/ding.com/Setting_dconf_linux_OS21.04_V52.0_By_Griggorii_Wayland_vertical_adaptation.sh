@@ -12359,6 +12359,7 @@ EOF
 rm /etc/sysctl.d/user_max_user_namespaces.conf
 EOF
 # не трогать unprivileged_userns_clone это chromium-sandbox zygote_linux.cc(646) just example
+# фдро от вендора griggorii не сломанный sandbox без ошибки zygote качать тут https://github.com/Griggorii/linux-image-unsigned-5.6.0-1020-oem-kernel-mod-rpm-deb много всезнаек забралось в разработку и начали ломать все и им верят и донатят за это
 EOF
 sudo rm /etc/sysctl.d/kernel_unprivileged_userns_clone.conf
 EOF
