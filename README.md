@@ -7,7 +7,7 @@ dconf 30.06.2021 new resetting tweak audio power_save_controller on perfomance |
 
 Fix script kill budgie-panel session to next sudo passwd
 
-Download thems + icons https://github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation/releases/tag/Themes
+Download new thems + icons https://github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation/releases/tag/Themes
 
 $ sudo dpkg -i *.deb
 
