@@ -7,8 +7,9 @@ dconf 30.06.2021 new resetting tweak audio power_save_controller on perfomance |
 
 Fix script kill budgie-panel session to next sudo passwd
 
-Download thems + icons https://github.com/Griggorii/ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso/archive/refs/heads/main.zip unpack ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso-main.zip run folder unpack all deb terminal command $ sudo dpkg -i *.deb
+Download thems + icons https://github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation/releases/tag/Themes
 
+$ sudo dpkg -i *.deb
 
 Ubuntu 20.04 new gnome-shell install deb https://github.com/Griggorii/gnome-control-center-3.36.8-ubuntu-20.04-update-new/releases/tag/ubuntu-20.04
 
