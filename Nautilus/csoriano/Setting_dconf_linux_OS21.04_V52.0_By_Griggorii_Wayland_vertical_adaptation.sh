@@ -13267,19 +13267,19 @@ sudo apt purge ruby* -y && sudo apt autoremove -y
 EOF
 sudo apt purge rygel* -y && sudo apt autoremove -y
 EOF
-sudo apt install gnome-shell-extension-prefs -y
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install gnome-shell-extension-prefs -y
 EOF
-sudo apt install gnome-shell-extension-autohidetopbar -y
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install gnome-shell-extension-autohidetopbar -y
 EOF
-sudo apt install gnome-shell-extensions -y
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install gnome-shell-extensions -y
 EOF
-sudo apt install gnome-tweaks -y
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install gnome-tweaks -y
+EOF
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install yaru-theme-icon yaru-theme-gtk yaru-theme-sound libreoffice-style-yaru -y
+EOF
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install chrome-gnome-shell -y
 EOF
 sudo apt install firewalld firewall-applet iptables -y
-EOF
-sudo apt install yaru-theme-icon yaru-theme-gtk yaru-theme-sound libreoffice-style-yaru -y
-EOF
-sudo apt install chrome-gnome-shell -y
 EOF
 sudo apt install libnotify-bin -y
 EOF
