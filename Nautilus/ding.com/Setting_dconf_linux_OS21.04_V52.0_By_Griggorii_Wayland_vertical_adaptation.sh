@@ -13271,6 +13271,8 @@ sudo apt install yaru-theme-icon yaru-theme-gtk yaru-theme-sound libreoffice-sty
 EOF
 sudo apt install chrome-gnome-shell -y
 EOF
+sudo apt install libnotify-bin -y
+EOF
 sudo systemctl restart firewalld
 EOF
 # lightdm --test-mode | (sleep 5; killall lightdm bash )
