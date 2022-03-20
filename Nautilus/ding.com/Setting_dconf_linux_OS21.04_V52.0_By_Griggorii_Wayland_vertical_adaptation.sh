@@ -105,6 +105,19 @@ echo '    PS1="$PURPLE\u$nc@$CYAN\H$nc:$GREEN\w$nc\n$red\$$nc"' >> ~/.bashrc
 
 echo "fi" >> ~/.bashrc
 EOF
+# OLD
+# echo '    PS1="$red\u$nc@$red\H$nc:$CYAN\w$nc\n$red#$nc"' >> ~/.bashrc
+
+# echo '    PS1="$PURPLE\u$CYAN📎$COLOR_LIGHTBLUE\H$COLOR_DARKGRAY:$COLOR_GREEN\w$COLOR_GREEN\n$red\$$COLOR_LIGHTCYAN"' >> ~/.bashrc
+EOF
+# Example varian two --gamma 1e-10:1e-10:1e-10
+sh -c "'/bin/xrandr' --output XWAYLAND0 --gamma 1.0:1.0:1.0 --reflect normal --rotate normal"
+
+sh -c "'/usr/bin/xrandr' --output XWAYLAND0 --gamma 1.0:1.0:1.0 --reflect normal --rotate normal"
+
+sh -c "/bin/xrandr --output XWAYLAND0 --gamma 1.0:1.0:1.0 --reflect normal --rotate normal"
+
+sh -c "/usr/bin/xrandr --output XWAYLAND0 --gamma 1.0:1.0:1.0 --reflect normal --rotate normal"
 EOF
 echo -e "\n                 40m     41m     42m     43m\
      44m     45m     46m     47m";
@@ -270,13 +283,13 @@ rm -rf  ~/.config/systemd/user/org.gnome.evolution.dataserver.UserPrompter.servi
 EOF
 rm -rf  $HOME/.config/systemd/user/org.gnome.evolution.dataserver.UserPrompter.service $HOME/.config/systemd/user/org.gnome.evolution.dataserver.Sources.service $HOME/.config/systemd/user/org.gnome.evolution.dataserver.Calendar.service $HOME/.config/systemd/user/org.gnome.evolution.dataserver.AddressBook.service $HOME/.config/systemd/user/org.freedesktop.Tracker1.Writeback.service $HOME/.config/systemd/user/org.freedesktop.Tracker1.service $HOME/.config/systemd/user/org.freedesktop.Tracker1.Miner.Files.service $HOME/.config/systemd/user/org.freedesktop.Tracker1.Miner.Extract.service $HOME/.config/systemd/user/evolution-source-registry.service $HOME/.config/systemd/user/evolution-calendar-factory.service $HOME/.config/systemd/user/evolution-addressbook-factory.service
 EOF
-lsof /home/griggorii && systemctl --user mask evolution-addressbook-factory.service evolution-calendar-factory.service evolution-source-registry.service
+lsof /home/griggorii & systemctl --user mask evolution-addressbook-factory.service evolution-calendar-factory.service evolution-source-registry.service
 
-lsof /home/griggorii && systemctl --user mask org.gnome.evolution.dataserver.AddressBook.service org.gnome.evolution.dataserver.Calendar.service org.gnome.evolution.dataserver.Sources.service org.gnome.evolution.dataserver.UserPrompter.service
+lsof /home/griggorii & systemctl --user mask org.gnome.evolution.dataserver.AddressBook.service org.gnome.evolution.dataserver.Calendar.service org.gnome.evolution.dataserver.Sources.service org.gnome.evolution.dataserver.UserPrompter.service
 
-lsof /home/griggorii && systemctl --user mask org.freedesktop.Tracker1.Miner.Extract.service org.freedesktop.Tracker1.Miner.Files.service org.freedesktop.Tracker1.service org.freedesktop.Tracker1.Writeback.service
+lsof /home/griggorii & systemctl --user mask org.freedesktop.Tracker1.Miner.Extract.service org.freedesktop.Tracker1.Miner.Files.service org.freedesktop.Tracker1.service org.freedesktop.Tracker1.Writeback.service
 
-lsof /home/griggorii && systemctl mask --user --now tracker-miner-fs-3.service
+lsof /home/griggorii & systemctl mask --user --now tracker-miner-fs-3.service
 EOF
 # dconf reset -f /
 EOF
@@ -10712,13 +10725,7 @@ alias goboost='(set -x; powerprofilesctl set interactive; sudo cpupower frequenc
 alias boostrun='powerprofilesctl launch -p interactive'
 
 EOF
-lsof /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders && '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders' > '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache'
-EOF
-lsof /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders && /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders > /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache
-EOF
-sudo lsof /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders && sudo '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders' > '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache'
-EOF
-sudo lsof /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders && sudo /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders > /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache
+lsof '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders' & '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders' > '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache'
 EOF
 cat > '/tmp/.drirc' <<EOL
 <driconf>
@@ -12204,11 +12211,11 @@ rm -rf  ~/.config/systemd/user/org.gnome.evolution.dataserver.UserPrompter.servi
 EOF
 rm -rf  $HOME/.config/systemd/user/org.gnome.evolution.dataserver.UserPrompter.service $HOME/.config/systemd/user/org.gnome.evolution.dataserver.Sources.service $HOME/.config/systemd/user/org.gnome.evolution.dataserver.Calendar.service $HOME/.config/systemd/user/org.gnome.evolution.dataserver.AddressBook.service $HOME/.config/systemd/user/org.freedesktop.Tracker1.Writeback.service $HOME/.config/systemd/user/org.freedesktop.Tracker1.service $HOME/.config/systemd/user/org.freedesktop.Tracker1.Miner.Files.service $HOME/.config/systemd/user/org.freedesktop.Tracker1.Miner.Extract.service $HOME/.config/systemd/user/evolution-source-registry.service $HOME/.config/systemd/user/evolution-calendar-factory.service $HOME/.config/systemd/user/evolution-addressbook-factory.service
 EOF
-lsof /home/griggorii && systemctl --user mask evolution-addressbook-factory.service evolution-calendar-factory.service evolution-source-registry.service
+lsof /home/griggorii & systemctl --user mask evolution-addressbook-factory.service evolution-calendar-factory.service evolution-source-registry.service
 
-lsof /home/griggorii && systemctl --user mask org.gnome.evolution.dataserver.AddressBook.service org.gnome.evolution.dataserver.Calendar.service org.gnome.evolution.dataserver.Sources.service org.gnome.evolution.dataserver.UserPrompter.service
+lsof /home/griggorii & systemctl --user mask org.gnome.evolution.dataserver.AddressBook.service org.gnome.evolution.dataserver.Calendar.service org.gnome.evolution.dataserver.Sources.service org.gnome.evolution.dataserver.UserPrompter.service
 
-lsof /home/griggorii && systemctl --user mask org.freedesktop.Tracker1.Miner.Extract.service org.freedesktop.Tracker1.Miner.Files.service org.freedesktop.Tracker1.service org.freedesktop.Tracker1.Writeback.service
+lsof /home/griggorii & systemctl --user mask org.freedesktop.Tracker1.Miner.Extract.service org.freedesktop.Tracker1.Miner.Files.service org.freedesktop.Tracker1.service org.freedesktop.Tracker1.Writeback.service
 EOF
 sudo cp /tmp/tracker-miner-apps.desktop /etc/xdg/autostart/
 
@@ -13219,9 +13226,9 @@ grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/
 EOF
 grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libpulse.so.0 /usr/lib/x86_64-linux-gnu/libpulse.so
 EOF
-grep -H -r -n  "20.04" /etc/lsb-release && sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Xorg_1.28-Mesa_21.0.3_Ubuntu_20.04/releases/tag/libmesa_dri"
+grep -H -r -n  "20.04" /etc/lsb-release && lsof /usr/bin/x-www-browser & sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Xorg_1.28-Mesa_21.2.6_Ubuntu_20.04/releases/tag/libmesa_dri"
 EOF
-grep -H -r -n  "20.04" /etc/lsb-release && notify-send "UI_Perfomance_Ubuntu_20.04_development.sh <- Only real technologies, not any fictional parasitic distributions support real technology investments and donate VISA 4817 7601 8112 4706"
+grep -H -r -n  "20.04" /etc/lsb-release && lsof /usr/bin/notify-send & sh -c "/usr/bin/notify-send "UI_Perfomance_Ubuntu_20.04_development.sh Only real technologies, not any fictional parasitic distributions support real technology investments and donate VISA 4817 7601 8112 4706""
 EOF
 mkdir $HOME/.config/gconf
 EOF
