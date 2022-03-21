@@ -4910,7 +4910,7 @@ rotation-lock=false
 end-system-uids=500
 no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1645109847
+release-check-time=uint32 1647854656
 show-apport-crashes=false
 show-livepatch-status-icon=true
 
@@ -6066,7 +6066,7 @@ locations=[<(uint32 2, <('Irkutsk', 'UIII', true, [(0.91222542819346697, 1.82066
 
 [org/gnome/baobab/ui]
 active-chart='rings'
-window-size=(850, 481)
+window-size=(968, 594)
 window-state=87168
 
 [org/gnome/boxes]
@@ -6301,7 +6301,7 @@ right-visible=false
 accuracy=9
 angle-units='degrees'
 base=10
-button-mode='basic'
+button-mode='advanced'
 number-format='automatic'
 precision=2000
 refresh-interval=604800
@@ -6311,7 +6311,7 @@ source-currency=''
 source-units='degree'
 target-currency=''
 target-units='radian'
-window-position=(34, 28)
+window-position=(26, 23)
 word-size=64
 
 [org/gnome/calendar]
@@ -6358,7 +6358,7 @@ show-development-warning=true
 
 [org/gnome/deja-dup]
 backend='google'
-prompt-check='2021-05-25T03:13:05.777862Z'
+prompt-check='2022-03-21T09:27:16.157087Z'
 
 [org/gnome/deja-dup/file]
 migrated=true
@@ -6520,7 +6520,7 @@ require-password='never'
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
-mru-sources=[('xkb', 'ru'), ('xkb', 'us')]
+mru-sources=[('xkb', 'us'), ('xkb', 'ru')]
 per-window=true
 show-all-sources=false
 sources=[('xkb', 'us'), ('xkb', 'ru')]
@@ -6556,7 +6556,7 @@ gtk-key-theme='Default'
 gtk-theme='Yaru-dark'
 gtk-timeout-initial=200
 gtk-timeout-repeat=20
-icon-theme='Yaru'
+icon-theme='oomox-griggorii'
 locate-pointer=true
 menubar-accel='F10'
 menubar-detachable=false
@@ -6596,7 +6596,7 @@ autorun-x-content-open-folder=['x-content/bootable-media']
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/bootable-media']
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-control-center', 'gsettings set org-gnome-tweaks', 'gsettings set org-gnome-gedit', 'firefox', 'com-gexperts-tilix', 'mousepad', 'gsettings set org-gnome-nautilus', 'gsettings set org-gnome-terminal', 'gsettings set org-gnome-fileroller', 'gsettings set org-gnome-baobab', 'budgie-desktop-settings', 'nemo', 'brave-browser', 'jb-mission-control-jdk8', 'brave-browser-beta', 'thunar', 'gdebi', 'thunderbird', 'telegramdesktop', 'gsettings set org-midori-browser-midori', 'vlc', 'xfce4-notifyd-config', 'nm-applet', 'com-obsproject-studio', 'yelp', 'gnome-power-panel', 'gnome-network-panel', 'displaycal', 'displaycal-scripting-client', 'stacer', 'chromium-browser', 'gnome-system-monitor', 'gsettings set org-gnome-boxes', 'displaycal-vrml-to-x3d-converter', 'green-recorder', 'gsettings set org-gnome-eog', 'io-github-celluloid-player-celluloid', 'update-manager', 'gsettings set org-gnome-totem', 'gsettings set org-freedesktop-problems-applet', 'gsettings set org-gnome-software', 'gsettings set org-gnome-extensions', 'sqlitebrowser', 'hardinfo', 'gsettings set org-gnome-epiphany', 'libreoffice-startcenter', 'nm-connection-editor', 'ca-desrt-dconf-editor']
+application-children=['gnome-control-center', 'gsettings set org-gnome-tweaks', 'gsettings set org-gnome-gedit', 'firefox', 'com-gexperts-tilix', 'mousepad', 'gsettings set org-gnome-nautilus', 'gsettings set org-gnome-terminal', 'gsettings set org-gnome-fileroller', 'gsettings set org-gnome-baobab', 'budgie-desktop-settings', 'nemo', 'brave-browser', 'jb-mission-control-jdk8', 'brave-browser-beta', 'thunar', 'gdebi', 'thunderbird', 'telegramdesktop', 'gsettings set org-midori-browser-midori', 'vlc', 'xfce4-notifyd-config', 'nm-applet', 'com-obsproject-studio', 'yelp', 'gnome-power-panel', 'gnome-network-panel', 'displaycal', 'displaycal-scripting-client', 'stacer', 'chromium-browser', 'gnome-system-monitor', 'gsettings set org-gnome-boxes', 'displaycal-vrml-to-x3d-converter', 'green-recorder', 'gsettings set org-gnome-eog', 'io-github-celluloid-player-celluloid', 'update-manager', 'gsettings set org-gnome-totem', 'gsettings set org-freedesktop-problems-applet', 'gsettings set org-gnome-software', 'gsettings set org-gnome-extensions', 'sqlitebrowser', 'hardinfo', 'gsettings set org-gnome-epiphany', 'libreoffice-startcenter', 'nm-connection-editor', 'ca-desrt-dconf-editor', 'org-gnome-fileroller', 'org-gnome-gedit', 'org-gnome-nautilus', 'org-gnome-baobab', 'org-gnome-dejadup']
 show-banners=true
 show-in-lock-screen=true
 
@@ -7240,7 +7240,7 @@ show-size=true
 show-time=true
 show-type=true
 sort-method='name'
-sort-type='ascending'
+sort-type='descending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=200
@@ -7249,7 +7249,7 @@ window-height=466
 window-width=815
 
 [org/gnome/gedit/plugins]
-active-plugins=['multiedit', 'wordcompletion', 'smartspaces', 'joinlines', 'codecomment', 'findinfiles', 'bracketcompletion', 'bookmarks', 'externaltools', 'terminal', 'colorpicker', 'charmap', 'sort', 'docinfo', 'colorschemer', 'snippets', 'quickhighlight', 'quickopen', 'translate', 'modelines', 'time', 'textsize', 'pythonconsole', 'commander', 'filebrowser', 'synctex', 'git', 'spell']
+active-plugins=['time', 'spell', 'sort', 'snippets', 'quickopen', 'quickhighlight', 'pythonconsole', 'modelines', 'filebrowser', 'externaltools', 'docinfo']
 
 [org/gnome/gedit/plugins/drawspaces]
 show-white-space=true
@@ -7361,7 +7361,7 @@ search-for-entry=['/usr/share/chromeos-assets/wallpaper']
 
 [org/gnome/gedit/state/window]
 bottom-panel-active-page='GeditPythonConsolePanel'
-bottom-panel-size=47
+bottom-panel-size=46
 side-panel-active-page='GeditFileBrowserPanel'
 side-panel-size=289
 size=(996, 658)
@@ -7511,7 +7511,7 @@ smooth-refresh=true
 solaris-mode=true
 swap-color='rgb(0,255,31)'
 update-interval=5000
-window-state=(844, 520, 34, 28)
+window-state=(844, 520, 26, 23)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -8132,7 +8132,7 @@ use-experimental-views=false
 geometry='907x521+138+113'
 initial-size=(890, 550)
 maximized=false
-sidebar-width=197
+sidebar-width=198
 start-with-location-bar=true
 start-with-sidebar=true
 
@@ -8293,8 +8293,6 @@ click-volume=0
 numlock-state='off'
 
 [org/gnome/settings-daemon/peripherals/mouse]
-double-click=400
-drag-threshold=8
 locate-pointer=true
 
 [org/gnome/settings-daemon/peripherals/smartcard]
@@ -8627,11 +8625,8 @@ priority=0
 
 [org/gnome/settings-daemon/plugins/xsettings]
 active=true
-antialiasing='grayscale'
-hinting='slight'
 overrides={'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'menu:minimize,maximize,close'>}
 priority=0
-rgba-order='rgb'
 
 [org/gnome/shell]
 always-show-log-out=false
@@ -8641,11 +8636,11 @@ command-history=['nautilus', 'r', 'tilix', 'lg']
 development-tools=true
 disable-extension-version-validation=true
 disable-user-extensions=false
-disabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'pop-shell@system76.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'unite@hardpixel.eu', 'dash-to-panel@jderose9.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'desktop-icons@csoriano']
+disabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'pop-shell@system76.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'desktop-icons@csoriano', 'unite@hardpixel.eu']
 enable-hot-corners=true
 enabled-extensions=['mediaplayer@patapon.info', 'GPaste@gnome-shell-extensions.gnome.org', 'gnomenu@panacier.gmail.com', 'popthemetoggle@kylecorry31.github.io', 'auto-ovpn@yahoo.com', 'printers@linux-man.org', 'openweather-extension@jenslody.de', 'sound-output-device-chooser@kgshank.net', 'bettervolume@tudmotu.com', 'dash-to-dock@micxgx.gmail.com', 'suspend-button@laserb', 'TilixDropdown@ivkuzev@gmail.com', 'system-monitor@paradoxxx.zero.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'impatience@gfxmonk.net', 'ubuntu-appindicators@ubuntu.com', 'CoverflowAltTab@palatis.blogspot.com', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'disconnect-wifi@kgshank.net', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'hidetopbar@mathieu.bidon.ca', 'ding@rastersoft.com']
 favorite-apps=['org.gnome.Screenshot.desktop', 'ubiquity.desktop', 'nemo.desktop', 'org.gnome.Nautilus.desktop', 'gnome-control-center.desktop', 'alacarte-made-48.desktop', 'Waydroid.desktop', 'com.gexperts.Tilix.desktop', 'gnome-system-monitor.desktop', 'com.obsproject.Studio.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.DiskUtility.desktop', 'nvidia-settings.desktop', 'ca.desrt.dconf-editor.desktop', 'chromium-browser.desktop', 'green-recorder.desktop', 'vlc.desktop']
-had-bluetooth-devices-setup=false
+had-bluetooth-devices-setup=true
 introspect=false
 remember-mount-password=false
 welcome-dialog-last-shown-version='40.0'
@@ -9622,7 +9617,7 @@ home-icon-visible=true
 horizontal-grid-adjust=1.0
 ignored-desktop-handlers=['conky', 'nemo', 'nemo-desktop', 'nautilus', 'nautilus-desktop']
 network-icon-visible=false
-show-desktop-icons=true
+show-desktop-icons=false
 show-orphaned-desktop-icons=false
 text-ellipsis-limit=2
 trash-icon-visible=true
@@ -12386,7 +12381,7 @@ EOF
 EOF
 sudo rm /etc/sysctl.d/kernel_unprivileged_userns_clone.conf
 EOF
-rm /etc/sysctl.d/kernel_unprivileged_userns_clone.conf
+# rm /etc/sysctl.d/kernel_unprivileged_userns_clone.conf
 EOF
 echo 0 > /proc/sys/kernel/unprivileged_userns_clone
 EOF
@@ -12408,7 +12403,7 @@ EOF
 EOF
 sudo sh -c "echo kernel.unprivileged_userns_clone=0 >> /etc/sysctl.d/kernel_unprivileged_userns_clone.conf"
 EOF
-rm /etc/sysctl.d/kernel_unprivileged_userns_clone.conf
+# rm /etc/sysctl.d/kernel_unprivileged_userns_clone.conf
 EOF
 sudo rm /etc/sysctl.d/kernel_unprivileged_userns_clone.conf
 EOF
@@ -12446,7 +12441,7 @@ sh -c "echo 2000000 > /proc/sys/dev/raid/speed_limit_max"
 EOF
 sudo sh -c "echo 2000000 > /proc/sys/dev/raid/speed_limit_max"
 EOF
-rm /etc/sysctl.d/99-i915psp.conf
+# rm /etc/sysctl.d/99-i915psp.conf
 EOF
 sudo rm /etc/sysctl.d/99-i915psp.conf
 EOF
@@ -12466,7 +12461,7 @@ sh -c "echo 0 > /proc/sys/dev/i915/perf_stream_paranoid"
 EOF
 sudo sh -c "echo 0 > /proc/sys/dev/i915/perf_stream_paranoid"
 EOF
-rm /etc/sysctl.d/raid_speed_limit_min.conf
+# rm /etc/sysctl.d/raid_speed_limit_min.conf
 EOF
 sudo rm /etc/sysctl.d/raid_speed_limit_min.conf
 EOF
@@ -12474,43 +12469,41 @@ EOF
 EOF
 sudo bash -c "echo dev.raid.speed_limit_min=200000 >> /etc/sysctl.d/raid_speed_limit_min.conf"
 EOF
-rm /etc/sysctl.d/raid_speed_limit_max.conf
-EOF
 sudo rm /etc/sysctl.d/raid_speed_limit_max.conf
 EOF
-sudo rm /etc/sysctl.d/raid_speed_limit_max.conf
+# rm /etc/sysctl.d/raid_speed_limit_max.conf
 EOF
 # bash -c "echo dev.raid.speed_limit_max=2000000 >> /etc/sysctl.d/raid_speed_limit_max.conf"
 EOF
 sudo bash -c "echo dev.raid.speed_limit_max=2000000 >> /etc/sysctl.d/raid_speed_limit_max.conf"
 EOF
-rm /etc/sysctl.d/60-dirty.conf
-EOF
 sudo rm /etc/sysctl.d/60-dirty.conf
+EOF
+# rm /etc/sysctl.d/60-dirty.conf
 EOF
 sudo bash -c "echo >> /etc/sysctl.d/60-dirty.conf" && sudo echo -e "\nvm.dirty_bytes = 67108864\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_background_bytes = 16777216\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_expire_centisecs = 500\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_background_ratio = 10\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_expire_centisecs = 1500\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_ratio = 20\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_writeback_centisecs = 1500\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.drop_caches = 0\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.dirty_writeback_centisecs = 1500\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.lowmem_reserve_ratio = 256	256	32	0	0\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.max_map_count = 65530\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf && sudo echo -e "\nvm.max_map_count = 65530\n"|sudo tee --append /etc/sysctl.d/60-dirty.conf
 EOF
-rm /etc/sysctl.d/gt_mhz.conf
-EOF
 sudo rm /etc/sysctl.d/gt_mhz.conf
+EOF
+# rm /etc/sysctl.d/gt_mhz.conf
 EOF
 sudo bash -c "echo >> /etc/sysctl.d/gt_mhz.conf" && sudo echo -e "\ndev.char.226:0.gt_RP1_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_RPn_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_act_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_cur_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_min_freq_mhz = 1100\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_RP0_freq_mhz = 2200\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_boost_freq_mhz = 2200\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_max_freq_mhz = 2200\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf && sudo echo -e "\ndev.char.226:0.gt_RP1_freq_mhz = 2200\n"|sudo tee --append /etc/sysctl.d/gt_mhz.conf
 EOF
 cd /tmp/
 EOF
-rm '/etc/sysctl.d/99-sysctl.conf'
+# rm '/etc/sysctl.d/99-sysctl.conf'
 EOF
 sudo rm '/etc/sysctl.d/99-sysctl.conf'
 EOF
-rm /etc/sysctl.d/99-sysctl.conf
+# rm /etc/sysctl.d/99-sysctl.conf
 EOF
 sudo rm /etc/sysctl.d/99-sysctl.conf
 EOF
-rm '/etc/sysctl.conf'
+# rm '/etc/sysctl.conf'
 EOF
 sudo rm '/etc/sysctl.conf'
 EOF
-rm /etc/sysctl.conf
+# rm /etc/sysctl.conf
 EOF
 sudo rm /etc/sysctl.conf
 EOF
@@ -13289,6 +13282,8 @@ EOF
 sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install yaru-theme-icon yaru-theme-gtk yaru-theme-sound libreoffice-style-yaru -y
 EOF
 sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install chrome-gnome-shell -y
+EOF
+(gnome-extensions-app) | (sleep 3; killall gnome-extensions-app)
 EOF
 sudo apt install firewalld firewall-applet iptables -y
 EOF
