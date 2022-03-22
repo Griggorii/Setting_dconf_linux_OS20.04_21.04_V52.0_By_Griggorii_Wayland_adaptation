@@ -4947,7 +4947,7 @@ rotation-lock=false
 end-system-uids=500
 no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1647854656
+release-check-time=uint32 1647941616
 show-apport-crashes=false
 show-livepatch-status-icon=true
 
@@ -6338,7 +6338,7 @@ right-visible=false
 accuracy=9
 angle-units='degrees'
 base=10
-button-mode='advanced'
+button-mode='basic'
 number-format='automatic'
 precision=2000
 refresh-interval=604800
@@ -6395,7 +6395,7 @@ show-development-warning=true
 
 [org/gnome/deja-dup]
 backend='google'
-prompt-check='2022-03-21T09:27:16.157087Z'
+prompt-check='2021-05-25T03:13:05.777862Z'
 
 [org/gnome/deja-dup/file]
 migrated=true
@@ -6557,7 +6557,7 @@ require-password='never'
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
-mru-sources=[('xkb', 'us'), ('xkb', 'ru')]
+mru-sources=[('xkb', 'ru'), ('xkb', 'us')]
 per-window=true
 show-all-sources=false
 sources=[('xkb', 'us'), ('xkb', 'ru')]
@@ -6571,6 +6571,7 @@ clock-format='24h'
 clock-show-date=true
 clock-show-seconds=true
 clock-show-weekday=true
+color-scheme='prefer-dark'
 cursor-blink=true
 cursor-blink-time=1200
 cursor-blink-timeout=10
@@ -6593,7 +6594,7 @@ gtk-key-theme='Default'
 gtk-theme='Yaru-dark'
 gtk-timeout-initial=200
 gtk-timeout-repeat=20
-icon-theme='oomox-griggorii'
+icon-theme='Yaru'
 locate-pointer=true
 menubar-accel='F10'
 menubar-detachable=false
@@ -6633,7 +6634,7 @@ autorun-x-content-open-folder=['x-content/bootable-media']
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/bootable-media']
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-control-center', 'gsettings set org-gnome-tweaks', 'gsettings set org-gnome-gedit', 'firefox', 'com-gexperts-tilix', 'mousepad', 'gsettings set org-gnome-nautilus', 'gsettings set org-gnome-terminal', 'gsettings set org-gnome-fileroller', 'gsettings set org-gnome-baobab', 'budgie-desktop-settings', 'nemo', 'brave-browser', 'jb-mission-control-jdk8', 'brave-browser-beta', 'thunar', 'gdebi', 'thunderbird', 'telegramdesktop', 'gsettings set org-midori-browser-midori', 'vlc', 'xfce4-notifyd-config', 'nm-applet', 'com-obsproject-studio', 'yelp', 'gnome-power-panel', 'gnome-network-panel', 'displaycal', 'displaycal-scripting-client', 'stacer', 'chromium-browser', 'gnome-system-monitor', 'gsettings set org-gnome-boxes', 'displaycal-vrml-to-x3d-converter', 'green-recorder', 'gsettings set org-gnome-eog', 'io-github-celluloid-player-celluloid', 'update-manager', 'gsettings set org-gnome-totem', 'gsettings set org-freedesktop-problems-applet', 'gsettings set org-gnome-software', 'gsettings set org-gnome-extensions', 'sqlitebrowser', 'hardinfo', 'gsettings set org-gnome-epiphany', 'libreoffice-startcenter', 'nm-connection-editor', 'ca-desrt-dconf-editor', 'org-gnome-fileroller', 'org-gnome-gedit', 'org-gnome-nautilus', 'org-gnome-baobab', 'org-gnome-dejadup']
+application-children=['gnome-control-center', 'gsettings set org-gnome-tweaks', 'gsettings set org-gnome-gedit', 'firefox', 'com-gexperts-tilix', 'mousepad', 'gsettings set org-gnome-nautilus', 'gsettings set org-gnome-terminal', 'gsettings set org-gnome-fileroller', 'gsettings set org-gnome-baobab', 'budgie-desktop-settings', 'nemo', 'brave-browser', 'jb-mission-control-jdk8', 'brave-browser-beta', 'thunar', 'gdebi', 'thunderbird', 'telegramdesktop', 'gsettings set org-midori-browser-midori', 'vlc', 'xfce4-notifyd-config', 'nm-applet', 'com-obsproject-studio', 'yelp', 'gnome-power-panel', 'gnome-network-panel', 'displaycal', 'displaycal-scripting-client', 'stacer', 'chromium-browser', 'gnome-system-monitor', 'gsettings set org-gnome-boxes', 'displaycal-vrml-to-x3d-converter', 'green-recorder', 'gsettings set org-gnome-eog', 'io-github-celluloid-player-celluloid', 'update-manager', 'gsettings set org-gnome-totem', 'gsettings set org-freedesktop-problems-applet', 'gsettings set org-gnome-software', 'gsettings set org-gnome-extensions', 'sqlitebrowser', 'hardinfo', 'gsettings set org-gnome-epiphany', 'libreoffice-startcenter', 'nm-connection-editor', 'ca-desrt-dconf-editor', 'org-gnome-fileroller', 'org-gnome-gedit', 'org-gnome-nautilus', 'org-gnome-baobab']
 show-banners=true
 show-in-lock-screen=true
 
@@ -7401,7 +7402,7 @@ bottom-panel-active-page='GeditPythonConsolePanel'
 bottom-panel-size=46
 side-panel-active-page='GeditFileBrowserPanel'
 side-panel-size=289
-size=(996, 658)
+size=(997, 658)
 state=87168
 
 [org/gnome/gitg/preferences/commit/message]
@@ -7548,7 +7549,7 @@ smooth-refresh=true
 solaris-mode=true
 swap-color='rgb(0,255,31)'
 update-interval=5000
-window-state=(844, 520, 26, 23)
+window-state=(844, 542, 26, 23)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -8662,6 +8663,8 @@ priority=0
 
 [org/gnome/settings-daemon/plugins/xsettings]
 active=true
+antialiasing='grayscale'
+hinting='slight'
 overrides={'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'menu:minimize,maximize,close'>}
 priority=0
 
@@ -8673,10 +8676,10 @@ command-history=['nautilus', 'r', 'tilix', 'lg']
 development-tools=true
 disable-extension-version-validation=true
 disable-user-extensions=false
-disabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'pop-shell@system76.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'desktop-icons@csoriano', 'unite@hardpixel.eu']
+disabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'pop-shell@system76.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'desktop-icons@csoriano']
 enable-hot-corners=true
-enabled-extensions=['mediaplayer@patapon.info', 'GPaste@gnome-shell-extensions.gnome.org', 'gnomenu@panacier.gmail.com', 'popthemetoggle@kylecorry31.github.io', 'auto-ovpn@yahoo.com', 'printers@linux-man.org', 'openweather-extension@jenslody.de', 'sound-output-device-chooser@kgshank.net', 'bettervolume@tudmotu.com', 'dash-to-dock@micxgx.gmail.com', 'suspend-button@laserb', 'TilixDropdown@ivkuzev@gmail.com', 'system-monitor@paradoxxx.zero.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'impatience@gfxmonk.net', 'ubuntu-appindicators@ubuntu.com', 'CoverflowAltTab@palatis.blogspot.com', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'disconnect-wifi@kgshank.net', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'hidetopbar@mathieu.bidon.ca', 'ding@rastersoft.com']
-favorite-apps=['org.gnome.Screenshot.desktop', 'ubiquity.desktop', 'nemo.desktop', 'org.gnome.Nautilus.desktop', 'gnome-control-center.desktop', 'alacarte-made-48.desktop', 'Waydroid.desktop', 'com.gexperts.Tilix.desktop', 'gnome-system-monitor.desktop', 'com.obsproject.Studio.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.DiskUtility.desktop', 'nvidia-settings.desktop', 'ca.desrt.dconf-editor.desktop', 'chromium-browser.desktop', 'green-recorder.desktop', 'vlc.desktop']
+enabled-extensions=['mediaplayer@patapon.info', 'GPaste@gnome-shell-extensions.gnome.org', 'gnomenu@panacier.gmail.com', 'popthemetoggle@kylecorry31.github.io', 'auto-ovpn@yahoo.com', 'printers@linux-man.org', 'openweather-extension@jenslody.de', 'sound-output-device-chooser@kgshank.net', 'bettervolume@tudmotu.com', 'dash-to-dock@micxgx.gmail.com', 'suspend-button@laserb', 'TilixDropdown@ivkuzev@gmail.com', 'system-monitor@paradoxxx.zero.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'impatience@gfxmonk.net', 'ubuntu-appindicators@ubuntu.com', 'CoverflowAltTab@palatis.blogspot.com', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'disconnect-wifi@kgshank.net', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'hidetopbar@mathieu.bidon.ca', 'ding@rastersoft.com', 'unite@hardpixel.eu']
+favorite-apps=['org.gnome.Screenshot.desktop', 'ubiquity.desktop', 'nemo.desktop', 'org.gnome.Nautilus.desktop', 'gnome-control-center.desktop', 'alacarte-made-48.desktop', 'com.gexperts.Tilix.desktop', 'gnome-system-monitor.desktop', 'com.obsproject.Studio.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Extensions.desktop', 'ca.desrt.dconf-editor.desktop', 'chromium-browser.desktop', 'green-recorder.desktop', 'vlc.desktop']
 had-bluetooth-devices-setup=true
 introspect=false
 remember-mount-password=false
@@ -8750,7 +8753,7 @@ icon-size-fixed=true
 intellihide=true
 intellihide-mode='ALL_WINDOWS'
 isolate-monitors=true
-isolate-workspaces=true
+isolate-workspaces=false
 max-alpha=0.80000000000000004
 middle-click-action='launch'
 min-alpha=0.20000000000000001
@@ -10074,7 +10077,7 @@ replace-all-location=1
 
 [org/xfce/mousepad/state/window]
 fullscreen=false
-height=481
+height=489
 left=-1
 maximized=false
 top=-1
@@ -13219,10 +13222,6 @@ grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/
 EOF
 grep -H -r -n  "20.04" /etc/lsb-release && sudo ln -s /usr/lib/x86_64-linux-gnu/libpulse.so.0 /usr/lib/x86_64-linux-gnu/libpulse.so
 EOF
-grep -H -r -n  "20.04" /etc/lsb-release && lsof /usr/bin/x-www-browser & sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Xorg_1.28-Mesa_21.2.6_Ubuntu_20.04/releases/tag/libmesa_dri"
-EOF
-grep -H -r -n  "20.04" /etc/lsb-release && lsof /usr/bin/notify-send & sh -c "/usr/bin/notify-send "UI_Perfomance_Ubuntu_20.04_development.sh Only real technologies, not any fictional parasitic distributions support real technology investments and donate VISA 4817 7601 8112 4706""
-EOF
 mkdir $HOME/.config/gconf
 EOF
 mkdir ~/.config/gconf
@@ -14608,6 +14607,10 @@ EOF
 update-alternatives --config gdm3-theme.gresource
 EOF
 sudo update-alternatives --config gdm3-theme.gresource
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && lsof /usr/bin/x-www-browser & sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Xorg_1.28-Mesa_21.2.6_Ubuntu_20.04/releases/tag/libmesa_dri"
+EOF
+grep -H -r -n  "20.04" /etc/lsb-release && lsof /usr/bin/notify-send & sh -c "/usr/bin/notify-send "UI_Perfomance_Ubuntu_20.04_development.sh Only real technologies, not any fictional parasitic distributions support real technology investments and donate VISA 4817 7601 8112 4706""
 EOF
 clear
 grep -H -r -n "egrep" /usr/bin
