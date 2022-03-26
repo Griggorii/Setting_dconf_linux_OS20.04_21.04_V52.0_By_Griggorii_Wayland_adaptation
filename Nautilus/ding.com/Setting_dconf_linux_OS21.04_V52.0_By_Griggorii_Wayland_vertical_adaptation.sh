@@ -10725,8 +10725,6 @@ alias goboost='(set -x; powerprofilesctl set interactive; sudo cpupower frequenc
 alias boostrun='powerprofilesctl launch -p interactive'
 
 EOF
-lsof '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders' & '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders' > '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache'
-EOF
 cat > '/tmp/.drirc' <<EOL
 <driconf>
    <device driver="i915">
@@ -10917,6 +10915,24 @@ EOF
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 EOF
 glib-compile-schemas /usr/share/glib-2.0/schemas/
+EOF
+lsof '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders' & '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders' > '/tmp/loaders.cache'
+EOF
+sudo mv '/tmp/loaders.cache' '/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache'
+EOF
+cat > '/tmp/giomodule.cache' <<EOL
+libdconfsettings.so: gsettings-backend
+libgiognomeproxy.so: gio-proxy-resolver
+libgiognutls.so: gio-tls-backend
+libgiolibproxy.so: gio-proxy-resolver
+libgioremote-volume-monitor.so: gio-native-volume-monitor,gio-volume-monitor
+libgvfsdbus.so: gio-vfs,gio-volume-monitor
+EOL
+sudo mv '/tmp/giomodule.cache' '/usr/lib/x86_64-linux-gnu/gio/modules/giomodule.cache'
+EOF
+export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
+EOF
+rm '/tmp/giomodule.cache'
 EOF
 sudo mv nautilus-autostart.desktop /etc/xdg/autostart/
 EOF
