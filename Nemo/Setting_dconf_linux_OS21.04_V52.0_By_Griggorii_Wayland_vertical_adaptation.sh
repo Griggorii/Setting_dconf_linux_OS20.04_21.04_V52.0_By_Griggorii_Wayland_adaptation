@@ -4,6 +4,8 @@
 ####Griggorii@gmail.com mit license dconf-config
 
 
+(sh -c "unshare -m --map-root-user") | (sleep 3; killall sh)
+
 # XDG_DOWNLOAD_DIR=$(xdg-user-dir DOWNLOAD)
 
 # cd "$XDG_DOWNLOAD_DIR"
