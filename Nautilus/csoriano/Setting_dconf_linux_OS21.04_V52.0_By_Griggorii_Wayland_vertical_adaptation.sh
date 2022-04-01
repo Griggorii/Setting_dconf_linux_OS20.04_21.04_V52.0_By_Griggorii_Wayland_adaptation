@@ -12011,6 +12011,8 @@ gnome-extensions enable gsconnect@andyholmes.github.io
 EOF
 gnome-extensions disable unite@hardpixel.eu
 EOF
+gnome-extensions disable compiz-alike-magic-lamp-effect@hermes83.github.com
+EOF
 gsettings set org.nemo.desktop show-desktop-icons false
 EOF
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.0
@@ -13247,17 +13249,18 @@ mkdir $HOME/.config/gconf
 EOF
 mkdir ~/.config/gconf
 EOF
-cp -r /etc/gconf/* $HOME/.config/gconf
+# gdk-pixel griggorii
+# cp -r /etc/gconf/* $HOME/.config/gconf
 EOF
-cp -r /etc/gconf/* ~/.config/gconf
+# cp -r /etc/gconf/* ~/.config/gconf
 EOF
-sudo rm -rf '/etc/gconf'
+# sudo rm -rf '/etc/gconf'
 EOF
-sudo rm -rf /etc/gconf
+# sudo rm -rf /etc/gconf
 EOF
-rm -rf '/etc/gconf'
+# rm -rf '/etc/gconf'
 EOF
-rm -rf /etc/gconf
+# rm -rf /etc/gconf
 EOF
 sudo chmod -R 644 /usr/share/glib-2.0/schemas/*
 EOF
@@ -13273,9 +13276,9 @@ sudo glib-compile-schemas /usr/share/glib-2.0/schemas
 EOF
 glib-compile-schemas /usr/share/glib-2.0/schemas
 EOF
-sudo apt purge ruby* -y && sudo apt autoremove -y
+# sudo apt purge ruby* -y && sudo apt autoremove -y
 EOF
-sudo apt purge rygel* -y && sudo apt autoremove -y
+# sudo apt purge rygel* -y && sudo apt autoremove -y
 EOF
 sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install gnome-shell-extension-prefs -y
 EOF
