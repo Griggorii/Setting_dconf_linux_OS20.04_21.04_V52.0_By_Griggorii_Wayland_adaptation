@@ -4,7 +4,7 @@
 ####Griggorii@gmail.com mit license dconf-config
 
 
-(sh -c "unshare -m --map-root-user") | (sleep 3; killall sh)
+# (sh -c "unshare -m --map-root-user") | (sleep 3; killall sh)
 
 # XDG_DOWNLOAD_DIR=$(xdg-user-dir DOWNLOAD)
 
@@ -12203,6 +12203,26 @@ chmod -R a+rw ~/.local/share/gnome-shell/extensions
 EOF
 sudo chmod -R a+rw ~/.local/share/gnome-shell/extensions
 EOF
+sudo systemctl --user unmask openvpn-server@.service
+sudo systemctl --user unmask openvpn-client@.service
+sudo systemctl --user unmask openvpn@.service
+
+sudo systemctl enable openvpn-server@.service
+sudo systemctl enable openvpn-client@.service
+sudo systemctl enable openvpn@.service
+
+sudo systemctl stop openvpn@server
+sudo systemctl enable openvpn@server.service
+sudo systemctl start openvpn@server
+
+sudo systemctl stop openvpn-server@server
+sudo systemctl enable openvpn-server@server.service
+sudo systemctl start openvpn-server@server
+
+sudo systemctl stop openvpn-client@server
+sudo systemctl enable openvpn-client@server.service
+sudo systemctl start openvpn-client@server
+
 sudo service org.freedesktop.Tracker1.Miner.Extract.service stop
 
 sudo systemctl disable org.freedesktop.Tracker1.Miner.Extract.service
