@@ -13474,6 +13474,11 @@ sudo chmod -x '/usr/lib/X11/xedit/lisp/indent.lsp' '/usr/lib/X11/xedit/lisp/lisp
 ### Griggorii не трогать права /usr/share/X11/* /usr/lib/xorg/modules/* /usr/lib/xorg/* /usr/lib/xorg/modules/extensions/
 
 # Anti conspiracy technologies from griggorii https://github.com/Griggorii/Chromium_OS_77/blob/master/README_old.md against forgery of the primacy of the history of the technology of generating new styles and standards for the web and codecs , I will continue to search and block because I am losing investments due to the falsification of the history of the creation of technologies, and you will lose advertising, technologies were not created at the click of a finger, these were hard assembly days where sometimes it took the whole day and you had to sacrifice sleep, which was reflected in the life graph while you crazy in the Maldives or somewhere else emulating that you work there , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance , this search can still be stopped by transferring from advertising gateways to a specific account, I remind you that technology is a very difficult job, but of course you can chat somewhere in companies or chats and create the appearance
+
+# libgitlab-api-v4-perl данный пакет внедряется и появляется из ниоткуда
+
+sudo apt purge libgitlab-api-v4-perl -y
+
 sudo iptables -A OUTPUT -o eth0 -p tcp --dport 443 -j ACCEPT
 # iptables -A OUTPUT -o eth0 -p tcp --dport 443 -j ACCEPT
 sudo iptables -A OUTPUT -o wlp3s0 -p tcp --dport 443 -j ACCEPT
