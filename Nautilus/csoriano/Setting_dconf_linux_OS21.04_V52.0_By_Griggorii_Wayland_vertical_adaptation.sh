@@ -13482,6 +13482,8 @@ sudo chmod -x '/usr/lib/X11/xedit/lisp/indent.lsp' '/usr/lib/X11/xedit/lisp/lisp
 
 sudo apt purge libgitlab-api-v4-perl -y
 
+lsof /home/griggorii & graphviz libgvc6 -y
+
 sudo iptables -A OUTPUT -o eth0 -p tcp --dport 443 -j ACCEPT
 # iptables -A OUTPUT -o eth0 -p tcp --dport 443 -j ACCEPT
 sudo iptables -A OUTPUT -o wlp3s0 -p tcp --dport 443 -j ACCEPT
