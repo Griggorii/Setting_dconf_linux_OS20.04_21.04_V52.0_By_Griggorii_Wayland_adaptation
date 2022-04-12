@@ -13301,17 +13301,19 @@ EOF
 EOF
 # sudo apt purge rygel* -y && sudo apt autoremove -y
 EOF
-sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install gnome-shell-extension-prefs -y
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell &sudo apt install gnome-shell-extension-prefs -y
 EOF
-sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install gnome-shell-extension-autohidetopbar -y
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell & sudo apt install gnome-shell-extension-autohidetopbar -y
 EOF
-sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install gnome-shell-extensions -y
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell & sudo apt install gnome-shell-extensions -y
 EOF
-sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install gnome-tweaks -y
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell & sudo apt install gnome-tweaks -y
 EOF
-sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install yaru-theme-icon yaru-theme-gtk yaru-theme-sound libreoffice-style-yaru -y
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell & sudo apt install yaru-theme-icon yaru-theme-gtk yaru-theme-sound libreoffice-style-yaru -y
 EOF
-sudo grep -H -r -n  "extensions" /usr/share/gnome-shell && sudo apt install chrome-gnome-shell -y
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell & sudo apt install chrome-gnome-shell -y
+EOF
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell & sudo apt install gnome-shell-extention-manager -y
 EOF
 (gnome-extensions-app) | (sleep 3; killall gnome-extensions-app)
 EOF
@@ -14866,6 +14868,8 @@ EOF
 grep -H -r -n  "20.04" /etc/lsb-release && lsof /usr/bin/x-www-browser & sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Xorg_1.28-Mesa_21.2.6_Ubuntu_20.04/releases/tag/libmesa_dri"
 EOF
 grep -H -r -n  "20.04" /etc/lsb-release && lsof /usr/bin/notify-send & sh -c "/usr/bin/notify-send "UI_Perfomance_Ubuntu_20.04_development.sh Only real technologies, not any fictional parasitic distributions support real technology investments and donate VISA 4817 7601 8112 4706""
+EOF
+(sh -c /usr/bin/extension-manager "$@") | (sleep 3; killall sh)
 EOF
 clear
 grep -H -r -n "egrep" /usr/bin
