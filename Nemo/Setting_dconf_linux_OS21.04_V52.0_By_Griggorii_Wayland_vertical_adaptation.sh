@@ -13336,7 +13336,7 @@ sudo grep -H -r -n  "extensions" /usr/share/gnome-shell & sudo apt install yaru-
 EOF
 sudo grep -H -r -n  "extensions" /usr/share/gnome-shell & sudo apt install chrome-gnome-shell -y
 EOF
-sudo grep -H -r -n  "extensions" /usr/share/gnome-shell & sudo apt install gnome-shell-extention-manager -y
+sudo grep -H -r -n  "extensions" /usr/share/gnome-shell & sudo apt install gnome-shell-extension-manager -y
 EOF
 (gnome-extensions-app) | (sleep 3; killall gnome-extensions-app)
 EOF
