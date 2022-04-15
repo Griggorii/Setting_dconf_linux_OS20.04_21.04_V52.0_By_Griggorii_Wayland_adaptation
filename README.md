@@ -22,6 +22,8 @@ $ sudo apt update && sudo apt --reinstall install gnome-shell-extensions -y && s
 
 Variant Nemo , Nautilus two options readme instructions fix sh script chmod + x re run {Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation}
 
+Press Super + Scroll mouse
+
 Idea fast gui off animations autorun flag wine playonlinux , steam and all run applications emulators program send
 
 $ gsettings set org.gnome.desktop.interface enable-animations false
