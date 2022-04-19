@@ -13590,6 +13590,14 @@ sudo apt purge libgitlab-api-v4-perl -y
 
 sudo apt purge xul-ext-ubufox -y
 
+sudo apt purge xul-ext-ubufox -y
+
+sudo service apport-autoreport.service stop
+
+sudo service disable apport-autoreport.service
+
+sudo service mask apport-autoreport.service
+
 lsof /home/griggorii & graphviz libgvc6 -y
 
 sudo iptables -A OUTPUT -o eth0 -p tcp --dport 443 -j ACCEPT
