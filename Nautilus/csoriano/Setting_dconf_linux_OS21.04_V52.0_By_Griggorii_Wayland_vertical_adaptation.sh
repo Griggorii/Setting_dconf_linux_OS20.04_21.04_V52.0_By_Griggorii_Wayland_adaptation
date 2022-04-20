@@ -10677,11 +10677,27 @@ grep -H -r -n  "20.04" /etc/lsb-release && gsettings set org.gnome.gedit.prefere
 
 grep -H -r -n  "20.04" /etc/lsb-release && gsettings set org.gnome.gedit.preferences.editor scheme 'tango'
 
+gsettings set org.gnome.desktop.interface color-scheme 'default'
+
+gsettings set org.gnome.desktop.interface menubar-detachable 'true'
+
+gsettings set org.gnome.desktop.interface menus-have-tearoff 'true'
+
+gsettings set org.gnome.desktop.interface toolbar-detachable 'true'
+
+gsettings set org.gnome.desktop.background picture-uri 'default'
+
 dconf reset -f /org/compiz/profiles/unity-lowgfx/plugins-with-set-keys
 
 dconf reset -f /org/gnome/nm-applet/eap/
 
 dconf reset -f /org/blueman/plugins/recentconns
+
+dconf reset -f /org/gnome/desktop/background/
+
+dconf reset -f /org/gnome/desktop/background/
+
+dconf reset -f /org/cinnamon/desktop/background/
 
 gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']"
 
@@ -10730,6 +10746,12 @@ alias goboost='(set -x; powerprofilesctl set interactive; sudo cpupower frequenc
 alias goboost='(set -x; powerprofilesctl set interactive; sudo cpupower frequency-set -g)'
 
 alias boostrun='powerprofilesctl launch -p interactive'
+
+sudo service apport-autoreport.service stop
+
+sudo service disable apport-autoreport.service
+
+sudo service mask apport-autoreport.service
 
 EOF
 cat > '/tmp/.drirc' <<EOL
