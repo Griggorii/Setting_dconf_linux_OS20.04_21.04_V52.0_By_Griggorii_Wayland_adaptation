@@ -10677,6 +10677,14 @@ grep -H -r -n  "20.04" /etc/lsb-release && gsettings set org.gnome.gedit.prefere
 
 grep -H -r -n  "20.04" /etc/lsb-release && gsettings set org.gnome.gedit.preferences.editor scheme 'tango'
 
+grep -H -r -n  "21.04" /etc/lsb-release && gsettings set org.gnome.gedit.preferences.editor scheme 'oblivion'
+
+grep -H -r -n  "21.04" /etc/lsb-release && gsettings set org.gnome.gedit.preferences.editor scheme 'tango'
+
+grep -H -r -n  "21.10" /etc/lsb-release && gsettings set org.gnome.gedit.preferences.editor scheme 'oblivion'
+
+grep -H -r -n  "21.10" /etc/lsb-release && gsettings set org.gnome.gedit.preferences.editor scheme 'tango'
+
 gsettings set org.gnome.desktop.interface color-scheme 'default'
 
 gsettings set org.gnome.desktop.interface menubar-detachable 'true'
