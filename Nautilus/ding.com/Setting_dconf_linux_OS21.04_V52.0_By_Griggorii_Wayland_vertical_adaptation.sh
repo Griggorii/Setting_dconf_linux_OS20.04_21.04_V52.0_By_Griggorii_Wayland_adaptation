@@ -12636,6 +12636,11 @@ cat << EOF > sysctl.conf
 # See https://www.kernel.org/doc/html/latest/admin-guide/sysrq.html
 # for what other values do
 # kernel.sysrq=438
+vm.vfs_cache_pressure=1000
+vm.dirty_background_ratio=50
+vm.dirty_ratio=80
+EOF
+sudo sed -i 's/true/false/g' '/etc/whoopsie'
 EOF
 sudo cp ./sysctl.conf /etc/
 EOF
