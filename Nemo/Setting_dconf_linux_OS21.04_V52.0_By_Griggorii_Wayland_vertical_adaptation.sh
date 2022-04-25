@@ -10976,6 +10976,8 @@ sudo mv nemo-desktop.desktop /etc/xdg/autostart/
 EOF
 rm nemo-desktop.desktop
 EOF
+sudo sed -i 's/system-file-manager/folder/g' '/usr/share/applications/nemo.desktop'
+EOF
 sudo rm /usr/share/onboard/themes/Droid.theme
 EOF
 cat << EOF > Droid.theme
