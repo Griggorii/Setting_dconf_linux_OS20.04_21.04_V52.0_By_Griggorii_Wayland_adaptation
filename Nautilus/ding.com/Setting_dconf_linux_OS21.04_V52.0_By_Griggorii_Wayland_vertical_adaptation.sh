@@ -15021,7 +15021,7 @@ grep -H -r -n  "20.04" /etc/lsb-release && lsof /usr/bin/x-www-browser & sh -c "
 EOF
 grep -H -r -n  "20.04" /etc/lsb-release && lsof /usr/bin/notify-send & sh -c "/usr/bin/notify-send "UI_Perfomance_Ubuntu_20.04_development.sh Only real technologies, not any fictional parasitic distributions support real technology investments and donate VISA 4817 7601 8112 4706""
 EOF
-(sh -c /usr/bin/extension-manager "$@") | (sleep 3; killall sh)
+grep -H -r -n  "extension-manager" /usr/bin & (sh -c /usr/bin/extension-manager "$@") | (sleep 3; killall sh)
 EOF
 clear
 grep -H -r -n "egrep" /usr/bin
