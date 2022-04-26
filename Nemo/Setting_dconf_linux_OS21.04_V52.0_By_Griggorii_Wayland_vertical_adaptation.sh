@@ -10756,6 +10756,20 @@ alias goboost='(set -x; powerprofilesctl set interactive; sudo cpupower frequenc
 
 alias boostrun='powerprofilesctl launch -p interactive'
 
+sudo service apport stop
+
+sudo systemctl disable apport
+
+sudo systemctl mask apport
+
+sudo rm -rf /var/crash/*
+
+sudo sed -i 's/enabled=1/enabled=0/g' '/etc/default/apport'
+
+sudo service disable apport
+
+sudo service mask apport
+
 sudo service apport-autoreport.service stop
 
 sudo service disable apport-autoreport.service
@@ -12667,8 +12681,6 @@ vm.vfs_cache_pressure=1000
 vm.dirty_background_ratio=50
 vm.dirty_ratio=80
 EOF
-sudo sed -i 's/true/false/g' '/etc/whoopsie'
-EOF
 sudo cp ./sysctl.conf /etc/
 EOF
 cp ./sysctl.conf /etc/
@@ -13650,15 +13662,7 @@ sudo apt purge libgitlab-api-v4-perl -y
 
 sudo apt purge xul-ext-ubufox -y
 
-sudo apt purge xul-ext-ubufox -y
-
-sudo service apport-autoreport.service stop
-
-sudo service disable apport-autoreport.service
-
-sudo service mask apport-autoreport.service
-
-lsof /home/griggorii & graphviz libgvc6 -y
+sudo sed -i 's/true/false/g' '/etc/whoopsie'
 
 sudo iptables -A OUTPUT -o eth0 -p tcp --dport 443 -j ACCEPT
 # iptables -A OUTPUT -o eth0 -p tcp --dport 443 -j ACCEPT
