@@ -663,6 +663,14 @@ grep -H -r -n  "21.10" /etc/lsb-release && gnome-extensions enable horizontal-wo
 
 grep -H -r -n  "22." /etc/lsb-release && gnome-extensions enable horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
 EOF
+rm -rf ~/.config/qt5ct
+EOF
+mkdir ~/.config/qt5ct
+EOF
+mkdir ~/.config/qt5ct/qss
+EOF
+mkdir ~/.config/qt5ct/colors
+EOF
 cat << EOF > qt5ct.conf
 [Appearance]
 color_scheme_path=/usr/share/qt5ct/colors/simple.conf

@@ -634,6 +634,14 @@ rm nemo
 EOF
 rm ./nemo
 EOF
+rm -rf ~/.config/qt5ct
+EOF
+mkdir ~/.config/qt5ct
+EOF
+mkdir ~/.config/qt5ct/qss
+EOF
+mkdir ~/.config/qt5ct/colors
+EOF
 cat << EOF > qt5ct.conf
 [Appearance]
 color_scheme_path=/usr/share/qt5ct/colors/simple.conf
