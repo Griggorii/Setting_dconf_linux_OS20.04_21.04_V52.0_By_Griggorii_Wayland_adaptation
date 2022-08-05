@@ -12132,37 +12132,37 @@ cat > '/tmp/qt5ct/airy.conf' <<EOL
 active_colors=#ff000000, #ffdcdcdc, #ffdcdcdc, #ff5e5c5b, #ff646464, #ffe1e1e1, #ff000000, #ff0a0a0a, #ff0a0a0a, #ffc8c8c8, #ffffffff, #ffe7e4e0, #ff0986d3, #ff0a0a0a, #ff0986d3, #ffa70b06, #ff5c5b5a, #ffffffff, #ff646464, #ff050505, #80000000
 disabled_colors=#ffffffff, #ff424245, #ffdcdcdc, #ff5e5c5b, #ff646464, #ffe1e1e1, #ff808080, #ffffffff, #ff808080, #ff969696, #ffc8c8c8, #ffe7e4e0, #ff0986d3, #ff808080, #ff0986d3, #ffa70b06, #ff5c5b5a, #ffffffff, #ff646464, #ffffffff, #80000000
 inactive_colors=#ff323232, #ffb4b4b4, #ffdcdcdc, #ff5e5c5b, #ff646464, #ffe1e1e1, #ff323232, #ff323232, #ff323232, #ff969696, #ffc8c8c8, #ffe7e4e0, #ff0986d3, #ff323232, #ff0986d3, #ffa70b06, #ff5c5b5a, #ffffffff, #ff646464, #ff323232, #80000000
-EOF
+EOL
 cat > '/tmp/qt5ct/darker.conf' <<EOL
 [ColorScheme]
 active_colors=#ffffffff, #ff424245, #ff979797, #ff5e5c5b, #ff302f2e, #ff4a4947, #ffffffff, #ffffffff, #ffffffff, #ff3d3d3d, #ff222020, #ffe7e4e0, #ff12608a, #fff9f9f9, #ff0986d3, #ffa70b06, #ff5c5b5a, #ffffffff, #ff3f3f36, #ffffffff, #80ffffff
 disabled_colors=#ff808080, #ff424245, #ff979797, #ff5e5c5b, #ff302f2e, #ff4a4947, #ff808080, #ffffffff, #ff808080, #ff3d3d3d, #ff222020, #ffe7e4e0, #ff12608a, #ff808080, #ff0986d3, #ffa70b06, #ff5c5b5a, #ffffffff, #ff3f3f36, #ffffffff, #80ffffff
 inactive_colors=#ffffffff, #ff424245, #ff979797, #ff5e5c5b, #ff302f2e, #ff4a4947, #ffffffff, #ffffffff, #ffffffff, #ff3d3d3d, #ff222020, #ffe7e4e0, #ff12608a, #fff9f9f9, #ff0986d3, #ffa70b06, #ff5c5b5a, #ffffffff, #ff3f3f36, #ffffffff, #80ffffff
-EOF
+EOL
 cat > '/tmp/qt5ct/dusk.conf' <<EOL
 [ColorScheme]
 active_colors=#ff000000, #ff7f7f7f, #ffffffff, #ffcbc7c4, #ff7f7f7f, #ffb8b5b2, #ff000000, #ffffffff, #ff000000, #ff7f7f7f, #ff7f7f7f, #ff707070, #ff308cc6, #ffffffff, #ff0000ff, #ffff00ff, #ff7f7f7f, #ff000000, #ff7f7f7f, #ff000000, #80000000
 disabled_colors=#ffbebebe, #ff7f7f7f, #ffffffff, #ffcbc7c4, #ff7f7f7f, #ffb8b5b2, #ffbebebe, #ffffffff, #ffbebebe, #ff7f7f7f, #ff7f7f7f, #ffb1aeab, #ff7f7f7f, #ffffffff, #ff0000ff, #ffff00ff, #ff7f7f7f, #ff000000, #ff7f7f7f, #ff000000, #80000000
 inactive_colors=#ff000000, #ff7f7f7f, #ffffffff, #ffcbc7c4, #ff7f7f7f, #ffb8b5b2, #ff000000, #ffffffff, #ff000000, #ff7f7f7f, #ff7f7f7f, #ff707070, #ff308cc6, #ffffffff, #ff0000ff, #ffff00ff, #ff7f7f7f, #ff000000, #ff7f7f7f, #ff000000, #80000000
-EOF
+EOL
 cat > '/tmp/qt5ct/ia_ora.conf' <<EOL
 [ColorScheme]
 active_colors=#ff000000, #ffeff3f7, #ffffffff, #ffe9e7e3, #ffc7cbce, #ffa0a0a4, #ff000000, #ffffffff, #ff000000, #ffeff3f7, #ffeff3f7, #ffb8bbbe, #ff4965ae, #ffffffff, #ff0000ff, #ffff00ff, #ffeff3f7, #ff000000, #ffffffdc, #ff000000, #80000000
 disabled_colors=#ff808080, #ffeff3f7, #ffffffff, #ffe9e7e3, #ffc7cbce, #ffa0a0a4, #ff808080, #ffffffff, #ff808080, #ffeff3f7, #ffeff3f7, #ffb8bbbe, #ff4965ae, #ff808080, #ff0000ff, #ffff00ff, #ffeff3f7, #ff000000, #ffffffdc, #ff000000, #80000000
 inactive_colors=#ff000000, #ffeff3f7, #ffffffff, #ffe9e7e3, #ffc7cbce, #ffa0a0a4, #ff000000, #ffffffff, #ff000000, #ffeff3f7, #ffeff3f7, #ffb8bbbe, #ff4965ae, #ffffffff, #ff0000ff, #ffff00ff, #ffeff3f7, #ff000000, #ffffffdc, #ff000000, #80000000
-EOF
+EOL
 cat > '/tmp/qt5ct/sand.conf' <<EOL
 [ColorScheme]
 active_colors=#ff000000, #ffffffdc, #ff979797, #ff5e5c5b, #ff302f2e, #ff4a4947, #ff000000, #ff000000, #ff000000, #ffffffdc, #ffffffdc, #ffe7e4e0, #ff5f5b5d, #fff9f9f9, #ff0986d3, #ffa70b06, #ffffffdc, #ff000000, #ff3f3f36, #ff000000, #80000000
 disabled_colors=#ff4a4947, #ffffffdc, #ff979797, #ff5e5c5b, #ff302f2e, #ff4a4947, #ff4a4947, #ff4a4947, #ff4a4947, #ffffffdc, #ffffffdc, #ffe7e4e0, #ff5f5b5d, #fff9f9f9, #ff0986d3, #ffa70b06, #ffffffdc, #ff000000, #ff3f3f36, #ff000000, #80000000
 inactive_colors=#ff000000, #ffffffdc, #ff979797, #ff5e5c5b, #ff302f2e, #ff4a4947, #ff000000, #ff000000, #ff000000, #ffffffdc, #ffffffdc, #ffe7e4e0, #ff5f5b5d, #fff9f9f9, #ff0986d3, #ffa70b06, #ffffffdc, #ff000000, #ff3f3f36, #ff000000, #80000000
-EOF
+EOL
 cat > '/tmp/qt5ct/simple.conf' <<EOL
 [ColorScheme]
 active_colors=#ff000000, #ffefebe7, #ffffffff, #ffcbc7c4, #ff9f9d9a, #ffb8b5b2, #ff000000, #ffffffff, #ff000000, #ffffffff, #ffefebe7, #ffb1aeab, #ff308cc6, #ffffffff, #ff0000ff, #ffff0000, #fff7f5f3, #ff000000, #ffffffdc, #ff000000, #80000000
 disabled_colors=#ffbebebe, #ffefebe7, #ffffffff, #ffcbc7c4, #ff9f9d9a, #ffb8b5b2, #ffbebebe, #ffffffff, #ffbebebe, #ffefebe7, #ffefebe7, #ffb1aeab, #ff9f9d9a, #ffffffff, #ff0000ff, #ffff0000, #fff7f5f3, #ff000000, #ffffffdc, #ff000000, #80000000
 inactive_colors=#ff000000, #ffefebe7, #ffffffff, #ffcbc7c4, #ff9f9d9a, #ffb8b5b2, #ff000000, #ffffffff, #ff000000, #ffffffff, #ffefebe7, #ffb1aeab, #ff308cc6, #ffffffff, #ff0000ff, #ffff0000, #fff7f5f3, #ff000000, #ffffffdc, #ff000000, #80000000
-EOF
+EOL
 cat > '/tmp/qt5ct/waves.conf' <<EOL
 [ColorScheme]
 active_colors=#ffb0b0b0, #ff010b2c, #ff979797, #ff5e5c5b, #ff302f2e, #ff4a4947, #ffb0b0b0, #ffb0b0b0, #ffb0b0b0, #ff010b2c, #ff010b2c, #ffb0b0b0, #ff302f2e, #ffb0b0b0, #ff0986d3, #ffa70b06, #ff5c5b5a, #ffffffff, #ff0a0a0a, #ffffffff, #80b0b0b0
