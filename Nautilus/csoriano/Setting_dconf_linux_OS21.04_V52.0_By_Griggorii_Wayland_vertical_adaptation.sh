@@ -11982,7 +11982,7 @@ sudo systemctl stop systemd-resolved
 sudo systemctl start systemd-resolved
 sudo service network-manager restart
 EOF
-# lightdm --test-mode | (sleep 5; killall lightdm bash )
+# timeout 5 lightdm --test-mode | (sleep 5; killall lightdm bash )
 EOF
 mkdir /tmp/pipewire
 EOF
@@ -15595,9 +15595,7 @@ EOL
 
 # mv /usr/share/doc/libglvnd0 ~/parasit_changelog_i386/doc
 EOF
-update-alternatives --config gdm3-theme.gresource
-EOF
-sudo update-alternatives --config gdm3-theme.gresource
+(sudo update-alternatives --config gdm3-theme.gresource)
 EOF
 grep -H -r -n  "20.04" /etc/lsb-release && lsof /usr/bin/x-www-browser & sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Xorg_1.28-Mesa_21.2.6_Ubuntu_20.04/releases/tag/libmesa_dri"
 EOF
@@ -15607,7 +15605,7 @@ grep -H -r -n  "extension-manager" /usr/bin & (sh -c /usr/bin/extension-manager 
 EOF
 clear
 grep -H -r -n "egrep" /usr/bin
-lightdm --test-mode
+timeout 5 lightdm --test-mode
 EOF
 # systemctl status systemd-sysctl
 # Griggorii пригодиться для дальнейшей разработки / полезные заметки в одном из примеров в моем статусе на странице https://github.com/Griggorii есть еще одна команда
